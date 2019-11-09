@@ -1,0 +1,44 @@
+$extrabold: 800;
+$bold: 700;
+$medium-plus: 600;
+$medium: 500;
+$regular: 400;
+$light: 300;
+
+
+
+@font-face {
+    font-family: 'Archivo Narrow', sans-serif;
+    src: url('fonts/ArchivoNarrow/ArchivoNarrow-Regular.eot');
+    src: url('fonts/ArchivoNarrow/ArchivoNarrow-Regular.eot') format('embedded-opentype'),
+         url('fonts/ArchivoNarrow/ArchivoNarrow-Regular.woff2') format('woff2'),
+         url('fonts/ArchivoNarrow/ArchivoNarrow-Regular.woff') format('woff'),
+         url('fonts/ArchivoNarrow/ArchivoNarrow-Regular.ttf') format('truetype'),
+         url('fonts/ArchivoNarrow/ArchivoNarrow-Regular.svg#PT_SerifWebBold') format('svg');
+    font-style: normal;
+    font-weight: $regular;     
+}
+
+@font-face {
+    font-family: 'Judson', serif;
+    src: url('fonts/Judson/Judson-Regular.eot');
+    src: url('fonts/Judson/Judson-Regular.eot') format('embedded-opentype'),
+         url('fonts/Judson/Judson-Regular.woff2') format('woff2'),
+         url('fonts/Judson/Judson-Regular.woff') format('woff'),
+         url('fonts/Judson/Judson-Regular.ttf') format('truetype'),
+         url('fonts/Judson/Judson-Regular.svg#PT_SansWebBold') format('svg');
+    font-style: normal;
+    font-weight: $regular;
+}
+
+@font-face {
+    font-family: 'Nunito Sans', sans-serif;
+    src: url('fonts/NunitoSans/NunitoSans-Regular.eot');
+    src: url('fonts/NunitoSans/NunitoSans-Regular.eot') format('embedded-opentype'),
+         url('fonts/NunitoSans/NunitoSans-Regular.woff2') format('woff2'),
+         url('fonts/NunitoSans/NunitoSans-Regular.woff') format('woff'),
+         url('fonts/NunitoSans/NunitoSans-Regular.ttf') format('truetype'),
+         url('fonts/NunitoSans/NunitoSans-Regular.svg#PT_SansWebBold') format('svg');
+    font-style: normal;
+    font-weight: $regular;
+}

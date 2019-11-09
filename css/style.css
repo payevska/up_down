@@ -1,0 +1,248 @@
+@font-face {
+  font-family: 'Archivo Narrow', sans-serif;
+  src: url("fonts/ArchivoNarrow/ArchivoNarrow-Regular.eot");
+  src: url("fonts/ArchivoNarrow/ArchivoNarrow-Regular.eot") format("embedded-opentype"), url("fonts/ArchivoNarrow/ArchivoNarrow-Regular.woff2") format("woff2"), url("fonts/ArchivoNarrow/ArchivoNarrow-Regular.woff") format("woff"), url("fonts/ArchivoNarrow/ArchivoNarrow-Regular.ttf") format("truetype"), url("fonts/ArchivoNarrow/ArchivoNarrow-Regular.svg#PT_SerifWebBold") format("svg");
+  font-style: normal;
+  font-weight: 400; }
+@font-face {
+  font-family: 'Judson', serif;
+  src: url("fonts/Judson/Judson-Regular.eot");
+  src: url("fonts/Judson/Judson-Regular.eot") format("embedded-opentype"), url("fonts/Judson/Judson-Regular.woff2") format("woff2"), url("fonts/Judson/Judson-Regular.woff") format("woff"), url("fonts/Judson/Judson-Regular.ttf") format("truetype"), url("fonts/Judson/Judson-Regular.svg#PT_SansWebBold") format("svg");
+  font-style: normal;
+  font-weight: 400; }
+@font-face {
+  font-family: 'Nunito Sans', sans-serif;
+  src: url("fonts/NunitoSans/NunitoSans-Regular.eot");
+  src: url("fonts/NunitoSans/NunitoSans-Regular.eot") format("embedded-opentype"), url("fonts/NunitoSans/NunitoSans-Regular.woff2") format("woff2"), url("fonts/NunitoSans/NunitoSans-Regular.woff") format("woff"), url("fonts/NunitoSans/NunitoSans-Regular.ttf") format("truetype"), url("fonts/NunitoSans/NunitoSans-Regular.svg#PT_SansWebBold") format("svg");
+  font-style: normal;
+  font-weight: 400; }
+/* ------------ variable --------------- */
+body {
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #312a31; }
+
+.container {
+  /* padding: 0; */ }
+
+a, button a, .header-big__logotype a, .header-big__menu_link-group a, .gambyrger-menu__gambyrger-list_link-group a {
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  text-decoration: none;
+  color: #ffffff;
+  /* &:visited {
+  	color: $purpur-dark;
+  } */ }
+  a:hover {
+    text-decoration: none;
+    color: #875c78; }
+  a:active {
+    color: #312a31; }
+  a:focus {
+    color: #ebebf4; }
+
+ul, .header-big__menu, .gambyrger-menu__gambyrger-list {
+  list-style: none; }
+
+h1 {
+  font-family: 'Archivo Narrow', sans-serif;
+  font-size: 60px;
+  font-weight: #fafafd;
+  color: #ffffff;
+  line-height: 1.2;
+  margin-bottom: 0; }
+
+h2 {
+  font-family: 'Judson', serif;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 1.1;
+  color: #431c43; }
+
+h3 {
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 24px;
+  font-weight: #fafafd;
+  color: #ffffff; }
+
+button {
+  background-color: #d6af18;
+  border-width: 0;
+  border-radius: 1px; }
+  button:hover {
+    background-color: #431c43;
+    transition: 2s; }
+  button a, button .header-big__logotype a, .header-big__logotype button a, button .header-big__menu_link-group a, .header-big__menu_link-group button a, button .gambyrger-menu__gambyrger-list_link-group a, .gambyrger-menu__gambyrger-list_link-group button a {
+    font-family: 'Archivo Narrow', sans-serif;
+    text-transform: uppercase;
+    color: #431c43; }
+    button a:hover {
+      color: #875c78;
+      transition: 2s; }
+
+.fon {
+  background-color: #ebebf4;
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%; }
+
+input {
+  width: 100%;
+  border: 1px solid #ffffff;
+  background-color: #431c43;
+  caret-color: #ffffff;
+  color: #ffffff; }
+
+input::placeholder {
+  display: flex;
+  justify-content: start;
+  color: #ffffff;
+  opacity: 0.5;
+  margin-left: 27px; }
+
+.social-web {
+  display: flex;
+  justify-content: space-between; }
+
+/* ------------ header --------------- */
+header {
+  width: 100%;
+  position: fixed;
+  z-index: 101;
+  background: url("../images/header.png") no-repeat top fixed;
+  opacity: 0.95;
+  background-size: cover; }
+
+.header-wrap {
+  display: flex;
+  flex-direction: column;
+  padding: 0; }
+
+.header-big {
+  display: flex;
+  align-items: flex-end;
+  padding: 0; }
+  .header-big__logotype {
+    display: flex;
+    padding: 0; }
+    .header-big__logotype a {
+      font-size: 20px; }
+  .header-big__menu {
+    width: 49%;
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+    margin-bottom: 2px;
+    padding: 66px 0 0 0; }
+    .header-big__menu_link-group a {
+      padding: 0px 4px; }
+      .header-big__menu_link-group a:hover {
+        border-bottom: 3px solid #d6af18; }
+
+/* for border in menu */
+.selected {
+  border-bottom: 3px solid #d6af18; }
+  .selected a {
+    border-bottom: 3px solid #d6af18; }
+
+/* byrger-menu start*/
+.byrger {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 0; }
+
+.byrger-menu {
+  display: flex;
+  justify-content: flex-end;
+  text-align: right;
+  padding-top: 9px; }
+  .byrger-menu__byrger-icon {
+    /* visibility: hidden; */
+    display: none;
+    width: 24px;
+    height: 25px;
+    position: relative;
+    cursor: pointer; }
+    .byrger-menu__byrger-icon_line {
+      display: block;
+      position: absolute;
+      height: 3px;
+      width: 100%;
+      background: #312a31;
+      border-radius: 6px;
+      opacity: 1;
+      left: 0;
+      transform: rotate(0deg);
+      transition: .25s ease-in-out; }
+
+.line-1 {
+  top: 0px; }
+
+.line-3, .line-2 {
+  top: 7px; }
+
+.line-4 {
+  top: 14px; }
+
+/* byrger-menu finish*/
+/* gambyrger-menu start*/
+.gambyrger {
+  display: flex;
+  flex-direction: column; }
+
+.gambyrger-menu {
+  display: flex;
+  justify-content: flex-end;
+  background-color: #312a31; }
+  .gambyrger-menu__gambyrger-list {
+    display: none;
+    height: 100vh;
+    padding-left: 0; }
+    .gambyrger-menu__gambyrger-list_link-group a {
+      padding: 0px 4px;
+      color: #ebebf4; }
+      .gambyrger-menu__gambyrger-list_link-group a:hover {
+        border-bottom: 3px solid #d6af18;
+        color: #8e86ac; }
+
+.popap {
+  padding-top: 20px; }
+
+.pop {
+  margin-bottom: 7px; }
+
+.byrger-menu.byrger-menu_state_open .byrger-menu__byrger-icon .line-1 {
+  top: 18px;
+  width: 0%;
+  left: 50%; }
+
+.byrger-menu.byrger-menu_state_open .byrger-menu__byrger-icon .line-2 {
+  transform: rotate(45deg); }
+
+.byrger-menu.byrger-menu_state_open .byrger-menu__byrger-icon .line-3 {
+  transform: rotate(-45deg); }
+
+.byrger-menu.byrger-menu_state_open .byrger-menu__byrger-icon .line-4 {
+  top: 18px;
+  width: 0%;
+  left: 50%; }
+
+.byrger-menu.byrger-menu_state_open .gambyrger-menu {
+  display: block; }
+
+/* gambyrger-menu finish*/
+/* ------ media query ------ */
+/* -------- fonts -------- */
+/* -------- colors -------- */
+/* -------- variables -------- */
+/* -------- header -------- */
+/* -------- home -------- */
+/* -------- about -------- */
+/* -------- portfolio -------- */
+/* -------- blog -------- */
+/* -------- footer -------- */
+
+/*# sourceMappingURL=style.css.map */
