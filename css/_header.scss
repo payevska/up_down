@@ -39,7 +39,7 @@ header {
 				padding: 0px 4px;	    		
 	    		@extend a;	    						
 	    		&:hover {
-		  			border-bottom: 3px solid $yellow;
+		  			border-bottom: 2px solid $orange-light;
 				}
 			}
 		}
@@ -49,9 +49,9 @@ header {
 
 /* for border in menu */
 .selected {	
-	border-bottom: 3px solid $yellow;
+	border-bottom: 2px solid $orange;
 	a {		
-  		border-bottom: 3px solid $yellow;
+  		border-bottom: 2px solid $orange;
 	}
 }
 
@@ -121,7 +121,7 @@ header {
 	    		@extend a;
 	    		color: $purpur-extra-light;				
 	    		&:hover {
-		  			border-bottom: 3px solid $yellow;
+		  			border-bottom: 2px solid $orange-light;
 		  			color: $purpur-light;
 				}
 			}

@@ -5,7 +5,7 @@ body {
 		size: 16px;
 		weight: $regular;
 	}
-	color: $purpur-dark;
+	color: $blue-light;
 }
 
 .container {
@@ -20,16 +20,16 @@ a {
 		weight: $bold;
 	}	
 	text-decoration: none;
-	color: $white;
+	color: $blue-dark;
 	&:hover {		
 	    text-decoration: none;
-	    color: $purpur-pink; 
+	    color: $blue-light; 
 	}
 	/* &:visited {
 		color: $purpur-dark;
 	} */
 	&:active {
-		color: $purpur-dark;
+		color: $blue-light;
 	}
 	&:focus {
 		color: $purpur-extra-light;
@@ -151,3 +151,6 @@ input::placeholder  {
     @content;
   }
 }
+
+
+
