@@ -1,11 +1,10 @@
 /* ------------ header --------------- */
-header {    
-    width: 100%;
+header { 
     position: fixed;
     z-index: 101;
-    background: url('../images/header.png') no-repeat top fixed;
-    opacity: 0.95;
-    background-size: cover;
+    width: 100%;    
+    background: $white;
+    padding-bottom: 10px;    
 }
 
 .header-wrap {
@@ -14,32 +13,57 @@ header {
     padding: 0;
 }
 
-.header-big {
+.header-top {
 	display: flex;
-    align-items: flex-end;
-    padding: 0;    
+    align-items: center;
+    padding: 0;
+    padding-top: 16px;
+    justify-content: space-between;    
 	&__logotype {
 		display: flex;
-		padding: 0;				
+		background-color: #adb5bd;				
 		a {
 			@extend a;
-			font-size: 20px;			
+		    text-align: center;
+			font-size: 14px;			
 		}				
 	}
+	&__language{
+		display: flex;
+	    justify-content: flex-end;
+		&_Ru {
+			a {
+				@extend a;
+				font-size: 20px;			
+			}
+		}
+		&_En {
+			display: none;
+			a {
+				
+				@extend a;
+				font-size: 20px;			
+			}
+		}
+	}
+
+}
+
+.header-big {
 	&__menu {
 		width: 49%;
 	    display: flex;
 	    justify-content: space-between;
     	text-decoration: none;
-	    margin-bottom: 2px;
-    	padding: 66px 0 0 0;
+    	margin-bottom: 6px;	    
+    	padding: 20px 0 0 0;
     	@extend ul;    	    	
 		&_link-group {
 			a {				
-				padding: 0px 4px;	    		
+				padding: 0px 4px 5px 4px;	    		
 	    		@extend a;	    						
 	    		&:hover {
-		  			border-bottom: 2px solid $orange-light;
+		  			//border-bottom: 1px solid $orange-light;
 				}
 			}
 		}
@@ -47,24 +71,25 @@ header {
 }
 
 
+
 /* for border in menu */
 .selected {	
-	border-bottom: 2px solid $orange;
+	border-bottom: 1px solid $orange;
 	a {		
-  		border-bottom: 2px solid $orange;
+  		border-bottom: 1px solid $orange;
 	}
 }
 
 /* byrger-menu start*/
 .byrger{
 	display: flex;
-    justify-content: flex-end;
-    padding-right: 0;
+    //justify-content: flex-end;
+    //padding-left: 0;
 }
 
 .byrger-menu {
 	display: flex;
-	justify-content: flex-end;  
+	//justify-content: flex-end;  
 	text-align: right;
   	padding-top: 9px;  
 	&__byrger-icon {
@@ -109,7 +134,7 @@ header {
 .gambyrger-menu {	
 	display: flex;
     justify-content: flex-end;
-	background-color: $purpur-dark;
+	//background-color: $purpur-dark;
 	&__gambyrger-list {
 		display: none;
 		height: 100vh;        

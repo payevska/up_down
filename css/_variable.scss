@@ -71,20 +71,20 @@ h3 {
 }
 
 button {
-	background-color: $yellow;
+	background-color: $orange;
 	border-width: 0;
 	border-radius: 1px;
 	&:hover {
-		background-color: $purpur;
+		background-color: $orange-light;
 		transition: 2s;
 	}
 	a {
 		@extend a;
 		font-family: 'Archivo Narrow', sans-serif;
 		text-transform: uppercase;	
-		color: $purpur;
+		color: $blue-dark;
 		&:hover {
-			color: $purpur-pink;
+			color: $blue-light;
 			transition: 2s;
 		}
     }
