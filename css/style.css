@@ -127,8 +127,7 @@ header {
   padding-top: 16px;
   justify-content: space-between; }
   .header-top__logotype {
-    display: flex;
-    background-color: #adb5bd; }
+    display: flex; }
     .header-top__logotype a, .header-top__logotype i {
       text-align: center;
       font-size: 14px; }
@@ -148,7 +147,7 @@ header {
   justify-content: space-between;
   text-decoration: none;
   margin-bottom: 6px;
-  padding: 20px 0 0 0; }
+  padding: 12px 0 0 0; }
   .header-big__menu_link-group a, .header-big__menu_link-group i {
     padding: 0px 4px 5px 4px; }
 
