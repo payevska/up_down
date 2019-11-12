@@ -19,21 +19,24 @@ header {
     padding: 0;
     padding-top: 16px;
     justify-content: space-between;    
-	&__logotype {
-		display: flex;						
+	/* &__logotype {
+		display: flex;
+	    	justify-content: center;						
 		a {
 			@extend a;
 		    text-align: center;
 			font-size: 14px;			
 		}				
-	}
-	&__language{
+	} */
+	/* &__language{
 		display: flex;
 	    justify-content: flex-end;
+	    align-items: center;
+	    font-size: 14px;
 		&_Ru {
 			a {
 				@extend a;
-				font-size: 20px;			
+							
 			}
 		}
 		&_En {
@@ -41,10 +44,10 @@ header {
 			a {
 				
 				@extend a;
-				font-size: 20px;			
+							
 			}
 		}
-	}
+	} */
 
 }
 
@@ -58,7 +61,7 @@ header {
     	padding: 12px 0 0 0;
     	@extend ul;    	    	
 		&_link-group {
-			a {				
+			a {							
 				padding: 0px 4px 5px 4px;	    		
 	    		@extend a;	    						
 	    		&:hover {
@@ -69,19 +72,62 @@ header {
 	}
 }
 
+.logotype {
+	display: flex;
+	justify-content: center;						
+	a {
+		@extend a;
+	    text-align: center;
+		font-size: 14px;			
+	}				
+}
+.header-phone {
+	display: flex;
+	    justify-content: flex-end;
+	    align-items: center;
+	&__number-phone {
+		
+	}
+}
+
+.language{
+	display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 14px;
+	&__Ru {
+		a {
+			@extend a;
+						
+		}
+	}
+	&__En {
+		display: none;
+		a {
+			
+			@extend a;
+						
+		}
+	}
+}
+
+
+
 
 
 /* for border in menu */
 .selected {	
-	border-bottom: 1px solid $orange;
+	border-bottom: 1px solid $red-dark;
 	a {		
-  		border-bottom: 1px solid $orange;
+  		border-bottom: 1px solid $red-link;
 	}
 }
 
 /* byrger-menu start*/
 .byrger{
 	display: flex;
+    align-items: center;
+
     //justify-content: flex-end;
     //padding-left: 0;
 }
@@ -145,7 +191,7 @@ header {
 	    		@extend a;
 	    		color: $purpur-extra-light;				
 	    		&:hover {
-		  			border-bottom: 2px solid $orange-light;
+		  			border-bottom: 2px solid $red-link;
 		  			color: $purpur-light;
 				}
 			}

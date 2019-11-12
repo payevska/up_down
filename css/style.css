@@ -26,9 +26,9 @@ body {
 .container {
   /* padding: 0; */ }
 
-a, button a, .main__button-home a, .header-top__logotype a, .header-top__language_Ru a, .header-top__language_En a, .header-big__menu_link-group a, .gambyrger-menu__gambyrger-list_link-group a, i {
+a, button a, .main__button-home a, .header-big__menu_link-group a, .logotype a, .language__Ru a, .language__En a, .gambyrger-menu__gambyrger-list_link-group a, i {
   font-family: 'Nunito Sans', sans-serif;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 700;
   text-decoration: none;
   color: #1b255d;
@@ -74,7 +74,7 @@ button, .main__button-home {
   button:hover, .main__button-home:hover {
     background-color: #ffd0b3;
     transition: 2s; }
-  button a, .main__button-home a, button .header-top__logotype a, .header-top__logotype button a, button .header-top__language_Ru a, .header-top__language_Ru button a, button .header-top__language_En a, .header-top__language_En button a, button .header-big__menu_link-group a, .header-big__menu_link-group button a, button .gambyrger-menu__gambyrger-list_link-group a, .gambyrger-menu__gambyrger-list_link-group button a, button i, .main__button-home i {
+  button a, .main__button-home a, button .header-big__menu_link-group a, .header-big__menu_link-group button a, button .logotype a, .logotype button a, button .language__Ru a, .language__Ru button a, button .language__En a, .language__En button a, button .gambyrger-menu__gambyrger-list_link-group a, .gambyrger-menu__gambyrger-list_link-group button a, button i, .main__button-home i {
     font-family: 'Archivo Narrow', sans-serif;
     text-transform: uppercase;
     color: #1b255d; }
@@ -125,21 +125,36 @@ header {
   align-items: center;
   padding: 0;
   padding-top: 16px;
-  justify-content: space-between; }
-  .header-top__logotype {
-    display: flex; }
-    .header-top__logotype a, .header-top__logotype i {
-      text-align: center;
-      font-size: 14px; }
-  .header-top__language {
-    display: flex;
-    justify-content: flex-end; }
-    .header-top__language_Ru a, .header-top__language_Ru i {
-      font-size: 20px; }
-    .header-top__language_En {
-      display: none; }
-      .header-top__language_En a, .header-top__language_En i {
-        font-size: 20px; }
+  justify-content: space-between;
+  /* &__logotype {
+  	display: flex;
+      	justify-content: center;						
+  	a {
+  		@extend a;
+  	    text-align: center;
+  		font-size: 14px;			
+  	}				
+  } */
+  /* &__language{
+  	display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      font-size: 14px;
+  	&_Ru {
+  		a {
+  			@extend a;
+  						
+  		}
+  	}
+  	&_En {
+  		display: none;
+  		a {
+  			
+  			@extend a;
+  						
+  		}
+  	}
+  } */ }
 
 .header-big__menu {
   width: 49%;
@@ -151,15 +166,36 @@ header {
   .header-big__menu_link-group a, .header-big__menu_link-group i {
     padding: 0px 4px 5px 4px; }
 
+.logotype {
+  display: flex;
+  justify-content: center; }
+  .logotype a, .logotype i {
+    text-align: center;
+    font-size: 14px; }
+
+.header-phone {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center; }
+
+.language {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 14px; }
+  .language__En {
+    display: none; }
+
 /* for border in menu */
 .selected {
-  border-bottom: 1px solid #f29257; }
+  border-bottom: 1px solid #990000; }
   .selected a, .selected i {
-    border-bottom: 1px solid #f29257; }
+    border-bottom: 1px solid #843434; }
 
 /* byrger-menu start*/
 .byrger {
-  display: flex; }
+  display: flex;
+  align-items: center; }
 
 .byrger-menu {
   display: flex;
@@ -210,7 +246,7 @@ header {
       padding: 0px 4px;
       color: #ebebf4; }
       .gambyrger-menu__gambyrger-list_link-group a:hover, .gambyrger-menu__gambyrger-list_link-group i:hover {
-        border-bottom: 2px solid #ffd0b3;
+        border-bottom: 2px solid #843434;
         color: #8e86ac; }
 
 .popap {
