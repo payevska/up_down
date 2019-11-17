@@ -1,0 +1,229 @@
+/* ------------ about --------------- */
+section-2 {    
+    /* background: url('../images/skills-bg.png') no-repeat bottom; */
+	display: flex;
+	flex-direction: column;		
+	position: relative;	
+}
+
+/* .fon-about {
+	@extend .fon;
+    width: 35%;        
+    left: 0;
+    height: 100%;
+    top: 0;    
+} */
+
+.about-wrap {
+	display: flex;
+	flex-direction: column;
+	//padding: 0;
+	//margin-bottom: 149px;	    
+}
+.title-about {
+		display: flex;
+    	justify-content: center;
+		margin-bottom: 20px;
+		padding-top: 25px;
+		@extend h2;
+	}
+
+.subtitle-about {
+	display: flex;
+	justify-content: center;
+	@extend h2;
+	font-size: 26px;
+	margin-bottom: 38px;
+}
+.video-portfolio{
+	display: flex;
+    justify-content: center;
+}
+.video-table{
+	width: 51%;
+}
+.go-portfolio{
+	display: flex;
+	justify-content: center;
+}
+.button-about {
+	display: flex;
+	justify-content: center;
+	margin-top: 35px;
+	margin-bottom: 15px;
+	@extend button;		
+	background-color: $orange;
+	border: 1px solid $orange;
+	&:hover {
+		background-color: $white;
+		border: 1px solid $orange;
+	}
+	a {
+		color: $white;
+		&:hover {
+			color: $orange-light;
+		}
+	}
+	&_btn {
+		padding: 20px 54px;
+					
+	}
+}	
+/* .about-block-left {
+	display: flex;
+    justify-content: flex-start;	
+	padding: 0;
+	margin-top: 120px;
+	@media (min-width: 992px) and (max-width: 1059.98px) {
+    	justify-content: center;
+	}	
+	&__foto-portfolio {
+	    width: 68%;
+	    position: relative;
+	    overflow: hidden;
+	    display: flex;
+	    justify-content: center;
+	    &_fotoMaket {
+    	    min-width: 100%;
+		    min-height: 100%;
+		    position: absolute;
+		    display: flex;
+	    }
+	}
+} */
+
+/* .about-block-right {
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 112px;	
+	&__title-about {
+		display: flex;
+    	justify-content: center;
+		margin-bottom: 52px;
+		@extend h2;
+	}
+
+	&__text-about {
+		margin-bottom: 58px;
+		&_span-about {			
+			@extend a;
+			color: $purpur-grey;
+			cursor: pointer;
+		}
+	}
+
+	&__subtitle-about {
+		display: flex;
+    	justify-content: center;
+		@extend h2;
+		font-size: 26px;
+		margin-bottom: 38px;
+	}
+	&__block-foto {
+	    width: 100%;
+		display: flex;
+        justify-content: space-between;
+        &_topic-about {
+	    	display: flex;
+	    	flex-direction: column;
+	    	align-items: center;
+        }		
+	}
+	&__button-about {
+	    margin-top: -42px;
+		display: flex;
+    	justify-content: center;
+    	@extend button;		
+		background-color: $purpur;
+		border: 1px solid $purpur;
+		&:hover {
+			background-color: $white;
+			border: 1px solid $purpur;
+		}
+		a {
+			color: $white;
+			&:hover {
+				color: $purpur-pink;
+			}
+		}
+		&_btn {
+			padding: 20px 54px;
+						
+		}
+	}
+} */
+
+/* .topic {
+	display: flex;
+    justify-content: center;
+	font-weight: $bold;
+	color: $purpur-grey;		
+	text-transform: uppercase;
+    padding-top: 22px;
+    padding-bottom: 10px;    
+} */
+
+/* .fotos {
+    display: flex;
+	overflow: hidden;
+    width: 100%;
+    height: 54%;
+    border: 2px solid $purpur-grey;   
+}
+ */
+
+/* .bl {
+	background: url('../images/skills-bg.png') no-repeat;
+	display: flex;
+	width: 100%;
+	height: auto;
+	background-size: cover;
+} */
+
+/* .block-bottom {	
+	display: flex;
+	flex-direction: column;
+	padding: 0;
+	&__topic-skills {
+	    display: flex;
+	    justify-content: center;
+	    padding-top: 56px;
+	    margin-bottom: 52px;
+		@extend h2;
+		color: $white;
+		font-size: 60px;
+	}
+	&__skills {
+		display: flex;
+	    justify-content: space-between;
+	    padding-bottom: 72px;
+		font: {
+			family: 'Archivo Narrow', sans-serif;
+			size: 34px;
+			weight: $regular;
+		}		
+		color: $white;
+	}
+} */
+
+/* ------ media query ------ */
+@include desktop {
+
+}
+
+@include laptop {
+	
+}
+
+@include tablet {
+	
+}
+
+@include phone {
+	
+}
+
+@include iphone {
+	
+}

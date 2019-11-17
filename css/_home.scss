@@ -1,5 +1,5 @@
 section-1 {
-	background: url('../images/photo_room.jpg') no-repeat top fixed;
+	background: url('../images/Home-photo4.png') no-repeat top fixed;
 	display: flex;
     flex-direction: column;
     padding-top: 122px;
@@ -19,31 +19,35 @@ section-1 {
 	display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 350px 0 145px 0;
+    padding-bottom: 350px;
+    margin-left: 0;
 	&__block-topic {
 		text-align: center;
 	}	
 	&__button-home {
 		display: flex;		
 		@extend button;
+		opacity: 0.7;
 		&_btn {
-			padding: 20px 69px;
+			padding: 20px 33px;
 		}
 	}
 }
 
 .topic-main {
-	@extend h1;	
+	@extend h1;
+	padding-top: 9px;	
 }
 
 .topic-text {
-	padding-top: 18px;
-	margin-bottom: 71px;
+	padding-top: 23px;
+	margin-bottom: 36px;
 	@extend h3;
+	font-size: 32px;
 }
 
 /* --------- bottom-bg start -------- */
-.home-scrol {
+/* .home-scrol {
 	display: flex;
 	background-color: $black;
 }
@@ -56,7 +60,12 @@ section-1 {
 		display: flex;
 	    justify-content: center;	
 	}	
-}
+} */
+
+.scroll-arrow {		
+		display: flex;
+	    justify-content: center;	
+	}
 
 i {
 	color: #ffffff;	

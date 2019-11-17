@@ -16,7 +16,7 @@ body {
 a {
 	font: {
 		family: 'Nunito Sans', sans-serif;
-		size: 14px;
+		size: 16px;
 		weight: $bold;
 	}	
 	text-decoration: none;
@@ -43,7 +43,7 @@ ul {
 h1 {
 	font: {
 			family: 'Archivo Narrow', sans-serif;
-			size: 60px;
+			size: 72px;
 			weight: $light;
 	}
 	color: $white;
@@ -73,7 +73,7 @@ h3 {
 button {
 	background-color: $orange;
 	border-width: 0;
-	border-radius: 1px;
+	border-radius: 4px;
 	&:hover {
 		background-color: $orange-light;
 		transition: 2s;
@@ -81,6 +81,7 @@ button {
 	a {
 		@extend a;
 		font-family: 'Archivo Narrow', sans-serif;
+		font-size: 18px;
 		text-transform: uppercase;	
 		color: $blue-dark;
 		&:hover {

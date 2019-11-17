@@ -96,17 +96,16 @@ header {
     align-items: center;
     font-size: 14px;
 	&__Ru {
+		color: $red-dark;
 		a {
-			@extend a;
-						
+			@extend a;					
 		}
 	}
 	&__En {
+		color: $red-dark;	
 		display: none;
-		a {
-			
-			@extend a;
-						
+		a {			
+			@extend a;						
 		}
 	}
 }
