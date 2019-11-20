@@ -1,0 +1,93 @@
+/* ------------ video-review --------------- */
+section-2 {    
+    /* background: url('../images/skills-bg.png') no-repeat bottom; */
+	display: flex;
+	flex-direction: column;		
+	position: relative;	
+}
+
+/* .fon-about {
+	@extend .fon;
+    width: 35%;        
+    left: 0;
+    height: 100%;
+    top: 0;    
+} */
+
+.review-wrap {
+	display: flex;
+	flex-direction: column;
+	//padding: 0;
+	//margin-bottom: 149px;	    
+}
+.title-review {
+		display: flex;
+    	justify-content: center;
+		margin-bottom: 20px;
+		padding-top: 25px;
+		@extend h2;
+	}
+
+.subtitle-review {
+	display: flex;
+	justify-content: center;
+	@extend h2;
+	font-size: 26px;
+	margin-bottom: 38px;
+}
+.video-portfolio{
+	display: flex;
+    justify-content: center;
+}
+.video-table{
+	width: 51%;
+}
+.go-portfolio{
+	display: flex;
+	justify-content: center;
+}
+.button-review {
+	display: flex;
+	justify-content: center;
+	margin-top: 35px;
+	margin-bottom: 15px;
+	@extend button;		
+	background-color: $orange;
+	border: 1px solid $orange;
+	&:hover {
+		background-color: $white;
+		border: 1px solid $orange;
+	}
+	a {
+		color: $white;
+		&:hover {
+			color: $orange;
+		}
+	}
+	&_btn {
+		padding: 20px 54px;
+					
+	}
+}	
+
+
+/* ------ media query ------ */
+@include desktop {
+
+}
+
+@include laptop {
+	
+}
+
+@include tablet {
+	
+}
+
+@include phone {
+	
+}
+
+@include iphone {
+	
+}

@@ -1,46 +1,16 @@
 /* ------------ about --------------- */
-section-2 {    
+section-3 {    
     /* background: url('../images/skills-bg.png') no-repeat bottom; */
 	display: flex;
 	flex-direction: column;		
-	position: relative;	
+	position: relative;
+	background-color: $blue-grey;	
 }
-
-/* .fon-about {
-	@extend .fon;
-    width: 35%;        
-    left: 0;
-    height: 100%;
-    top: 0;    
-} */
 
 .about-wrap {
 	display: flex;
 	flex-direction: column;
-	//padding: 0;
-	//margin-bottom: 149px;	    
-}
-.title-about {
-		display: flex;
-    	justify-content: center;
-		margin-bottom: 20px;
-		padding-top: 25px;
-		@extend h2;
-	}
-
-.subtitle-about {
-	display: flex;
-	justify-content: center;
-	@extend h2;
-	font-size: 26px;
-	margin-bottom: 38px;
-}
-.video-portfolio{
-	display: flex;
-    justify-content: center;
-}
-.video-table{
-	width: 51%;
+	align-items: center;
 }
 .go-portfolio{
 	display: flex;
@@ -61,14 +31,18 @@ section-2 {
 	a {
 		color: $white;
 		&:hover {
-			color: $orange-light;
+			color: $orange;
 		}
 	}
 	&_btn {
 		padding: 20px 54px;
 					
 	}
-}	
+}
+
+.table-foto-about {
+	width: 45%;
+}
 /* .about-block-left {
 	display: flex;
     justify-content: flex-start;	

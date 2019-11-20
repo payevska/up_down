@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="">
+	<title>3D</title>
+	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script type="text/javascript" src="sources/auto_rotate.js"></script>
+	<script type="text/javascript" src="sources/rotateLR.js"></script>
+
+</head>
+<body>
+
+
+	<style>
+		.rot360d {
+			max-width: 500px;
+			text-align: center;
+			margin: 0 auto;
+		}
+	</style>
+
+
+
+	<div class="rot360d">
+		<div id="auto"><div class="table"></div></div>
+	</div>
+	<div class="rot360d">
+		<div id="lr"><div class="table"></div></div>
+	</div>
+
+
+
+	<script>
+		$(document).ready(function(){
+			mouseAutoNew($('#auto'),700,700,72,'img/sprite.jpg',45);
+			mouseLR($('#lr'),700,700,72,'img/sprite.jpg');
+		});
+	</script>
+
+
+
+</body>
+</html>
