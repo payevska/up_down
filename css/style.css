@@ -54,7 +54,7 @@ h1, .topic-main {
   line-height: 1.2;
   margin-bottom: 0; }
 
-h2, .title-review, .subtitle-review {
+h2, .title-review, .subtitle-review, .title-about, .subtitle-about {
   font-family: 'Judson', serif;
   font-size: 40px;
   font-weight: 400;
@@ -360,7 +360,8 @@ section-2 {
 } */
 .review-wrap {
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  margin-bottom: 50px; }
 
 .title-review {
   display: flex;
@@ -409,12 +410,28 @@ section-3 {
   display: flex;
   flex-direction: column;
   position: relative;
-  background-color: #828893; }
+  background-color: #828893;
+  padding-top: 80px; }
 
 .about-wrap {
   display: flex;
   flex-direction: column;
   align-items: center; }
+
+.title-about {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  padding-top: 25px;
+  color: #ffffff; }
+
+.subtitle-about {
+  display: flex;
+  justify-content: center;
+  font-size: 26px;
+  color: #ffffff;
+  margin-bottom: 38px;
+  margin-top: 450px; }
 
 .go-portfolio {
   display: flex;
@@ -437,8 +454,16 @@ section-3 {
   .button-about_btn {
     padding: 20px 54px; }
 
+.block-left__foto-about {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 535px;
+  border-radius: 50%; }
+
 .table-foto-about {
-  width: 45%; }
+  width: 100%;
+  margin-top: -100px; }
 
 /* .about-block-left {
 	display: flex;
