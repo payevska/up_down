@@ -462,6 +462,7 @@ section-3 {
   align-items: center;
   margin-top: 112px; }
   .about-block-right__text-about {
+    text-align: justify;
     color: #ffffff;
     padding-left: 40px;
     margin-bottom: 107px; }
