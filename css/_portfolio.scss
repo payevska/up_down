@@ -1,0 +1,143 @@
+/* ------------ portfolio --------------- */
+section-3 {
+	display: flex;
+	position: relative;
+	margin-top: 178px;
+    margin-bottom: 166px;
+} 
+
+.portfolio-info {    
+    display: flex;
+    flex-direction: column;
+    align-items: center;	
+	&__topic {			
+		@extend h2;
+	}
+	
+	&__text-portfolio {
+	   
+	}
+	&__link-portfolio {
+		@extend a;
+		color: $orange;
+		cursor: pointer;
+	}
+}
+
+.portfolio-right {
+     display: flex;
+    flex-direction: column;
+    align-items: center;	
+}
+
+.project-big-foto {
+	position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 700px;	
+}
+
+.project {
+	position: relative;
+	overflow: hidden;
+	width: 170px;
+    height: 186px;
+	img {
+		
+	}
+}
+
+.fotoProject-big {
+	margin-top: -180px;
+	width: 100%;
+}
+.fotoProject {
+	width: 100%;
+}
+
+/* .portfolio {
+	display: flex;
+}
+
+.portfolio-left {
+	
+}
+
+.portfolio-info {    
+    	
+	&__topic {			
+		
+	}
+	
+	&__text-portfolio {
+	   
+	}
+	&__link-portfolio {
+
+	}
+}
+
+
+
+
+
+.project-2 {
+	
+	img {
+		
+	}
+}
+
+.project-3 {	
+	img {
+		
+	}
+}
+
+.project-4 {
+	
+}
+
+.project-box {
+    
+       
+}
+
+
+
+.one-line {
+		
+}
+
+.three-line {
+	
+}
+
+.two-line {
+	
+}
+
+.fon-portfolio {
+	    
+} */
+
+/* ------ media query ------ */
+@include desktop {
+
+}
+
+@include laptop {
+			
+}
+
+@include tablet {
+	
+}
+
+@include phone {
+	
+}
+
+@include iphone {
+	
+}

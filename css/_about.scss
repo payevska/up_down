@@ -5,7 +5,8 @@ section-3 {
 	flex-direction: column;		
 	position: relative;
 	background-color: $blue-grey;
-	padding-top: 80px;	
+	padding-bottom: 166px;
+    padding-top: 178px;	
 }
 
 .about-wrap {
@@ -19,7 +20,7 @@ section-3 {
 	margin-bottom: 20px;
 	padding-top: 25px;
 	@extend h2;
-	color: $white;
+	color: $orange;
 }
 .subtitle-about{
 	display: flex;
@@ -28,7 +29,7 @@ section-3 {
 	font-size: 26px;
 	color: $white;
 	margin-bottom: 38px;
-	margin-top: 450px;
+	margin-top: 50px;
 }
 .go-portfolio{
 	display: flex;
@@ -36,33 +37,46 @@ section-3 {
 }
 .button-about {
 	display: flex;
-	justify-content: center;
-	margin-top: 35px;
-	margin-bottom: 15px;
+	justify-content: center;	
 	@extend button;		
-	background-color: $orange;
+	background-color: $white;
 	border: 1px solid $orange;
 	&:hover {
-		background-color: $white;
+		background-color: $orange;
 		border: 1px solid $orange;
 	}
 	a {
-		color: $white;
+		color: $orange;
 		&:hover {
-			color: $orange;
+			color: $white;
 		}
 	}
 	&_btn {
-		padding: 20px 54px;
-					
+		padding: 20px 54px;					
 	}
 }
+.about-block-right {
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 112px;	
+	&__text-about {
+		color: $white;
+		padding-left: 40px;
+		margin-bottom: 107px;
+		&_span-about {			
+			@extend a;
+			color: $orange;
+			cursor: pointer;
+		}
+	}
+}	
 .block-left {
 	&__foto-about {
 		position: relative;
 	    overflow: hidden;
-	    width: 100%;
-	    height: 535px;
+	    width: 550px;
+	    height: 550px;
 	    border-radius: 50%;
 	}
 }
@@ -94,26 +108,7 @@ section-3 {
 	}
 } */
 
-/* .about-block-right {
-	display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 112px;	
-	&__title-about {
-		display: flex;
-    	justify-content: center;
-		margin-bottom: 52px;
-		@extend h2;
-	}
-
-	&__text-about {
-		margin-bottom: 58px;
-		&_span-about {			
-			@extend a;
-			color: $purpur-grey;
-			cursor: pointer;
-		}
-	}
+/* 
 
 	&__subtitle-about {
 		display: flex;

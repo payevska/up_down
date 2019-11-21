@@ -26,7 +26,7 @@ body {
 .container {
   /* padding: 0; */ }
 
-a, button a, .main__button-home a, .button-review a, .button-about a, .header-big__menu_link-group a, .logotype a, .language__Ru a, .language__En a, .gambyrger-menu__gambyrger-list_link-group a, i {
+a, button a, .button-top a, .button-review a, .button-about a, .header-big__menu_link-group a, .logotype a, .language__Ru a, .language__En a, .gambyrger-menu__gambyrger-list_link-group a, i, .about-block-right__text-about_span-about, .portfolio-info__link-portfolio {
   font-family: 'Nunito Sans', sans-serif;
   font-size: 16px;
   font-weight: 700;
@@ -35,12 +35,12 @@ a, button a, .main__button-home a, .button-review a, .button-about a, .header-bi
   /* &:visited {
   	color: $purpur-dark;
   } */ }
-  a:hover, i:hover {
+  a:hover, i:hover, .about-block-right__text-about_span-about:hover, .portfolio-info__link-portfolio:hover {
     text-decoration: none;
     color: #566ca5; }
-  a:active, i:active {
+  a:active, i:active, .about-block-right__text-about_span-about:active, .portfolio-info__link-portfolio:active {
     color: #566ca5; }
-  a:focus, i:focus {
+  a:focus, i:focus, .about-block-right__text-about_span-about:focus, .portfolio-info__link-portfolio:focus {
     color: #ebebf4; }
 
 ul, .header-big__menu, .gambyrger-menu__gambyrger-list {
@@ -48,13 +48,13 @@ ul, .header-big__menu, .gambyrger-menu__gambyrger-list {
 
 h1, .topic-main {
   font-family: 'Archivo Narrow', sans-serif;
-  font-size: 72px;
+  font-size: 52px;
   font-weight: #fafafd;
   color: #ffffff;
   line-height: 1.2;
   margin-bottom: 0; }
 
-h2, .title-review, .subtitle-review, .title-about, .subtitle-about {
+h2, .topic-title, .title-review, .subtitle-review, .title-about, .subtitle-about, .portfolio-info__topic {
   font-family: 'Judson', serif;
   font-size: 40px;
   font-weight: 400;
@@ -67,19 +67,19 @@ h3, .topic-text {
   font-weight: #fafafd;
   color: #ffffff; }
 
-button, .main__button-home, .button-review, .button-about {
+button, .button-top, .button-review, .button-about {
   background-color: #f29257;
   border-width: 0;
   border-radius: 4px; }
-  button:hover, .main__button-home:hover, .button-review:hover, .button-about:hover {
+  button:hover, .button-top:hover, .button-review:hover, .button-about:hover {
     background-color: #ffd0b3;
     transition: 2s; }
-  button a, .main__button-home a, .button-review a, .button-about a, button .header-big__menu_link-group a, .header-big__menu_link-group button a, button .logotype a, .logotype button a, button .language__Ru a, .language__Ru button a, button .language__En a, .language__En button a, button .gambyrger-menu__gambyrger-list_link-group a, .gambyrger-menu__gambyrger-list_link-group button a, button i, .main__button-home i, .button-review i, .button-about i {
+  button a, .button-top a, .button-review a, .button-about a, button .header-big__menu_link-group a, .header-big__menu_link-group button a, button .logotype a, .logotype button a, button .language__Ru a, .language__Ru button a, button .language__En a, .language__En button a, button .gambyrger-menu__gambyrger-list_link-group a, .gambyrger-menu__gambyrger-list_link-group button a, button i, .button-top i, .button-review i, .button-about i, button .about-block-right__text-about_span-about, .button-top .about-block-right__text-about_span-about, .button-review .about-block-right__text-about_span-about, .button-about .about-block-right__text-about_span-about, button .portfolio-info__link-portfolio, .button-top .portfolio-info__link-portfolio, .button-review .portfolio-info__link-portfolio, .button-about .portfolio-info__link-portfolio {
     font-family: 'Archivo Narrow', sans-serif;
     font-size: 18px;
     text-transform: uppercase;
     color: #1b255d; }
-    button a:hover, .main__button-home a:hover, .button-review a:hover, .button-about a:hover, button i:hover, .main__button-home i:hover, .button-review i:hover, .button-about i:hover {
+    button a:hover, .button-top a:hover, .button-review a:hover, .button-about a:hover, button i:hover, .button-top i:hover, .button-review i:hover, .button-about i:hover, button .about-block-right__text-about_span-about:hover, .button-top .about-block-right__text-about_span-about:hover, .button-review .about-block-right__text-about_span-about:hover, .button-about .about-block-right__text-about_span-about:hover, button .portfolio-info__link-portfolio:hover, .button-top .portfolio-info__link-portfolio:hover, .button-review .portfolio-info__link-portfolio:hover, .button-about .portfolio-info__link-portfolio:hover {
       color: #566ca5;
       transition: 2s; }
 
@@ -164,13 +164,13 @@ header {
   text-decoration: none;
   margin-bottom: 6px;
   padding: 12px 0 0 0; }
-  .header-big__menu_link-group a, .header-big__menu_link-group i {
+  .header-big__menu_link-group a, .header-big__menu_link-group i, .header-big__menu_link-group .about-block-right__text-about_span-about, .header-big__menu_link-group .portfolio-info__link-portfolio {
     padding: 0px 4px 5px 4px; }
 
 .logotype {
   display: flex;
   justify-content: center; }
-  .logotype a, .logotype i {
+  .logotype a, .logotype i, .logotype .about-block-right__text-about_span-about, .logotype .portfolio-info__link-portfolio {
     text-align: center;
     font-size: 14px; }
 
@@ -193,7 +193,7 @@ header {
 /* for border in menu */
 .selected {
   border-bottom: 1px solid #cb3d00; }
-  .selected a, .selected i {
+  .selected a, .selected i, .selected .about-block-right__text-about_span-about, .selected .portfolio-info__link-portfolio {
     border-bottom: 1px solid #ff9571; }
 
 /* byrger-menu start*/
@@ -246,10 +246,10 @@ header {
     display: none;
     height: 100vh;
     padding-left: 0; }
-    .gambyrger-menu__gambyrger-list_link-group a, .gambyrger-menu__gambyrger-list_link-group i {
+    .gambyrger-menu__gambyrger-list_link-group a, .gambyrger-menu__gambyrger-list_link-group i, .gambyrger-menu__gambyrger-list_link-group .about-block-right__text-about_span-about, .gambyrger-menu__gambyrger-list_link-group .portfolio-info__link-portfolio {
       padding: 0px 4px;
       color: #ebebf4; }
-      .gambyrger-menu__gambyrger-list_link-group a:hover, .gambyrger-menu__gambyrger-list_link-group i:hover {
+      .gambyrger-menu__gambyrger-list_link-group a:hover, .gambyrger-menu__gambyrger-list_link-group i:hover, .gambyrger-menu__gambyrger-list_link-group .about-block-right__text-about_span-about:hover, .gambyrger-menu__gambyrger-list_link-group .portfolio-info__link-portfolio:hover {
         border-bottom: 2px solid #ff9571;
         color: #8e86ac; }
 
@@ -290,48 +290,53 @@ section-1 {
 .home-wrap {
   width: 100%;
   min-height: 92vh;
-  display: flex; }
+  display: flex;
+  flex-direction: column; }
 
 .main {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  padding-bottom: 350px;
+  align-items: flex-end;
   margin-left: 0; }
-  .main__block-topic {
-    text-align: center; }
-  .main__button-home {
-    display: flex;
-    opacity: 0.7; }
-    .main__button-home_btn {
-      padding: 20px 33px; }
 
 .topic-main {
   padding-top: 9px; }
+
+.topic-title {
+  color: #ffffff;
+  padding-top: 23px; }
 
 .topic-text {
   padding-top: 23px;
   margin-bottom: 36px;
   font-size: 32px; }
 
-/* --------- bottom-bg start -------- */
-/* .home-scrol {
-	display: flex;
-	background-color: $black;
-}
+.block-topic {
+  text-align: center; }
 
-.home-part-bottom {    
-    display: flex;
-    padding: 0; 
-    justify-content: center;   	
-	&__scroll-arrow {		
-		display: flex;
-	    justify-content: center;	
-	}	
-} */
+.blok-button {
+  display: flex;
+  flex-direction: column; }
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 52%; }
+
+.button-home {
+  margin-top: 84px; }
+
+.button-top {
+  display: flex;
+  opacity: 0.7; }
+  .button-top_btn {
+    padding: 20px 33px; }
+
 .scroll-arrow {
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+  padding-top: 450px; }
 
 i {
   color: #ffffff;
@@ -342,8 +347,6 @@ i {
   flex-direction: column;
   margin-bottom: 20px; }
 
-/* --------- bottom-bg finish -------- */
-/* ------ media query ------ */
 /* ------------ video-review --------------- */
 section-2 {
   /* background: url('../images/skills-bg.png') no-repeat bottom; */
@@ -396,9 +399,9 @@ section-2 {
   .button-review:hover {
     background-color: #ffffff;
     border: 1px solid #f29257; }
-  .button-review a, .button-review i {
+  .button-review a, .button-review i, .button-review .about-block-right__text-about_span-about, .button-review .portfolio-info__link-portfolio {
     color: #ffffff; }
-    .button-review a:hover, .button-review i:hover {
+    .button-review a:hover, .button-review i:hover, .button-review .about-block-right__text-about_span-about:hover, .button-review .portfolio-info__link-portfolio:hover {
       color: #f29257; }
   .button-review_btn {
     padding: 20px 54px; }
@@ -411,7 +414,8 @@ section-3 {
   flex-direction: column;
   position: relative;
   background-color: #828893;
-  padding-top: 80px; }
+  padding-bottom: 166px;
+  padding-top: 178px; }
 
 .about-wrap {
   display: flex;
@@ -423,7 +427,7 @@ section-3 {
   justify-content: center;
   margin-bottom: 20px;
   padding-top: 25px;
-  color: #ffffff; }
+  color: #f29257; }
 
 .subtitle-about {
   display: flex;
@@ -431,7 +435,7 @@ section-3 {
   font-size: 26px;
   color: #ffffff;
   margin-bottom: 38px;
-  margin-top: 450px; }
+  margin-top: 50px; }
 
 .go-portfolio {
   display: flex;
@@ -440,25 +444,36 @@ section-3 {
 .button-about {
   display: flex;
   justify-content: center;
-  margin-top: 35px;
-  margin-bottom: 15px;
-  background-color: #f29257;
+  background-color: #ffffff;
   border: 1px solid #f29257; }
   .button-about:hover {
-    background-color: #ffffff;
+    background-color: #f29257;
     border: 1px solid #f29257; }
-  .button-about a, .button-about i {
-    color: #ffffff; }
-    .button-about a:hover, .button-about i:hover {
-      color: #f29257; }
+  .button-about a, .button-about i, .button-about .about-block-right__text-about_span-about, .button-about .portfolio-info__link-portfolio {
+    color: #f29257; }
+    .button-about a:hover, .button-about i:hover, .button-about .about-block-right__text-about_span-about:hover, .button-about .portfolio-info__link-portfolio:hover {
+      color: #ffffff; }
   .button-about_btn {
     padding: 20px 54px; }
+
+.about-block-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 112px; }
+  .about-block-right__text-about {
+    color: #ffffff;
+    padding-left: 40px;
+    margin-bottom: 107px; }
+    .about-block-right__text-about_span-about {
+      color: #f29257;
+      cursor: pointer; }
 
 .block-left__foto-about {
   position: relative;
   overflow: hidden;
-  width: 100%;
-  height: 535px;
+  width: 550px;
+  height: 550px;
   border-radius: 50%; }
 
 .table-foto-about {
@@ -487,26 +502,7 @@ section-3 {
 	    }
 	}
 } */
-/* .about-block-right {
-	display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 112px;	
-	&__title-about {
-		display: flex;
-    	justify-content: center;
-		margin-bottom: 52px;
-		@extend h2;
-	}
-
-	&__text-about {
-		margin-bottom: 58px;
-		&_span-about {			
-			@extend a;
-			color: $purpur-grey;
-			cursor: pointer;
-		}
-	}
+/* 
 
 	&__subtitle-about {
 		display: flex;
@@ -596,6 +592,111 @@ section-3 {
 		}		
 		color: $white;
 	}
+} */
+/* ------ media query ------ */
+/* ------------ portfolio --------------- */
+section-3 {
+  display: flex;
+  position: relative;
+  margin-top: 178px;
+  margin-bottom: 166px; }
+
+.portfolio-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .portfolio-info__link-portfolio {
+    color: #f29257;
+    cursor: pointer; }
+
+.portfolio-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.project-big-foto {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 700px; }
+
+.project {
+  position: relative;
+  overflow: hidden;
+  width: 170px;
+  height: 186px; }
+
+.fotoProject-big {
+  margin-top: -180px;
+  width: 100%; }
+
+.fotoProject {
+  width: 100%; }
+
+/* .portfolio {
+	display: flex;
+}
+
+.portfolio-left {
+	
+}
+
+.portfolio-info {    
+    	
+	&__topic {			
+		
+	}
+	
+	&__text-portfolio {
+	   
+	}
+	&__link-portfolio {
+
+	}
+}
+
+
+
+
+
+.project-2 {
+	
+	img {
+		
+	}
+}
+
+.project-3 {	
+	img {
+		
+	}
+}
+
+.project-4 {
+	
+}
+
+.project-box {
+    
+       
+}
+
+
+
+.one-line {
+		
+}
+
+.three-line {
+	
+}
+
+.two-line {
+	
+}
+
+.fon-portfolio {
+	    
 } */
 /* ------ media query ------ */
 /* -------- fonts -------- */
