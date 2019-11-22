@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: 'Archivo Narrow', sans-serif;
   src: url("fonts/ArchivoNarrow/ArchivoNarrow-Regular.eot");
@@ -16,6 +17,46 @@
   src: url("fonts/NunitoSans/NunitoSans-Regular.eot") format("embedded-opentype"), url("fonts/NunitoSans/NunitoSans-Regular.woff2") format("woff2"), url("fonts/NunitoSans/NunitoSans-Regular.woff") format("woff"), url("fonts/NunitoSans/NunitoSans-Regular.ttf") format("truetype"), url("fonts/NunitoSans/NunitoSans-Regular.svg#PT_SansWebBold") format("svg");
   font-style: normal;
   font-weight: 400; }
+/* 
+<i class="fas fa-caret-up"></i>
+<i class="fas fa-caret-down"></i>
+<i class="fas fa-chevron-down"></i>
+<i class="fas fa-chevron-up"></i>
+<i class="fas fa-play"></i>
+<i class="fas fa-redo-alt"></i>
+<i class="fas fa-sort"></i>
+<i class="fas fa-sync-alt"></i>
+<i class="fas fa-angle-double-down"></i>
+<i class="fas fa-angle-down"></i>
+<i class="fas fa-angle-left"></i>
+<i class="fas fa-angle-right"></i>
+<i class="fas fa-angle-up"></i>
+<i class="fas fa-arrows-alt-h"></i>
+<i class="fas fa-exchange-alt"></i>
+<i class="far fa-hand-point-right"></i>
+<i class="far fa-hand-point-left"></i>
+<i class="fas fa-circle"></i>
+<i class="far fa-circle"></i>
+<i class="fas fa-pause"></i>
+<i class="far fa-play-circle"></i>
+<i class="fas fa-play-circle"></i>
+<i class="fas fa-video"></i>
+<i class="fas fa-expand"></i>
+<i class="fas fa-volume-up"></i>
+<i class="fas fa-volume-mute"></i>
+<i class="fas fa-phone"></i>
+<i class="far fa-envelope"></i>
+<i class="far fa-clock"></i>
+<i class="fas fa-pencil-ruler"></i>
+<i class="fas fa-phone-alt"></i>
+<i class="fas fa-desktop"></i>
+<i class="fas fa-keyboard"></i>
+<i class="fas fa-laptop"></i>
+<i class="fas fa-mouse"></i>
+<i class="fas fa-print"></i>
+<i class="fas fa-image"></i>
+
+ */
 /* ------------ variable --------------- */
 body {
   font-family: 'Nunito Sans', sans-serif;
@@ -54,7 +95,7 @@ h1, .topic-main {
   line-height: 1.2;
   margin-bottom: 0; }
 
-h2, .topic-title, .title-review, .subtitle-review, .title-about, .subtitle-about, .portfolio-info__topic {
+h2, .topic-title, .title-review, .subtitle-review, .title-about, .subtitle-about, .product__product-title, .portfolio-info__topic {
   font-family: 'Judson', serif;
   font-size: 40px;
   font-weight: 400;
@@ -412,7 +453,6 @@ section-3 {
   /* background: url('../images/skills-bg.png') no-repeat bottom; */
   display: flex;
   flex-direction: column;
-  position: relative;
   background-color: #828893;
   padding-bottom: 166px;
   padding-top: 178px; }
@@ -595,17 +635,33 @@ section-3 {
 	}
 } */
 /* ------ media query ------ */
-/* ------------ portfolio --------------- */
-section-3 {
+/* ------------ products --------------- */
+section-4 {
   display: flex;
-  position: relative;
-  margin-top: 178px;
-  margin-bottom: 166px; }
+  flex-direction: column;
+  margin-top: 120px;
+  margin-bottom: 20px; }
+
+.product {
+  display: flex;
+  justify-content: center; }
+
+/* ------------ portfolio --------------- */
+section-5 {
+  display: flex;
+  flex-direction: column;
+  margin-top: 120px;
+  margin-bottom: 20px; }
 
 .portfolio-info {
   display: flex;
   flex-direction: column;
   align-items: center; }
+  .portfolio-info__topic {
+    margin-bottom: 30px; }
+  .portfolio-info__text-portfolio {
+    width: 50%;
+    text-align: center; }
   .portfolio-info__link-portfolio {
     color: #f29257;
     cursor: pointer; }
@@ -614,6 +670,8 @@ section-3 {
   display: flex;
   flex-direction: column;
   align-items: center; }
+  .portfolio-right__projeсts-portfolio {
+    margin-bottom: 20px; }
 
 .project-big-foto {
   position: relative;
@@ -625,14 +683,21 @@ section-3 {
   position: relative;
   overflow: hidden;
   width: 170px;
-  height: 186px; }
+  height: 130px; }
 
 .fotoProject-big {
-  margin-top: -180px;
+  margin-top: -265px;
   width: 100%; }
 
 .fotoProject {
-  width: 100%; }
+  width: 100%;
+  margin-top: -65px; }
+
+.caret {
+  color: #f29257; }
+
+.two-line {
+  display: none; }
 
 /* .portfolio {
 	display: flex;
@@ -707,6 +772,7 @@ section-3 {
 /* -------- home -------- */
 /* -------- video-review -------- */
 /* -------- about -------- */
+/* -------- products -------- */
 /* -------- portfolio -------- */
 /* -------- blog -------- */
 /* -------- footer -------- */

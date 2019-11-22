@@ -1,21 +1,23 @@
 /* ------------ portfolio --------------- */
-section-3 {
+section-5 {
 	display: flex;
-	position: relative;
-	margin-top: 178px;
-    margin-bottom: 166px;
+	flex-direction: column;	
+	margin-top: 120px;
+    margin-bottom: 20px;
 } 
 
 .portfolio-info {    
     display: flex;
     flex-direction: column;
     align-items: center;	
-	&__topic {			
+	&__topic {
+	    margin-bottom: 30px;			
 		@extend h2;
 	}
 	
 	&__text-portfolio {
-	   
+	    width: 50%;
+    	text-align: center;
 	}
 	&__link-portfolio {
 		@extend a;
@@ -27,7 +29,10 @@ section-3 {
 .portfolio-right {
      display: flex;
     flex-direction: column;
-    align-items: center;	
+    align-items: center;
+    &__projeсts-portfolio {
+		margin-bottom: 20px;
+	}	
 }
 
 .project-big-foto {
@@ -41,19 +46,30 @@ section-3 {
 	position: relative;
 	overflow: hidden;
 	width: 170px;
-    height: 186px;
+    height: 130px;
 	img {
 		
 	}
 }
 
 .fotoProject-big {
-	margin-top: -180px;
+	margin-top: -265px;
 	width: 100%;
 }
 .fotoProject {
 	width: 100%;
+	margin-top: -65px;
 }
+
+.caret {
+	color: $orange;
+}
+
+.two-line {
+	display: none;
+}
+
+
 
 /* .portfolio {
 	display: flex;
