@@ -2,26 +2,50 @@
 section-4 {
 	display: flex;
 	flex-direction: column;	
-	margin-top: 120px;
-    margin-bottom: 20px;
+	padding-top: 200px;
+    margin-bottom: 300px;
 } 
 
 .product {
 	display: flex;
 	justify-content: center;
+	margin-bottom: 90px;
 	&__product-title {
 		@extend  h2;
 	}	
 }
 
+.product-images {
+	display: flex;
+    flex-direction: column;
+	&__picture1 {
+		height: 150px;
+		position: relative;
+    	overflow: hidden;
+    	display: flex;
+    	justify-content: center;
+	}
+	&__picture2 {
+		height: 150px;
+		position: relative;
+    	overflow: hidden;
+    	display: flex;
+    	justify-content: center;
+	}
+}
 .product-image {
-
+	width: 40%;
+	position: absolute;
+	margin-top: -80px;
 }
 
 .product-characteristic {
-
+	display: flex;
+	margin-bottom: 7px;
 }
 
 .character {
-
+	display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
 }
