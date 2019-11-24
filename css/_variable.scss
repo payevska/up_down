@@ -86,7 +86,7 @@ button {
 		color: $blue-dark;
 		&:hover {
 			color: $blue-light;
-			transition: 2s;
+			transition: 1s;
 		}
     }
 }
@@ -103,7 +103,7 @@ button {
 input {
 	width: 100%;	
 	border: 1px solid $white;
-	background-color: $purpur;
+	background-color: $blue-grey;
 	caret-color: $white;
 	color: $white;	
 }
@@ -111,7 +111,7 @@ input {
 input::placeholder  {
 	display: flex;
 	justify-content: start;
-	color: $white;
+	color: $orange;
 	opacity: 0.5;
 	margin-left: 27px;	
 }

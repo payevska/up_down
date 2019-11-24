@@ -127,8 +127,10 @@
 
 						<!--scroll mouse start -->	
 						<div id="mice" class="col-sm scroll-arrow">
-			                <a href="#myAbout" id="scroll-home">
-			                	<img src="images/button-down-home.png" alt="button-down" class="">
+			                <a href="#myAbout" id="scroll-home" class="scroll-arrow__scroll-link">
+			                	<!-- <img src="images/circle-solid.svg" alt="button-down" class="scroll-arrow__scroll-link_link-circle"> -->
+			                	<i class="fas fa-circle fa-3x"></i>
+			                	<img src="images/button-down-home.png" alt="button-down" class="scroll-arrow__scroll-link_link-arrow">
 			                </a>
 						</div>
 					
@@ -395,99 +397,74 @@
 <!-- Blog finish -->
 
 <!-- Footer start -->
-	<!-- <footer id="myFooter">
+	<footer id="myFooter">
 		<div class="line1-footer"></div>
 		<div class="line2-footer"></div>
 		<div class="container">				
 			<div class="row form-contact">
-				<div class="form-contact__form-title">I invite you to contact me</div>
+				<div class="form-contact__form-title">Напишите нам</div>
 				<form class="form-contact__form-content">
-					<input type="text" class="form-contact__form-content_form-name" placeholder="Name">
-					<input type="email" class="form-contact__form-content_form-email" placeholder="Email">
-					<input type="message" class="form-contact__form-content_form-message" placeholder="Message">
+					<input type="text" class="form-contact__form-content_form-name" placeholder="Имя">
+					<input type="email" class="form-contact__form-content_form-email" placeholder="Электронный адресс">
+					<input type="message" class="form-contact__form-content_form-message" placeholder="Сообщение">
 					<button type="submit" class="form-contact__form-content_form-submit">
-						<a href="#myFooter">Send Message</a>
+						<a href="#myFooter">Отправить</a>
 					</button>
 				</form>
 			</div>			
 			
 			<div class="row footer-wrap">
-				<div class="col-sm-4 footer-wrap__footer-contact">
-					<div class="footer-wrap__footer-contact_logotype-small">Yuliya Payevska</div>
-					<div class="footer-wrap__footer-contact_topic-contact">Contact</div>
-					<div class="footer-wrap__footer-contact_footer-email">
-					<a href="#"> y.payevska@gmail.com</a></div>
-					<div class="footer-wrap__footer-contact_topic-social">Follow me on:</div>					
-					<div class="footer-wrap__footer-contact_social-web">
-						<a href="https://www.linkedin.com/in/yuliya-payevska-3064b7140" target="_blank"><i class="fab fa-lg fa-linkedin"></i></a>
-						<a href="https://github.com/payevska" target="_blank"><i class="fab fa-lg fa-git-square"></i></a>
-						<a href="https://www.facebook.com/profile.php?id=100018109118451" target="_blank"><i class="fab fa-lg fa-facebook-square"></i></a>
-						<a href="https://twitter.com/payevska" target="_blank"><i class="fab fa-lg fa-twitter-square"></i></a>
-					</div>					
-				</div>
 				<div class="col-sm-4 footer-wrap__menu-footer">
-					<div class="footer-wrap__menu-footer_title-menu">Quick Link
+					<div class="footer-wrap__menu-footer_title-menu">Меню
 					</div>	
 					<ul class="footer-wrap__menu-footer_vertical-menu">
 						<li class="footer-wrap__menu-footer_vertical-menu_link-group">
-							<a href="#myHome">Home</a>
+							<a href="#myHome">Главная</a>
 						</li>					
 						<li class="footer-wrap__menu-footer_vertical-menu_link-group">
-							<a href="#myAbout">About</a>
+							<a href="#myAbout">Обзор</a>
 						</li>
 						<li class="footer-wrap__menu-footer_vertical-menu_link-group">
-							<a href="#myPortfolio">Portfolio</a>
+							<a href="#myProducts">Продукты</a>
 						</li>
 						<li class="footer-wrap__menu-footer_vertical-menu_link-group">
-							<a href="#myBlog">Blog</a>
+							<a href="#myPortfolio">Галерея</a>
+						</li>
+						<li class="footer-wrap__menu-footer_vertical-menu_link-group">
+							<a href="#myBlog">Блог</a>
 						</li>			
 					</ul>					
 				</div>
-				<div class="col-sm-4 footer-wrap__twitter-block">
-					<div class="footer-wrap__twitter-block_twitter-title">Twitter Update</div>
-					<div class="footer-wrap__twitter-block_twitter-foto">
-						<div class="footer-wrap__twitter-block_twitter-foto_rows">
-							<a href="https://pbs.twimg.com/media/D7AGbduW0AAVgxL.jpg:large" target="_blank">
-								<div class="block-foto-1">
-									<img src="https://pbs.twimg.com/media/D7AGbduW0AAVgxL.jpg:large" alt="" class="foto-1">									
-								</div>										
-							</a>
-							<a href="https://pbs.twimg.com/media/D-IncSEXkAEOhWR.jpg:large" target="_blank">
-								<div class="block-foto-2">	
-									<img src="https://pbs.twimg.com/media/D-IncSEXkAEOhWR.jpg:large" alt="" class="foto-1">
-								</div>
-							</a>
-						</div>
-						<div class="footer-wrap__twitter-block_twitter-foto_rows">
-							<a href="https://pbs.twimg.com/media/D4vxhnUXkAA9217.jpg:large" target="_blank">
-								<div class="block-foto-3">
-									<img src="https://pbs.twimg.com/media/D4vxhnUXkAA9217.jpg:large" alt="" class="foto-3">									
-								</div>										
-							</a>
-							<a href="https://pbs.twimg.com/media/D4qOZVSX4AAWAkG.jpg:large" target="_blank">
-								<div class="block-foto-4">	
-									<img src="https://pbs.twimg.com/media/D4qOZVSX4AAWAkG.jpg:large" alt="" class="foto-4">
-								</div>
-							</a>
-						</div>
-					</div>
+				<div class="col-sm-4 footer-wrap__footer-contact">
+					
+					<div class="footer-wrap__footer-contact_topic-contact">Наш электронный адресс</div>
+					<div class="footer-wrap__footer-contact_footer-email">
+					<a href="#"> y.payevska@gmail.com</a></div>
+										
+					<div class="footer-wrap__footer-contact_social-web">
+						<div class="footer-wrap__footer-contact_social-web_topic-social">Мы в Instagram - </div>
+						<a href="https://www.instagram.com/up_and_down__ukraine/" target="_blank"><i class="fab fa-instagram fa-lg"></i></a>
+						
+						<!-- <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-lg fa-facebook-square"></i></a> -->
+						
+					</div>					
 				</div>
-			</div>				
-	
-			copyright			
-			<div class="row footer-bottom">Portfolio &#169 2019 By Payevska Yuliya</div>			
-		
-			botton up start
+				<div class="col-sm-4 footer-wrap__logotype-small">Up-and-Down</div>
+								
+			</div>
+			<!-- copyright -->
+			<div class="row footer-bottom">			
+				<div class="col-sm footer-bottom__footer-copyright">Up-and-Down &#169 2019 By Payevska Yuliya</div>			
+			</div>
+			<!-- botton up start -->
 			<div class="button-up">					
 				<a href="#myHome" class="button-up__circle-wrap">
-					<div class="button-up__circle-wrap_circle-box">
-	            			<img src="images/button-up-arrow.png" alt="" class="circle">
-	                	</div>      
-	            	</a>				
+					<i class="fas fa-chevron-circle-up fa-3x"></i>	      
+	            </a>				
 			</div>
-			botton up finish				
+			<!-- botton up finish -->				
 		</div>
-	</footer> -->
+	</footer>
 <!-- Footer finish -->	
 
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

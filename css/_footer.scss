@@ -1,0 +1,230 @@
+/* ------------ footer --------------- */
+footer {
+	display: flex;
+    position: relative;
+	background-color: $blue-grey;
+}
+
+.form-contact {
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+	&__form-title {		
+    	margin-top: 46px;
+	    margin-bottom: 44px;
+	    line-height: 1.1;
+	    @extend  h2;
+		
+		color: $orange;
+	}
+	&__form-content {
+	    width: 43%;
+	    display: flex;
+	    flex-direction: column;
+	    align-items: center;    	
+		&_form-name {
+						
+			margin-bottom: 24px;
+			padding: 10px 0 10px 27px;
+		}
+		&_form-email {
+			
+			margin-bottom: 24px;
+		    padding: 10px 0 10px 27px;
+		}
+		&_form-message {
+			
+			margin-bottom: 42px;
+		    padding: 10px 0 51px 27px;
+		}
+		&_form-submit {
+			margin-bottom: 117px;
+			padding: 16px 40px;
+			@extend button;
+			background-color: $white;
+			border: 1px solid $orange;
+			&:hover {
+				background-color: $orange;
+				border: 1px solid $orange;
+			}
+			a {
+				color: $orange;
+				&:hover {
+					color: $white;
+				}
+			}
+		}
+	}
+}
+
+
+.button-up {
+	position: absolute;
+    z-index: 3;
+    right: 221px;
+    top: 465px;
+}
+
+.fa-chevron-circle-up {	
+	color: $orange;
+	opacity: 0.95;	
+    &:hover {
+	    opacity: 0.7;
+	    cursor: pointer;
+    }
+}	
+
+.footer-wrap {
+    display: flex;
+    padding: 0;
+    color: $white;
+    margin-bottom: 20px;
+	&__footer-contact {
+	    display: flex;
+	    flex-direction: column;
+	    align-items: center;
+	    padding: 0;	    
+	    &_topic-contact {
+    	    padding-bottom: 10px;
+	    }
+	    &_footer-email {
+	    	    margin-bottom: 38px;
+	    	a {
+				@extend a;
+				font-weight: $regular;
+				&:hover {
+		  			border-bottom: none;
+		  			color: $blue-dark;
+		  			opacity: 0.5;
+				}				
+			}
+	    }	    
+	    &_social-web {
+	    	//@extend .social-web;
+		    //width: 28%;
+		    color: $orange;
+		    display: flex;
+		    &_topic-social {
+		    	color: $white;
+		    	margin-bottom: 8px;
+		    	margin-right: 6px;
+		    }
+	    }
+	}
+	&__menu-footer {
+	    display: flex;
+	    flex-direction: column;
+		padding: 0;
+		padding-left: 20px;
+		&_title-menu {
+			font-size: 18px;
+		}
+		&_vertical-menu {
+		    padding-left: 0;
+		    //margin-top: 17px;
+			@extend ul;
+			&_link-group {
+				a {
+					@extend a;
+					font-weight: $regular;
+					&:hover {
+			  			border-bottom: none;
+			  			color: $white;
+			  			opacity: 0.5;
+					}				
+				}				
+			}
+		}
+	}
+	&__logotype-small {
+		font-size: 23px;
+		font-weight: $bold;
+		display: flex;
+	    justify-content: flex-end;
+	    padding-right: 20px;
+	    align-items: center;
+    	padding-bottom: 39px;
+    }	
+}
+
+.fa-instagram {
+	color: $orange;
+}
+
+.footer-bottom {
+    display: flex;
+    font-size: 14px;
+	color: $white;
+	opacity: 0.7;
+	margin-bottom: 45px;
+	&__footer-copyright {
+		display: flex;
+    	justify-content: center;
+	}
+}
+
+/* .button-up {
+    position: absolute;
+    z-index: 3;
+    right: 221px;
+    top: 466px;
+	&__circle-wrap {
+		
+		&_circle-box {
+			width: 50px;
+		    background-color: $white;
+		    height: 50px;
+		    border-radius: 25px;
+		    display: flex;
+		    justify-content: center;
+		    align-items: center;
+		    @extend button;
+		    &:hover {
+			    background-color: $yellow;
+			    cursor: pointer;
+		    }	    	    
+		}
+	}
+}
+
+.circle {
+	    line-height: 0.7;
+} */
+
+.line1-footer {
+	position: absolute;
+    z-index: 3;
+    width: 100%;
+    border-bottom: 1px solid $white-opacity;
+    bottom: 280px;
+}
+
+.line2-footer {
+	position: absolute;
+    z-index: 4;
+    width: 100%;    
+    border-bottom: 1px solid $white-opacity;
+    bottom: 70px;
+}
+
+/* ------ media query ------ */
+@include desktop {
+
+}
+
+@include laptop {
+	
+}
+
+@include tablet {
+	
+}
+
+@include phone {
+	
+}
+
+@include iphone {
+	
+}

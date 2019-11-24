@@ -67,7 +67,7 @@ body {
 .container {
   /* padding: 0; */ }
 
-a, button a, .button-top a, .button-review a, .button-about a, .header-big__menu_link-group a, .logotype a, .language__Ru a, .language__En a, .gambyrger-menu__gambyrger-list_link-group a, i, .about-block-right__text-about_span-about, .portfolio-info__link-portfolio {
+a, button a, .button-top a, .button-review a, .button-about a, .form-contact__form-content_form-submit a, .header-big__menu_link-group a, .logotype a, .language__Ru a, .language__En a, .gambyrger-menu__gambyrger-list_link-group a, .about-block-right__text-about_span-about, .portfolio-info__link-portfolio, .footer-wrap__footer-contact_footer-email a, .footer-wrap__menu-footer_vertical-menu_link-group a {
   font-family: 'Nunito Sans', sans-serif;
   font-size: 16px;
   font-weight: 700;
@@ -76,15 +76,15 @@ a, button a, .button-top a, .button-review a, .button-about a, .header-big__menu
   /* &:visited {
   	color: $purpur-dark;
   } */ }
-  a:hover, i:hover, .about-block-right__text-about_span-about:hover, .portfolio-info__link-portfolio:hover {
+  a:hover, .about-block-right__text-about_span-about:hover, .portfolio-info__link-portfolio:hover {
     text-decoration: none;
     color: #566ca5; }
-  a:active, i:active, .about-block-right__text-about_span-about:active, .portfolio-info__link-portfolio:active {
+  a:active, .about-block-right__text-about_span-about:active, .portfolio-info__link-portfolio:active {
     color: #566ca5; }
-  a:focus, i:focus, .about-block-right__text-about_span-about:focus, .portfolio-info__link-portfolio:focus {
+  a:focus, .about-block-right__text-about_span-about:focus, .portfolio-info__link-portfolio:focus {
     color: #ebebf4; }
 
-ul, .header-big__menu, .gambyrger-menu__gambyrger-list {
+ul, .header-big__menu, .gambyrger-menu__gambyrger-list, .footer-wrap__menu-footer_vertical-menu {
   list-style: none; }
 
 h1, .topic-main {
@@ -95,7 +95,7 @@ h1, .topic-main {
   line-height: 1.2;
   margin-bottom: 0; }
 
-h2, .topic-title, .title-review, .subtitle-review, .title-about, .subtitle-about, .product__product-title, .portfolio-info__topic {
+h2, .topic-title, .title-review, .subtitle-review, .title-about, .subtitle-about, .product__product-title, .portfolio-info__topic, .form-contact__form-title {
   font-family: 'Judson', serif;
   font-size: 40px;
   font-weight: 400;
@@ -108,21 +108,21 @@ h3, .topic-text {
   font-weight: #fafafd;
   color: #ffffff; }
 
-button, .button-top, .button-review, .button-about {
+button, .button-top, .button-review, .button-about, .form-contact__form-content_form-submit {
   background-color: #f29257;
   border-width: 0;
   border-radius: 4px; }
-  button:hover, .button-top:hover, .button-review:hover, .button-about:hover {
+  button:hover, .button-top:hover, .button-review:hover, .button-about:hover, .form-contact__form-content_form-submit:hover {
     background-color: #ffd0b3;
     transition: 2s; }
-  button a, .button-top a, .button-review a, .button-about a, button .header-big__menu_link-group a, .header-big__menu_link-group button a, button .logotype a, .logotype button a, button .language__Ru a, .language__Ru button a, button .language__En a, .language__En button a, button .gambyrger-menu__gambyrger-list_link-group a, .gambyrger-menu__gambyrger-list_link-group button a, button i, .button-top i, .button-review i, .button-about i, button .about-block-right__text-about_span-about, .button-top .about-block-right__text-about_span-about, .button-review .about-block-right__text-about_span-about, .button-about .about-block-right__text-about_span-about, button .portfolio-info__link-portfolio, .button-top .portfolio-info__link-portfolio, .button-review .portfolio-info__link-portfolio, .button-about .portfolio-info__link-portfolio {
+  button a, .button-top a, .button-review a, .button-about a, .form-contact__form-content_form-submit a, button .header-big__menu_link-group a, .header-big__menu_link-group button a, button .logotype a, .logotype button a, button .language__Ru a, .language__Ru button a, button .language__En a, .language__En button a, button .gambyrger-menu__gambyrger-list_link-group a, .gambyrger-menu__gambyrger-list_link-group button a, button .about-block-right__text-about_span-about, .button-top .about-block-right__text-about_span-about, .button-review .about-block-right__text-about_span-about, .button-about .about-block-right__text-about_span-about, .form-contact__form-content_form-submit .about-block-right__text-about_span-about, button .portfolio-info__link-portfolio, .button-top .portfolio-info__link-portfolio, .button-review .portfolio-info__link-portfolio, .button-about .portfolio-info__link-portfolio, .form-contact__form-content_form-submit .portfolio-info__link-portfolio, button .footer-wrap__footer-contact_footer-email a, .footer-wrap__footer-contact_footer-email button a, button .footer-wrap__menu-footer_vertical-menu_link-group a, .footer-wrap__menu-footer_vertical-menu_link-group button a {
     font-family: 'Archivo Narrow', sans-serif;
     font-size: 18px;
     text-transform: uppercase;
     color: #1b255d; }
-    button a:hover, .button-top a:hover, .button-review a:hover, .button-about a:hover, button i:hover, .button-top i:hover, .button-review i:hover, .button-about i:hover, button .about-block-right__text-about_span-about:hover, .button-top .about-block-right__text-about_span-about:hover, .button-review .about-block-right__text-about_span-about:hover, .button-about .about-block-right__text-about_span-about:hover, button .portfolio-info__link-portfolio:hover, .button-top .portfolio-info__link-portfolio:hover, .button-review .portfolio-info__link-portfolio:hover, .button-about .portfolio-info__link-portfolio:hover {
+    button a:hover, .button-top a:hover, .button-review a:hover, .button-about a:hover, .form-contact__form-content_form-submit a:hover, button .about-block-right__text-about_span-about:hover, .button-top .about-block-right__text-about_span-about:hover, .button-review .about-block-right__text-about_span-about:hover, .button-about .about-block-right__text-about_span-about:hover, .form-contact__form-content_form-submit .about-block-right__text-about_span-about:hover, button .portfolio-info__link-portfolio:hover, .button-top .portfolio-info__link-portfolio:hover, .button-review .portfolio-info__link-portfolio:hover, .button-about .portfolio-info__link-portfolio:hover, .form-contact__form-content_form-submit .portfolio-info__link-portfolio:hover {
       color: #566ca5;
-      transition: 2s; }
+      transition: 1s; }
 
 .fon {
   background-color: #ebebf4;
@@ -134,14 +134,14 @@ button, .button-top, .button-review, .button-about {
 input {
   width: 100%;
   border: 1px solid #ffffff;
-  background-color: #431c43;
+  background-color: #828893;
   caret-color: #ffffff;
   color: #ffffff; }
 
 input::placeholder {
   display: flex;
   justify-content: start;
-  color: #ffffff;
+  color: #f29257;
   opacity: 0.5;
   margin-left: 27px; }
 
@@ -156,7 +156,8 @@ header {
   width: 100%;
   background: #ffffff;
   padding-top: 10px;
-  padding-bottom: 10px; }
+  padding-bottom: 10px;
+  opacity: 0.95; }
 
 .header-wrap {
   display: flex;
@@ -206,13 +207,13 @@ header {
   text-decoration: none;
   margin-bottom: 6px;
   padding: 12px 0 0 0; }
-  .header-big__menu_link-group a, .header-big__menu_link-group i, .header-big__menu_link-group .about-block-right__text-about_span-about, .header-big__menu_link-group .portfolio-info__link-portfolio {
+  .header-big__menu_link-group a, .header-big__menu_link-group .about-block-right__text-about_span-about, .header-big__menu_link-group .portfolio-info__link-portfolio {
     padding: 0px 4px 5px 4px; }
 
 .logotype {
   display: flex;
   justify-content: center; }
-  .logotype a, .logotype i, .logotype .about-block-right__text-about_span-about, .logotype .portfolio-info__link-portfolio {
+  .logotype a, .logotype .about-block-right__text-about_span-about, .logotype .portfolio-info__link-portfolio {
     text-align: center;
     font-size: 14px; }
 
@@ -235,7 +236,7 @@ header {
 /* for border in menu */
 .selected {
   border-bottom: 1px solid #cb3d00; }
-  .selected a, .selected i, .selected .about-block-right__text-about_span-about, .selected .portfolio-info__link-portfolio {
+  .selected a, .selected .about-block-right__text-about_span-about, .selected .portfolio-info__link-portfolio {
     border-bottom: 1px solid #ff9571; }
 
 /* byrger-menu start*/
@@ -288,10 +289,10 @@ header {
     display: none;
     height: 100vh;
     padding-left: 0; }
-    .gambyrger-menu__gambyrger-list_link-group a, .gambyrger-menu__gambyrger-list_link-group i, .gambyrger-menu__gambyrger-list_link-group .about-block-right__text-about_span-about, .gambyrger-menu__gambyrger-list_link-group .portfolio-info__link-portfolio {
+    .gambyrger-menu__gambyrger-list_link-group a, .gambyrger-menu__gambyrger-list_link-group .about-block-right__text-about_span-about, .gambyrger-menu__gambyrger-list_link-group .portfolio-info__link-portfolio {
       padding: 0px 4px;
       color: #ebebf4; }
-      .gambyrger-menu__gambyrger-list_link-group a:hover, .gambyrger-menu__gambyrger-list_link-group i:hover, .gambyrger-menu__gambyrger-list_link-group .about-block-right__text-about_span-about:hover, .gambyrger-menu__gambyrger-list_link-group .portfolio-info__link-portfolio:hover {
+      .gambyrger-menu__gambyrger-list_link-group a:hover, .gambyrger-menu__gambyrger-list_link-group .about-block-right__text-about_span-about:hover, .gambyrger-menu__gambyrger-list_link-group .portfolio-info__link-portfolio:hover {
         border-bottom: 2px solid #ff9571;
         color: #8e86ac; }
 
@@ -378,16 +379,29 @@ section-1 {
 .scroll-arrow {
   display: flex;
   justify-content: center;
+  position: relative;
   padding-top: 450px; }
+  .scroll-arrow__scroll-link {
+    justify-content: center;
+    align-items: center;
+    /* &_link-circle {
+    				position: absolute;
+        			width: 6%;
+        			z-index: 1;
+    } */ }
+    .scroll-arrow__scroll-link_link-arrow {
+      width: 80%;
+      z-index: 1;
+      margin-top: 4px; }
 
-i {
+.fa-circle {
   color: #ffffff;
-  font-size: 1.6em; }
+  position: absolute;
+  opacity: 0.4;
+  z-index: 1; }
 
 #scroll-home {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 20px; }
+  display: flex; }
 
 /* ------------ video-review --------------- */
 section-2 {
@@ -441,9 +455,9 @@ section-2 {
   .button-review:hover {
     background-color: #ffffff;
     border: 1px solid #f29257; }
-  .button-review a, .button-review i, .button-review .about-block-right__text-about_span-about, .button-review .portfolio-info__link-portfolio {
+  .button-review a, .button-review .about-block-right__text-about_span-about, .button-review .portfolio-info__link-portfolio {
     color: #ffffff; }
-    .button-review a:hover, .button-review i:hover, .button-review .about-block-right__text-about_span-about:hover, .button-review .portfolio-info__link-portfolio:hover {
+    .button-review a:hover, .button-review .about-block-right__text-about_span-about:hover, .button-review .portfolio-info__link-portfolio:hover {
       color: #f29257; }
   .button-review_btn {
     padding: 20px 54px; }
@@ -490,9 +504,9 @@ section-3 {
   .button-about:hover {
     background-color: #f29257;
     border: 1px solid #f29257; }
-  .button-about a, .button-about i, .button-about .about-block-right__text-about_span-about, .button-about .portfolio-info__link-portfolio {
+  .button-about a, .button-about .about-block-right__text-about_span-about, .button-about .portfolio-info__link-portfolio {
     color: #f29257; }
-    .button-about a:hover, .button-about i:hover, .button-about .about-block-right__text-about_span-about:hover, .button-about .portfolio-info__link-portfolio:hover {
+    .button-about a:hover, .button-about .about-block-right__text-about_span-about:hover, .button-about .portfolio-info__link-portfolio:hover {
       color: #ffffff; }
   .button-about_btn {
     padding: 20px 54px; }
@@ -682,7 +696,7 @@ section-4 {
 section-5 {
   display: flex;
   flex-direction: column;
-  padding-top: 120px;
+  padding-top: 140px;
   margin-bottom: 20px; }
 
 .portfolio-info {
@@ -797,6 +811,168 @@ section-5 {
 .fon-portfolio {
 	    
 } */
+/* ------ media query ------ */
+/* ------------ footer --------------- */
+footer {
+  display: flex;
+  position: relative;
+  background-color: #828893; }
+
+.form-contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0; }
+  .form-contact__form-title {
+    margin-top: 46px;
+    margin-bottom: 44px;
+    line-height: 1.1;
+    color: #f29257; }
+  .form-contact__form-content {
+    width: 43%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .form-contact__form-content_form-name {
+      margin-bottom: 24px;
+      padding: 10px 0 10px 27px; }
+    .form-contact__form-content_form-email {
+      margin-bottom: 24px;
+      padding: 10px 0 10px 27px; }
+    .form-contact__form-content_form-message {
+      margin-bottom: 42px;
+      padding: 10px 0 51px 27px; }
+    .form-contact__form-content_form-submit {
+      margin-bottom: 117px;
+      padding: 16px 40px;
+      background-color: #ffffff;
+      border: 1px solid #f29257; }
+      .form-contact__form-content_form-submit:hover {
+        background-color: #f29257;
+        border: 1px solid #f29257; }
+      .form-contact__form-content_form-submit a, .form-contact__form-content_form-submit .about-block-right__text-about_span-about, .form-contact__form-content_form-submit .portfolio-info__link-portfolio {
+        color: #f29257; }
+        .form-contact__form-content_form-submit a:hover, .form-contact__form-content_form-submit .about-block-right__text-about_span-about:hover, .form-contact__form-content_form-submit .portfolio-info__link-portfolio:hover {
+          color: #ffffff; }
+
+.button-up {
+  position: absolute;
+  z-index: 3;
+  right: 221px;
+  top: 465px; }
+
+.fa-chevron-circle-up {
+  color: #f29257;
+  opacity: 0.95; }
+  .fa-chevron-circle-up:hover {
+    opacity: 0.7;
+    cursor: pointer; }
+
+.footer-wrap {
+  display: flex;
+  padding: 0;
+  color: #ffffff;
+  margin-bottom: 20px; }
+  .footer-wrap__footer-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0; }
+    .footer-wrap__footer-contact_topic-contact {
+      padding-bottom: 10px; }
+    .footer-wrap__footer-contact_footer-email {
+      margin-bottom: 38px; }
+      .footer-wrap__footer-contact_footer-email .about-block-right__text-about_span-about, .footer-wrap__footer-contact_footer-email .portfolio-info__link-portfolio, .footer-wrap__footer-contact_footer-email a {
+        font-weight: 400; }
+        .footer-wrap__footer-contact_footer-email .about-block-right__text-about_span-about:hover, .footer-wrap__footer-contact_footer-email .portfolio-info__link-portfolio:hover, .footer-wrap__footer-contact_footer-email a:hover {
+          border-bottom: none;
+          color: #1b255d;
+          opacity: 0.5; }
+    .footer-wrap__footer-contact_social-web {
+      color: #f29257;
+      display: flex; }
+      .footer-wrap__footer-contact_social-web_topic-social {
+        color: #ffffff;
+        margin-bottom: 8px;
+        margin-right: 6px; }
+  .footer-wrap__menu-footer {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    padding-left: 20px; }
+    .footer-wrap__menu-footer_title-menu {
+      font-size: 18px; }
+    .footer-wrap__menu-footer_vertical-menu {
+      padding-left: 0; }
+      .footer-wrap__menu-footer_vertical-menu_link-group .about-block-right__text-about_span-about, .footer-wrap__menu-footer_vertical-menu_link-group .portfolio-info__link-portfolio, .footer-wrap__menu-footer_vertical-menu_link-group a {
+        font-weight: 400; }
+        .footer-wrap__menu-footer_vertical-menu_link-group .about-block-right__text-about_span-about:hover, .footer-wrap__menu-footer_vertical-menu_link-group .portfolio-info__link-portfolio:hover, .footer-wrap__menu-footer_vertical-menu_link-group a:hover {
+          border-bottom: none;
+          color: #ffffff;
+          opacity: 0.5; }
+  .footer-wrap__logotype-small {
+    font-size: 23px;
+    font-weight: 700;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 20px;
+    align-items: center;
+    padding-bottom: 39px; }
+
+.fa-instagram {
+  color: #f29257; }
+
+.footer-bottom {
+  display: flex;
+  font-size: 14px;
+  color: #ffffff;
+  opacity: 0.7;
+  margin-bottom: 45px; }
+  .footer-bottom__footer-copyright {
+    display: flex;
+    justify-content: center; }
+
+/* .button-up {
+    position: absolute;
+    z-index: 3;
+    right: 221px;
+    top: 466px;
+	&__circle-wrap {
+		
+		&_circle-box {
+			width: 50px;
+		    background-color: $white;
+		    height: 50px;
+		    border-radius: 25px;
+		    display: flex;
+		    justify-content: center;
+		    align-items: center;
+		    @extend button;
+		    &:hover {
+			    background-color: $yellow;
+			    cursor: pointer;
+		    }	    	    
+		}
+	}
+}
+
+.circle {
+	    line-height: 0.7;
+} */
+.line1-footer {
+  position: absolute;
+  z-index: 3;
+  width: 100%;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  bottom: 280px; }
+
+.line2-footer {
+  position: absolute;
+  z-index: 4;
+  width: 100%;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  bottom: 70px; }
+
 /* ------ media query ------ */
 /* -------- fonts -------- */
 /* -------- colors -------- */
