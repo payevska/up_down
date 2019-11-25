@@ -43,7 +43,7 @@ ul {
 h1 {
 	font: {
 			family: 'Archivo Narrow', sans-serif;
-			size: 52px;
+			size: 48px;
 			weight: $light;
 	}
 	color: $white;
@@ -76,7 +76,7 @@ button {
 	border-radius: 4px;
 	&:hover {
 		background-color: $orange-light;
-		transition: 2s;
+		transition: 1s;
 	}
 	a {
 		@extend a;
@@ -116,10 +116,10 @@ input::placeholder  {
 	margin-left: 27px;	
 }
 
-.social-web {	
+/* .social-web {	
     display: flex;
     justify-content: space-between;
-}
+} */
 
 @mixin television {
   @media (min-width: 1600px) {

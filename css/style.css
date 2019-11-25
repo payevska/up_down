@@ -17,7 +17,8 @@
   src: url("fonts/NunitoSans/NunitoSans-Regular.eot") format("embedded-opentype"), url("fonts/NunitoSans/NunitoSans-Regular.woff2") format("woff2"), url("fonts/NunitoSans/NunitoSans-Regular.woff") format("woff"), url("fonts/NunitoSans/NunitoSans-Regular.ttf") format("truetype"), url("fonts/NunitoSans/NunitoSans-Regular.svg#PT_SansWebBold") format("svg");
   font-style: normal;
   font-weight: 400; }
-/* 
+/*
+<i class="fas fa-chevron-circle-up"></i> 
 <i class="fas fa-caret-up"></i>
 <i class="fas fa-caret-down"></i>
 <i class="fas fa-chevron-down"></i>
@@ -55,7 +56,7 @@
 <i class="fas fa-mouse"></i>
 <i class="fas fa-print"></i>
 <i class="fas fa-image"></i>
-
+<i class="fab fa-instagram"></i>
  */
 /* ------------ variable --------------- */
 body {
@@ -89,7 +90,7 @@ ul, .header-big__menu, .gambyrger-menu__gambyrger-list, .footer-wrap__menu-foote
 
 h1, .topic-main {
   font-family: 'Archivo Narrow', sans-serif;
-  font-size: 52px;
+  font-size: 48px;
   font-weight: #fafafd;
   color: #ffffff;
   line-height: 1.2;
@@ -114,7 +115,7 @@ button, .button-top, .button-review, .button-about, .form-contact__form-content_
   border-radius: 4px; }
   button:hover, .button-top:hover, .button-review:hover, .button-about:hover, .form-contact__form-content_form-submit:hover {
     background-color: #ffd0b3;
-    transition: 2s; }
+    transition: 1s; }
   button a, .button-top a, .button-review a, .button-about a, .form-contact__form-content_form-submit a, button .header-big__menu_link-group a, .header-big__menu_link-group button a, button .logotype a, .logotype button a, button .language__Ru a, .language__Ru button a, button .language__En a, .language__En button a, button .gambyrger-menu__gambyrger-list_link-group a, .gambyrger-menu__gambyrger-list_link-group button a, button .about-block-right__text-about_span-about, .button-top .about-block-right__text-about_span-about, .button-review .about-block-right__text-about_span-about, .button-about .about-block-right__text-about_span-about, .form-contact__form-content_form-submit .about-block-right__text-about_span-about, button .portfolio-info__link-portfolio, .button-top .portfolio-info__link-portfolio, .button-review .portfolio-info__link-portfolio, .button-about .portfolio-info__link-portfolio, .form-contact__form-content_form-submit .portfolio-info__link-portfolio, button .footer-wrap__footer-contact_footer-email a, .footer-wrap__footer-contact_footer-email button a, button .footer-wrap__menu-footer_vertical-menu_link-group a, .footer-wrap__menu-footer_vertical-menu_link-group button a {
     font-family: 'Archivo Narrow', sans-serif;
     font-size: 18px;
@@ -145,10 +146,10 @@ input::placeholder {
   opacity: 0.5;
   margin-left: 27px; }
 
-.social-web {
-  display: flex;
-  justify-content: space-between; }
-
+/* .social-web {	
+    display: flex;
+    justify-content: space-between;
+} */
 /* ------------ header --------------- */
 header {
   position: fixed;
@@ -339,7 +340,7 @@ section-1 {
 .main {
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
+  align-items: center;
   margin-left: 0; }
 
 .topic-main {
@@ -368,13 +369,21 @@ section-1 {
   width: 52%; }
 
 .button-home {
-  margin-top: 84px; }
+  margin-top: 50px; }
 
 .button-top {
   display: flex;
-  opacity: 0.7; }
-  .button-top_btn {
-    padding: 20px 33px; }
+  background-color: #ffffff; }
+  .button-top:hover {
+    background-color: #f29257; }
+  .button-top a, .button-top .about-block-right__text-about_span-about, .button-top .portfolio-info__link-portfolio {
+    font-family: 'Nunito Sans', sans-serif;
+    text-transform: none;
+    color: #f29257; }
+    .button-top a:hover, .button-top .about-block-right__text-about_span-about:hover, .button-top .portfolio-info__link-portfolio:hover {
+      color: #ffffff; }
+  .button-top__btn {
+    padding: 20px 50px; }
 
 .scroll-arrow {
   display: flex;
@@ -382,6 +391,7 @@ section-1 {
   position: relative;
   padding-top: 450px; }
   .scroll-arrow__scroll-link {
+    scroll-behavior: smooth;
     justify-content: center;
     align-items: center;
     /* &_link-circle {
@@ -397,7 +407,7 @@ section-1 {
 .fa-circle {
   color: #ffffff;
   position: absolute;
-  opacity: 0.4;
+  opacity: 0.5;
   z-index: 1; }
 
 #scroll-home {
@@ -426,7 +436,7 @@ section-2 {
   display: flex;
   justify-content: center;
   margin-bottom: 20px;
-  padding-top: 25px; }
+  padding-top: 100px; }
 
 .subtitle-review {
   display: flex;
@@ -448,7 +458,7 @@ section-2 {
 .button-review {
   display: flex;
   justify-content: center;
-  margin-top: 35px;
+  margin-top: 60px;
   margin-bottom: 15px;
   background-color: #f29257;
   border: 1px solid #f29257; }
@@ -459,7 +469,7 @@ section-2 {
     color: #ffffff; }
     .button-review a:hover, .button-review .about-block-right__text-about_span-about:hover, .button-review .portfolio-info__link-portfolio:hover {
       color: #f29257; }
-  .button-review_btn {
+  .button-review__btn {
     padding: 20px 54px; }
 
 /* ------ media query ------ */
@@ -719,6 +729,20 @@ section-5 {
   align-items: center; }
   .portfolio-right__projeсts-portfolio {
     margin-bottom: 20px; }
+  .portfolio-right__carousel {
+    width: 170px;
+    height: 520px;
+    display: flex;
+    overflow: hidden; }
+    .portfolio-right__carousel_carousel-block {
+      height: 1040px;
+      display: flex;
+      flex-direction: column; }
+
+#polosa {
+  position: relative;
+  top: 0;
+  transition: all ease 1s; }
 
 .project-big-foto {
   position: relative;
@@ -741,76 +765,19 @@ section-5 {
   margin-top: -65px; }
 
 .caret {
+  position: absolute;
   color: #f29257; }
 
-.two-line {
-  display: none; }
+#slider-top {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
 
-/* .portfolio {
-	display: flex;
-}
+#slider-bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
 
-.portfolio-left {
-	
-}
-
-.portfolio-info {    
-    	
-	&__topic {			
-		
-	}
-	
-	&__text-portfolio {
-	   
-	}
-	&__link-portfolio {
-
-	}
-}
-
-
-
-
-
-.project-2 {
-	
-	img {
-		
-	}
-}
-
-.project-3 {	
-	img {
-		
-	}
-}
-
-.project-4 {
-	
-}
-
-.project-box {
-    
-       
-}
-
-
-
-.one-line {
-		
-}
-
-.three-line {
-	
-}
-
-.two-line {
-	
-}
-
-.fon-portfolio {
-	    
-} */
 /* ------ media query ------ */
 /* ------------ footer --------------- */
 footer {

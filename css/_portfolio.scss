@@ -28,12 +28,29 @@ section-5 {
 }
 
 .portfolio-right {
-     display: flex;
+    display: flex;
     flex-direction: column;
     align-items: center;
     &__projeсts-portfolio {
 		margin-bottom: 20px;
-	}	
+	}
+	&__carousel	{
+		width: 170px;
+		height: 520px;
+		display: flex;
+		overflow: hidden;		
+		&_carousel-block {
+			height: 1040px;
+			display: flex;
+			flex-direction: column;
+		}
+	}
+}
+#polosa {
+	position: relative;
+	top: 0;
+	//bottom: 520;
+	transition: all ease 1s;
 }
 
 .project-big-foto {
@@ -63,80 +80,23 @@ section-5 {
 }
 
 .caret {
+	position: absolute;
 	color: $orange;
 }
 
-.two-line {
-	display: none;
-}
-
-
-
-/* .portfolio {
+#slider-top {
 	display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.portfolio-left {
-	
-}
-
-.portfolio-info {    
-    	
-	&__topic {			
-		
-	}
-	
-	&__text-portfolio {
-	   
-	}
-	&__link-portfolio {
-
-	}
+#slider-bottom {
+	display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
-
-
-
-.project-2 {
-	
-	img {
-		
-	}
-}
-
-.project-3 {	
-	img {
-		
-	}
-}
-
-.project-4 {
-	
-}
-
-.project-box {
-    
-       
-}
-
-
-
-.one-line {
-		
-}
-
-.three-line {
-	
-}
-
-.two-line {
-	
-}
-
-.fon-portfolio {
-	    
-} */
 
 /* ------ media query ------ */
 @include desktop {
