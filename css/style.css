@@ -68,7 +68,7 @@ body {
 .container {
   /* padding: 0; */ }
 
-a, button a, .button-top a, .button-review a, .button-about a, .form-contact__form-content_form-submit a, .header-big__menu_link-group a, .logotype a, .language__Ru a, .language__En a, .gambyrger-menu__gambyrger-list_link-group a, .about-block-right__text-about_span-about, .portfolio-info__link-portfolio, .footer-wrap__footer-contact_footer-email a, .footer-wrap__menu-footer_vertical-menu_link-group a {
+a, button a, .button-top a, .button-review a, .button-about a, .form-contact__form-content_form-submit a, .header-big__menu_link-group a, .logotype a, .language__Ru a, .language__En a, .gambyrger-menu__gambyrger-list_link-group a, .video-table, .about-block-right__text-about_span-about, .portfolio-info__link-portfolio, .footer-wrap__footer-contact_footer-email a, .footer-wrap__menu-footer_vertical-menu_link-group a {
   font-family: 'Nunito Sans', sans-serif;
   font-size: 16px;
   font-weight: 700;
@@ -77,16 +77,15 @@ a, button a, .button-top a, .button-review a, .button-about a, .form-contact__fo
   /* &:visited {
   	color: $blue-light;
   } */
-  /* &:focus {
-  		color: $blue-light;
-  	} */
   /* &:alink {
   		color: $blue-grey;
   	} */ }
-  a:hover, .about-block-right__text-about_span-about:hover, .portfolio-info__link-portfolio:hover {
+  a:hover, .video-table:hover, .about-block-right__text-about_span-about:hover, .portfolio-info__link-portfolio:hover {
     text-decoration: none;
     color: #566ca5; }
-  a:active, .about-block-right__text-about_span-about:active, .portfolio-info__link-portfolio:active {
+  a:active, .video-table:active, .about-block-right__text-about_span-about:active, .portfolio-info__link-portfolio:active {
+    color: #566ca5; }
+  a:focus, .video-table:focus, .about-block-right__text-about_span-about:focus, .portfolio-info__link-portfolio:focus {
     color: #566ca5; }
 
 ul, .header-big__menu, .gambyrger-menu__gambyrger-list, .footer-wrap__menu-footer_vertical-menu {
@@ -120,12 +119,12 @@ button, .button-top, .button-review, .button-about, .form-contact__form-content_
   button:hover, .button-top:hover, .button-review:hover, .button-about:hover, .form-contact__form-content_form-submit:hover {
     background-color: #ffd0b3;
     transition: 1s; }
-  button a, .button-top a, .button-review a, .button-about a, .form-contact__form-content_form-submit a, button .header-big__menu_link-group a, .header-big__menu_link-group button a, button .logotype a, .logotype button a, button .language__Ru a, .language__Ru button a, button .language__En a, .language__En button a, button .gambyrger-menu__gambyrger-list_link-group a, .gambyrger-menu__gambyrger-list_link-group button a, button .about-block-right__text-about_span-about, .button-top .about-block-right__text-about_span-about, .button-review .about-block-right__text-about_span-about, .button-about .about-block-right__text-about_span-about, .form-contact__form-content_form-submit .about-block-right__text-about_span-about, button .portfolio-info__link-portfolio, .button-top .portfolio-info__link-portfolio, .button-review .portfolio-info__link-portfolio, .button-about .portfolio-info__link-portfolio, .form-contact__form-content_form-submit .portfolio-info__link-portfolio, button .footer-wrap__footer-contact_footer-email a, .footer-wrap__footer-contact_footer-email button a, button .footer-wrap__menu-footer_vertical-menu_link-group a, .footer-wrap__menu-footer_vertical-menu_link-group button a {
+  button a, .button-top a, .button-review a, .button-about a, .form-contact__form-content_form-submit a, button .header-big__menu_link-group a, .header-big__menu_link-group button a, button .logotype a, .logotype button a, button .language__Ru a, .language__Ru button a, button .language__En a, .language__En button a, button .gambyrger-menu__gambyrger-list_link-group a, .gambyrger-menu__gambyrger-list_link-group button a, button .video-table, .button-top .video-table, .button-review .video-table, .button-about .video-table, .form-contact__form-content_form-submit .video-table, button .about-block-right__text-about_span-about, .button-top .about-block-right__text-about_span-about, .button-review .about-block-right__text-about_span-about, .button-about .about-block-right__text-about_span-about, .form-contact__form-content_form-submit .about-block-right__text-about_span-about, button .portfolio-info__link-portfolio, .button-top .portfolio-info__link-portfolio, .button-review .portfolio-info__link-portfolio, .button-about .portfolio-info__link-portfolio, .form-contact__form-content_form-submit .portfolio-info__link-portfolio, button .footer-wrap__footer-contact_footer-email a, .footer-wrap__footer-contact_footer-email button a, button .footer-wrap__menu-footer_vertical-menu_link-group a, .footer-wrap__menu-footer_vertical-menu_link-group button a {
     font-family: 'Archivo Narrow', sans-serif;
     font-size: 18px;
     text-transform: uppercase;
     color: #1b255d; }
-    button a:hover, .button-top a:hover, .button-review a:hover, .button-about a:hover, .form-contact__form-content_form-submit a:hover, button .about-block-right__text-about_span-about:hover, .button-top .about-block-right__text-about_span-about:hover, .button-review .about-block-right__text-about_span-about:hover, .button-about .about-block-right__text-about_span-about:hover, .form-contact__form-content_form-submit .about-block-right__text-about_span-about:hover, button .portfolio-info__link-portfolio:hover, .button-top .portfolio-info__link-portfolio:hover, .button-review .portfolio-info__link-portfolio:hover, .button-about .portfolio-info__link-portfolio:hover, .form-contact__form-content_form-submit .portfolio-info__link-portfolio:hover {
+    button a:hover, .button-top a:hover, .button-review a:hover, .button-about a:hover, .form-contact__form-content_form-submit a:hover, button .video-table:hover, .button-top .video-table:hover, .button-review .video-table:hover, .button-about .video-table:hover, .form-contact__form-content_form-submit .video-table:hover, button .about-block-right__text-about_span-about:hover, .button-top .about-block-right__text-about_span-about:hover, .button-review .about-block-right__text-about_span-about:hover, .button-about .about-block-right__text-about_span-about:hover, .form-contact__form-content_form-submit .about-block-right__text-about_span-about:hover, button .portfolio-info__link-portfolio:hover, .button-top .portfolio-info__link-portfolio:hover, .button-review .portfolio-info__link-portfolio:hover, .button-about .portfolio-info__link-portfolio:hover, .form-contact__form-content_form-submit .portfolio-info__link-portfolio:hover {
       color: #566ca5;
       transition: 1s; }
 
@@ -212,7 +211,7 @@ header {
   text-decoration: none;
   margin-bottom: 6px;
   padding: 12px 0 0 0; }
-  .header-big__menu_link-group a, .header-big__menu_link-group .about-block-right__text-about_span-about, .header-big__menu_link-group .portfolio-info__link-portfolio {
+  .header-big__menu_link-group a, .header-big__menu_link-group .video-table, .header-big__menu_link-group .about-block-right__text-about_span-about, .header-big__menu_link-group .portfolio-info__link-portfolio {
     padding: 0px 4px 5px 4px; }
 
 /* .link-active {
@@ -224,7 +223,7 @@ header {
 .logotype {
   display: flex;
   justify-content: center; }
-  .logotype a, .logotype .about-block-right__text-about_span-about, .logotype .portfolio-info__link-portfolio {
+  .logotype a, .logotype .video-table, .logotype .about-block-right__text-about_span-about, .logotype .portfolio-info__link-portfolio {
     text-align: center;
     font-size: 14px; }
 
@@ -247,7 +246,7 @@ header {
 /* for border in menu */
 .selected {
   border-bottom: 1px solid #cb3d00; }
-  .selected a, .selected .about-block-right__text-about_span-about, .selected .portfolio-info__link-portfolio {
+  .selected a, .selected .video-table, .selected .about-block-right__text-about_span-about, .selected .portfolio-info__link-portfolio {
     border-bottom: 1px solid #ff9571; }
 
 /* byrger-menu start*/
@@ -300,10 +299,10 @@ header {
     display: none;
     height: 100vh;
     padding-left: 0; }
-    .gambyrger-menu__gambyrger-list_link-group a, .gambyrger-menu__gambyrger-list_link-group .about-block-right__text-about_span-about, .gambyrger-menu__gambyrger-list_link-group .portfolio-info__link-portfolio {
+    .gambyrger-menu__gambyrger-list_link-group a, .gambyrger-menu__gambyrger-list_link-group .video-table, .gambyrger-menu__gambyrger-list_link-group .about-block-right__text-about_span-about, .gambyrger-menu__gambyrger-list_link-group .portfolio-info__link-portfolio {
       padding: 0px 4px;
       color: #ebebf4; }
-      .gambyrger-menu__gambyrger-list_link-group a:hover, .gambyrger-menu__gambyrger-list_link-group .about-block-right__text-about_span-about:hover, .gambyrger-menu__gambyrger-list_link-group .portfolio-info__link-portfolio:hover {
+      .gambyrger-menu__gambyrger-list_link-group a:hover, .gambyrger-menu__gambyrger-list_link-group .video-table:hover, .gambyrger-menu__gambyrger-list_link-group .about-block-right__text-about_span-about:hover, .gambyrger-menu__gambyrger-list_link-group .portfolio-info__link-portfolio:hover {
         border-bottom: 2px solid #ff9571;
         color: #8e86ac; }
 
@@ -386,11 +385,11 @@ section-1 {
   background-color: #ffffff; }
   .button-top:hover {
     background-color: #f29257; }
-  .button-top a, .button-top .about-block-right__text-about_span-about, .button-top .portfolio-info__link-portfolio {
+  .button-top a, .button-top .video-table, .button-top .about-block-right__text-about_span-about, .button-top .portfolio-info__link-portfolio {
     font-family: 'Nunito Sans', sans-serif;
     text-transform: none;
     color: #f29257; }
-    .button-top a:hover, .button-top .about-block-right__text-about_span-about:hover, .button-top .portfolio-info__link-portfolio:hover {
+    .button-top a:hover, .button-top .video-table:hover, .button-top .about-block-right__text-about_span-about:hover, .button-top .portfolio-info__link-portfolio:hover {
       color: #ffffff; }
   .button-top__btn {
     padding: 20px 50px; }
@@ -460,6 +459,8 @@ section-2 {
 
 .video-table {
   width: 51%; }
+  .video-table:focus {
+    outline: none; }
 
 .go-portfolio {
   display: flex;
@@ -475,9 +476,9 @@ section-2 {
   .button-review:hover {
     background-color: #ffffff;
     border: 1px solid #f29257; }
-  .button-review a, .button-review .about-block-right__text-about_span-about, .button-review .portfolio-info__link-portfolio {
+  .button-review a, .button-review .video-table, .button-review .about-block-right__text-about_span-about, .button-review .portfolio-info__link-portfolio {
     color: #ffffff; }
-    .button-review a:hover, .button-review .about-block-right__text-about_span-about:hover, .button-review .portfolio-info__link-portfolio:hover {
+    .button-review a:hover, .button-review .video-table:hover, .button-review .about-block-right__text-about_span-about:hover, .button-review .portfolio-info__link-portfolio:hover {
       color: #f29257; }
   .button-review__btn {
     padding: 20px 54px; }
@@ -524,9 +525,9 @@ section-3 {
   .button-about:hover {
     background-color: #f29257;
     border: 1px solid #f29257; }
-  .button-about a, .button-about .about-block-right__text-about_span-about, .button-about .portfolio-info__link-portfolio {
+  .button-about a, .button-about .video-table, .button-about .about-block-right__text-about_span-about, .button-about .portfolio-info__link-portfolio {
     color: #f29257; }
-    .button-about a:hover, .button-about .about-block-right__text-about_span-about:hover, .button-about .portfolio-info__link-portfolio:hover {
+    .button-about a:hover, .button-about .video-table:hover, .button-about .about-block-right__text-about_span-about:hover, .button-about .portfolio-info__link-portfolio:hover {
       color: #ffffff; }
   .button-about_btn {
     padding: 20px 54px; }
@@ -857,9 +858,9 @@ footer {
       .form-contact__form-content_form-submit:hover {
         background-color: #f29257;
         border: 1px solid #f29257; }
-      .form-contact__form-content_form-submit a, .form-contact__form-content_form-submit .about-block-right__text-about_span-about, .form-contact__form-content_form-submit .portfolio-info__link-portfolio {
+      .form-contact__form-content_form-submit a, .form-contact__form-content_form-submit .video-table, .form-contact__form-content_form-submit .about-block-right__text-about_span-about, .form-contact__form-content_form-submit .portfolio-info__link-portfolio {
         color: #f29257; }
-        .form-contact__form-content_form-submit a:hover, .form-contact__form-content_form-submit .about-block-right__text-about_span-about:hover, .form-contact__form-content_form-submit .portfolio-info__link-portfolio:hover {
+        .form-contact__form-content_form-submit a:hover, .form-contact__form-content_form-submit .video-table:hover, .form-contact__form-content_form-submit .about-block-right__text-about_span-about:hover, .form-contact__form-content_form-submit .portfolio-info__link-portfolio:hover {
           color: #ffffff; }
 
 .button-up {
@@ -889,9 +890,9 @@ footer {
       padding-bottom: 10px; }
     .footer-wrap__footer-contact_footer-email {
       margin-bottom: 38px; }
-      .footer-wrap__footer-contact_footer-email .about-block-right__text-about_span-about, .footer-wrap__footer-contact_footer-email .portfolio-info__link-portfolio, .footer-wrap__footer-contact_footer-email a {
+      .footer-wrap__footer-contact_footer-email .video-table, .footer-wrap__footer-contact_footer-email .about-block-right__text-about_span-about, .footer-wrap__footer-contact_footer-email .portfolio-info__link-portfolio, .footer-wrap__footer-contact_footer-email a {
         font-weight: 400; }
-        .footer-wrap__footer-contact_footer-email .about-block-right__text-about_span-about:hover, .footer-wrap__footer-contact_footer-email .portfolio-info__link-portfolio:hover, .footer-wrap__footer-contact_footer-email a:hover {
+        .footer-wrap__footer-contact_footer-email .video-table:hover, .footer-wrap__footer-contact_footer-email .about-block-right__text-about_span-about:hover, .footer-wrap__footer-contact_footer-email .portfolio-info__link-portfolio:hover, .footer-wrap__footer-contact_footer-email a:hover {
           border-bottom: none;
           color: #1b255d;
           opacity: 0.5; }
@@ -911,9 +912,9 @@ footer {
       font-size: 18px; }
     .footer-wrap__menu-footer_vertical-menu {
       padding-left: 0; }
-      .footer-wrap__menu-footer_vertical-menu_link-group .about-block-right__text-about_span-about, .footer-wrap__menu-footer_vertical-menu_link-group .portfolio-info__link-portfolio, .footer-wrap__menu-footer_vertical-menu_link-group a {
+      .footer-wrap__menu-footer_vertical-menu_link-group .video-table, .footer-wrap__menu-footer_vertical-menu_link-group .about-block-right__text-about_span-about, .footer-wrap__menu-footer_vertical-menu_link-group .portfolio-info__link-portfolio, .footer-wrap__menu-footer_vertical-menu_link-group a {
         font-weight: 400; }
-        .footer-wrap__menu-footer_vertical-menu_link-group .about-block-right__text-about_span-about:hover, .footer-wrap__menu-footer_vertical-menu_link-group .portfolio-info__link-portfolio:hover, .footer-wrap__menu-footer_vertical-menu_link-group a:hover {
+        .footer-wrap__menu-footer_vertical-menu_link-group .video-table:hover, .footer-wrap__menu-footer_vertical-menu_link-group .about-block-right__text-about_span-about:hover, .footer-wrap__menu-footer_vertical-menu_link-group .portfolio-info__link-portfolio:hover, .footer-wrap__menu-footer_vertical-menu_link-group a:hover {
           border-bottom: none;
           color: #ffffff;
           opacity: 0.5; }

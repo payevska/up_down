@@ -42,6 +42,10 @@ section-2 {
 }
 .video-table{
 	width: 51%;
+	@extend a;
+	&:focus {
+		outline: none;
+	}
 }
 .go-portfolio{
 	display: flex;
