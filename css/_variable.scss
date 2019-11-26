@@ -26,14 +26,18 @@ a {
 	    color: $blue-light; 
 	}
 	/* &:visited {
-		color: $purpur-dark;
+		color: $blue-light;
 	} */
 	&:active {
 		color: $blue-light;
 	}
-	&:focus {
-		color: $purpur-extra-light;
-	}	
+	/* &:focus {
+			color: $blue-light;
+		} */
+
+	/* &:alink {
+			color: $blue-grey;
+		} */	
 }
 
 ul {

@@ -75,15 +75,19 @@ a, button a, .button-top a, .button-review a, .button-about a, .form-contact__fo
   text-decoration: none;
   color: #1b255d;
   /* &:visited {
-  	color: $purpur-dark;
-  } */ }
+  	color: $blue-light;
+  } */
+  /* &:focus {
+  		color: $blue-light;
+  	} */
+  /* &:alink {
+  		color: $blue-grey;
+  	} */ }
   a:hover, .about-block-right__text-about_span-about:hover, .portfolio-info__link-portfolio:hover {
     text-decoration: none;
     color: #566ca5; }
   a:active, .about-block-right__text-about_span-about:active, .portfolio-info__link-portfolio:active {
     color: #566ca5; }
-  a:focus, .about-block-right__text-about_span-about:focus, .portfolio-info__link-portfolio:focus {
-    color: #ebebf4; }
 
 ul, .header-big__menu, .gambyrger-menu__gambyrger-list, .footer-wrap__menu-footer_vertical-menu {
   list-style: none; }
@@ -96,7 +100,7 @@ h1, .topic-main {
   line-height: 1.2;
   margin-bottom: 0; }
 
-h2, .topic-title, .title-review, .subtitle-review, .title-about, .subtitle-about, .product__product-title, .portfolio-info__topic, .form-contact__form-title {
+h2, .topic-title, .title-review, .subtitle-review, .title-about, .subtitle-about, .product__product-title, .portfolio-info__topic, .myBlog-title__topic-blog, .form-contact__form-title {
   font-family: 'Judson', serif;
   font-size: 40px;
   font-weight: 400;
@@ -210,6 +214,12 @@ header {
   padding: 12px 0 0 0; }
   .header-big__menu_link-group a, .header-big__menu_link-group .about-block-right__text-about_span-about, .header-big__menu_link-group .portfolio-info__link-portfolio {
     padding: 0px 4px 5px 4px; }
+
+/* .link-active {
+	color: blue;
+} */
+.link-active.active {
+  color: #566ca5; }
 
 .logotype {
   display: flex;
@@ -756,6 +766,10 @@ section-5 {
   width: 170px;
   height: 130px; }
 
+.fotoProject-big-fixed {
+  margin-top: -265px;
+  width: 100%; }
+
 .fotoProject-big {
   margin-top: -265px;
   width: 100%; }
@@ -779,6 +793,32 @@ section-5 {
   align-items: center; }
 
 /* ------ media query ------ */
+/* ------------ blog --------------- */
+section-6 {
+  display: none;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 100px; }
+
+.myBlog-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 20px; }
+  .myBlog-title__topic-blog {
+    margin-top: 64px;
+    margin-bottom: 38px; }
+  .myBlog-title__topic-text {
+    font-size: 25px;
+    width: 40%;
+    text-align: center; }
+
+.myBlog-wrap {
+  display: flex;
+  justify-content: space-around;
+  padding-left: 0;
+  padding-right: 0; }
+
 /* ------------ footer --------------- */
 footer {
   display: flex;

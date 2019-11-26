@@ -81,9 +81,35 @@ function sliderBottom(){
     polosa.style.top = top + 'px';
 }
 
-/*function myFunction() {
-  document.getElementById('demo').innerHTML = document.getElementById('imgs').img;
-}*/
+/*image portfolio-left.... http://www.web.cofp.ru/vse-o-sajtakh/
+sozdanie-sajta/javascript/jquery/154-uvelichenie-izobrazheniya-pri-nazhatii-na-nego*/ 
+
+    $(".fotoProject").click(function(){   // Событие клика на маленькое изображение
+        var img = $(this);  // Получаем изображение, на которое кликнули
+        var src = img.attr('src'); // Достаем из этого изображения путь до картинки
+        
+        
+        $(".fotoProject-big").remove(); // Удаляем разметку всплывающего окна
+
+
+        $(".project-big-foto").append("<img src='"+src+"' class='fotoProject-big'>"); // Само увеличенное фото
+                          
+        $(".project-big-foto").fadeIn(800); // Медленно выводим изображение
+        
+    });
+
+
+/* for active a ... http://jsfiddle.net/sdLs7urp/1/
+  https://toster.ru/q/136525*/ 
+
+var links = $('.link-active');
+    
+    links.first().addClass('active');
+    
+    links.on('click', function(){
+        links.removeClass('active');
+        $(this).addClass('active');
+    });
 
 });
 

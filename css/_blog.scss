@@ -1,0 +1,31 @@
+/* ------------ blog --------------- */
+section-6 {
+	display: none;
+	display: flex;
+    flex-direction: column;
+    padding-bottom: 100px;
+}
+
+.myBlog-title {
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    &__topic-blog {
+    	margin-top: 64px;
+    	margin-bottom: 38px;
+		@extend h2;
+    }
+    &__topic-text {
+		font-size: 25px;
+	    width: 40%;
+    	text-align: center;
+    }
+}
+
+.myBlog-wrap {
+	display: flex;
+	justify-content: space-around;
+	padding-left: 0;
+    padding-right: 0;
+}
