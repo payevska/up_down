@@ -24,17 +24,17 @@ footer {
 	    flex-direction: column;
 	    align-items: center;    	
 		&_form-name {
-						
+			outline: none;			
 			margin-bottom: 24px;
 			padding: 10px 0 10px 27px;
 		}
 		&_form-email {
-			
+			outline: none;
 			margin-bottom: 24px;
 		    padding: 10px 0 10px 27px;
 		}
 		&_form-message {
-			
+			outline: none;
 			margin-bottom: 42px;
 		    padding: 10px 0 51px 27px;
 		}
