@@ -39,6 +39,7 @@ footer {
 		    padding: 10px 0 51px 27px;
 		}
 		&_form-submit {
+			outline: none;
 			margin-bottom: 117px;
 			padding: 16px 40px;
 			@extend button;

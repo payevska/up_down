@@ -398,7 +398,7 @@ section-1 {
   display: flex;
   justify-content: center;
   position: relative;
-  padding-top: 450px; }
+  padding-top: 370px; }
   .scroll-arrow__scroll-link {
     scroll-behavior: smooth;
     justify-content: center;
@@ -439,7 +439,7 @@ section-2 {
 .review-wrap {
   display: flex;
   flex-direction: column;
-  margin-bottom: 50px; }
+  margin-bottom: 62px; }
 
 .title-review {
   display: flex;
@@ -490,7 +490,7 @@ section-3 {
   display: flex;
   flex-direction: column;
   background-color: #828893;
-  padding-bottom: 166px;
+  padding-bottom: 184px;
   padding-top: 178px; }
 
 .about-wrap {
@@ -767,6 +767,9 @@ section-5 {
   width: 170px;
   height: 130px; }
 
+.arrow-up-down {
+  height: 60px; }
+
 .fotoProject-big-fixed {
   margin-top: -265px;
   width: 100%; }
@@ -854,6 +857,7 @@ footer {
       margin-bottom: 42px;
       padding: 10px 0 51px 27px; }
     .form-contact__form-content_form-submit {
+      outline: none;
       margin-bottom: 117px;
       padding: 16px 40px;
       background-color: #ffffff;
