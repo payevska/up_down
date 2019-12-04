@@ -125,6 +125,9 @@ input::placeholder  {
     justify-content: space-between;
 } */
 
+
+
+
 @mixin television {
   @media (min-width: 1600px) {
     @content;
@@ -146,16 +149,13 @@ input::placeholder  {
     @content;
   }
 }  
-@mixin phone {
+@mixin iphone {
   @media (min-width: 576px) and (max-width: 767.98px) {
     @content;
   }
 } 
-@mixin iphone {
+@mixin phone {
   @media (min-width: 320px) and (max-width: 575.98px) {
     @content;
   }
 }
-
-
-

@@ -2,10 +2,14 @@
 section-3 {    
     /* background: url('../images/skills-bg.png') no-repeat bottom; */
 	display: flex;
-	flex-direction: column;	
+	min-height: 100vh;	
 	background-color: $blue-grey;
+}
+
+.block-about  {
+	display: flex;
 	padding-bottom: 184px;
-    padding-top: 178px;	
+    padding-top: 178px;
 }
 
 .about-wrap {
@@ -204,23 +208,38 @@ section-3 {
 	}
 } */
 
+
 /* ------ media query ------ */
+@include phone {
+
+}
+@include iphone {
+
+}
+@include tablet {
+
+}
+@include laptop {
+
+}
 @include desktop {
 
 }
 
-@include laptop {
-	
-}
+/* 
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {  }
 
-@include tablet {
-	
-}
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) and (max-width: 767.98px) {  }
 
-@include phone {
-	
-}
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 991.98px) {  }
 
-@include iphone {
-	
-}
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) and (max-width: 1199.98px) {  }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {  } 
+
+ */

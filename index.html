@@ -17,36 +17,27 @@
 <body>
 	
 <!-- HEADER start -->
-	<header id="myHeader">
-		<!-- above header -->
-		<!-- <div class="container">
-			<div class="row">	
-				<div class="col-sm header-wrap">
-					<div class="col-sm header-top">
-						
-					</div>
-				</div>				
-			</div>
-		</div> -->
+	<header id="myHeader">	
 
 		<!-- menu -->
 		<div class="container">
 			<div class="row">					
-				<div class="col-sm-5 byrger">
-					<ul class="col-sm-10 header-big__menu">
-						<li class="header-big__menu_link-group">
+				<menu class="col-sm-5">
+					<ul class="col-sm-10 header-nav">
+						<li class="header-nav__link-group">
 							<a href="#myProducts" class="selected link-active">Продукты</a>
 						</li>						
-						<li class="header-big__menu_link-group">
+						<li class="header-nav__link-group">
 							<a href="#myAbout" class="link-active">Обзор</a>
 						</li>
-						<li class="header-big__menu_link-group">
+						<li class="header-nav__link-group">
 							<a href="#myPortfolio" class="link-active">Галерея</a>
 						</li>
-						<li class="header-big__menu_link-group" style="display: none;">
-							<a href="#myHome" class="link-active">Блог</a>
+						<li class="header-nav__link-group">
+							<a href="#myBlog" class="link-active">Блог</a>
 						</li>			
 					</ul>
+
 					<!-- byrger-menu start -->
 					<div class="byrger-menu">
                         <a href="#myHome" class="byrger-menu__byrger-icon">
@@ -57,17 +48,20 @@
                         </a>
                     </div>
                     <!-- byrger-menu finish --> 
-				</div>
+				</menu>
+
 				<div class="col-sm-2 logotype">
-					<a href="#myHome" class="logo link-active">
-						<img src="images/Up-and-Down-final-black.png" alt="logotype" class="l">
+					<a href="#myHome" class="link-active">
+						<img src="images/Up-and-Down-final-black.png" alt="logotype">
 					</a>
 				</div>
+
 				<div class="col-sm-3 header-phone">
 					<a href="#myFooter" class="header-phone__number-phone">
 							077-777-77-77
 					</a>
 				</div>
+
 				<div class="col-sm-2 language">
 					<a href="#" class="language__Ru">
 							Ru
@@ -95,7 +89,7 @@
 						</li>			
 					</ul>
 				</div>
-				<!-- byrger-menu finish -->             
+				<!-- gambyrge-menu finish -->             
             
 			</div>				
 		</div>
@@ -104,40 +98,33 @@
 	
 <!-- Home start -->
 	<section-1 id="myHome">
-		<div class="home-wrap">
-			<div class="container">			    				
-				<div class="row">
+		<div class="container">			    				
+			<div class="row">
+				<div class="home-wrap">
+			
 					<div class="col-sm main">
-						<div class="col-sm buttons">
-							<h1 class="topic-main">Стол для работы стоя</h1>
-							<h2 class="topic-title">Забота о Вашем здоровье</h2>
-							<!-- <h3 class="topic-text">для программистов</h3> -->
-
-							<div class="button-home">		
+						<div class="col-sm main__main-title">
+							<h1 class="main__main-title_title">Стол для работы стоя</h1>
+							<h2 class="main__main-title_topic">Забота о Вашем здоровье</h2>
+							<div class="main__main-title_main-button">
 								<button class="button-top">
 									<a href="#myVideo-review" class="button-top__btn">3D обзор</a>
 								</button>					
 							</div>
 						</div>
 					</div>
-				</div>
-			</div>
-			<div class="container">			    				
-				<div class="row">
 
-						<!--scroll mouse start -->	
-						<div id="mice" class="col-sm scroll-arrow">
-			                <a href="#myAbout" id="scroll-home" class="scroll-arrow__scroll-link">
-			                	<!-- <img src="images/circle-solid.svg" alt="button-down" class="scroll-arrow__scroll-link_link-circle"> -->
-			                	<i class="fas fa-circle fa-3x"></i>
-			                	<img src="images/button-down-home.png" alt="button-down" class="scroll-arrow__scroll-link_link-arrow">
-			                </a>
-						</div>
-					
+					<!--scroll mouse start -->	
+					<div id="mice" class="col-sm scroll-arrow">
+		                <a href="#myAbout" id="scroll-home" class="scroll-arrow__scroll-link">
+		                	<i class="fas fa-circle fa-3x"></i>
+		                	<img src="images/button-down-home.png" alt="button-down" class="scroll-arrow__scroll-link_link-arrow">
+		                </a>
+					</div>
+					<!-- scroll mouse finish-->					
 				</div>
 			</div>		
-		</div>
-		<!-- scroll mouse finish-->
+		</div>		
 	</section-1>
 <!-- Home finish -->
 	
@@ -168,28 +155,27 @@
 	<section-3 id="myAbout">
 		<div class="container">
 			<div class="row">
-					
-				<div class="col-sm-6 block-left">
-					<div class="block-left__foto-about">
-						<img src="images/full_jpg_69.jpg" alt="table-foto" class="table-foto-about">
+				<div class="block-about">	
+					<div class="col-sm-6 block-left">
+						<div class="block-left__foto-about">
+							<img src="images/full_jpg_69.jpg" alt="table-foto" class="table-foto-about">
+						</div>
 					</div>
-				</div>
 
-				<div class="col-sm-6 about-wrap">					
-					
-					<div class="title-about">Стол Up-and-Down</div>
-					<div class="subtitle-about">Для чего он предназначен?</div>
-					<div class="about-block-right__text-about">
-						Cтол Up-and-Down предназначен для комбинированной работы как сидя, так и стоя. Представляемая модель устанавливается на основной рабочий стол. Благодаря своим компактным размерам он легко разместится на Вашем столе даже в небольшом офисе. Расположите на верхней столешнице монитор, а на нижней полке клавиатуру. При помощи кнопки Вы сможете поднять все необходимое оборудование на комфортную для вас высоту, не прилагая никаких усилий<span class="about-block-right__text-about_span-about"> click here</span>
-					</div>
-					
-					<div class="go-portfolio">
-						<button class="button-about">
-							<a href="#myPortfolio" class="button-about_btn">Галерея</a>
-						</button>
-					</div>
-				</div>							
-							
+					<div class="col-sm-6 about-wrap">			
+						<div class="title-about">Стол Up-and-Down</div>
+						<div class="subtitle-about">Для чего он предназначен?</div>
+						<div class="about-block-right__text-about">
+							Cтол Up-and-Down предназначен для комбинированной работы как сидя, так и стоя. Представляемая модель устанавливается на основной рабочий стол. Благодаря своим компактным размерам он легко разместится на Вашем столе даже в небольшом офисе. Расположите на верхней столешнице монитор, а на нижней полке клавиатуру. При помощи кнопки Вы сможете поднять все необходимое оборудование на комфортную для вас высоту, не прилагая никаких усилий<span class="about-block-right__text-about_span-about"> click here</span>
+						</div>
+						
+						<div class="go-portfolio">
+							<button class="button-about">
+								<a href="#myPortfolio" class="button-about_btn">Галерея</a>
+							</button>
+						</div>
+					</div>							
+				</div>			
 			</div>
 		</div>			
 	</section-3>
@@ -263,83 +249,78 @@
 	<section-5 id="myPortfolio">
 		<div class="container">
 			<div class="row">
-				
-				<div class="col-sm portfolio-info">
-					<h2 class="portfolio-info__topic">Галерея</h2>
-					<div class="portfolio-info__text-portfolio">All my projects in my portfolio have been created using mockups, that  web designers posted online for free access. </div>
-					<!-- <a href="#" class="portfolio-info__link-portfolio">Read More...</a> -->
-				</div>
-				
-			</div>
-		</div>
-
-		<div class="container">
-			<div class="row">
-				<div href="#" class="col-sm-9 portfolio-left">
-					<div class="project-big-foto">
-						<img src="images/full_jpg_01.jpg" alt="desk" class="fotoProject-big">
-					</div>			
-				</div>
-
-				<div class="col-sm-3 portfolio-right">
-					<div id="slider-top" class="project one-line arrow-up-down">
-						<i class="fas fa-caret-up caret"></i>
-					</div>
-
-					<div class="portfolio-right__carousel">
-						<div id="polosa" class="portfolio-right__carousel_carousel-block">		
-							<div class="carousel-foto one-line">
-								<div class="project">
-									<img src="images/full_jpg_01.jpg" alt="desk" class="fotoProject">
-								</div>
-							</div>
-							<div class="carousel-foto one-line">
-								<div class="project">
-									<img src="images/full_jpg_54.jpg" alt="desk" class="fotoProject">
-								</div>	
-							</div>
-							<div class="carousel-foto one-line">
-								<div class="project">
-									<img src="images/full_jpg_19.jpg" alt="desk" class="fotoProject">
-								</div>
-							</div>
-							<div class="carousel-foto one-line">
-								<div class="project">
-									<img src="images/full_jpg_11.jpg" alt="desk" class="fotoProject">
-								</div>
-							</div>
-							<div class="carousel-foto one-line">
-								<div class="project">
-									<img src="images/full_jpg_01s.jpg" alt="desk" class="fotoProject">
-								</div>
-							</div>
-							<div class="carousel-foto one-line">
-								<div class="project">
-									<img src="images/full_jpg_20.jpg" alt="desk" class="fotoProject">
-								</div>
-							</div>
-							<div class="carousel-foto one-line">
-								<div class="project">
-									<img src="images/full_jpg_39.jpg" alt="desk" class="fotoProject">
-								</div>
-							</div>
-							<div class="carousel-foto one-line">
-								<div class="project">
-									<img src="images/full_jpg_64.jpg" alt="desk" class="fotoProject">
-								</div>
-							</div>
+				<div class="block-gallery">
+					<div class="col-sm portfolio-info">
+						<h2 class="portfolio-info__topic">Галерея</h2>
+						<div class="portfolio-info__text-portfolio">All my projects in my portfolio have been created using mockups, that  web designers posted online for free access. </div>
+						<!-- <a href="#" class="portfolio-info__link-portfolio">Read More...</a> -->
+					</div>	
+		
+					<div class="col-sm block-gallery-image">
+						<div href="#" class="col-sm-9 portfolio-left">
+							<div class="project-big-foto">
+								<img src="images/full_jpg_01.jpg" alt="desk" class="fotoProject-big">
+							</div>			
 						</div>
-					</div>
 
-					<div id="slider-bottom" class="project one-line arrow-up-down">
-							<i class="fas fa-caret-down caret"></i>
+						<div class="col-sm-3 portfolio-right">
+							<div id="slider-top" class="project one-line arrow-up-down">
+								<i class="fas fa-caret-up caret"></i>
+							</div>
+
+							<div class="portfolio-right__carousel">
+								<div id="polosa" class="portfolio-right__carousel_carousel-block">		
+									<div class="carousel-foto one-line">
+										<div class="project">
+											<img src="images/full_jpg_01.jpg" alt="desk" class="fotoProject">
+										</div>
+									</div>
+									<div class="carousel-foto one-line">
+										<div class="project">
+											<img src="images/full_jpg_54.jpg" alt="desk" class="fotoProject">
+										</div>	
+									</div>
+									<div class="carousel-foto one-line">
+										<div class="project">
+											<img src="images/full_jpg_19.jpg" alt="desk" class="fotoProject">
+										</div>
+									</div>
+									<div class="carousel-foto one-line">
+										<div class="project">
+											<img src="images/full_jpg_11.jpg" alt="desk" class="fotoProject">
+										</div>
+									</div>
+									<div class="carousel-foto one-line">
+										<div class="project">
+											<img src="images/full_jpg_01s.jpg" alt="desk" class="fotoProject">
+										</div>
+									</div>
+									<div class="carousel-foto one-line">
+										<div class="project">
+											<img src="images/full_jpg_20.jpg" alt="desk" class="fotoProject">
+										</div>
+									</div>
+									<div class="carousel-foto one-line">
+										<div class="project">
+											<img src="images/full_jpg_39.jpg" alt="desk" class="fotoProject">
+										</div>
+									</div>
+									<div class="carousel-foto one-line">
+										<div class="project">
+											<img src="images/full_jpg_64.jpg" alt="desk" class="fotoProject">
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div id="slider-bottom" class="project one-line arrow-up-down">
+									<i class="fas fa-caret-down caret"></i>
+							</div>
+						</div>	
 					</div>
-					
-				</div>										
+				</div>											
 			</div>			
 		</div>		
-		
-		<div class="fon-portfolio"></div>
 	</section-5>
 <!-- Portfolio finish -->
 

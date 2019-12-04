@@ -1,64 +1,40 @@
 section-1 {
 	background: url('../images/Home-photo4.png') no-repeat top fixed;
 	display: flex;
-    flex-direction: column;
-    padding-top: 122px;
+    flex-direction: column;    
     background-size: cover;
+    min-height: 100vh;
 }
 
-.home-wrap {
-	
+.home-wrap {	
 	width: 100%;
-	//opacity: 0.5;
-	min-height: 92vh;
 	display: flex;
-	flex-direction: column;	
-		
+	flex-direction: column;			
 }
 
 .main {
-	display: flex;
-    flex-direction: column;
-    align-items: center;    
-    margin-left: 0;	
+	display: flex;    
+    padding-top: 122px;
+    &__main-title {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	    width: 52%;
+	    &_title {
+			@extend h1;	
+			padding-top: 9px;	
+		}
+		&_topic {
+			@extend h2;
+			color: $white;
+			padding-top: 23px;	
+		}
+		&_main-button {
+			margin-top: 50px;	
+		}
+	}	
 }
 
-
-.topic-main {
-	@extend h1;	
-	padding-top: 9px;	
-}
-
-.topic-title {
-	@extend h2;
-	color: $white;
-	padding-top: 23px;	
-}
-
-.topic-text {
-	padding-top: 23px;
-	margin-bottom: 36px;
-	@extend h3;
-	font-size: 32px;
-}
-
-.block-topic {
-		text-align: center;
-}
-
-.blok-button {
-	display: flex;
-    flex-direction: column;
-} 
-.buttons {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-    width: 52%;	
-}   
-.button-home {
-	margin-top: 50px;	
-}
 .button-top {
 	display: flex;			
 	@extend button;
@@ -79,30 +55,21 @@ section-1 {
 	}
 }
 
-
-
-
-
 .scroll-arrow {		
-		display: flex;
-	    justify-content: center;
-	    position: relative;
-	    padding-top: 370px;
-	    &__scroll-link {
-	    	scroll-behavior: smooth;
-	    	justify-content: center;
-    		align-items: center;
-	    	/* &_link-circle {
-	    					position: absolute;
-	    	    			width: 6%;
-	    	    			z-index: 1;
-	    	} */
-	    	&_link-arrow {
-	    		width: 80%;
-	    		z-index: 1;
-	    		margin-top: 4px;
-	    	}
-	    }	
+	display: flex;
+    justify-content: center;
+    position: relative;
+    padding-top: 370px;
+    &__scroll-link {
+    	scroll-behavior: smooth;
+    	justify-content: center;
+		align-items: center;
+    	&_link-arrow {
+    		width: 80%;
+    		z-index: 1;
+    		margin-top: 4px;
+    	}
+    }	
 }
 
 .fa-circle {
@@ -112,7 +79,41 @@ section-1 {
 	z-index: 1;
 }
 
-
 #scroll-home {
     display: flex;
 }
+
+/* ------ media query ------ */
+@include phone {
+
+}
+@include iphone {
+
+}
+@include tablet {
+
+}
+@include laptop {
+
+}
+@include desktop {
+
+}
+
+/* 
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {  }
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) and (max-width: 767.98px) {  }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 991.98px) {  }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) and (max-width: 1199.98px) {  }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {  } 
+
+ */

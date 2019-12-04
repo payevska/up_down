@@ -1,10 +1,20 @@
 /* ------------ portfolio --------------- */
 section-5 {
 	display: flex;
-	flex-direction: column;	
+		
 	padding-top: 140px;
-    margin-bottom: 20px;
+    //margin-bottom: 20px;
+    min-height: 100vh;
 } 
+
+.block-gallery {
+	display: flex;
+	flex-direction: column;
+}
+
+.block-gallery-image {
+	display: flex;
+}
 
 .portfolio-info {    
     display: flex;
@@ -56,7 +66,7 @@ section-5 {
 	position: relative;
     overflow: hidden;
     width: 100%;
-    height: 700px;	
+    height: 662px;	
 }
 
 .project {
@@ -110,22 +120,36 @@ section-5 {
 
 
 /* ------ media query ------ */
+@include phone {
+
+}
+@include iphone {
+
+}
+@include tablet {
+
+}
+@include laptop {
+
+}
 @include desktop {
 
 }
 
-@include laptop {
-			
-}
+/* 
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {  }
 
-@include tablet {
-	
-}
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) and (max-width: 767.98px) {  }
 
-@include phone {
-	
-}
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 991.98px) {  }
 
-@include iphone {
-	
-}
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) and (max-width: 1199.98px) {  }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {  } 
+
+ */
