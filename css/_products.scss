@@ -19,31 +19,30 @@ section-4 {
 .product-images {
 	display: flex;
     flex-direction: column;
-	&__picture1 {
+	&__picture {
 		height: 150px;
 		position: relative;
     	overflow: hidden;
     	display: flex;
     	justify-content: center;
-	}
-	&__picture2 {
-		height: 150px;
-		position: relative;
-    	overflow: hidden;
-    	display: flex;
-    	justify-content: center;
-	}
-}
-.product-image {
-	width: 40%;
-	position: absolute;
-	margin-top: -80px;
+    	&_product-image {
+			width: 40%;
+			position: absolute;
+			margin-top: -80px;
+		}
+	}	
 }
 
-.product-characteristic {
+
+.characteristic-list {
 	display: flex;
-	margin-bottom: 7px;
+    flex-direction: column;
+	&__product-characteristic {
+		display: flex;
+		margin-bottom: 7px;
+	}
 }
+
 
 .character {
 	display: flex;
@@ -52,20 +51,15 @@ section-4 {
 }
 
 /* ------ media query ------ */
-@include phone {
-
-}
-@include iphone {
-
-}
-@include tablet {
-
+@include desktop {	
 }
 @include laptop {
-
 }
-@include desktop {
-
+@include tablet {
+}
+@include iphone {
+}
+@include phone {
 }
 
 /* 

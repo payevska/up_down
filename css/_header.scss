@@ -127,7 +127,7 @@ menu {
 
 
 
-/* gambyrger-menu start*/
+/* -----  gambyrger-menu start  -----*/
 .gambyrger {
 	display: flex;
     flex-direction: column;
@@ -183,24 +183,19 @@ menu {
 .byrger-menu.byrger-menu_state_open .gambyrger-menu {
   display: block;  
 }
-/* gambyrger-menu finish*/
+/* -----  gambyrger-menu finish  -----*/
 
 
 /* ------ media query ------ */
-@include phone {
-
-}
-@include iphone {
-
-}
-@include tablet {
-
+@include desktop {	
 }
 @include laptop {
-
 }
-@include desktop {
-
+@include tablet {
+}
+@include iphone {
+}
+@include phone {
 }
 
 /* 

@@ -100,7 +100,7 @@
 	<section-1 id="myHome">
 		<div class="container">			    				
 			<div class="row">
-				<div class="home-wrap">
+				<div class="col-sm home-wrap">
 			
 					<div class="col-sm main">
 						<div class="col-sm main__main-title">
@@ -115,12 +115,12 @@
 					</div>
 
 					<!--scroll mouse start -->	
-					<div id="mice" class="col-sm scroll-arrow">
-		                <a href="#myAbout" id="scroll-home" class="scroll-arrow__scroll-link">
-		                	<i class="fas fa-circle fa-3x"></i>
-		                	<img src="images/button-down-home.png" alt="button-down" class="scroll-arrow__scroll-link_link-arrow">
-		                </a>
-					</div>
+					
+	                <a href="#myAbout" id="scroll-home" class="scroll-link">
+	                	<i class="fas fa-circle fa-5x"></i>
+	                	<img src="images/button-down-home.png" alt="button-down" class="scroll-link__link-arrow">
+	                </a>
+					
 					<!-- scroll mouse finish-->					
 				</div>
 			</div>		
@@ -133,14 +133,13 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-sm review-wrap">
-					<div class="title-review">3D обзор</div>
-					<!-- <div class="subtitle-review">What this doing?</div> -->
-					<div class="video-portfolio">
+					<div class="review-wrap__title-review">3D обзор</div>
+					<div class="review-wrap__video-portfolio">
 						<video class="video-table" controls="controls" poster="" preload="">
 							<source src="images/1080x1080_insta.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
 						</video>						
 					</div>
-					<div class="go-portfolio">
+					<div class="review-wrap__box-button-review">
 						<button class="button-review">
 							<a href="#myProducts" class="button-review__btn">Продукты</a>
 						</button>
@@ -155,21 +154,26 @@
 	<section-3 id="myAbout">
 		<div class="container">
 			<div class="row">
-				<div class="block-about">	
-					<div class="col-sm-6 block-left">
+				<div class="col-sm block-about">	
+					<div class="block-left">
 						<div class="block-left__foto-about">
 							<img src="images/full_jpg_69.jpg" alt="table-foto" class="table-foto-about">
 						</div>
 					</div>
 
-					<div class="col-sm-6 about-wrap">			
-						<div class="title-about">Стол Up-and-Down</div>
-						<div class="subtitle-about">Для чего он предназначен?</div>
-						<div class="about-block-right__text-about">
-							Cтол Up-and-Down предназначен для комбинированной работы как сидя, так и стоя. Представляемая модель устанавливается на основной рабочий стол. Благодаря своим компактным размерам он легко разместится на Вашем столе даже в небольшом офисе. Расположите на верхней столешнице монитор, а на нижней полке клавиатуру. При помощи кнопки Вы сможете поднять все необходимое оборудование на комфортную для вас высоту, не прилагая никаких усилий<span class="about-block-right__text-about_span-about"> click here</span>
+					<div class="block-right">			
+						<div class="block-right__title-about">Стол Up-and-Down</div>
+						<div class="block-right__subtitle-about">Для чего он предназначен?</div>
+						<div class="block-right__block-left">
+							<div class="block-right__block-left_foto-about">
+								<img src="images/full_jpg_69.jpg" alt="table-foto" class="table-foto-about">
+							</div>
+						</div>
+						<div class="block-right__text-about">
+							Cтол Up-and-Down предназначен для комбинированной работы как сидя, так и стоя. Представляемая модель устанавливается на основной рабочий стол. Благодаря своим компактным размерам он легко разместится на Вашем столе даже в небольшом офисе. Расположите на верхней столешнице монитор, а на нижней полке клавиатуру. При помощи кнопки Вы сможете поднять все необходимое оборудование на комфортную для вас высоту, не прилагая никаких усилий<span class="block-right__text-about_span-about"> click here</span>
 						</div>
 						
-						<div class="go-portfolio">
+						<div class="block-right__box-botton-about">
 							<button class="button-about">
 								<a href="#myPortfolio" class="button-about_btn">Галерея</a>
 							</button>
@@ -186,56 +190,55 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-sm product">
-					<div class="product__product-title">Технические характеристики</div>
-						
+					<div class="product__product-title">Технические характеристики</div>						
 				</div>
 			</div>
 		</div>
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-6 product-images">
-					<div class="product-images__picture1">
-						<img src="images/full_jpg_01.jpg" alt="desk" class="product-image">
+					<div class="product-images__picture">
+						<img src="images/full_jpg_01.jpg" alt="desk" class="product-images__picture_product-image">
 					</div>
-					<div class="product-images__picture2">
-						<img src="images/full_jpg_01s.jpg" alt="desk" class="product-image">
+					<div class="product-images__picture">
+						<img src="images/full_jpg_01s.jpg" alt="desk" class="product-images__picture_product-image">
 					</div>
 				</div>
 				<div class="col-sm-6 characteristic-list">
-					<div class="col-sm product-characteristic">
+					<div class="col-sm characteristic-list__product-characteristic">
 						<div class="col-sm-9 character">Габариты в сложенном
 						состоянии</div>
 						<div class="col-sm-3 character">860х650мм</div>
 					</div>
-					<div class="col-sm product-characteristic">
+					<div class="col-sm characteristic-list__product-characteristic">
 						<div class="col-sm-9 character">Высота столешницы в сложенном виде</div>
 						<div class="col-sm-3 character">165мм</div>
 					</div>
-					<div class="col-sm product-characteristic">
+					<div class="col-sm characteristic-list__product-characteristic">
 						<div class="col-sm-9 character">Высота столешницы в поднятом виде</div>
 						<div class="col-sm-3 character">475мм</div>
 					</div>
-					<div class="col-sm product-characteristic">
+					<div class="col-sm characteristic-list__product-characteristic">
 						<div class="col-sm-9 character">Возможность плавной подстройки удобной высоты под свой рост в этом диапазоне</div>
 						<div class="col-sm-3 character">да</div>
 					</div>	
-					<div class="col-sm product-characteristic">
+					<div class="col-sm characteristic-list__product-characteristic">
 						<div class="col-sm-9 character">Размер столешницы</div>
 						<div class="col-sm-3 character">860х550</div>
 					</div>
-					<div class="col-sm product-characteristic">
+					<div class="col-sm characteristic-list__product-characteristic">
 						<div class="col-sm-9 character">Размер нижней полки</div>
 						<div class="col-sm-3 character">640х300мм</div>
 					</div>
-					<div class="col-sm product-characteristic">
+					<div class="col-sm characteristic-list__product-characteristic">
 						<div class="col-sm-9 character">Материал столешницы и полки</div>
 						<div class="col-sm-3 character">сосна</div>
 					</div>
-					<div class="col-sm product-characteristic">
+					<div class="col-sm characteristic-list__product-characteristic">
 						<div class="col-sm-9 character">Блок питания 12V</div>
 						<div class="col-sm-3 character">в комплекте</div>
 					</div>
-					<div class="col-sm product-characteristic">
+					<div class="col-sm characteristic-list__product-characteristic">
 						<div class="col-sm-9 character">Масса</div>
 						<div class="col-sm-3 character">19 кг</div>
 					</div>				
@@ -252,71 +255,74 @@
 				<div class="block-gallery">
 					<div class="col-sm portfolio-info">
 						<h2 class="portfolio-info__topic">Галерея</h2>
-						<div class="portfolio-info__text-portfolio">All my projects in my portfolio have been created using mockups, that  web designers posted online for free access. </div>
-						<!-- <a href="#" class="portfolio-info__link-portfolio">Read More...</a> -->
+						<div class="portfolio-info__text-portfolio">All my projects in my portfolio have been created using mockups, that  web designers posted online for free access. </div>		
 					</div>	
 		
 					<div class="col-sm block-gallery-image">
 						<div href="#" class="col-sm-9 portfolio-left">
-							<div class="project-big-foto">
-								<img src="images/full_jpg_01.jpg" alt="desk" class="fotoProject-big">
+							<div class="portfolio-left__project-big-foto">
+								<img src="images/full_jpg_01.jpg" alt="desk" class="portfolio-left__project-big-foto_fotoProject-big">
 							</div>			
 						</div>
-
+						<!--   carousel - start  -->
 						<div class="col-sm-3 portfolio-right">
-							<div id="slider-top" class="project one-line arrow-up-down">
-								<i class="fas fa-caret-up caret"></i>
+							<div class="carousel-foto">
+								<div id="slider-top" class="carousel-foto__project arrow-up-down">
+									<i class="fas fa-caret-up caret"></i>
+								</div>
 							</div>
-
 							<div class="portfolio-right__carousel">
 								<div id="polosa" class="portfolio-right__carousel_carousel-block">		
-									<div class="carousel-foto one-line">
-										<div class="project">
-											<img src="images/full_jpg_01.jpg" alt="desk" class="fotoProject">
+									<div class="carousel-foto">
+										<div class="carousel-foto__project">
+											<img src="images/full_jpg_01.jpg" alt="desk" class="carousel-foto__project_fotoProject">
 										</div>
 									</div>
-									<div class="carousel-foto one-line">
-										<div class="project">
-											<img src="images/full_jpg_54.jpg" alt="desk" class="fotoProject">
+									<div class="carousel-foto">
+										<div class="carousel-foto__project">
+											<img src="images/full_jpg_54.jpg" alt="desk" class="carousel-foto__project_fotoProject">
 										</div>	
 									</div>
-									<div class="carousel-foto one-line">
-										<div class="project">
-											<img src="images/full_jpg_19.jpg" alt="desk" class="fotoProject">
+									<div class="carousel-foto">
+										<div class="carousel-foto__project">
+											<img src="images/full_jpg_19.jpg" alt="desk" class="carousel-foto__project_fotoProject">
 										</div>
 									</div>
-									<div class="carousel-foto one-line">
-										<div class="project">
-											<img src="images/full_jpg_11.jpg" alt="desk" class="fotoProject">
+									<div class="carousel-foto">
+										<div class="carousel-foto__project">
+											<img src="images/full_jpg_11.jpg" alt="desk" class="carousel-foto__project_fotoProject">
 										</div>
 									</div>
-									<div class="carousel-foto one-line">
-										<div class="project">
-											<img src="images/full_jpg_01s.jpg" alt="desk" class="fotoProject">
+									<div class="carousel-foto">
+										<div class="carousel-foto__project">
+											<img src="images/full_jpg_01s.jpg" alt="desk" class="carousel-foto__project_fotoProject">
 										</div>
 									</div>
-									<div class="carousel-foto one-line">
-										<div class="project">
-											<img src="images/full_jpg_20.jpg" alt="desk" class="fotoProject">
+									<div class="carousel-foto">
+										<div class="carousel-foto__project">
+											<img src="images/full_jpg_20.jpg" alt="desk" class="carousel-foto__project_fotoProject">
 										</div>
 									</div>
-									<div class="carousel-foto one-line">
-										<div class="project">
-											<img src="images/full_jpg_39.jpg" alt="desk" class="fotoProject">
+									<div class="carousel-foto">
+										<div class="carousel-foto__project">
+											<img src="images/full_jpg_39.jpg" alt="desk" class="carousel-foto__project_fotoProject">
 										</div>
 									</div>
-									<div class="carousel-foto one-line">
-										<div class="project">
-											<img src="images/full_jpg_64.jpg" alt="desk" class="fotoProject">
+									<div class="carousel-foto">
+										<div class="carousel-foto__project">
+											<img src="images/full_jpg_64.jpg" alt="desk" class="carousel-foto__project_fotoProject">
 										</div>
 									</div>
 								</div>
 							</div>
-
-							<div id="slider-bottom" class="project one-line arrow-up-down">
-									<i class="fas fa-caret-down caret"></i>
+							
+							<div class="carousel-foto">
+								<div id="slider-bottom" class="carousel-foto__project arrow-up-down">
+										<i class="fas fa-caret-down caret"></i>
+								</div>
 							</div>
-						</div>	
+						</div>
+						<!-- carousel-finis -->	
 					</div>
 				</div>											
 			</div>			
@@ -327,93 +333,94 @@
 <!-- Blog start -->
 	<section-6 id="myBlog">
 		<div class="container">
-			<div class="row">			
-				<div class="col-sm myBlog-title">
-					<h2 class="myBlog-title__topic-blog">Блог</h2>
-					<div class="myBlog-title__topic-text">Рекомендуем статью "Беречь здоровье во время работы"</div>
+			<div class="row">
+			<div class="col-sm blog-wrap">		
+				<div class="col-sm blog-title">
+					<h2 class="blog-title__topic-blog">Блог</h2>
+					<div class="blog-title__topic-text">Рекомендуем статью "Беречь здоровье во время работы"</div>
+				</div>
+				<div class="col-sm article">					
+					
 				</div>
 			</div>
-		</div>
-		<div class="container">
-			<div class="row">					
-				<div class="col-sm myBlog-wrap">
-					
-					
-				</div>
 			</div>			
 		</div>
-		<div class="fon-blog"></div>
 	</section-6>
 <!-- Blog finish -->
 
 <!-- Footer start -->
-	<footer id="myFooter">
-		<div class="line1-footer"></div>
-		<div class="line2-footer"></div>
-		<div class="container">				
-			<div class="row form-contact">
-				<div class="form-contact__form-title">Напишите нам</div>
-				<form class="form-contact__form-content">
-					<input type="text" class="form-contact__form-content_form-name" placeholder="Имя">
-					<input type="email" class="form-contact__form-content_form-email" placeholder="Электронный адресс">
-					<input type="message" class="form-contact__form-content_form-message" placeholder="Сообщение">
-					<button type="submit" class="form-contact__form-content_form-submit">
-						<a href="#myFooter">Отправить</a>
-					</button>
-				</form>
-			</div>			
+	<footer id="myFooter">		
+		<div class="container">	
+			<div class="row">
+				<div class="col-sm footer-block">
+
+					<div class="col-sm form-contact">
+						<div class="form-contact__form-title">Напишите нам</div>
+						<form class="form-contact__form-content">
+							<input type="text" class="form-contact__form-content_form-name" placeholder="Имя">
+							<input type="email" class="form-contact__form-content_form-email" placeholder="Электронный адресс">
+							<input type="message" class="form-contact__form-content_form-message" placeholder="Сообщение">
+							<button type="submit" class="form-contact__form-content_form-submit">
+								<a href="#myFooter">Отправить</a>
+							</button>
+						</form>
+					</div>			
 			
-			<div class="row footer-wrap">
-				<div class="col-sm-4 footer-wrap__menu-footer">
-					<div class="footer-wrap__menu-footer_title-menu">Меню
-					</div>	
-					<ul class="footer-wrap__menu-footer_vertical-menu">
-						<li class="footer-wrap__menu-footer_vertical-menu_link-group">
-							<a href="#myHome">Главная</a>
-						</li>					
-						<li class="footer-wrap__menu-footer_vertical-menu_link-group">
-							<a href="#myAbout">Обзор</a>
-						</li>
-						<li class="footer-wrap__menu-footer_vertical-menu_link-group">
-							<a href="#myProducts">Продукты</a>
-						</li>
-						<li class="footer-wrap__menu-footer_vertical-menu_link-group">
-							<a href="#myPortfolio">Галерея</a>
-						</li>
-						<li class="footer-wrap__menu-footer_vertical-menu_link-group">
-							<a href="#myBlog">Блог</a>
-						</li>			
-					</ul>					
-				</div>
-				<div class="col-sm-4 footer-wrap__footer-contact">
-					
-					<div class="footer-wrap__footer-contact_topic-contact">Наш электронный адресс</div>
-					<div class="footer-wrap__footer-contact_footer-email">
-					<a href="#"> y.payevska@gmail.com</a></div>
-										
-					<div class="footer-wrap__footer-contact_social-web">
-						<div class="footer-wrap__footer-contact_social-web_topic-social">Мы в Instagram - </div>
-						<a href="https://www.instagram.com/up_and_down__ukraine/" target="_blank"><i class="fab fa-instagram fa-lg"></i></a>
-						
-						<!-- <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-lg fa-facebook-square"></i></a> -->
-						
-					</div>					
-				</div>
-				<div class="col-sm-4 footer-wrap__logotype-small">Up-and-Down</div>
+					<div class="col-sm footer-wrap">
+						<div class="col-sm-4 footer-wrap__menu-footer">
+							<div class="footer-wrap__menu-footer_title-menu">Меню
+							</div>	
+							<ul class="footer-wrap__menu-footer_vertical-menu">
+								<li class="footer-wrap__menu-footer_vertical-menu_link-group">
+									<a href="#myHome">Главная</a>
+								</li>					
+								<li class="footer-wrap__menu-footer_vertical-menu_link-group">
+									<a href="#myAbout">Обзор</a>
+								</li>
+								<li class="footer-wrap__menu-footer_vertical-menu_link-group">
+									<a href="#myProducts">Продукты</a>
+								</li>
+								<li class="footer-wrap__menu-footer_vertical-menu_link-group">
+									<a href="#myPortfolio">Галерея</a>
+								</li>
+								<li class="footer-wrap__menu-footer_vertical-menu_link-group">
+									<a href="#myBlog">Блог</a>
+								</li>			
+							</ul>					
+						</div>
+						<div class="col-sm-4 footer-wrap__footer-contact">
+							
+							<div class="footer-wrap__footer-contact_topic-contact">Наш электронный адресс</div>
+							<div class="footer-wrap__footer-contact_footer-email">
+							<a href="#"> y.payevska@gmail.com</a></div>
+												
+							<div class="footer-wrap__footer-contact_social-web">
+								<div class="footer-wrap__footer-contact_social-web_topic-social">Мы в Instagram - </div>
+								<a href="https://www.instagram.com/up_and_down__ukraine/" target="_blank"><i class="fab fa-instagram fa-lg"></i></a>
 								
+								<!-- <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-lg fa-facebook-square"></i></a> -->
+								
+							</div>					
+						</div>
+						<div class="col-sm-4 footer-wrap__logotype-small">Up-and-Down</div>
+										
+					</div>
+					<!-- copyright -->
+					<div class="row footer-bottom">			
+						<div class="col-sm footer-bottom__footer-copyright">Up-and-Down &#169 2019 By Payevska Yuliya</div>			
+					</div>
+					<!-- botton-up start -->
+					<div class="button-up">					
+						<a href="#myHome" class="button-up__circle-wrap">
+							<i class="fas fa-chevron-circle-up fa-3x"></i>	      
+			            </a>				
+					</div>
+					<!-- botton-up finish -->				
+				</div>
 			</div>
-			<!-- copyright -->
-			<div class="row footer-bottom">			
-				<div class="col-sm footer-bottom__footer-copyright">Up-and-Down &#169 2019 By Payevska Yuliya</div>			
-			</div>
-			<!-- botton up start -->
-			<div class="button-up">					
-				<a href="#myHome" class="button-up__circle-wrap">
-					<i class="fas fa-chevron-circle-up fa-3x"></i>	      
-	            </a>				
-			</div>
-			<!-- botton up finish -->				
 		</div>
+		<div class="line1 footer-line"></div>
+		<div class="line2 footer-line"></div>
 	</footer>
 <!-- Footer finish -->	
 

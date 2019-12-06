@@ -7,56 +7,40 @@ section-2 {
 	min-height: 100vh;	
 }
 
-/* .fon-about {
-	@extend .fon;
-    width: 35%;        
-    left: 0;
-    height: 100%;
-    top: 0;    
-} */
 
 .review-wrap {
 	display: flex;
 	flex-direction: column;
-	padding-bottom: 60.908px;
-	//padding: 0;
-	//margin-bottom: 149px;	    
-}
-.title-review {
+	padding-top: 120px;
+	&__title-review {
 		display: flex;
     	justify-content: center;
 		margin-bottom: 20px;
 		padding-top: 100px;
 		@extend h2;
 	}
+	&__video-portfolio{
+		display: flex;
+	    justify-content: center;
+	}
+	&__box-button-review {
+		display: flex;
+		justify-content: center;
+	}
+}
 
-.subtitle-review {
-	display: flex;
-	justify-content: center;
-	@extend h2;
-	font-size: 26px;
-	margin-bottom: 38px;
-}
-.video-portfolio{
-	display: flex;
-    justify-content: center;
-}
 .video-table{
-	width: 51%;
+	width: 60%;
 	@extend a;
 	&:focus {
 		outline: none;
 	}
 }
-.go-portfolio{
-	display: flex;
-	justify-content: center;
-}
+
 .button-review {
 	display: flex;
 	justify-content: center;
 	margin-top: 60px;
-	margin-bottom: 15px;
 	@extend button;		
 	background-color: $orange;
 	border: 1px solid $orange;
@@ -78,20 +62,142 @@ section-2 {
 
 
 /* ------ media query ------ */
-@include phone {
 
-}
-@include iphone {
-
-}
-@include tablet {
-
+@include desktop {
+	.button-review {	
+		a {
+			font-size: 15px;
+		}
+		&__btn {
+			padding: 15px 30px;					
+		}
+	}
+	.video-table{
+		width: 40%;
+	}
 }
 @include laptop {
-
+	.button-review {
+		margin-top: 80px;	
+		a {
+			font-size: 15px;
+		}
+		&__btn {
+			padding: 15px 30px;					
+		}
+	}
+	.video-table{
+		width: 36%;
+	}
 }
-@include desktop {
+@include iPadPro-portrait {
+	.button-review {
+		margin-top: 80px;	
+		a {
+			font-size: 16px;
+		}
+		&__btn {
+			padding: 15px 30px;					
+		}
+	}
+	.video-table{
+		width: 40%;
+	}
+	.video-table{
+		width: 55%;
+	}
+}
+@include iPadPro-landscape {
+	.review-wrap {
+		&__title-review {
+			font-size: 36px;
+			padding-top: 40px;
+			margin-bottom: 0px;
+		}
+		&__video-portfolio{
+		}
+		&__box-button-review {
+		}
+	}
+	.button-review {
+		margin-top: 45px;	
+		a {
+			font-size: 16px;
+		}
+		&__btn {
+			padding: 15px 30px;					
+		}
+	}
+	.video-table{
+		width: 40%;
+	}
+}
+@include iPad-portrait {
+	.review-wrap {
+		&__title-review {
+			font-size: 28px;
+			padding-top: 40px;
+			margin-bottom: 0px;
+		}
+		&__video-portfolio{
+		}
+		&__box-button-review {
+		}
+	}
+	.button-review {
+		margin-top: 60px;	
+		a {
+			font-size: 14px;
+		}
+		&__btn {
+			padding: 15px 30px;					
+		}
+	}
+	.video-table{
+		width: 50%;
+	}
+}
+@include iPad-landscape {
+	.review-wrap {
+		padding-top: 90px;
+		&__title-review {
+			font-size: 28px;
+			padding-top: 0;
+			margin-bottom: 0px;
+		}
+		&__video-portfolio{
+		}
+		&__box-button-review {
+		}
+	}
+	.button-review {
+		margin-top: 40px;	
+		a {
+			font-size: 14px;
+		}
+		&__btn {
+			padding: 15px 30px;					
+		}
+	}
+	.video-table{
+		width: 32%;
+	}
+}
 
+@include tablet {
+	.video-table{
+		width: 50%;
+	}
+}
+@include iphone {
+	.video-table{
+		width: 20%;
+	}
+}
+@include phone {
+	.video-table{
+		width: 10%;
+	}
 }
 
 /* 

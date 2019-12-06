@@ -84,17 +84,17 @@ function sliderBottom(){
 /*image portfolio-left.... http://www.web.cofp.ru/vse-o-sajtakh/
 sozdanie-sajta/javascript/jquery/154-uvelichenie-izobrazheniya-pri-nazhatii-na-nego*/ 
 
-    $(".fotoProject").click(function(){   // Событие клика на маленькое изображение
+    $(".carousel-foto__project_fotoProject").click(function(){   // Событие клика на маленькое изображение
         var img = $(this);  // Получаем изображение, на которое кликнули
         var src = img.attr('src'); // Достаем из этого изображения путь до картинки
         
         
-        $(".fotoProject-big").remove(); // Удаляем разметку всплывающего окна
+        $(".portfolio-left__project-big-foto_fotoProject-big").remove(); // Удаляем разметку всплывающего окна
 
 
-        $(".project-big-foto").append("<img src='"+src+"' class='fotoProject-big'>"); // Само увеличенное фото
+        $(".portfolio-left__project-big-foto").append("<img src='"+src+"' class='portfolio-left__project-big-foto_fotoProject-big'>"); // Само увеличенное фото
                           
-        $(".project-big-foto").fadeIn(800); // Медленно выводим изображение
+        $(".portfolio-left__project-big-foto").fadeIn(800); // Медленно выводим изображение
         
     });
 
