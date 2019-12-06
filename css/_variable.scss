@@ -47,7 +47,7 @@ ul {
 h1 {
 	font: {
 			family: 'Archivo Narrow', sans-serif;
-			size: 80px;
+			size: 60px;
 			weight: $light;
 	}
 	color: $white;
@@ -58,7 +58,7 @@ h1 {
 h2 {
 	font: {
 		family: 'Judson', serif;
-		size: 40px;
+		size: 46px;
 		weight: $regular;
 	}
 	line-height: 1.1;
@@ -252,3 +252,14 @@ ipad
 	}
 }
  */
+/* 
+
+@include iPadPro-portrait {
+}
+@include iPadPro-landscape {
+}
+@include iPad-portrait {
+}
+@include iPad-landscape {
+} 
+*/
