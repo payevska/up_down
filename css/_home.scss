@@ -1,6 +1,7 @@
 section-1 {
 	background: url('../images/Home-photo4.png') no-repeat center center fixed;
 	display: flex;
+	-webkit-background-size: 2880px 1800px;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -183,9 +184,8 @@ section-1 {
 }
 
 @include iPadPro-portrait {
-	section-1 {
-		background: url('../images/Home-photo4.png') no-repeat center center;
-		position: fixed;
+	.home-wrap {	
+	    padding-top: 0;		
 	}
 	.main {	
 	    &__main-title {	
@@ -220,9 +220,8 @@ section-1 {
 }
 
 @include iPadPro-landscape {
-	section-1 {
-		background: url('../images/Home-photo4.png') no-repeat center center;
-		position: fixed;		
+	.home-wrap {	
+	    padding-top: 0;		
 	}
 	.main {	
 	    &__main-title {   	
@@ -255,9 +254,8 @@ section-1 {
 }
 
 @include iPad-portrait {
-	section-1 {
-		background: url('../images/Home-photo4.png') no-repeat center center;
-		position: fixed;		
+	.home-wrap {	
+	    padding-top: 0;		
 	}
 	.main {	
 	    &__main-title {	    	
@@ -290,9 +288,8 @@ section-1 {
 }
 
 @include iPad-landscape {
-	section-1 {
-		background: url('../images/Home-photo4.png') no-repeat center center;
-		position: fixed;		
+	.home-wrap {	
+	    padding-top: 0;		
 	}
 	.main {	
 	    &__main-title {	    	
