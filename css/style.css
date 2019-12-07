@@ -567,18 +567,18 @@ section-1 {
     .scroll-link__link-arrow {
       width: 75%; } }
 @media only screen and (min-device-width: 1024px) and (max-device-height: 768px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
+  section-1 {
+    background: none; }
+
   body:before {
     content: '';
     background-image: url("../images/Home-photo4.png");
-    position: fixed;
+    position: absolute;
+    background-size: cover;
     left: 0;
     right: 0;
     top: 0;
-    bottom: 0;
-    z-index: -1; }
-
-  section-1 {
-    background: none; }
+    bottom: 0; }
 
   .home-wrap {
     padding-top: 0; }
