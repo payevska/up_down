@@ -169,7 +169,7 @@ $ipad-pro-landscape-breakpoint: "(min-device-width : 1024px) and (max-device-wid
 	and (min-device-width : 768px) 
 	and (max-device-height : 1024px) 
 	and (orientation : portrait)
-	and (-webkit-min-device-pixel-ratio: 2) {
+	and (-webkit-min-device-pixel-ratio: 1) {
     	@content;
 	}
 }
@@ -178,7 +178,7 @@ $ipad-pro-landscape-breakpoint: "(min-device-width : 1024px) and (max-device-wid
 	and (min-device-width : 1024px) 
 	and (max-device-height : 768px) 
 	and (orientation : landscape)
-	and (-webkit-min-device-pixel-ratio: 2) {
+	and (-webkit-min-device-pixel-ratio: 1) {
 	    @content;
 	}
 }  
