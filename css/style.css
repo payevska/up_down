@@ -369,13 +369,22 @@ menu {
 
  */
 section-1 {
-  background: url("../images/Home-photo4.png") no-repeat center center fixed;
+  /* background: url('../images/Home-photo4.png') no-repeat center center fixed; */
   display: flex;
-  -webkit-background-size: 2880px 1800px;
+  /* -webkit-background-size: 2880px 1800px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; */
+  min-height: 100vh; }
+
+.home {
+  background: url("../images/Home-photo4.png") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  display: flex;
   min-height: 100vh; }
 
 .home-wrap {
@@ -462,7 +471,7 @@ section-1 {
       width: 80%; } }
 @media (min-width: 1200px) and (max-width: 1599.98px) {
   .home-wrap {
-    padding-top: 100px; }
+    padding-top: 0; }
 
   .main {
     align-items: start; }
@@ -567,19 +576,6 @@ section-1 {
     .scroll-link__link-arrow {
       width: 75%; } }
 @media only screen and (min-device-width: 1024px) and (max-device-height: 768px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
-  section-1 {
-    background: none; }
-
-  body:before {
-    content: '';
-    background-image: url("../images/Home-photo4.png");
-    position: absolute;
-    background-size: cover;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0; }
-
   .home-wrap {
     padding-top: 0; }
 
