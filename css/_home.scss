@@ -13,7 +13,10 @@ section-1 {
 	background: url('../images/Home-photo4.png') no-repeat center center fixed;	
     width: 100%;
 	min-height: 100vh;
-	display: flex;	
+	display: flex;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;	
 	background-size: cover;
 }
 
@@ -297,8 +300,8 @@ section-1 {
 
 @include iPad-landscape {	
 	.home {
-		-webkit-background-size: 2880px 1800px;
-		background-size: contain;
+		//-webkit-background-size: 2880px 1800px;
+		//background-size: contain;
 	}
 	.home-wrap {	
 	    padding-top: 0;		
