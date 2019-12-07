@@ -504,149 +504,100 @@ section-1 {
     font-size: 18px; }
   .button-top__btn {
     padding: 15px 30px; } }
-/* @include iPadPro-portrait {
-	.home-wrap {	
-	    padding-top: 0;		
-	}
-	.main {	
-	    &__main-title {	
-	    	padding-top: 0;	    		
-		    &_title {		    	
-				font-size: 50px;
-				padding-top: 0;	
-			}
-			&_topic {
-				font-size: 40px;	
-			}
-			&_main-button {
-				margin-top: 40px;	
-			}
-		}	
-	}
-	.button-top {
-		a {
-			font-size: 16px;			
-		}
-		&__btn {
-			padding: 15px 30px;					
-		}
-	}
-	.scroll-link {
-		bottom: 50px;	
-		font-size: 10px;
-		&__link-arrow {
-			width: 75%;
-		}
-	}
-}
+@media only screen and (min-device-width: 1024px) and (max-device-height: 1366px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+  .home-wrap {
+    padding-top: 0; }
 
-@include iPadPro-landscape {
-	.home-wrap {	
-	    padding-top: 0;		
-	}
-	.main {	
-	    &__main-title {   	
-	    	padding-top: 160px;	
-		    &_title {		    	
-				font-size: 50px;	
-			}
-			&_topic {
-				font-size: 40px;	
-			}
-			&_main-button {
-				margin-top: 40px;	
-			}
-		}	
-	}
-	.button-top {
-		a {
-			font-size: 16px;			
-		}
-		&__btn {
-			padding: 15px 30px;					
-		}
-	}
-	.scroll-link {	
-		font-size: 10px;
-		&__link-arrow {
-			width: 75%;
-		}
-	}	
-}
+  .main__main-title {
+    padding-top: 0; }
+    .main__main-title_title {
+      font-size: 50px;
+      padding-top: 0; }
+    .main__main-title_topic {
+      font-size: 40px; }
+    .main__main-title_main-button {
+      margin-top: 40px; }
 
-@include iPad-portrait {
-	.home-wrap {	
-	    padding-top: 0;		
-	}
-	.main {	
-	    &__main-title {	    	
-	    	padding-top: 120px;	
-		    &_title {		    	
-				font-size: 36px;	
-			}
-			&_topic {
-				font-size: 28px;	
-			}
-			&_main-button {
-				margin-top: 30px;	
-			}
-		}	
-	}
-	.button-top {
-		a {
-			font-size: 14px;			
-		}
-		&__btn {
-			padding: 12px 22px;					
-		}
-	}
-	.scroll-link {	
-		font-size: 10px;
-		&__link-arrow {
-			width: 75%;
-		}
-	}
-}
+  .button-top a, .button-top .video-table, .button-top .block-right__text-about_span-about, .button-top .portfolio-info__link-portfolio {
+    font-size: 16px; }
+  .button-top__btn {
+    padding: 15px 30px; }
 
-@include iPad-landscape {	
-	.home {
-		//-webkit-background-size: 2880px 1800px;
-		
-	}
-	.home-wrap {	
-	    padding-top: 0;		
-	}
-	.main {	
-	    &__main-title {	    	
-	    	padding-top: 120px;	
-		    &_title {		    	
-				font-size: 36px;	
-			}
-			&_topic {
-				font-size: 28px;	
-			}
-			&_main-button {
-				margin-top: 22px;	
-			}
-		}	
-	}
-	.button-top {
-		a {
-			font-size: 14px;			
-		}
-		&__btn {
-			padding: 12px 22px;					
-		}
-	}
-	.scroll-link {
-		bottom: 50px;	
-		font-size: 10px;
-		&__link-arrow {
-			width: 75%;
-		}
-	}	
-}
- */
+  .scroll-link {
+    bottom: 50px;
+    font-size: 10px; }
+    .scroll-link__link-arrow {
+      width: 75%; } }
+@media only screen and (min-device-width: 1366px) and (max-device-height: 1024px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+  .home-wrap {
+    padding-top: 0; }
+
+  .main__main-title {
+    padding-top: 160px; }
+    .main__main-title_title {
+      font-size: 50px; }
+    .main__main-title_topic {
+      font-size: 40px; }
+    .main__main-title_main-button {
+      margin-top: 40px; }
+
+  .button-top a, .button-top .video-table, .button-top .block-right__text-about_span-about, .button-top .portfolio-info__link-portfolio {
+    font-size: 16px; }
+  .button-top__btn {
+    padding: 15px 30px; }
+
+  .scroll-link {
+    font-size: 10px; }
+    .scroll-link__link-arrow {
+      width: 75%; } }
+@media only screen and (min-device-width: 768px) and (max-device-height: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
+  .home-wrap {
+    padding-top: 0; }
+
+  .main__main-title {
+    padding-top: 120px; }
+    .main__main-title_title {
+      font-size: 36px; }
+    .main__main-title_topic {
+      font-size: 28px; }
+    .main__main-title_main-button {
+      margin-top: 30px; }
+
+  .button-top a, .button-top .video-table, .button-top .block-right__text-about_span-about, .button-top .portfolio-info__link-portfolio {
+    font-size: 14px; }
+  .button-top__btn {
+    padding: 12px 22px; }
+
+  .scroll-link {
+    font-size: 10px; }
+    .scroll-link__link-arrow {
+      width: 75%; } }
+@media only screen and (min-device-width: 1024px) and (max-device-height: 768px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
+  .home {
+    background-size: contain; }
+
+  .home-wrap {
+    padding-top: 0; }
+
+  .main__main-title {
+    padding-top: 120px; }
+    .main__main-title_title {
+      font-size: 36px; }
+    .main__main-title_topic {
+      font-size: 28px; }
+    .main__main-title_main-button {
+      margin-top: 22px; }
+
+  .button-top a, .button-top .video-table, .button-top .block-right__text-about_span-about, .button-top .portfolio-info__link-portfolio {
+    font-size: 14px; }
+  .button-top__btn {
+    padding: 12px 22px; }
+
+  .scroll-link {
+    bottom: 50px;
+    font-size: 10px; }
+    .scroll-link__link-arrow {
+      width: 75%; } }
 @media (min-width: 768px) and (max-width: 991.98px) {
   .main {
     align-items: center;
