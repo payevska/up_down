@@ -1,11 +1,6 @@
 section-1 {
-	/* background: url('../images/Home-photo4.png') no-repeat center center fixed; */
 	display: flex;
-	/* -webkit-background-size: 2880px 1800px;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover; */
+	
    
 }
 
@@ -18,6 +13,20 @@ section-1 {
 	-moz-background-size: cover;
 	-o-background-size: cover;	
 	background-size: cover;
+}
+.home:after{
+      content:"";
+      position:fixed; /* stretch a fixed position to the whole screen */
+      top:0;
+      height:100vh; /* fix for mobile browser address bar appearing disappearing */
+      left:0;
+      right:0;
+      z-index:-1; /* needed to keep in the background */
+      background: url('../images/Home-photo4.png') center center;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
 }
 
 .home-wrap {    
@@ -302,9 +311,7 @@ section-1 {
 	.home {
 		//-webkit-background-size: 2880px 1800px;
 		//background-size: contain;
-		height: 100%;
-		width: 100%;
-		position: fixed;
+
 	}
 	.home-wrap {	
 	    padding-top: 0;		
