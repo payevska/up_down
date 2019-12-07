@@ -288,16 +288,19 @@ section-1 {
 }
 
 @include iPad-landscape {
-	section-1:before {
-    content: '';
-    background-image: url('../images/Home-photo4.png');
-    position: fixed;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    z-index: -1;
-}
+	body:before {
+	    content: '';
+	    background-image: url('../images/Home-photo4.png');
+	    position: fixed;
+	    left: 0;
+	    right: 0;
+	    top: 0;
+	    bottom: 0;
+	    z-index: -1;
+	}
+	section-1 {
+		background: none;
+	}
 	.home-wrap {	
 	    padding-top: 0;		
 	}
