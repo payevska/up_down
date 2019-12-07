@@ -6,17 +6,15 @@ section-1 {
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover; */
-    min-height: 100vh;
+   
 }
 
 .home {
 	background: url('../images/Home-photo4.png') no-repeat center center fixed;	
-    -webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-	display: flex;
+    width: 100%;
 	min-height: 100vh;
+	display: flex;	
+	background-size: cover;
 }
 
 .home-wrap {    
@@ -298,6 +296,10 @@ section-1 {
 }
 
 @include iPad-landscape {	
+	.home {
+		//-webkit-background-size: 2880px 1800px;
+		
+	}
 	.home-wrap {	
 	    padding-top: 0;		
 	}

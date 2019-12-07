@@ -375,17 +375,14 @@ section-1 {
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover; */
-  min-height: 100vh; }
+  background-size: cover; */ }
 
 .home {
   background: url("../images/Home-photo4.png") no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  width: 100%;
+  min-height: 100vh;
   display: flex;
-  min-height: 100vh; }
+  background-size: cover; }
 
 .home-wrap {
   display: flex;
