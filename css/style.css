@@ -372,7 +372,7 @@ section-1 {
   display: flex; }
 
 .home {
-  background: url("../images/Home-photo4.png") no-repeat center center fixed;
+  background: url("../images/Home-photo4.png") no-repeat top fixed;
   width: 100%;
   min-height: 100vh;
   display: flex;
@@ -571,8 +571,7 @@ section-1 {
       width: 75%; } }
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
   .home {
-    background: url("../images/Home-photo4.png") no-repeat center center;
-    background-attachment: scroll; }
+    background-size: contain; }
 
   .home-wrap {
     padding-top: 0; }
