@@ -297,7 +297,7 @@ section-1 {
 
 @include iPad-landscape {	
 	.home {
-		//-webkit-background-size: 2880px 1800px;
+		-webkit-background-size: 2880px 1800px;
 		background-size: contain;
 	}
 	.home-wrap {	

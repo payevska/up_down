@@ -167,7 +167,7 @@ $ipad-pro-landscape-breakpoint: "(min-device-width : 1024px) and (max-device-wid
 @mixin iPad-portrait {
 	@media only screen 
 	and (min-device-width : 768px) 
-	and (max-device-height : 1024px) 
+	and (max-device-width : 1024px) 
 	and (orientation : portrait)
 	and (-webkit-min-device-pixel-ratio: 2) {
     	@content;
@@ -175,8 +175,8 @@ $ipad-pro-landscape-breakpoint: "(min-device-width : 1024px) and (max-device-wid
 }
 @mixin iPad-landscape {
     @media only screen 
-	and (min-device-width : 1024px) 
-	and (max-device-height : 768px) 
+	and (min-device-width : 768px) 
+	and (max-device-width : 1024px) 
 	and (orientation : landscape)
 	and (-webkit-min-device-pixel-ratio: 2) {
 	    @content;
