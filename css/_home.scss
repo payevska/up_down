@@ -302,6 +302,9 @@ section-1 {
 	.home {
 		//-webkit-background-size: 2880px 1800px;
 		//background-size: contain;
+		height: 100%;
+		width: 100%;
+		position: fixed;
 	}
 	.home-wrap {	
 	    padding-top: 0;		
