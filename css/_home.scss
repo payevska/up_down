@@ -180,6 +180,10 @@ section-1 {
 }
 
 @include iPadPro-portrait {
+	section-1 {
+		background: url('../images/Home-photo4.png') no-repeat center center;
+		
+	}
 	.main {	
 	    &__main-title {	
 	    	padding-top: 0;	    		
@@ -213,6 +217,9 @@ section-1 {
 }
 
 @include iPadPro-landscape {
+	section-1 {
+		background: url('../images/Home-photo4.png') no-repeat center center;		
+	}
 	.main {	
 	    &__main-title {   	
 	    	padding-top: 160px;	
@@ -244,6 +251,9 @@ section-1 {
 }
 
 @include iPad-portrait {
+	section-1 {
+		background: url('../images/Home-photo4.png') no-repeat center center;		
+	}
 	.main {	
 	    &__main-title {	    	
 	    	padding-top: 120px;	
@@ -275,6 +285,9 @@ section-1 {
 }
 
 @include iPad-landscape {
+	section-1 {
+		background: url('../images/Home-photo4.png') no-repeat center center;		
+	}
 	.main {	
 	    &__main-title {	    	
 	    	padding-top: 120px;	
