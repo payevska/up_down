@@ -371,7 +371,6 @@ menu {
 section-1 {
   background: url("../images/Home-photo4.png") no-repeat center center fixed;
   display: flex;
-  flex-direction: column;
   background-size: cover;
   min-height: 100vh; }
 
@@ -385,13 +384,13 @@ section-1 {
 
 .main {
   display: flex;
+  justify-content: center;
   align-items: start;
   padding-top: 0; }
   .main__main-title {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    width: 52%; }
+    align-items: center; }
     .main__main-title_title {
       padding-top: 0; }
     .main__main-title_topic {
