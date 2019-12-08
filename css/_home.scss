@@ -17,17 +17,18 @@ section-1 {
 
 .home-wrap {    
 	display: flex;
-	flex-direction: column;
+	/* flex-direction: column;
 	align-items: center;	
-	position: relative;
+	position: relative; */
     min-height: 100vh;
     padding-top: 320px;		
 }
 
 .main {
 	display: flex;
-	justify-content: center;
-	align-items: start;
+	flex-direction: column;
+	justify-content: space-around;
+    align-items: center;
 	padding-top: 0;
     &__main-title {
 		display: flex;
@@ -75,7 +76,7 @@ section-1 {
 	justify-content: center;
 	align-items: center;
 	bottom: 100px;
-	position: absolute;
+	
 	&__link-arrow {
 		width: 100%;
 		z-index: 1;
@@ -132,7 +133,7 @@ section-1 {
 	    padding-top: 0;		
 	}
 	.main {
-		align-items: start;
+		//align-items: start;
 	    &__main-title {	
 	    	padding-top: 70px;		
 		    &_title {
@@ -163,6 +164,9 @@ section-1 {
 	}
 }
 @include laptop {
+	.home-wrap {	
+	    padding-top: 0;		
+	}
 	.main {	
 	    &__main-title {		
 		    &_title {
@@ -187,6 +191,7 @@ section-1 {
 	}
 }
 
+/* ---- iPadPro ---- */
 @include iPadPro-portrait {
 	.home {
 		-webkit-background-size: cover;
@@ -263,7 +268,8 @@ section-1 {
 	}	
 }
 
-@include iPad-portrait {
+/* ---- iPad ---- */
+@include iPad {	
 	.home {
 		//background-size: contain;
 	}
@@ -272,44 +278,7 @@ section-1 {
 	}
 	.main {	
 	    &__main-title {	    	
-	    	padding-top: 120px;	
-		    &_title {		    	
-				font-size: 36px;	
-			}
-			&_topic {
-				font-size: 28px;	
-			}
-			&_main-button {
-				margin-top: 30px;	
-			}
-		}	
-	}
-	.button-top {
-		a {
-			font-size: 14px;			
-		}
-		&__btn {
-			padding: 12px 22px;					
-		}
-	}
-	.scroll-link {	
-		font-size: 10px;
-		&__link-arrow {
-			width: 75%;
-		}
-	}
-}
-
-@include iPad-landscape {	
-	.home {
-		//background-size: contain;
-	}
-	.home-wrap {	
-	    padding-top: 0;		
-	}
-	.main {	
-	    &__main-title {	    	
-	    	padding-top: 120px;	
+	    	padding-top: 0;	
 		    &_title {		    	
 				font-size: 36px;	
 			}
@@ -337,8 +306,44 @@ section-1 {
 		}
 	}	
 }
+@include iPad-landscape {		
+	.main {
+		padding-top: 94px;	
+	    &__main-title {	    	
+		    &_title {		    	
+			}
+			&_topic {
+			}
+			&_main-button {
+				margin-top: 22px;	
+			}
+		}	
+	}	
+	.scroll-link {
+		bottom: 50px;	
+		&__link-arrow {
+		}
+	}	
+}
+
+@include iPad-portrait {
+	.main {	
+	    &__main-title {	    	
+		    &_title {		    	
+			}
+			&_topic {
+			}
+			&_main-button {
+				margin-top: 30px;	
+			}
+		}	
+	}	
+}
 
 @include tablet {
+	.home-wrap {	
+	    padding-top: 0;		
+	}
 	.main {
 		align-items: center;
 		padding-top: 0;	
