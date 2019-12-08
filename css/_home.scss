@@ -190,6 +190,9 @@ section-1 {
 }
 
 @include iPadPro-portrait {
+	.home {
+		background-size: contain;
+	}
 	.home-wrap {	
 	    padding-top: 0;		
 	}
@@ -226,6 +229,9 @@ section-1 {
 }
 
 @include iPadPro-landscape {
+	.home {
+		background-size: contain;
+	}
 	.home-wrap {	
 	    padding-top: 0;		
 	}
@@ -260,6 +266,9 @@ section-1 {
 }
 
 @include iPad-portrait {
+	.home {
+		background-size: contain;
+	}
 	.home-wrap {	
 	    padding-top: 0;		
 	}
