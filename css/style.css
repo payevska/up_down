@@ -502,9 +502,6 @@ section-1 {
   .button-top__btn {
     padding: 15px 30px; } }
 @media only screen and (min-device-width: 1024px) and (max-device-height: 1366px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
-  .home {
-    background-size: contain; }
-
   .home-wrap {
     padding-top: 0; }
 
@@ -529,9 +526,6 @@ section-1 {
     .scroll-link__link-arrow {
       width: 75%; } }
 @media only screen and (min-device-width: 1366px) and (max-device-height: 1024px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
-  .home {
-    background-size: contain; }
-
   .home-wrap {
     padding-top: 0; }
 
@@ -554,9 +548,6 @@ section-1 {
     .scroll-link__link-arrow {
       width: 75%; } }
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
-  .home {
-    background-size: contain; }
-
   .home-wrap {
     padding-top: 0; }
 
@@ -579,9 +570,6 @@ section-1 {
     .scroll-link__link-arrow {
       width: 75%; } }
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
-  .home {
-    background-size: contain; }
-
   .home-wrap {
     padding-top: 0; }
 
