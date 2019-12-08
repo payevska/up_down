@@ -502,6 +502,9 @@ section-1 {
   .button-top__btn {
     padding: 15px 30px; } }
 @media only screen and (min-device-width: 1024px) and (max-device-height: 1366px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+  .home {
+    -webkit-background-size: cover; }
+
   .home-wrap {
     padding-top: 0; }
 
