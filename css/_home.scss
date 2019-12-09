@@ -266,7 +266,7 @@ section-1 {
 /* ---- iPad ---- */
 @include iPad {	
 	.home {
-		
+		background-attachment: scroll;
 	}
 	.home-wrap {	
 	    padding-top: 0;		
@@ -301,7 +301,10 @@ section-1 {
 		}
 	}	
 }
-@include iPad-landscape {		
+@include iPad-landscape {	
+	.home {
+		background-attachment: scroll;
+	}	
 	.main {
 		padding-top: 94px;	
 	    &__main-title {	    	
@@ -322,6 +325,9 @@ section-1 {
 }
 
 @include iPad-portrait {
+	.home {
+		background-attachment: scroll;
+	}
 	.main {	
 	    &__main-title {	    	
 		    &_title {		    	

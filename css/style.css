@@ -538,6 +538,9 @@ section-1 {
     bottom: 50px; } }
 /* ---- iPad ---- */
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .home {
+    background-attachment: scroll; }
+
   .home-wrap {
     padding-top: 0; }
 
@@ -561,6 +564,9 @@ section-1 {
     .scroll-link__link-arrow {
       width: 75%; } }
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
+  .home {
+    background-attachment: scroll; }
+
   .main {
     padding-top: 94px; }
     .main__main-title_main-button {
@@ -569,6 +575,9 @@ section-1 {
   .scroll-link {
     bottom: 50px; } }
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+  .home {
+    background-attachment: scroll; }
+
   .main__main-title_main-button {
     margin-top: 30px; } }
 @media (min-width: 768px) and (max-width: 991.98px) {
