@@ -385,8 +385,7 @@ section-1 {
 
 .home-wrap {
   display: flex;
-  min-height: 100vh;
-  padding-top: 320px; }
+  min-height: 100vh; }
 
 .main {
   display: flex;
@@ -503,9 +502,6 @@ section-1 {
     padding: 15px 30px; } }
 /* ---- iPadPro ---- */
 @media only screen and (min-width: 1024px) and (max-width: 1366px) {
-  .home {
-    -webkit-background-size: cover; }
-
   .home-wrap {
     padding-top: 0; }
 
@@ -535,14 +531,8 @@ section-1 {
 
   .scroll-link {
     bottom: 50px; } }
-@media only screen and (min-width: 1366px) and (orientation: landscape) {
-  .main__main-title {
-    padding-top: 160px; } }
 /* ---- iPad ---- */
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
-  .home {
-    -webkit-background-size: cover; }
-
   .home-wrap {
     padding-top: 0; }
 

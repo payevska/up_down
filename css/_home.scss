@@ -16,7 +16,7 @@ section-1 {
 .home-wrap {    
 	display: flex;
     min-height: 100vh;
-    padding-top: 320px;		
+    //padding-top: 320px;		
 }
 
 .main {
@@ -189,8 +189,7 @@ section-1 {
 /* ---- iPadPro ---- */
 @include iPadPro {
 	.home {
-		-webkit-background-size: cover;
-	}
+	}	
 	.home-wrap {	
 	    padding-top: 0;		
 	}
@@ -247,7 +246,7 @@ section-1 {
 @include iPadPro-landscape {
 	.main {	
 	    &__main-title {   	
-	    	padding-top: 160px;	
+	    	//padding-top: 160px;	
 		    &_title {		    	
 			}
 			&_topic {
@@ -262,7 +261,7 @@ section-1 {
 /* ---- iPad ---- */
 @include iPad {	
 	.home {
-		-webkit-background-size: cover;
+		
 	}
 	.home-wrap {	
 	    padding-top: 0;		
