@@ -7,6 +7,10 @@ section-1 {
     width: 100%;
 	min-height: 100vh;
 	display: flex;
+	-webkit-background-size: 100%; 
+    -moz-background-size: 100%; 
+    -o-background-size: 100%; 
+    background-size: 100%; 
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;	
