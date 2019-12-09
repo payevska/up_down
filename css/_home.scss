@@ -189,6 +189,7 @@ section-1 {
 /* ---- iPadPro ---- */
 @include iPadPro {
 	.home {
+		-webkit-background-size: cover;
 	}
 	.home-wrap {	
 	    padding-top: 0;		
@@ -261,6 +262,7 @@ section-1 {
 /* ---- iPad ---- */
 @include iPad {	
 	.home {
+		-webkit-background-size: cover;
 	}
 	.home-wrap {	
 	    padding-top: 0;		
