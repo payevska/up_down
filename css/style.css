@@ -378,6 +378,7 @@ section-1 {
   width: 100%;
   min-height: 100vh;
   display: flex;
+  background-size: 2880px 1800px;
   -webkit-background-size: 100%;
   -moz-background-size: 100%;
   -o-background-size: 100%;
