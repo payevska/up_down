@@ -3,7 +3,10 @@ footer {
 	display: flex;
     position: relative;
 	background-color: $blue-grey;
-	padding-top: 110px;
+	padding-top: 200px;
+	@media (min-width: 1440px) and (max-width: 1599.98px) {
+	 	padding-top: 94px;
+	}
 	min-height: 100vh;
 }
 
@@ -46,7 +49,10 @@ footer {
 		}
 		&_form-submit {
 			outline: none;
-			margin-bottom: 117px;
+			margin-bottom: 167px;
+			@media (min-width: 1440px) and (max-width: 1599.98px) {
+    			margin-bottom: 40px;
+ 			}
 			padding: 16px 40px;
 			@extend button;
 			background-color: $white;
@@ -70,7 +76,6 @@ footer {
 
 .footer-wrap {
     display: flex;
-    padding: 0;
     color: $white;
     margin-bottom: 20px;
 	
@@ -190,7 +195,102 @@ footer {
 }
 
 /* ------ media query ------ */
-@include desktop {	
+@include television {
+	footer {
+		padding-top: 94px;
+	}
+	.form-contact {
+		&__form-title {		
+	    	margin-top: 20px;
+		    margin-bottom: 20px;
+		    font-size: 36px;
+		}
+		&__form-content {
+			&_form-name {
+			}
+			&_form-email {
+			}
+			&_form-message {
+				margin-bottom: 36px;
+			    padding: 10px 0 40px 27px;
+			}
+			&_form-submit {
+				outline: none;
+				margin-bottom: 60px; 			
+			}
+		}
+	}
+	.line1 {	
+	    bottom: 250px;
+	}
+
+	.line2 {
+	    bottom: 50px;
+	}
+}
+@include iPadPro-landscape {
+	.form-contact {
+		&__form-title {		
+	    	margin-top: 20px;
+		    margin-bottom: 40px;
+		    font-size: 26px;
+		}
+		&__form-content {
+			&_form-name {
+			}
+			&_form-email {
+			}
+			&_form-message {
+				margin-bottom: 70px;
+			    padding: 10px 0 70px 27px;
+			}
+			&_form-submit {
+				outline: none;
+				margin-bottom: 140px; 			
+			}
+		}
+	}
+	.line1 {	
+	    bottom: 370px;
+	}
+
+	.line2 {
+	    bottom: 90px;
+	}
+}
+@include desktop {
+	footer {
+		padding-top: 94px;
+	}
+	.form-contact {
+		&__form-title {		
+	    	margin-top: 30px;
+		    margin-bottom: 20px;
+		    font-size: 36px;
+		}
+		&__form-content {
+			&_form-name {
+			}
+			&_form-email {
+			}
+			&_form-message {
+				margin-bottom: 36px;
+			    padding: 10px 0 40px 27px;
+			}
+			&_form-submit {
+				outline: none;
+				margin-bottom: 60px; 			
+			}
+		}
+	}
+	.line1 {	
+	    bottom: 250px;
+	}
+
+	.line2 {
+	    bottom: 60px;
+	}
+
 }
 @include laptop {
 }

@@ -3,7 +3,7 @@ section-6 {
 	display: none;
 	display: flex;
     flex-direction: column;
-    padding-top: 100px;
+    padding-top: 94px;
     min-height: 100vh;
 }
 
@@ -16,7 +16,6 @@ section-6 {
 	display: flex;
     flex-direction: column;
     align-items: center;
-    padding-bottom: 20px;
     &__topic-blog {
     	margin-top: 64px;
     	margin-bottom: 38px;
@@ -34,20 +33,15 @@ section-6 {
 }
 
 /* ------ media query ------ */
-@include phone {
-
-}
-@include iphone {
-
-}
-@include tablet {
-
+@include desktop {	
 }
 @include laptop {
-
 }
-@include desktop {
-
+@include tablet {
+}
+@include iphone {
+}
+@include phone {
 }
 
 /* 

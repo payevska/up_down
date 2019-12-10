@@ -130,13 +130,13 @@ $ipad-pro-landscape-breakpoint: "(min-device-width : 1024px) and (max-device-wid
 
 
 @mixin television {
-  @media (min-width: 1600px) and (max-width: 1899.98px) {
+  @media (min-width: 1366px) and (max-width: 1439.98px) {
     @content;
   }
 }
 
 @mixin desktop {
-  @media (min-width: 1200px) and (max-width: 1599.98px) {
+  @media (min-width: 1200px) and (max-width: 1365.98px) {
     @content;
   }
 }

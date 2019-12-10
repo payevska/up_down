@@ -1,13 +1,15 @@
 /* ------------ about --------------- */
 section-3 {    
     display: flex;
-	min-height: 100vh;	
+    align-items: center;
+	min-height: 100vh;
+	padding-top: 94px;	
 	background-color: $blue-grey;
 }
 
 .block-about  {
 	display: flex;
-    padding-top: 178px;
+	align-items: center;    
 }
 
 .block-left {
@@ -96,7 +98,48 @@ section-3 {
 
 
 /* ------ media query ------ */
-@include desktop {	
+@include desktop {
+	.block-about  {
+		display: flex;
+		justify-content: space-around;
+	    padding-top: 0;
+	}
+	.block-left {
+		padding-top: 36px;
+		&__foto-about {
+			width: 400px;
+    		height: 400px;		
+		}
+	}
+	.block-right {
+		width: 50%;
+		&__title-about {
+		}
+		&__subtitle-about{
+			margin-top: 0;
+			margin-bottom: 0;
+		}
+		&__block-left {
+			&_foto-about {
+			}
+		}
+		&__text-about {
+			padding-top: 32px;
+			margin-bottom: 30px;
+			&_span-about {			
+			}
+		}
+		&__box-botton-about{
+		}
+	}
+	.button-about {
+		a {
+			font-size: 16px;
+		}
+		&_btn {
+			padding: 15px 30px;					
+		}
+	}	
 }
 @include laptop {
 	.block-about  {
@@ -141,43 +184,6 @@ section-3 {
 		}
 	}
 }
-
-@include iPadPro-portrait {
-	.block-left {
-		display: none;
-		&__foto-about {		
-		}
-	}
-	.block-right {
-		&__title-about {
-		}
-		&__subtitle-about{
-			margin-top: 0;
-		}
-		&__block-left {
-			display: block;
-			&_foto-about {
-			    width: 350px;
-			    height: 350px;
-			}
-		}
-		&__text-about {
-			width: 70%;
-			padding-top: 32px;
-			margin-bottom: 52px;
-			&_span-about {			
-			}
-		}
-		&__box-botton-about{
-		}
-	}
-	.table-foto-about {
-		margin-top: -70px;
-	}
-}
-
-@include iPadPro-landscape {
-}
 @include iPad-portrait {
 	.block-about  {
 		display: flex;
@@ -216,6 +222,49 @@ section-3 {
 		margin-top: -70px;
 	}
 }
+
+@include iPadPro-portrait {
+	.block-about  {
+	    padding-top: 0;
+	}
+	.block-left {
+		display: none;
+		&__foto-about {		
+		}
+	}
+	.block-right {
+		&__title-about {
+		}
+		&__subtitle-about{
+			margin-top: 0;
+			margin-bottom: 45px;
+		}
+		&__block-left {
+			display: block;
+			&_foto-about {
+			    width: 350px;
+			    height: 350px;
+			}
+		}
+		&__text-about {
+			width: 100%;
+			padding-left: 0px;
+			padding-top: 32px;
+			margin-bottom: 52px;
+			&_span-about {			
+			}
+		}
+		&__box-botton-about{
+		}
+	}
+	.table-foto-about {
+		margin-top: -70px;
+	}
+}
+
+@include iPadPro-landscape {
+}
+
 @include iPad-landscape {
 	.block-about  {
 		display: flex;

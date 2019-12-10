@@ -6,7 +6,16 @@ header {
     background: $white;
     padding-top: 10px;
     padding-bottom: 10px;
+    @media (min-width: 385px) and (max-width: 575.98px) {
+		    	padding-bottom: 7px;
+    			padding-top: 7px;
+		    }
     opacity: 0.95;    
+}
+
+.header-wrap {
+	display: flex;
+    //justify-content: space-between;
 }
 
 menu {
@@ -15,7 +24,7 @@ menu {
 }
 
 .header-nav {
-	width: 49%;
+	width: 100%;
     display: flex;
     justify-content: space-between;
 	text-decoration: none;
@@ -85,25 +94,34 @@ menu {
 /* byrger-menu finish*/
 
 .logotype {
+	width: 100%;
 	display: flex;
 	justify-content: center;						
 	a {
 		@extend a;
 	    text-align: center;
-		font-size: 14px;			
+		font-size: 14px;
+		img {
+			
+		}			
 	}				
 }
 
 .header-phone {
+	width: 100%;
 	display: flex;
-	    justify-content: flex-end;
-	    align-items: center;
-	&__number-phone {
-		
+    justify-content: flex-end;
+    align-items: center;
+	&__number-phone {		
 	}
 }
 
+.fa-phone {
+	display: none;
+}
+
 .language{
+	width: 100%;
 	display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -133,12 +151,13 @@ menu {
     flex-direction: column;
 }
 
-.gambyrger-menu {	
-	display: flex;
-    justify-content: flex-end;
+.gambyrger-menu {
+	display: none;	
+	//display: flex;
+    //justify-content: flex-end;
 	//background-color: $purpur-dark;
 	&__gambyrger-list {
-		display: none;
+		//display: none;
 		height: 100vh;        
 	    @extend ul;
 	    padding-left: 0;    	
@@ -194,8 +213,101 @@ menu {
 @include tablet {
 }
 @include iphone {
+	menu {
+		margin: 0;	
+	}
+	.header-nav {
+		margin-bottom: 0;
+    	padding: 0;	    
+		&__link-group {			
+			a {
+			font-size: 12px;							
+			}
+		}
+	}
+	.logotype {
+		align-items: center;
+		a {
+			img {
+				width: 80%;
+			}
+		}				
+	}
+	.header-phone {
+		&__number-phone {
+			font-size: 12px;
+		}
+	}
+	.language{
+		&__Ru {
+			font-size: 12px;
+		}	
+		&__En {
+			font-size: 12px;
+		}
+	}
 }
 @include phone {
+	header {    
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+	menu {
+		margin: 0;	
+	}
+	.header-nav {
+	    display: none;
+		&__link-group {			
+			a {							
+			}
+		}
+	}
+	.byrger-menu {	
+		//display: block;	
+		&__byrger-icon {
+		   	display: block;
+			&_line {
+			  	
+	  		} 		
+		}
+	}
+	.gambyrger-menu {		
+		&__gambyrger-list {
+			
+			&_link-group {			
+				a {
+					
+				}
+			}
+	    }
+	}
+	.logotype {
+		align-items: center;
+		a {
+			img {
+				width: 90%;
+			}
+		}				
+	}
+	.header-phone {
+		&__number-phone {
+			display: none;
+		}
+	}
+
+	.fa-phone {
+		display: block;
+		color: $green;
+		font-size: 12px;
+	}
+	.language{
+		&__Ru {
+			font-size: 12px;
+		}	
+		&__En {
+			font-size: 12px;
+		}
+	}
 }
 
 /* 

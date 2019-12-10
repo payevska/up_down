@@ -62,9 +62,9 @@ var top = 0;
 
 function sliderTop(){
     var polosa = document.getElementById('polosa');
-    top = top - 130;
-    if(top < -520) {
-        top = -520;
+    top = top - 90;
+    if(top < -360) {
+        top = -360;
     }
     polosa.style.top = top + 'px';
 }
@@ -74,7 +74,7 @@ document.getElementById('slider-bottom').onclick = sliderBottom;
 
 function sliderBottom(){
     var polosa = document.getElementById('polosa');
-    top = top + 130;
+    top = top + 90;
     if(top > 0) {
         top = 0;
     }

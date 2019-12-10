@@ -2,8 +2,7 @@
 section-4 {
 	display: flex;
 	flex-direction: column;	
-	padding-top: 200px;
-    padding-bottom: 300px;
+	justify-content: center;
     min-height: 100vh;
 } 
 
@@ -51,9 +50,33 @@ section-4 {
 }
 
 /* ------ media query ------ */
+@include television {
+	.product {
+		&__product-title {
+			font-size: 32px;
+		}	
+	}
+}
 @include desktop {	
 }
 @include laptop {
+}
+@include iPadPro-portrait {
+	.product-images {
+		display: flex;
+	    flex-direction: row;
+	    justify-content: space-around;
+	    padding-bottom: 50px;
+		&__picture {
+			width: 40%;
+			height: 230px;
+	    	&_product-image {
+				width: 100%;
+				position: absolute;
+				margin-top: -145px;
+			}
+		}	
+	}
 }
 @include tablet {
 }

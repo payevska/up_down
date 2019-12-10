@@ -1,7 +1,8 @@
 /* ------------ portfolio --------------- */
 section-5 {
 	display: flex;
-	padding-top: 140px;
+	align-items: center;
+	padding-top: 94px;
     min-height: 100vh;
 } 
 
@@ -22,12 +23,7 @@ section-5 {
 	    width: 50%;
     	text-align: center;
     	color: $blue-dark;
-	}
-	&__link-portfolio {
-		@extend a;
-		color: $orange;
-		cursor: pointer;
-	}
+	}	
 }
 
 .block-gallery-image {
@@ -39,11 +35,11 @@ section-5 {
 	&__project-big-foto {
 		position: relative;
 	    overflow: hidden;
-	    width: 75%;
-	    height: 550px;
+	    width: 70%;
+	    height: 450px;
 	    margin-left: 40px;
 	    &_fotoProject-big {
-			margin-top: -130px;
+			margin-top: -180px;
 			width: 100%;
 		}	
 	}
@@ -59,11 +55,12 @@ section-5 {
 	}
 	&__carousel	{
 		width: 170px;
-		height: 520px;
+		height: 360px;
 		display: flex;
+		justify-content: center;
 		overflow: hidden;		
 		&_carousel-block {
-			height: 1040px;
+			height: 720px;
 			display: flex;
 			flex-direction: column;
 		}
@@ -80,11 +77,11 @@ section-5 {
 	&__project {
 		position: relative;
 		overflow: hidden;
-		width: 170px;
-	    height: 130px;
+		width: 120px;
+	    height: 90px;
 		&_fotoProject {
 			width: 100%;
-			margin-top: -65px;
+			margin-top: -53px;
 		}
 	}
 }
@@ -114,20 +111,31 @@ section-5 {
 
 
 /* ------ media query ------ */
-@include phone {
-
-}
-@include iphone {
-
-}
-@include tablet {
-
-}
-@include laptop {
-
+@include television {
+	.portfolio-info {    
+		&__topic {
+			font-size: 36px;
+		}
+		&__text-portfolio {
+		}
+		&__link-portfolio {
+		}
+	}
 }
 @include desktop {
-
+	.portfolio-info {    
+		&__topic {
+			font-size: 36px;
+		}		
+	}	
+}
+@include laptop {
+}
+@include tablet {
+}
+@include iphone {
+}
+@include phone {
 }
 
 /* 
