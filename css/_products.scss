@@ -138,6 +138,12 @@ section-4 {
 			}
 		}	
 	}
+	.product {
+		margin-bottom: 30px;
+		&__product-title {
+			font-size: 36px;
+		}	
+	}
 }
 @include tablet {
 }

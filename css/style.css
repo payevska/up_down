@@ -1280,7 +1280,12 @@ section-4 {
       .product-images__picture_product-image {
         width: 100%;
         position: absolute;
-        margin-top: -90px; } }
+        margin-top: -90px; }
+
+  .product {
+    margin-bottom: 30px; }
+    .product__product-title {
+      font-size: 36px; } }
 /* 
 // Extra small devices (portrait phones, less than 576px)
 @media (max-width: 575.98px) {  }
