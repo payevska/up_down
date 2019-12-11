@@ -12,6 +12,7 @@ section-2 {
 .review-wrap {
 	display: flex;
 	flex-direction: column;
+	align-items: center;
 }
 .title-review {
 	display: flex;
@@ -19,10 +20,11 @@ section-2 {
 	margin-bottom: 20px;
 	@extend h2;
 }
-.video-portfolio{
+/* .video-portfolio{
 	display: flex;
     justify-content: center;
 }
+ */
 .box-button-review {
 	display: flex;
 	justify-content: center;
@@ -31,6 +33,8 @@ section-2 {
 
 .video-table{
 	width: 40%;
+	display: flex;
+    justify-content: center;
 	@extend a;
 	&:focus {
 		outline: none;

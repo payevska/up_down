@@ -734,23 +734,27 @@ section-2 {
 
 .review-wrap {
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  align-items: center; }
 
 .title-review {
   display: flex;
   justify-content: center;
   margin-bottom: 20px; }
 
-.video-portfolio {
-  display: flex;
-  justify-content: center; }
-
+/* .video-portfolio{
+	display: flex;
+    justify-content: center;
+}
+ */
 .box-button-review {
   display: flex;
   justify-content: center; }
 
 .video-table {
-  width: 40%; }
+  width: 40%;
+  display: flex;
+  justify-content: center; }
   .video-table:focus {
     outline: none; }
 
