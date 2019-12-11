@@ -2,11 +2,11 @@
 section-2 {    
 	display: flex;
 	display: -webkit-flex;
-	flex-direction: column;	
-	justify-content: center;	
-	position: relative;
+	align-items: center;
+	-webkit-align-items: center;	
 	padding-top: 94px;
-	min-height: 100vh;	
+	min-height: 100vh;
+	height: calc(var(--vh, 1vh) * 100);	
 }
 
 
@@ -56,7 +56,6 @@ section-2 {
 	}
 	&__btn {
 		padding: 20px 54px;
-					
 	}
 }	
 
@@ -149,6 +148,38 @@ section-2 {
 		width: 40%;
 	}
 }
+
+@include iPad-landscape {
+	section-2 {
+		padding-top: 0;
+	}
+	.review-wrap {
+		padding-top: 0;
+		&__title-review {
+			font-size: 28px;
+			padding-top: 0;
+			margin-bottom: 0px;
+		}
+		&__video-portfolio{
+		}
+		&__box-button-review {
+		}
+	}
+	.button-review {
+		margin-top: 40px;	
+		a {
+			font-size: 14px;
+		}
+		&__btn {
+			padding: 15px 30px;					
+		}
+	}
+	.video-table{
+		width: 32%;
+	}
+}
+
+
 @include iPad-portrait {
 	.review-wrap {
 		&__title-review {
@@ -192,32 +223,6 @@ section-2 {
 	}
 }
 
-@include iPad-landscape {
-	.review-wrap {
-		padding-top: 0;
-		&__title-review {
-			font-size: 28px;
-			padding-top: 0;
-			margin-bottom: 0px;
-		}
-		&__video-portfolio{
-		}
-		&__box-button-review {
-		}
-	}
-	.button-review {
-		margin-top: 40px;	
-		a {
-			font-size: 14px;
-		}
-		&__btn {
-			padding: 15px 30px;					
-		}
-	}
-	.video-table{
-		width: 32%;
-	}
-}
 
 @include tablet {
 	.video-table{
