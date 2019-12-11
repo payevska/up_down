@@ -1,6 +1,7 @@
 /* ------------ footer --------------- */
 footer {
 	display: flex;
+	flex-direction: column;
     position: relative;
 	background-color: $blue-grey;
 	padding-top: 200px;
@@ -153,13 +154,18 @@ footer {
 
 .footer-bottom {
     display: flex;
+    bottom: 20px;
+    position: absolute;
+    width: 100%;
     font-size: 14px;
 	color: $white;
 	opacity: 0.7;
-	//margin-bottom: 45px;
 	&__footer-copyright {
+		width: 100%;
 		display: flex;
     	justify-content: center;
+    	border-top: 1px solid white;
+    	padding-top: 6px;
 	}
 }
 
@@ -186,13 +192,6 @@ footer {
     border-bottom: 1px solid $white-opacity;
 }
 
-.line1 {	
-    bottom: 280px;
-}
-
-.line2 {
-    bottom: 70px;
-}
 
 /* ------ media query ------ */
 @include television {
@@ -220,13 +219,6 @@ footer {
 			}
 		}
 	}
-	.line1 {	
-	    bottom: 250px;
-	}
-
-	.line2 {
-	    bottom: 50px;
-	}
 }
 @include iPadPro-landscape {
 	.form-contact {
@@ -250,13 +242,6 @@ footer {
 			}
 		}
 	}
-	.line1 {	
-	    bottom: 370px;
-	}
-
-	.line2 {
-	    bottom: 90px;
-	}
 }
 @include desktop {
 	footer {
@@ -278,23 +263,55 @@ footer {
 			    padding: 10px 0 40px 27px;
 			}
 			&_form-submit {
-				outline: none;
 				margin-bottom: 60px; 			
 			}
 		}
 	}
-	.line1 {	
-	    bottom: 250px;
-	}
-
-	.line2 {
-	    bottom: 60px;
-	}
-
 }
 @include laptop {
 }
+@include iPad-landscape {
+	footer {
+		padding-top: 94px;
+	}
+	.form-contact {
+		&__form-title {		
+	    	margin-top: 30px;
+		    margin-bottom: 20px;
+		    font-size: 36px;
+		}
+		&__form-content {
+			&_form-name {
+			}
+			&_form-email {
+			}
+			&_form-message {
+				margin-bottom: 36px;
+			    padding: 10px 0 40px 27px;
+			}
+			&_form-submit {
+				padding: 12px 30px;
+				margin-bottom: 30px;
+				a {
+					font-size: 14px;
+				}			 			
+			}
+		}
+	}
+}
 @include tablet {
+}
+@include iPad-portrait {
+	footer {
+		padding-top: 94px;
+	}
+	.form-contact {
+		&__form-content {			
+			&_form-submit {
+				margin-bottom: 80px; 			
+			}
+		}	
+	}
 }
 @include iphone {
 }

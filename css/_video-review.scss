@@ -193,7 +193,7 @@ section-2 {
 
 @include iPad-landscape {
 	.review-wrap {
-		padding-top: 90px;
+		padding-top: 0;
 		&__title-review {
 			font-size: 28px;
 			padding-top: 0;

@@ -131,7 +131,26 @@ section-5 {
 }
 @include laptop {
 }
+@include iPad-landscape {
+	.portfolio-left {
+		&__project-big-foto {
+			width: 65%;
+		    &_fotoProject-big {
+				margin-top: -110px;
+			}	
+		}
+	}
+}
 @include tablet {
+}
+@include iPad-portrait {
+	.portfolio-left {
+		&__project-big-foto {
+		    &_fotoProject-big {
+				margin-top: -40px;
+			}	
+		}
+	}
 }
 @include iphone {
 }

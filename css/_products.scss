@@ -1,10 +1,14 @@
 /* ------------ products --------------- */
 section-4 {
 	display: flex;
-	flex-direction: column;	
-	justify-content: center;
+    align-items: center;
+	padding-top: 94px;
     min-height: 100vh;
 } 
+.product-wrap {
+	display: flex;
+	flex-direction: column;
+}
 
 .product {
 	display: flex;
@@ -13,6 +17,10 @@ section-4 {
 	&__product-title {
 		@extend  h2;
 	}	
+}
+
+.product-contain {
+	display: flex;
 }
 
 .product-images {
@@ -62,18 +70,70 @@ section-4 {
 @include laptop {
 }
 @include iPadPro-portrait {
+	.product-contain {
+		flex-direction: column;
+	}
 	.product-images {
 		display: flex;
 	    flex-direction: row;
 	    justify-content: space-around;
 	    padding-bottom: 50px;
 		&__picture {
-			width: 40%;
+			width: 34%;
 			height: 230px;
 	    	&_product-image {
 				width: 100%;
 				position: absolute;
-				margin-top: -145px;
+				margin-top: -130px;
+			}
+		}	
+	}
+}
+@include iPad-landscape {	
+	.product-images {
+		max-width: 40%;
+		&__picture {
+			width: 50%;
+			height: 180px;
+			margin-left: 30px;
+	    	&_product-image {
+	    		width: 100%;
+				margin-top: -30px;
+			}
+		}	
+	}
+	.product {
+		margin-bottom: 30px;
+		&__product-title {
+			font-size: 36px;
+		}	
+	}
+	.characteristic-list {
+		&__product-characteristic {
+			font-size: 12px;
+			padding: 0;
+		}
+	}
+	.character {
+		padding: 0;
+	}
+}
+@include iPad-portrait {
+	.product-contain {
+		flex-direction: column;
+	}
+	.product-images {
+		display: flex;
+	    flex-direction: row;
+	    justify-content: space-around;
+	    padding-bottom: 0;
+		&__picture {
+			width: 34%;
+			height: 190px;
+	    	&_product-image {
+				width: 100%;
+				position: absolute;
+				margin-top: -90px;
 			}
 		}	
 	}

@@ -849,7 +849,7 @@ section-2 {
     width: 60%; } }
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
   .review-wrap {
-    padding-top: 90px; }
+    padding-top: 0; }
     .review-wrap__title-review {
       font-size: 28px;
       padding-top: 0;
@@ -1016,29 +1016,6 @@ section-3 {
     font-size: 16px; }
   .button-about_btn {
     padding: 15px 30px; } }
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
-  .block-about {
-    display: flex;
-    justify-content: space-around;
-    padding-top: 90px; }
-
-  .block-left {
-    display: none; }
-
-  .block-right__subtitle-about {
-    margin-top: 0; }
-  .block-right__block-left {
-    display: block; }
-    .block-right__block-left_foto-about {
-      width: 350px;
-      height: 350px; }
-  .block-right__text-about {
-    width: 70%;
-    padding-top: 32px;
-    margin-bottom: 36px; }
-
-  .table-foto-about {
-    margin-top: -70px; } }
 @media only screen and (min-device-width: 1024px) and (max-device-height: 1366px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
   .block-about {
     padding-top: 0; }
@@ -1062,36 +1039,11 @@ section-3 {
 
   .table-foto-about {
     margin-top: -70px; } }
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
-  .block-about {
-    display: flex;
-    justify-content: space-around;
-    padding-top: 110px; }
-
-  .block-left {
-    padding-top: 36px; }
-    .block-left__foto-about {
-      width: 400px;
-      height: 400px; }
-
-  .block-right {
-    width: 50%; }
-    .block-right__subtitle-about {
-      margin-top: 0;
-      margin-bottom: 0; }
-    .block-right__text-about {
-      padding-top: 32px;
-      margin-bottom: 30px; }
-
-  .button-about a, .button-about .video-table, .button-about .block-right__text-about_span-about {
-    font-size: 16px; }
-  .button-about_btn {
-    padding: 15px 30px; } }
 @media (min-width: 768px) and (max-width: 991.98px) {
   .block-about {
     display: flex;
     justify-content: space-around;
-    padding-top: 90px; }
+    padding-top: 0; }
 
   .block-left {
     display: none; }
@@ -1107,6 +1059,57 @@ section-3 {
     width: 70%;
     padding-top: 32px;
     margin-bottom: 36px; }
+
+  .table-foto-about {
+    margin-top: -70px; } }
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
+  .block-about {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 0; }
+
+  .block-left {
+    padding-top: 36px; }
+    .block-left__foto-about {
+      width: 400px;
+      height: 400px; }
+
+  .block-right {
+    width: 50%; }
+    .block-right__title-about {
+      padding-top: 0; }
+    .block-right__subtitle-about {
+      margin-top: 0;
+      margin-bottom: 0; }
+    .block-right__text-about {
+      padding-top: 32px;
+      margin-bottom: 30px; }
+
+  .button-about a, .button-about .video-table, .button-about .block-right__text-about_span-about {
+    font-size: 16px; }
+  .button-about_btn {
+    padding: 15px 30px; } }
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+  .block-about {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 0; }
+
+  .block-left {
+    display: none; }
+
+  .block-right__subtitle-about {
+    margin-top: 0; }
+  .block-right__block-left {
+    display: block; }
+    .block-right__block-left_foto-about {
+      width: 300px;
+      height: 300px; }
+  .block-right__text-about {
+    width: 80%;
+    padding-top: 32px;
+    margin-bottom: 36px;
+    padding-left: 0; }
 
   .table-foto-about {
     margin-top: -70px; } }
@@ -1176,14 +1179,21 @@ section-3 {
 /* ------------ products --------------- */
 section-4 {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  align-items: center;
+  padding-top: 94px;
   min-height: 100vh; }
+
+.product-wrap {
+  display: flex;
+  flex-direction: column; }
 
 .product {
   display: flex;
   justify-content: center;
   margin-bottom: 90px; }
+
+.product-contain {
+  display: flex; }
 
 .product-images {
   display: flex;
@@ -1216,18 +1226,59 @@ section-4 {
   .product__product-title {
     font-size: 32px; } }
 @media only screen and (min-device-width: 1024px) and (max-device-height: 1366px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+  .product-contain {
+    flex-direction: column; }
+
   .product-images {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     padding-bottom: 50px; }
     .product-images__picture {
-      width: 40%;
+      width: 34%;
       height: 230px; }
       .product-images__picture_product-image {
         width: 100%;
         position: absolute;
-        margin-top: -145px; } }
+        margin-top: -130px; } }
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
+  .product-images {
+    max-width: 40%; }
+    .product-images__picture {
+      width: 50%;
+      height: 180px;
+      margin-left: 30px; }
+      .product-images__picture_product-image {
+        width: 100%;
+        margin-top: -30px; }
+
+  .product {
+    margin-bottom: 30px; }
+    .product__product-title {
+      font-size: 36px; }
+
+  .characteristic-list__product-characteristic {
+    font-size: 12px;
+    padding: 0; }
+
+  .character {
+    padding: 0; } }
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+  .product-contain {
+    flex-direction: column; }
+
+  .product-images {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-bottom: 0; }
+    .product-images__picture {
+      width: 34%;
+      height: 190px; }
+      .product-images__picture_product-image {
+        width: 100%;
+        position: absolute;
+        margin-top: -90px; } }
 /* 
 // Extra small devices (portrait phones, less than 576px)
 @media (max-width: 575.98px) {  }
@@ -1337,6 +1388,14 @@ section-5 {
 @media (min-width: 1200px) and (max-width: 1365.98px) {
   .portfolio-info__topic {
     font-size: 36px; } }
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
+  .portfolio-left__project-big-foto {
+    width: 65%; }
+    .portfolio-left__project-big-foto_fotoProject-big {
+      margin-top: -110px; } }
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+  .portfolio-left__project-big-foto_fotoProject-big {
+    margin-top: -40px; } }
 /* 
 // Extra small devices (portrait phones, less than 576px)
 @media (max-width: 575.98px) {  }
@@ -1402,6 +1461,7 @@ section-6 {
 /* ------------ footer --------------- */
 footer {
   display: flex;
+  flex-direction: column;
   position: relative;
   background-color: #828893;
   padding-top: 200px;
@@ -1513,12 +1573,18 @@ footer {
 
 .footer-bottom {
   display: flex;
+  bottom: 20px;
+  position: absolute;
+  width: 100%;
   font-size: 14px;
   color: #ffffff;
   opacity: 0.7; }
   .footer-bottom__footer-copyright {
+    width: 100%;
     display: flex;
-    justify-content: center; }
+    justify-content: center;
+    border-top: 1px solid white;
+    padding-top: 6px; }
 
 .button-up {
   position: absolute;
@@ -1539,12 +1605,6 @@ footer {
   width: 100%;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1); }
 
-.line1 {
-  bottom: 280px; }
-
-.line2 {
-  bottom: 70px; }
-
 /* ------ media query ------ */
 @media (min-width: 1366px) and (max-width: 1439.98px) {
   footer {
@@ -1559,13 +1619,7 @@ footer {
     padding: 10px 0 40px 27px; }
   .form-contact__form-content_form-submit {
     outline: none;
-    margin-bottom: 60px; }
-
-  .line1 {
-    bottom: 250px; }
-
-  .line2 {
-    bottom: 50px; } }
+    margin-bottom: 60px; } }
 @media only screen and (min-device-width: 1366px) and (max-device-height: 1024px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
   .form-contact__form-title {
     margin-top: 20px;
@@ -1576,13 +1630,7 @@ footer {
     padding: 10px 0 70px 27px; }
   .form-contact__form-content_form-submit {
     outline: none;
-    margin-bottom: 140px; }
-
-  .line1 {
-    bottom: 370px; }
-
-  .line2 {
-    bottom: 90px; } }
+    margin-bottom: 140px; } }
 @media (min-width: 1200px) and (max-width: 1365.98px) {
   footer {
     padding-top: 94px; }
@@ -1595,14 +1643,29 @@ footer {
     margin-bottom: 36px;
     padding: 10px 0 40px 27px; }
   .form-contact__form-content_form-submit {
-    outline: none;
-    margin-bottom: 60px; }
+    margin-bottom: 60px; } }
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
+  footer {
+    padding-top: 94px; }
 
-  .line1 {
-    bottom: 250px; }
+  .form-contact__form-title {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-size: 36px; }
+  .form-contact__form-content_form-message {
+    margin-bottom: 36px;
+    padding: 10px 0 40px 27px; }
+  .form-contact__form-content_form-submit {
+    padding: 12px 30px;
+    margin-bottom: 30px; }
+    .form-contact__form-content_form-submit a, .form-contact__form-content_form-submit .video-table, .form-contact__form-content_form-submit .block-right__text-about_span-about {
+      font-size: 14px; } }
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+  footer {
+    padding-top: 94px; }
 
-  .line2 {
-    bottom: 60px; } }
+  .form-contact__form-content_form-submit {
+    margin-bottom: 80px; } }
 /* 
 // Extra small devices (portrait phones, less than 576px)
 @media (max-width: 575.98px) {  }
