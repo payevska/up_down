@@ -120,7 +120,11 @@ $(document).ready(function(){
 //      document.documentElement.style.setProperty('--vh', `${vh}px`);
 //    });
 
-
+    // https://medium.com/@susiekim9/how-to-compensate-for-the-ios-viewport-unit-bug-46e78d54af0d
+    window.onresize = function() {
+        document.body.height = window.innerHeight;
+    }
+    window.onresize(); // called to initially set the height.
 
 
 });
