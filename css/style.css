@@ -1464,7 +1464,7 @@ footer {
   flex-direction: column;
   position: relative;
   background-color: #828893;
-  padding-top: 200px;
+  padding-top: 160px;
   min-height: 100vh; }
   @media (min-width: 1440px) and (max-width: 1599.98px) {
     footer {
@@ -1503,7 +1503,7 @@ footer {
       padding: 10px 0 51px 27px; }
     .form-contact__form-content_form-submit {
       outline: none;
-      margin-bottom: 167px;
+      margin-bottom: 140px;
       padding: 16px 40px;
       background-color: #ffffff;
       border: 1px solid #f29257; }
@@ -1662,7 +1662,8 @@ footer {
       font-size: 14px; } }
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
   footer {
-    padding-top: 94px; }
+    justify-content: center;
+    padding-top: 0; }
 
   .form-contact__form-content_form-submit {
     margin-bottom: 80px; } }
