@@ -34,9 +34,9 @@ section-4 {
     	display: flex;
     	justify-content: center;
     	&_product-image {
-			width: 40%;
+			width: 50%;
 			position: absolute;
-			margin-top: -80px;
+			margin-top: -40px;
 		}
 	}	
 }
@@ -95,11 +95,11 @@ section-4 {
 		max-width: 40%;
 		&__picture {
 			width: 50%;
-			height: 180px;
+			height: 116px;
 			margin-left: 30px;
 	    	&_product-image {
 	    		width: 100%;
-				margin-top: -30px;
+				margin-top: -40px;
 			}
 		}	
 	}

@@ -1207,9 +1207,9 @@ section-4 {
     display: flex;
     justify-content: center; }
     .product-images__picture_product-image {
-      width: 40%;
+      width: 50%;
       position: absolute;
-      margin-top: -80px; }
+      margin-top: -40px; }
 
 .characteristic-list {
   display: flex;
@@ -1248,11 +1248,11 @@ section-4 {
     max-width: 40%; }
     .product-images__picture {
       width: 50%;
-      height: 180px;
+      height: 116px;
       margin-left: 30px; }
       .product-images__picture_product-image {
         width: 100%;
-        margin-top: -30px; }
+        margin-top: -40px; }
 
   .product {
     margin-bottom: 30px; }
