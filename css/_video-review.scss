@@ -12,21 +12,22 @@ section-2 {
 .review-wrap {
 	display: flex;
 	flex-direction: column;
-	&__title-review {
-		display: flex;
-    	justify-content: center;
-		margin-bottom: 20px;
-		@extend h2;
-	}
-	&__video-portfolio{
-		display: flex;
-	    justify-content: center;
-	}
-	&__box-button-review {
-		display: flex;
-		justify-content: center;
-	}
 }
+.title-review {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 20px;
+	@extend h2;
+}
+.video-portfolio{
+	display: flex;
+    justify-content: center;
+}
+.box-button-review {
+	display: flex;
+	justify-content: center;
+}
+
 
 .video-table{
 	width: 40%;
@@ -61,15 +62,9 @@ section-2 {
 
 /* ------ media query ------ */
 @include television {
-	.review-wrap {
-		&__title-review {
-			font-size: 36px;
-			margin-bottom: 0px;
-		}
-		&__video-portfolio{
-		}
-		&__box-button-review {
-		}
+	.title-review {
+		font-size: 36px;
+		margin-bottom: 0px;
 	}
 	.button-review {
 		margin-top: 40px;	
@@ -98,15 +93,9 @@ section-2 {
 	}
 }
 @include laptop {
-	.review-wrap {
-		&__title-review {
-			font-size: 36px;
-			margin-bottom: 0px;
-		}
-		&__video-portfolio{
-		}
-		&__box-button-review {
-		}
+	.title-review {
+		font-size: 36px;
+		margin-bottom: 0px;
 	}
 	.button-review {
 		margin-top: 80px;	
@@ -123,19 +112,10 @@ section-2 {
 }
 
 @include iPadPro-landscape {
-	section-2 {
-
-	}
-	.review-wrap {
-		&__title-review {
-			font-size: 36px;
-			padding-top: 40px;
-			margin-bottom: 0px;
-		}
-		&__video-portfolio{
-		}
-		&__box-button-review {
-		}
+	.title-review {
+		font-size: 36px;
+		padding-top: 40px;
+		margin-bottom: 0px;
 	}
 	.button-review {
 		margin-top: 45px;	
@@ -176,15 +156,11 @@ section-2 {
 	}
 	.review-wrap {
 		padding-top: 0;
-		&__title-review {
-			font-size: 28px;
-			padding-top: 0;
-			margin-bottom: 0px;
-		}
-		&__video-portfolio{
-		}
-		&__box-button-review {
-		}
+	}	
+	.title-review {
+		font-size: 28px;
+		padding-top: 0;
+		margin-bottom: 0px;
 	}
 	.button-review {
 		margin-top: 40px;
@@ -203,16 +179,10 @@ section-2 {
 
 
 @include iPad-portrait {
-	.review-wrap {
-		&__title-review {
-			font-size: 28px;
-			padding-top: 40px;
-			margin-bottom: 0px;
-		}
-		&__video-portfolio{
-		}
-		&__box-button-review {
-		}
+	.title-review {
+		font-size: 28px;
+		padding-top: 40px;
+		margin-bottom: 0px;
 	}
 	.button-review {
 		margin-top: 80px;	

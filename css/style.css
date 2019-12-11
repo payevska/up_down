@@ -99,7 +99,7 @@ h1, .main__main-title_title {
   line-height: 1.2;
   margin-bottom: 0; }
 
-h2, .main__main-title_topic, .review-wrap__title-review, .block-right__title-about, .block-right__subtitle-about, .product__product-title, .portfolio-info__topic, .blog-title__topic-blog, .form-contact__form-title {
+h2, .main__main-title_topic, .title-review, .block-right__title-about, .block-right__subtitle-about, .product__product-title, .portfolio-info__topic, .blog-title__topic-blog, .form-contact__form-title {
   font-family: 'Judson', serif;
   font-size: 46px;
   font-weight: 400;
@@ -735,16 +735,19 @@ section-2 {
 .review-wrap {
   display: flex;
   flex-direction: column; }
-  .review-wrap__title-review {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 20px; }
-  .review-wrap__video-portfolio {
-    display: flex;
-    justify-content: center; }
-  .review-wrap__box-button-review {
-    display: flex;
-    justify-content: center; }
+
+.title-review {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px; }
+
+.video-portfolio {
+  display: flex;
+  justify-content: center; }
+
+.box-button-review {
+  display: flex;
+  justify-content: center; }
 
 .video-table {
   width: 40%; }
@@ -769,7 +772,7 @@ section-2 {
 
 /* ------ media query ------ */
 @media (min-width: 1366px) and (max-width: 1439.98px) {
-  .review-wrap__title-review {
+  .title-review {
     font-size: 36px;
     margin-bottom: 0px; }
 
@@ -791,7 +794,7 @@ section-2 {
   .video-table {
     width: 40%; } }
 @media (min-width: 992px) and (max-width: 1199.98px) {
-  .review-wrap__title-review {
+  .title-review {
     font-size: 36px;
     margin-bottom: 0px; }
 
@@ -805,7 +808,7 @@ section-2 {
   .video-table {
     width: 36%; } }
 @media only screen and (min-device-width: 1366px) and (max-device-height: 1024px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
-  .review-wrap__title-review {
+  .title-review {
     font-size: 36px;
     padding-top: 40px;
     margin-bottom: 0px; }
@@ -839,10 +842,11 @@ section-2 {
 
   .review-wrap {
     padding-top: 0; }
-    .review-wrap__title-review {
-      font-size: 28px;
-      padding-top: 0;
-      margin-bottom: 0px; }
+
+  .title-review {
+    font-size: 28px;
+    padding-top: 0;
+    margin-bottom: 0px; }
 
   .button-review {
     margin-top: 40px;
@@ -855,7 +859,7 @@ section-2 {
   .video-table {
     width: 32%; } }
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
-  .review-wrap__title-review {
+  .title-review {
     font-size: 28px;
     padding-top: 40px;
     margin-bottom: 0px; }

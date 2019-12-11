@@ -112,8 +112,6 @@ $(document).ready(function(){
     });
 
 
-    $(window).height();
-    $(window).width();
 
 });
 
