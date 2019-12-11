@@ -1,6 +1,7 @@
 /* ------------ video-review --------------- */
 section-2 {    
 	display: flex;
+	display: -webkit-flex;
 	flex-direction: column;	
 	justify-content: center;	
 	position: relative;

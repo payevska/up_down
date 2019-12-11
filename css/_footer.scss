@@ -1,6 +1,7 @@
 /* ------------ footer --------------- */
 footer {
 	display: flex;
+	display: -webkit-flex;
 	flex-direction: column;
     position: relative;
 	background-color: $blue-grey;

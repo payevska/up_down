@@ -726,6 +726,7 @@ section-1 {
 /* ------------ video-review --------------- */
 section-2 {
   display: flex;
+  display: -webkit-flex;
   flex-direction: column;
   justify-content: center;
   position: relative;
@@ -1179,6 +1180,7 @@ section-3 {
 /* ------------ products --------------- */
 section-4 {
   display: flex;
+  display: -webkit-flex;
   align-items: center;
   padding-top: 94px;
   min-height: 100vh; }
@@ -1299,6 +1301,7 @@ section-4 {
 /* ------------ portfolio --------------- */
 section-5 {
   display: flex;
+  display: -webkit-flex;
   align-items: center;
   padding-top: 94px;
   min-height: 100vh; }
@@ -1461,6 +1464,7 @@ section-6 {
 /* ------------ footer --------------- */
 footer {
   display: flex;
+  display: -webkit-flex;
   flex-direction: column;
   position: relative;
   background-color: #828893;
