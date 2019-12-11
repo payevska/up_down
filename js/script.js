@@ -112,20 +112,8 @@ $(document).ready(function(){
     });
 
 
-    /*instead vh ----   https://css-tricks.com/the-trick-to-viewport-units-on-mobile/*/
-    // We listen to the resize event
-//    window.addEventListener('resize', () => {
-      // We execute the same script as before
-//      let vh = window.innerHeight * 0.01;
-//      document.documentElement.style.setProperty('--vh', `${vh}px`);
-//    });
-
-    // https://medium.com/@susiekim9/how-to-compensate-for-the-ios-viewport-unit-bug-46e78d54af0d
-    window.onresize = function() {
-        document.body.height = window.innerHeight;
-    }
-    window.onresize(); // called to initially set the height.
-
+    $(window).height();
+    $(window).width();
 
 });
 
