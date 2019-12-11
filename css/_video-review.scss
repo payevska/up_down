@@ -124,7 +124,7 @@ section-2 {
 
 @include iPadPro-landscape {
 	section-2 {
-		height: 768px;
+
 	}
 	.review-wrap {
 		&__title-review {
@@ -153,7 +153,8 @@ section-2 {
 
 @include iPad-landscape {
 	section-2 {
-		padding-top: 0;
+		height: 768px;
+		padding-top: 30px;
 	}
 	.review-wrap {
 		padding-top: 0;
@@ -168,7 +169,8 @@ section-2 {
 		}
 	}
 	.button-review {
-		margin-top: 40px;	
+		margin-top: 40px;
+		margin-bottom: 40px;	
 		a {
 			font-size: 14px;
 		}
