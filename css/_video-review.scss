@@ -5,8 +5,7 @@ section-2 {
 	align-items: center;
 	-webkit-align-items: center;	
 	padding-top: 94px;
-	min-height: 100vh;
-	height: calc(var(--vh, 1vh) * 100);	
+	min-height: 100vh;		
 }
 
 
@@ -124,6 +123,9 @@ section-2 {
 }
 
 @include iPadPro-landscape {
+	section-2 {
+		height: calc(var(--vh, 1vh) * 100);
+	}
 	.review-wrap {
 		&__title-review {
 			font-size: 36px;

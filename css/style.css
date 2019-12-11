@@ -730,8 +730,7 @@ section-2 {
   align-items: center;
   -webkit-align-items: center;
   padding-top: 94px;
-  min-height: 100vh;
-  height: calc(var(--vh, 1vh) * 100); }
+  min-height: 100vh; }
 
 .review-wrap {
   display: flex;
@@ -806,6 +805,9 @@ section-2 {
   .video-table {
     width: 36%; } }
 @media only screen and (min-device-width: 1366px) and (max-device-height: 1024px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+  section-2 {
+    height: calc(var(--vh, 1vh) * 100); }
+
   .review-wrap__title-review {
     font-size: 36px;
     padding-top: 40px;
