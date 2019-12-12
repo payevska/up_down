@@ -4,15 +4,11 @@ footer {
 	display: -webkit-flex;
 	align-items: center;
 	-webkit-align-items: center;
-	/* flex-direction: column;
-	-webkit-flex-direction: column;
-	justify-content: center;
-	-webkit-justify-content: center; */
     position: relative;
 	background-color: $blue-grey;
-	padding-top: 160px;
-	@media (min-width: 1440px) and (max-width: 1599.98px) {
-	 	padding-top: 94px;
+	padding-top: 94px;
+	@media (min-width: 1440px) {
+	 	padding-top: 0;
 	}
 	min-height: 100vh;
 }
@@ -220,10 +216,7 @@ footer {
 
 
 /* ------ media query ------ */
-@include television {
-	footer {
-		padding-top: 94px;
-	}
+@include television {	
 	.form-contact {
 		&__form-title {		
 	    	margin-top: 20px;
@@ -270,9 +263,6 @@ footer {
 	}
 }
 @include desktop {
-	footer {
-		padding-top: 94px;
-	}
 	.form-contact {
 		&__form-title {		
 	    	margin-top: 30px;
@@ -297,9 +287,6 @@ footer {
 @include laptop {
 }
 @include iPad-landscape {
-	footer {
-		padding-top: 94px;
-	}
 	.form-contact {
 		&__form-title {		
 	    	margin-top: 30px;

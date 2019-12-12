@@ -60,6 +60,7 @@
  */
 /* ------------ variable --------------- */
 body {
+  position: relative;
   font-family: 'Nunito Sans', sans-serif;
   font-size: 16px;
   font-weight: 400;
@@ -1483,17 +1484,13 @@ footer {
   display: -webkit-flex;
   align-items: center;
   -webkit-align-items: center;
-  /* flex-direction: column;
-  -webkit-flex-direction: column;
-  justify-content: center;
-  -webkit-justify-content: center; */
   position: relative;
   background-color: #828893;
-  padding-top: 160px;
+  padding-top: 94px;
   min-height: 100vh; }
-  @media (min-width: 1440px) and (max-width: 1599.98px) {
+  @media (min-width: 1440px) {
     footer {
-      padding-top: 94px; } }
+      padding-top: 0; } }
 
 .footer-block {
   display: flex;
@@ -1652,9 +1649,6 @@ footer {
 
 /* ------ media query ------ */
 @media (min-width: 1366px) and (max-width: 1439.98px) {
-  footer {
-    padding-top: 94px; }
-
   .form-contact__form-title {
     margin-top: 20px;
     margin-bottom: 20px;
@@ -1677,9 +1671,6 @@ footer {
     outline: none;
     margin-bottom: 140px; } }
 @media (min-width: 1200px) and (max-width: 1365.98px) {
-  footer {
-    padding-top: 94px; }
-
   .form-contact__form-title {
     margin-top: 30px;
     margin-bottom: 20px;
@@ -1690,9 +1681,6 @@ footer {
   .form-contact__form-content_form-submit {
     margin-bottom: 60px; } }
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
-  footer {
-    padding-top: 94px; }
-
   .form-contact__form-title {
     margin-top: 30px;
     margin-bottom: 20px;
