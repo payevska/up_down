@@ -288,24 +288,28 @@ footer {
 @include iPad-landscape {
 	.form-contact {
 		&__form-title {		
-	    	margin-top: 30px;
+	    	margin-top: 0;
 		    margin-bottom: 20px;
-		    font-size: 36px;
+		    font-size: 32px;
 		}
 		&__form-content {
 			&_form-name {
+				margin-bottom: 18px;
+				padding: 5px 0 5px 27px;
 			}
 			&_form-email {
+				margin-bottom: 18px;
+				padding: 5px 0 5px 27px;
 			}
 			&_form-message {
-				margin-bottom: 36px;
-			    padding: 10px 0 40px 27px;
+				margin-bottom: 25px;
+			    padding: 5px 0 32px 27px;
 			}
 			&_form-submit {
-				padding: 12px 30px;
+				padding: 10px 30px;
 				margin-bottom: 30px;
 				a {
-					font-size: 14px;
+					font-size: 12px;
 				}			 			
 			}
 		}

@@ -1680,17 +1680,23 @@ footer {
     margin-bottom: 60px; } }
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
   .form-contact__form-title {
-    margin-top: 30px;
+    margin-top: 0;
     margin-bottom: 20px;
-    font-size: 36px; }
+    font-size: 32px; }
+  .form-contact__form-content_form-name {
+    margin-bottom: 18px;
+    padding: 5px 0 5px 27px; }
+  .form-contact__form-content_form-email {
+    margin-bottom: 18px;
+    padding: 5px 0 5px 27px; }
   .form-contact__form-content_form-message {
-    margin-bottom: 36px;
-    padding: 10px 0 40px 27px; }
+    margin-bottom: 25px;
+    padding: 5px 0 32px 27px; }
   .form-contact__form-content_form-submit {
-    padding: 12px 30px;
+    padding: 10px 30px;
     margin-bottom: 30px; }
     .form-contact__form-content_form-submit a, .form-contact__form-content_form-submit .video-table, .form-contact__form-content_form-submit .block-right__text-about_span-about {
-      font-size: 14px; } }
+      font-size: 12px; } }
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
   footer {
     padding-top: 0; }
