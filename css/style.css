@@ -1222,6 +1222,10 @@ section-4 {
       width: 50%;
       position: absolute;
       margin-top: -40px; }
+      @media (min-width: 1025px) and (max-width: 1199.98px) {
+        .product-images__picture_product-image {
+          width: 100%;
+          margin-top: -82px; } }
 
 .characteristic-list {
   display: flex;
@@ -1264,7 +1268,7 @@ section-4 {
       margin-left: 30px; }
       .product-images__picture_product-image {
         width: 100%;
-        margin-top: -40px; }
+        margin-top: -82px; }
 
   .product {
     margin-bottom: 50px; }
@@ -1298,6 +1302,70 @@ section-4 {
     margin-bottom: 30px; }
     .product__product-title {
       font-size: 36px; } }
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .product-contain {
+    flex-direction: row; }
+
+  .product {
+    margin-bottom: 80px; }
+
+  .product-images {
+    flex-direction: column; }
+    .product-images__picture {
+      width: 70%; } }
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .product-images {
+    max-width: 100%; }
+
+  .characteristic-list {
+    max-width: 100%; } }
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .product {
+    margin-bottom: 50px; }
+    .product__product-title {
+      font-size: 28px; }
+
+  .product-contain {
+    flex-direction: column; }
+
+  .product-images {
+    max-width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-bottom: 0; }
+    .product-images__picture {
+      width: 50%;
+      height: 120px; }
+
+  .characteristic-list {
+    max-width: 100%; }
+
+  .character {
+    line-height: 1.1; } }
+@media (min-width: 320px) and (max-width: 575.98px) {
+  .product {
+    margin-bottom: 50px; }
+    .product__product-title {
+      font-size: 28px; }
+
+  .product-contain {
+    flex-direction: column; }
+
+  .product-images {
+    max-width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-bottom: 0; }
+    .product-images__picture {
+      width: 50%;
+      height: 120px; }
+
+  .characteristic-list {
+    max-width: 100%; }
+
+  .character {
+    width: 240%;
+    line-height: 1.1; } }
 /* 
 // Extra small devices (portrait phones, less than 576px)
 @media (max-width: 575.98px) {  }
