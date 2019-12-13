@@ -3,7 +3,7 @@ section-3 {
     display: flex;
     align-items: center;
 	min-height: 100vh;
-	padding-top: 94px;	
+	//padding-top: 94px;	
 	background-color: $blue-grey;
 }
 
@@ -97,12 +97,11 @@ section-3 {
 }
 
 
-/* ------ media query ------ */
+/* ------ media query ----------------- */
 @include desktop {
 	.block-about  {
 		display: flex;
 		justify-content: space-around;
-	    padding-top: 0;
 	}
 	.block-left {
 		padding-top: 36px;
@@ -145,7 +144,6 @@ section-3 {
 	.block-about  {
 		display: flex;
 		justify-content: space-around;
-	    padding-top: 110px;
 	}
 	.block-left {
 		padding-top: 36px;
@@ -160,7 +158,7 @@ section-3 {
 		}
 		&__subtitle-about{
 			margin-top: 0;
-			margin-bottom: 0;
+			margin-bottom: 20px;
 		}
 		&__block-left {
 			&_foto-about {
@@ -187,7 +185,6 @@ section-3 {
 
 @include iPadPro-portrait {
 	.block-about  {
-	    padding-top: 0;
 	}
 	.block-left {
 		display: none;
@@ -195,6 +192,7 @@ section-3 {
 		}
 	}
 	.block-right {
+		width: 80%;
 		&__title-about {
 		}
 		&__subtitle-about{
@@ -231,7 +229,6 @@ section-3 {
 	.block-about  {
 		display: flex;
 		justify-content: space-around;
-	    padding-top: 0;
 	}
 	.block-left {
 		display: none;
@@ -255,6 +252,7 @@ section-3 {
 			width: 70%;
 			padding-top: 32px;
 			margin-bottom: 36px;
+			padding-left: 0;
 			&_span-about {			
 			}
 		}
@@ -271,7 +269,6 @@ section-3 {
 	.block-about  {
 		display: flex;
 		justify-content: space-around;
-	    padding-top: 0;
 	}
 	.block-left {
 		padding-top: 36px;
@@ -316,7 +313,6 @@ section-3 {
 	.block-about  {
 		display: flex;
 		justify-content: space-around;
-	    padding-top: 0;
 	}
 	.block-left {
 		display: none;
@@ -356,7 +352,6 @@ section-3 {
 	.block-about  {
 		display: flex;
 		justify-content: space-around;
-	    padding-top: 90px;
 	}
 	.block-left {
 		display: none;
@@ -365,36 +360,51 @@ section-3 {
 	}
 	.block-right {
 		&__title-about {
+			font-size: 32px;
 		}
 		&__subtitle-about{
+			font-size: 20px;
 			margin-top: 0;
 		}
 		&__block-left {
 			display: block;
 			&_foto-about {
-			    width: 350px;
-			    height: 350px;
+			    width: 250px;
+			    height: 250px;
 			}
 		}
 		&__text-about {
 			width: 70%;
 			padding-top: 32px;
 			margin-bottom: 36px;
+			padding-left: 0px;
 			&_span-about {			
 			}
 		}
 		&__box-botton-about{
+			a {
+				font-size: 14px;
+			}
+			&_btn {
+			}
+		}
+	}
+	.button-about {
+		a {				
+			font-size: 14px;
+		}
+		&_btn {
+			padding: 12px 30px;
 		}
 	}
 	.table-foto-about {
-		margin-top: -70px;
+		margin-top: -60px;
 	}
 }
 @include phone {
 	.block-about  {
 		display: flex;
 		justify-content: space-around;
-	    padding-top: 90px;
 	}
 	.block-left {
 		display: none;
@@ -403,29 +413,42 @@ section-3 {
 	}
 	.block-right {
 		&__title-about {
+			font-size: 28px;
 		}
 		&__subtitle-about{
+			font-size: 20px;
 			margin-top: 0;
 		}
 		&__block-left {
 			display: block;
 			&_foto-about {
-			    width: 350px;
-			    height: 350px;
+			    width: 170px;
+			    height: 170px;
 			}
 		}
 		&__text-about {
 			width: 70%;
+			font-size: 14px;
+			line-height: 1.4;
 			padding-top: 32px;
 			margin-bottom: 36px;
+			padding-left: 0px;
 			&_span-about {			
 			}
 		}
-		&__box-botton-about{
+		&__box-botton-about{			
+		}
+	}
+	.button-about {
+		a {				
+			font-size: 14px;
+		}
+		&_btn {
+			padding: 10px 28px;
 		}
 	}
 	.table-foto-about {
-		margin-top: -70px;
+		margin-top: -37px;
 	}
 }
 
