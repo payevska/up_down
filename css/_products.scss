@@ -176,6 +176,7 @@ section-4 {
 	}
 
 }
+
 @include tablet-mini {
 	.product {
 		margin-bottom: 30px;
@@ -204,6 +205,30 @@ section-4 {
 	.character {
 		line-height: 1.2;
 	}
+}
+@include iphone-X {
+	.product-contain {
+		flex-direction: column;
+	}
+	.product-images {
+		max-width: 100%;
+	    flex-direction: row;
+	    justify-content: space-around;
+	    padding-bottom: 0;
+		&__picture {
+			width: 50%;
+			height: 120px;
+	    	&_product-image {
+			}
+		}	
+	}	
+	.characteristic-list {
+		max-width: 100%;		
+	}
+}
+@include iphone-X-portrait {
+}
+@include iphone-X-landscape {
 }
 @include phone {
 	.product {

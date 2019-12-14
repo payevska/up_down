@@ -1392,6 +1392,21 @@ section-4 {
 
   .character {
     line-height: 1.2; } }
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-device-pixel-ratio: 3) {
+  .product-contain {
+    flex-direction: column; }
+
+  .product-images {
+    max-width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-bottom: 0; }
+    .product-images__picture {
+      width: 50%;
+      height: 120px; }
+
+  .characteristic-list {
+    max-width: 100%; } }
 @media (min-width: 320px) and (max-width: 575.98px) {
   .product {
     margin-bottom: 10px; }
