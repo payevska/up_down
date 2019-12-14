@@ -236,6 +236,9 @@ section-4 {
 		font-size: 12px;
 		line-height: 1.2;
 	}
+	.character-min {
+		width: 50%;
+	}
 }
 @include iphone-X-portrait {
 }
@@ -270,6 +273,9 @@ section-4 {
 	.character {
 		font-size: 12px;
 		line-height: 1.2;
+	}
+	.character-min {
+		width: 57%;
 	}
 }
 
