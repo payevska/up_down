@@ -433,7 +433,8 @@ menu {
 
  */
 section-1 {
-  display: flex; }
+  display: flex;
+  display: -webkit-flex; }
 
 .home {
   background: url("../images/Home-photo4.png") no-repeat top fixed;
