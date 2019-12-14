@@ -232,7 +232,50 @@ section-2 {
 		width: 50%;
 	}
 }
+
 @include phone {
+	.title-review {
+		font-size: 24px;
+		padding-top: 0;
+		margin-bottom: 0px;
+	}
+	.button-review {
+		margin-top: 40px;	
+		a {
+			font-size: 10px;
+		}
+		&__btn {
+			padding: 10px 25px;					
+		}
+	}
+	.video-table{
+		width: 50%;
+	}
+}
+@include iphone-X {
+	.title-review {
+		font-size: 24px;
+		padding-top: 0;
+		margin-bottom: 0px;
+	}
+	.button-review {
+		margin-top: 40px;	
+		a {
+			font-size: 10px;
+		}
+		&__btn {
+			padding: 10px 25px;					
+		}
+	}
+	.video-table{
+		width: 50%;
+	}
+}
+@include iphone-X-portrait {
+}
+@include iphone-X-landscape {
+}	
+@include iphone-5 {
 	.title-review {
 		font-size: 24px;
 		padding-top: 0;

@@ -299,6 +299,126 @@ menu {
 		}
 	}
 }
+@include iphone-X {
+	header {    
+	    padding-top: 3px;
+	    padding-bottom: 3px;
+	}
+
+	menu {
+		margin: 0;	
+	}
+	.header-nav {
+	    display: none;
+		&__link-group {			
+			a {							
+			}
+		}
+	}
+	.byrger-menu {	
+		//display: block;	
+		&__byrger-icon {
+		   	display: block;
+			&_line {
+			  	
+	  		} 		
+		}
+	}
+	.gambyrger-menu {		
+		&__gambyrger-list {
+			
+			&_link-group {			
+				a {
+					
+				}
+			}
+	    }
+	}
+	.logotype {
+		align-items: center;						
+	}
+	.header-phone {
+		&__number-phone {
+			display: none;
+		}
+	}
+
+	.fa-phone {
+		display: block;
+		color: $green;
+		font-size: 12px;
+	}
+	.language{
+		&__Ru {
+			font-size: 12px;
+		}	
+		&__En {
+			font-size: 12px;
+		}
+	}
+}
+@include iphone-X-portrait {
+}
+@include iphone-X-landscape {
+}
+@include iphone-5 {
+	header {    
+	    padding-top: 3px;
+	    padding-bottom: 3px;
+	}
+
+	menu {
+		margin: 0;	
+	}
+	.header-nav {
+	    display: none;
+		&__link-group {			
+			a {							
+			}
+		}
+	}
+	.byrger-menu {	
+		//display: block;	
+		&__byrger-icon {
+		   	display: block;
+			&_line {
+			  	
+	  		} 		
+		}
+	}
+	.gambyrger-menu {		
+		&__gambyrger-list {
+			
+			&_link-group {			
+				a {
+					
+				}
+			}
+	    }
+	}
+	.logotype {
+		align-items: center;						
+	}
+	.header-phone {
+		&__number-phone {
+			display: none;
+		}
+	}
+
+	.fa-phone {
+		display: block;
+		color: $green;
+		font-size: 12px;
+	}
+	.language{
+		&__Ru {
+			font-size: 12px;
+		}	
+		&__En {
+			font-size: 12px;
+		}
+	}
+}
 
 /* 
 // Extra small devices (portrait phones, less than 576px)

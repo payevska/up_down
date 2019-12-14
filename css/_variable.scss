@@ -209,6 +209,11 @@ $ipad-pro-landscape-breakpoint: "(min-device-width : 1024px) and (max-device-wid
     @content;
   }
 }
+@mixin phone {
+  @media (min-width: 376px) and (max-width: 575.98px) {
+    @content;
+  }
+}
 @mixin iphone-X {
   @media only screen 
 and (min-device-width : 375px) 
@@ -235,8 +240,8 @@ and (orientation : landscape) {
     @content;
   }
 }
-@mixin phone {
-  @media (min-width: 320px) and (max-width: 575.98px) {
+@mixin iphone-5 {
+  @media (min-width: 320px) and (max-width: 374.98px) {
     @content;
   }
 }

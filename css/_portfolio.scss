@@ -208,6 +208,48 @@ section-5 {
 	}
 }
 @include phone {
+ 	.portfolio-info {    
+		&__topic {
+			font-size: 20px;
+			margin-bottom: 10px;
+		}
+		&__text-portfolio {
+			display: none;
+		}
+		&__link-portfolio {
+		}
+	}
+	.portfolio-left {
+		display: none;
+	}
+	.arrow-up-down {
+	    height: 20px;
+	}
+ }
+@include iphone-X {
+ 	.portfolio-info {    
+		&__topic {
+			font-size: 20px;
+			margin-bottom: 10px;
+		}
+		&__text-portfolio {
+			display: none;
+		}
+		&__link-portfolio {
+		}
+	}
+	.portfolio-left {
+		display: none;
+	}
+	.arrow-up-down {
+	    height: 20px;
+	}
+}
+@include iphone-X-portrait {
+}
+@include iphone-X-landscape {
+}	
+@include iphone-5 {
 	.portfolio-info {    
 		&__topic {
 			font-size: 20px;
