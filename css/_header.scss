@@ -90,6 +90,27 @@ menu {
 }
 .line-4 {
 	top: 14px;
+}
+
+
+.byrger-menu.byrger-menu_state_open .byrger-menu__byrger-icon .line-1 {
+  top: 18px;
+  width: 0%;
+  left: 50%;
+}
+.byrger-menu.byrger-menu_state_open .byrger-menu__byrger-icon .line-2 {
+  transform: rotate(45deg);
+}
+.byrger-menu.byrger-menu_state_open  .byrger-menu__byrger-icon .line-3 {
+  transform: rotate(-45deg);
+}
+.byrger-menu.byrger-menu_state_open  .byrger-menu__byrger-icon .line-4 {
+  top: 18px;
+  width: 0%;
+  left: 50%;
+}
+.byrger-menu.byrger-menu_state_open .gambyrger-menu {
+  display: block;  
 }  
 /* byrger-menu finish*/
 
@@ -145,33 +166,128 @@ menu {
 
 
 /* -----  gambyrger-menu start  -----*/
-.gambyrger {
-	display: flex;
-    flex-direction: column;
-}
 
 .gambyrger-menu {
-	display: none;	
-	//display: flex;
-    //justify-content: flex-end;
-	//background-color: $purpur-dark;
-	&__gambyrger-list {
-		//display: none;
-		height: 100vh;        
-	    @extend ul;
-	    padding-left: 0;    	
-		&_link-group {			
-			a {
-				padding: 0px 4px;
-	    		@extend a;
-	    		color: $purpur-extra-light;				
-	    		&:hover {
-		  			border-bottom: 2px solid $red-link;
-		  			color: $purpur-light;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	&__toggler {
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 2;
+		cursor: pointer;
+		width: 50px;
+		height: 50px;
+		opacity: 0;		
+	}
+	&__gambyrger {
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 1;
+		width: 60px;
+		height: 60px;
+		padding: 1rem;
+		background: $shadow;
+		display: flex;
+	    justify-content: center;
+	    align-items: center;	    
+	}
+}
+
+/*gambyrger line*/
+.gambyrger-in {
+	position: relative;
+	width: 100%;
+	height: 2px;
+	background-color: $black;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.4s ease;
+}
+
+/* Top and bottom lines */
+.gambyrger-in:before, .gambyrger-in:after {
+	content: '';
+	position: absolute;
+	z-index: 1;
+	top: -10px;
+	width: 100%;
+	height: 2px;
+	background: $black;	
+}
+
+/* Moves line down */
+.gambyrger-in:after {
+	top: 10px;
+}
+
+/* Toggler animate */
+.gambyrger-menu__toggler:checked + .gambyrger-in {
+	transform: rotate(135deg); 
+}
+
+/* Turn lines into X */
+.gambyrger-menu__toggler:checked + .gambyrger-in:before, 
+.gambyrger-menu__toggler:checked + .gambyrger-in:after {
+	top: 0;
+	transform: rotate(90deg); 
+}
+
+/* Rotate on hover when checked */
+.gambyrger-menu__toggler:checked:hover + .gambyrger-in {
+	transform: rotate(225deg); 
+}
+
+.gambyrger-background {
+	//display: none;	
+	display: flex;
+    justify-content: center;
+    align-items: center;
+	width: 100%;
+	height: 100%;
+	visibility: hidden;
+	overflow: hidden;
+	position: fixed;
+	top: 0;
+	left: 0;
+	&__gambyrger-wrap {
+		display: flex;
+		justify-content: center;
+	    align-items: center;
+		background: var(--overlay-color);
+		border-radius: 50%;
+		width: 200vw;
+		height: 200vw;
+		transform: scale(0);
+		transition: all 0.4s ease;
+		&__gambyrger-box {
+			text-align: center;
+			max-width: 90vw;
+			max-height: 100vh;
+			opacity: 0;
+			transition: opacity 0.4s ease;	
+			&_gambyrger-list {
+			    @extend ul;
+			    padding-left: 0;    	
+				&_link-group {			
+					a {
+						padding: 0px 4px;
+			    		@extend a;
+			    		color: inherit;
+			    		transition: color 0.4s ease;				
+			    		&:hover {
+				  			border-bottom: 2px solid $red-link;
+				  			color: $purpur-light;
+						}
+					}
 				}
-			}
+		    }
 		}
-    }
+	}	
 }
 
 .popap {
@@ -182,25 +298,7 @@ menu {
 	margin-bottom: 7px;
 }
 
-.byrger-menu.byrger-menu_state_open .byrger-menu__byrger-icon .line-1 {
-  top: 18px;
-  width: 0%;
-  left: 50%;
-}
-.byrger-menu.byrger-menu_state_open .byrger-menu__byrger-icon .line-2 {
-  transform: rotate(45deg);
-}
-.byrger-menu.byrger-menu_state_open  .byrger-menu__byrger-icon .line-3 {
-  transform: rotate(-45deg);
-}
-.byrger-menu.byrger-menu_state_open  .byrger-menu__byrger-icon .line-4 {
-  top: 18px;
-  width: 0%;
-  left: 50%;
-}
-.byrger-menu.byrger-menu_state_open .gambyrger-menu {
-  display: block;  
-}
+
 /* -----  gambyrger-menu finish  -----*/
 
 

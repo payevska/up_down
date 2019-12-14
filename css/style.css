@@ -69,7 +69,7 @@ body {
 .container {
   /* padding: 0; */ }
 
-a, button a, .button-top a, .button-review a, .button-about a, .form-contact__form-content_form-submit a, .header-nav__link-group a, .logotype a, .language__Ru a, .language__En a, .gambyrger-menu__gambyrger-list_link-group a, .video-table, .block-right__text-about_span-about, .footer-wrap__menu-footer_vertical-menu_link-group a, .footer-wrap__footer-contact_footer-email a {
+a, button a, .button-top a, .button-review a, .button-about a, .form-contact__form-content_form-submit a, .header-nav__link-group a, .logotype a, .language__Ru a, .language__En a, .gambyrger-background__gambyrger-wrap__gambyrger-box_gambyrger-list_link-group a, .video-table, .block-right__text-about_span-about, .footer-wrap__menu-footer_vertical-menu_link-group a, .footer-wrap__footer-contact_footer-email a {
   font-family: 'Nunito Sans', sans-serif;
   font-size: 16px;
   font-weight: 700;
@@ -89,7 +89,7 @@ a, button a, .button-top a, .button-review a, .button-about a, .form-contact__fo
   a:focus, .video-table:focus, .block-right__text-about_span-about:focus {
     color: #566ca5; }
 
-ul, .header-nav, .gambyrger-menu__gambyrger-list, .footer-wrap__menu-footer_vertical-menu {
+ul, .header-nav, .gambyrger-background__gambyrger-wrap__gambyrger-box_gambyrger-list, .footer-wrap__menu-footer_vertical-menu {
   list-style: none; }
 
 h1, .main__main-title_title {
@@ -120,7 +120,7 @@ button, .button-top, .button-review, .button-about, .form-contact__form-content_
   button:hover, .button-top:hover, .button-review:hover, .button-about:hover, .form-contact__form-content_form-submit:hover {
     background-color: #ffd0b3;
     transition: 1s; }
-  button a, .button-top a, .button-review a, .button-about a, .form-contact__form-content_form-submit a, button .header-nav__link-group a, .header-nav__link-group button a, button .logotype a, .logotype button a, button .language__Ru a, .language__Ru button a, button .language__En a, .language__En button a, button .gambyrger-menu__gambyrger-list_link-group a, .gambyrger-menu__gambyrger-list_link-group button a, button .video-table, .button-top .video-table, .button-review .video-table, .button-about .video-table, .form-contact__form-content_form-submit .video-table, button .block-right__text-about_span-about, .button-top .block-right__text-about_span-about, .button-review .block-right__text-about_span-about, .button-about .block-right__text-about_span-about, .form-contact__form-content_form-submit .block-right__text-about_span-about, button .footer-wrap__menu-footer_vertical-menu_link-group a, .footer-wrap__menu-footer_vertical-menu_link-group button a, button .footer-wrap__footer-contact_footer-email a, .footer-wrap__footer-contact_footer-email button a {
+  button a, .button-top a, .button-review a, .button-about a, .form-contact__form-content_form-submit a, button .header-nav__link-group a, .header-nav__link-group button a, button .logotype a, .logotype button a, button .language__Ru a, .language__Ru button a, button .language__En a, .language__En button a, button .gambyrger-background__gambyrger-wrap__gambyrger-box_gambyrger-list_link-group a, .gambyrger-background__gambyrger-wrap__gambyrger-box_gambyrger-list_link-group button a, button .video-table, .button-top .video-table, .button-review .video-table, .button-about .video-table, .form-contact__form-content_form-submit .video-table, button .block-right__text-about_span-about, .button-top .block-right__text-about_span-about, .button-review .block-right__text-about_span-about, .button-about .block-right__text-about_span-about, .form-contact__form-content_form-submit .block-right__text-about_span-about, button .footer-wrap__menu-footer_vertical-menu_link-group a, .footer-wrap__menu-footer_vertical-menu_link-group button a, button .footer-wrap__footer-contact_footer-email a, .footer-wrap__footer-contact_footer-email button a {
     font-family: 'Archivo Narrow', sans-serif;
     font-size: 18px;
     text-transform: uppercase;
@@ -291,6 +291,25 @@ menu {
 .line-4 {
   top: 14px; }
 
+.byrger-menu.byrger-menu_state_open .byrger-menu__byrger-icon .line-1 {
+  top: 18px;
+  width: 0%;
+  left: 50%; }
+
+.byrger-menu.byrger-menu_state_open .byrger-menu__byrger-icon .line-2 {
+  transform: rotate(45deg); }
+
+.byrger-menu.byrger-menu_state_open .byrger-menu__byrger-icon .line-3 {
+  transform: rotate(-45deg); }
+
+.byrger-menu.byrger-menu_state_open .byrger-menu__byrger-icon .line-4 {
+  top: 18px;
+  width: 0%;
+  left: 50%; }
+
+.byrger-menu.byrger-menu_state_open .gambyrger-menu {
+  display: block; }
+
 /* byrger-menu finish*/
 .logotype {
   display: flex;
@@ -323,46 +342,114 @@ menu {
     display: none; }
 
 /* -----  gambyrger-menu start  -----*/
-.gambyrger {
-  display: flex;
-  flex-direction: column; }
-
 .gambyrger-menu {
-  display: none; }
-  .gambyrger-menu__gambyrger-list {
-    height: 100vh;
-    padding-left: 0; }
-    .gambyrger-menu__gambyrger-list_link-group a, .gambyrger-menu__gambyrger-list_link-group .video-table, .gambyrger-menu__gambyrger-list_link-group .block-right__text-about_span-about {
-      padding: 0px 4px;
-      color: #ebebf4; }
-      .gambyrger-menu__gambyrger-list_link-group a:hover, .gambyrger-menu__gambyrger-list_link-group .video-table:hover, .gambyrger-menu__gambyrger-list_link-group .block-right__text-about_span-about:hover {
-        border-bottom: 2px solid #ff9571;
-        color: #8e86ac; }
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1; }
+  .gambyrger-menu__toggler {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    opacity: 0; }
+  .gambyrger-menu__gambyrger {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 60px;
+    height: 60px;
+    padding: 1rem;
+    background: rgba(43, 46, 102, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+
+/*gambyrger line*/
+.gambyrger-in {
+  position: relative;
+  width: 100%;
+  height: 2px;
+  background-color: #000000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.4s ease; }
+
+/* Top and bottom lines */
+.gambyrger-in:before, .gambyrger-in:after {
+  content: '';
+  position: absolute;
+  z-index: 1;
+  top: -10px;
+  width: 100%;
+  height: 2px;
+  background: #000000; }
+
+/* Moves line down */
+.gambyrger-in:after {
+  top: 10px; }
+
+/* Toggler animate */
+.gambyrger-menu__toggler:checked + .gambyrger-in {
+  transform: rotate(135deg); }
+
+/* Turn lines into X */
+.gambyrger-menu__toggler:checked + .gambyrger-in:before,
+.gambyrger-menu__toggler:checked + .gambyrger-in:after {
+  top: 0;
+  transform: rotate(90deg); }
+
+/* Rotate on hover when checked */
+.gambyrger-menu__toggler:checked:hover + .gambyrger-in {
+  transform: rotate(225deg); }
+
+.gambyrger-background {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0; }
+  .gambyrger-background__gambyrger-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--overlay-color);
+    border-radius: 50%;
+    width: 200vw;
+    height: 200vw;
+    transform: scale(0);
+    transition: all 0.4s ease; }
+    .gambyrger-background__gambyrger-wrap__gambyrger-box {
+      text-align: center;
+      max-width: 90vw;
+      max-height: 100vh;
+      opacity: 0;
+      transition: opacity 0.4s ease; }
+      .gambyrger-background__gambyrger-wrap__gambyrger-box_gambyrger-list {
+        padding-left: 0; }
+        .gambyrger-background__gambyrger-wrap__gambyrger-box_gambyrger-list_link-group a, .gambyrger-background__gambyrger-wrap__gambyrger-box_gambyrger-list_link-group .video-table, .gambyrger-background__gambyrger-wrap__gambyrger-box_gambyrger-list_link-group .block-right__text-about_span-about {
+          padding: 0px 4px;
+          color: inherit;
+          transition: color 0.4s ease; }
+          .gambyrger-background__gambyrger-wrap__gambyrger-box_gambyrger-list_link-group a:hover, .gambyrger-background__gambyrger-wrap__gambyrger-box_gambyrger-list_link-group .video-table:hover, .gambyrger-background__gambyrger-wrap__gambyrger-box_gambyrger-list_link-group .block-right__text-about_span-about:hover {
+            border-bottom: 2px solid #ff9571;
+            color: #8e86ac; }
 
 .popap {
   padding-top: 20px; }
 
 .pop {
   margin-bottom: 7px; }
-
-.byrger-menu.byrger-menu_state_open .byrger-menu__byrger-icon .line-1 {
-  top: 18px;
-  width: 0%;
-  left: 50%; }
-
-.byrger-menu.byrger-menu_state_open .byrger-menu__byrger-icon .line-2 {
-  transform: rotate(45deg); }
-
-.byrger-menu.byrger-menu_state_open .byrger-menu__byrger-icon .line-3 {
-  transform: rotate(-45deg); }
-
-.byrger-menu.byrger-menu_state_open .byrger-menu__byrger-icon .line-4 {
-  top: 18px;
-  width: 0%;
-  left: 50%; }
-
-.byrger-menu.byrger-menu_state_open .gambyrger-menu {
-  display: block; }
 
 /* -----  gambyrger-menu finish  -----*/
 /* ------ media query ------ */

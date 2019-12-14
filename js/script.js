@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-   /* // byrger 
+   // byrger 
 
     
     (function($){
@@ -26,7 +26,8 @@ $(document).ready(function(){
     $('.block-blog__info-blog_link3-blog').click(function () {
     $('#span3').show();
     
-    });*/
+    });
+    
 
     /*scroll-home......https://www.w3schools.com/howto/howto_css_smooth_scroll.asp#section2*/
 
