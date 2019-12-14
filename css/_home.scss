@@ -396,6 +396,21 @@ section-1 {
 		}
 	}
 }
+@include iphone-X {
+	.home {
+		background-attachment: scroll;
+	}
+}
+@include iphone-X-portrait {
+	.home {
+		background-attachment: scroll;
+	}
+}
+@include iphone-X-landscape {
+	.home {
+		background-attachment: scroll;
+	}
+}	
 @include phone {
 	.main {
 		align-items: center;

@@ -682,6 +682,15 @@ section-1 {
     font-size: 8px; }
     .scroll-link__link-arrow {
       width: 60%; } }
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-device-pixel-ratio: 3) {
+  .home {
+    background-attachment: scroll; } }
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait) {
+  .home {
+    background-attachment: scroll; } }
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape) {
+  .home {
+    background-attachment: scroll; } }
 @media (min-width: 320px) and (max-width: 575.98px) {
   .main {
     align-items: center;
