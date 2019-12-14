@@ -401,6 +401,37 @@ section-1 {
 	.home {
 		background-attachment: scroll;
 	}
+	.main {
+		align-items: center;
+		padding-top: 0;	
+	    &__main-title {		
+		    &_title {
+		    	padding-top: 0;
+				font-size: 22px;	
+			}
+			&_topic {
+				font-size: 16px;	
+			}
+			&_main-button {
+				margin-top: 20px;	
+			}
+		}	
+	}
+	.button-top {
+		a {
+			font-size: 12px;			
+		}
+		&__btn {
+			padding: 8px 10px;					
+		}
+	}
+	.scroll-link {
+		bottom: 50px;	
+		font-size: 8px;
+		&__link-arrow {
+			width: 60%;
+		}
+	}
 }
 @include iphone-X-portrait {
 	.home {

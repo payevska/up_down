@@ -401,6 +401,97 @@ footer {
 		font-size: 32px;
 	}		
 }
+@include iphone-X {
+	.form-contact {
+		&__form-title {		
+	    	margin-top: 0;
+		    margin-bottom: 17px;
+		    font-size: 21px;
+		}
+		&__form-content {
+			width: 75%;
+			font-size: 14px;
+			&_form-name {
+				margin-bottom: 18px;
+				padding: 5px 0 5px 27px;
+			}
+			&_form-email {
+				margin-bottom: 18px;
+				padding: 5px 0 5px 27px;
+			}
+			&_form-message {
+				margin-bottom: 25px;
+			    padding: 5px 0 32px 27px;
+			}
+			&_form-submit {
+				padding: 7px 22px;
+				margin-bottom: 25px;
+				a {
+					font-size: 12px;
+				}			 			
+			}
+		}
+	}
+	.footer-wrap {
+		flex-direction: column;
+		&__logotype-small {
+			justify-content: center;
+			font-size: 16px;
+		    padding-bottom: 0;
+		}
+		&__menu-footer {
+			padding: 5px 15px;
+			&_title-menu {
+				font-size: 14px;
+				text-align: center;
+			}
+			&_vertical-menu {
+				display: flex;
+    			justify-content: space-between;
+				&_link-group {
+					a {
+						font-size: 12px;
+					}					
+				}				
+			}				
+		}
+		&__footer-contact {
+			&_topic-contact {
+				font-size: 14px;
+				padding-bottom: 5px;
+			}
+			&_footer-email {
+				margin-bottom: 5px;
+				a {
+					font-size: 14px;
+				}
+			}
+			&_social-web {
+				padding-bottom: 10px;
+				&_topic-social {
+					font-size: 14px;
+				}
+			}	
+			
+		}	
+	}
+	.footer-bottom {
+		&__footer-copyright {
+			font-size: 10px;
+		} 
+	}
+	.button-up {
+	    right: 15px;
+	    bottom: 46px;    
+	}
+	.fa-chevron-circle-up {	
+		font-size: 32px;
+	}
+}
+@include iphone-X-portrait {
+}
+@include iphone-X-landscape {
+}
 @include phone {
 	.form-contact {
 		&__form-title {		

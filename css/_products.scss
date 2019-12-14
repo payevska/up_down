@@ -207,6 +207,12 @@ section-4 {
 	}
 }
 @include iphone-X {
+	.product {
+		margin-bottom: 10px;
+		&__product-title {
+			font-size: 20px;
+		}	
+	}
 	.product-contain {
 		flex-direction: column;
 	}
@@ -214,16 +220,21 @@ section-4 {
 		max-width: 100%;
 	    flex-direction: row;
 	    justify-content: space-around;
-	    padding-bottom: 0;
+	    padding-bottom: 10px;
 		&__picture {
 			width: 50%;
-			height: 120px;
+			height: 70px;
 	    	&_product-image {
+	    		margin-top: -20px;
 			}
 		}	
-	}	
+	}
 	.characteristic-list {
 		max-width: 100%;		
+	}
+	.character {
+		font-size: 12px;
+		line-height: 1.2;
 	}
 }
 @include iphone-X-portrait {

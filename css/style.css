@@ -685,7 +685,29 @@ section-1 {
       width: 60%; } }
 @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-device-pixel-ratio: 3) {
   .home {
-    background-attachment: scroll; } }
+    background-attachment: scroll; }
+
+  .main {
+    align-items: center;
+    padding-top: 0; }
+    .main__main-title_title {
+      padding-top: 0;
+      font-size: 22px; }
+    .main__main-title_topic {
+      font-size: 16px; }
+    .main__main-title_main-button {
+      margin-top: 20px; }
+
+  .button-top a, .button-top .video-table, .button-top .block-right__text-about_span-about {
+    font-size: 12px; }
+  .button-top__btn {
+    padding: 8px 10px; }
+
+  .scroll-link {
+    bottom: 50px;
+    font-size: 8px; }
+    .scroll-link__link-arrow {
+      width: 60%; } }
 @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait) {
   .home {
     background-attachment: scroll; } }
@@ -1393,6 +1415,11 @@ section-4 {
   .character {
     line-height: 1.2; } }
 @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-device-pixel-ratio: 3) {
+  .product {
+    margin-bottom: 10px; }
+    .product__product-title {
+      font-size: 20px; }
+
   .product-contain {
     flex-direction: column; }
 
@@ -1400,13 +1427,19 @@ section-4 {
     max-width: 100%;
     flex-direction: row;
     justify-content: space-around;
-    padding-bottom: 0; }
+    padding-bottom: 10px; }
     .product-images__picture {
       width: 50%;
-      height: 120px; }
+      height: 70px; }
+      .product-images__picture_product-image {
+        margin-top: -20px; }
 
   .characteristic-list {
-    max-width: 100%; } }
+    max-width: 100%; }
+
+  .character {
+    font-size: 12px;
+    line-height: 1.2; } }
 @media (min-width: 320px) and (max-width: 575.98px) {
   .product {
     margin-bottom: 10px; }
@@ -1925,6 +1958,66 @@ footer {
 
   .footer-bottom__footer-copyright {
     font-size: 10px; }
+
+  .fa-chevron-circle-up {
+    font-size: 32px; } }
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-device-pixel-ratio: 3) {
+  .form-contact__form-title {
+    margin-top: 0;
+    margin-bottom: 17px;
+    font-size: 21px; }
+  .form-contact__form-content {
+    width: 75%;
+    font-size: 14px; }
+    .form-contact__form-content_form-name {
+      margin-bottom: 18px;
+      padding: 5px 0 5px 27px; }
+    .form-contact__form-content_form-email {
+      margin-bottom: 18px;
+      padding: 5px 0 5px 27px; }
+    .form-contact__form-content_form-message {
+      margin-bottom: 25px;
+      padding: 5px 0 32px 27px; }
+    .form-contact__form-content_form-submit {
+      padding: 7px 22px;
+      margin-bottom: 25px; }
+      .form-contact__form-content_form-submit a, .form-contact__form-content_form-submit .video-table, .form-contact__form-content_form-submit .block-right__text-about_span-about {
+        font-size: 12px; }
+
+  .footer-wrap {
+    flex-direction: column; }
+    .footer-wrap__logotype-small {
+      justify-content: center;
+      font-size: 16px;
+      padding-bottom: 0; }
+    .footer-wrap__menu-footer {
+      padding: 5px 15px; }
+      .footer-wrap__menu-footer_title-menu {
+        font-size: 14px;
+        text-align: center; }
+      .footer-wrap__menu-footer_vertical-menu {
+        display: flex;
+        justify-content: space-between; }
+        .footer-wrap__menu-footer_vertical-menu_link-group .video-table, .footer-wrap__menu-footer_vertical-menu_link-group .block-right__text-about_span-about, .footer-wrap__menu-footer_vertical-menu_link-group a {
+          font-size: 12px; }
+    .footer-wrap__footer-contact_topic-contact {
+      font-size: 14px;
+      padding-bottom: 5px; }
+    .footer-wrap__footer-contact_footer-email {
+      margin-bottom: 5px; }
+      .footer-wrap__footer-contact_footer-email .video-table, .footer-wrap__footer-contact_footer-email .block-right__text-about_span-about, .footer-wrap__footer-contact_footer-email a {
+        font-size: 14px; }
+    .footer-wrap__footer-contact_social-web {
+      padding-bottom: 10px; }
+      .footer-wrap__footer-contact_social-web_topic-social {
+        font-size: 14px; }
+
+  .footer-bottom__footer-copyright {
+    font-size: 10px; }
+
+  .button-up {
+    right: 15px;
+    bottom: 46px; }
 
   .fa-chevron-circle-up {
     font-size: 32px; } }
