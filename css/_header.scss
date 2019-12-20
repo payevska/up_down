@@ -200,6 +200,8 @@ menu {
 	transition: opacity 0.4s ease;
 }
 
+
+
 .gambyrger-menu .gambyrger-background {
 	display: flex;
     justify-content: center;
@@ -237,7 +239,13 @@ menu {
 } 
 .gambyrger-menu .gambyrger-background > .gambyrger-wrap > .gambyrger-box > .gambyrger-list > .link-group > a:hover ~ .gambyrger-background > .gambyrger-wrap {
     transform: scale(0);
-}   	
+} 
+
+#drop {	
+	transform: scale(0);	
+}	
+
+
 .link-group {			
 	a {
 		padding: 0px 4px;
