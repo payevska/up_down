@@ -1,80 +1,19 @@
-$(document).ready(function(){
+$(document).ready(function(){   
 
-   // byrger 
+    /* for active a ... http://jsfiddle.net/sdLs7urp/1/
+      https://toster.ru/q/136525*/ 
 
-
-    /*----start - byrger from https://traversymedia.com/  --------*/
-    /*var $document = $(document),
-        $window = $(window),
-        $htmlBody = $('html, body'),
-        $body = $('body'),
-        $navbar = $('.navbar'),
-        $navbarCollapse = $('.navbar-collapse'),
-        $pageScrollLink = $('.page-scroll'),
-        $scrollToTop = $('.scroll-to-top'),
-        $galleryGrid = $('.gallery-grid'),
-        navHeight = 80,
-        navHeightShrink = 60;*/
-    /** Page scroll */ 
-        /*$pageScrollLink.on('click', function(e){
-            var anchor = $(this),
-                target = anchor.attr('href');
-            pageScroll(target);
-            e.preventDefault();
-        });*/
-        
-        /*function pageScroll(target){
-            var ww = Math.max($window.width(), window.innerWidth),
-                    offset = ww > 992 ? navHeightShrink : navHeight;
-            
-            $htmlBody.stop().animate({
-                scrollTop: $(target).offset().top - (offset - 1)
-            }, 1000, 'easeInOutExpo');
-            
-            // Automatically retract the navigation after clicking on one of the menu items.
-            $navbarCollapse.collapse('hide');
-        };*/
-
-    /*----finish - byrger from https://traversymedia.com/  --------*/
-
-    /*
-    (function($){
-        $(function() {
-            $('.byrger-menu__byrger-icon').on('click', function() {
-                $(this).closest('.byrger-menu').toggleClass('byrger-menu_state_open');
-            });
-        });
-    })(jQuery);*/
-
-
-
-    // for hambyrger
-
-    /*function openNav() {
-    document.getElementById('drop').style.height = '100%';
-}*/
-
-function closelink() {
-    document.getElementById('drop').style.transform = "scale(0)";
-}
-
-    // for Read more in Blog page
-
-    $('.block-blog__info-blog_link1-blog').click(function () {
-    $('#span1').show();
-
-    });
-
-    $('.block-blog__info-blog_link2-blog').click(function () {
-    $('#span2').show();
-
-    });
-
-    $('.block-blog__info-blog_link3-blog').click(function () {
-    $('#span3').show();
+    var links = $('.link-active');
     
-    });
+    links.last().addClass('active');
     
+    links.on('click', function(){
+        links.removeClass('active');
+        $(this).addClass('active');
+    });
+
+
+   
 
     /*scroll-home......https://www.w3schools.com/howto/howto_css_smooth_scroll.asp#section2*/
 
@@ -147,20 +86,78 @@ function closelink() {
     });
 
 
-    /* for active a ... http://jsfiddle.net/sdLs7urp/1/
-      https://toster.ru/q/136525*/ 
-
-    var links = $('.link-active');
-    
-    links.first().addClass('active');
-    
-    links.on('click', function(){
-        links.removeClass('active');
-        $(this).addClass('active');
+   /* $('.gambyrger-menu__toggler').on('click', function() {
+      document.getElementById("gambyrger-close").style.visibility = "visible";
     });
+  
+    $('.gambyrger-link').on('click', function() {
+      document.getElementById("gambyrger-close").style.visibility = "hidden";
+      document.getElementById("gambyrger-close").style.visibility = "visible";
+    });*/
+    
+    function burgerMenu(selector) {
+        let menu = $(selector);
+        let button = menu.find('.burger-menu__burger-button');
+        let links = menu.find('.burger-menu__burger-link');
+        let overlay = menu.find('.burger-menu__overlay');
 
+        button.on('click', (e) => {
+            e.preventDefault();
+            toggleMenu();
+        });
+
+        links.on('click', () => toggleMenu());
+        overlay.on('click', () => toggleMenu());
+
+        function toggleMenu() {
+            menu.toggleClass('burger-menu__active');
+
+            if  (menu.hasClass('burger-menu__active')) {
+                $('body').css('overflow', 'hidden');
+            } else {
+                $('body').css('overflow', 'visible');
+            }
+        }
+
+    }
+  
+    burgerMenu('.burger-menu');
 
 
 });
 
 
+
+
+
+
+
+
+
+/*function burgerMenu(selector) {
+        let menu = $(selector);
+        let button = menu.find('.burger-menu__button');
+        let links = menu.find('.burger-menu__link');
+        let overlay = menu.find('.burger-menu__overlay');
+
+        button.on('click', (e) => {
+            e.preventDefault();
+            toggleMenu();
+        });
+
+        links.on('click', () => toggleMenu());
+        overlay.on('click', () => toggleMenu());
+
+        function toggleMenu() {
+            menu.toggleClass('burger-menu__active');
+
+            if  (menu.hasClass('burger-menu__active')) {
+                $('body').css('overflow', 'hidden');
+            } else {
+                $('body').css('overflow', 'visible');
+            }
+        }
+
+    }
+  
+    burgerMenu('.burger-menu');*/

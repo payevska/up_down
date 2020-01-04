@@ -22,7 +22,8 @@ section-6 {
 		@extend h2;
     }
     &__topic-text {
-		font-size: 25px;
+        @extend h3;
+        color: $blue-light;
 	    width: 40%;
     	text-align: center;
     }
@@ -52,6 +53,17 @@ section-6 {
 @include iphone-X-landscape {
 }	
 @include iphone-5 {
+    .blog-title {
+        &__topic-blog {
+            margin-top: 15px;
+            margin-bottom: 5px;
+            font-size: 20px;
+        }
+        &__topic-text {
+            font-size: 10px;
+            width: 70%;
+        }
+    }
 }
 
 /* 
