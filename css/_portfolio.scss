@@ -61,7 +61,9 @@ section-5 {
 		height: 360px;
 		display: flex;
 		justify-content: center;
-		overflow: hidden;		
+		overflow: hidden;
+	    margin-top: 15px;
+    	margin-bottom: 10px;		
 		&_carousel-block {
 			height: 720px;
 			display: flex;
@@ -116,13 +118,10 @@ section-5 {
 
 /* ------ media query ------ */
 @include television {
-	.portfolio-info {    
+	.portfolio-info {  
+	  	padding-top: 65px;
 		&__topic {
 			font-size: 36px;
-		}
-		&__text-portfolio {
-		}
-		&__link-portfolio {
 		}
 	}
 }

@@ -98,6 +98,12 @@ section-3 {
 
 
 /* ------ media query ----------------- */
+
+@include television {
+	.block-about {  
+	  	padding-top: 65px;
+	}
+}
 @include desktop {
 	.block-about  {
 		display: flex;
