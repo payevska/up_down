@@ -74,6 +74,13 @@ menu {
     justify-content: flex-end;
     align-items: center;
     a {
+    	width: 86%;
+    	@media (min-width: 576px) and (max-width: 767.98px) {
+			width: 82%;
+		}
+		@media(max-width: 575.98px) {
+			width: 15%;
+		}
     	@extend a;
     	display: flex;
     	align-items: center;
@@ -238,7 +245,36 @@ menu {
 /* ------ media query ------ */
 @include desktop {	
 }
-@include laptop {
+@include iPad {
+	menu {
+		margin: 0;	
+	}
+	.header-nav {
+		&__link-group {			
+			a {
+				font-size: 12px;							
+			}
+		}
+	}
+	.link-active {
+		width: 55%;
+	}
+	.header-phone {
+		i {
+			font-size: 12px;
+		}
+		&__number-phone {
+			font-size: 12px;
+		}
+	}
+	.language{
+		&__Ru {
+			font-size: 12px;
+		}	
+		&__En {
+			font-size: 12px;
+		}
+	}
 }
 @include tablet {
 	menu {
@@ -247,7 +283,7 @@ menu {
 	.header-nav {
 		&__link-group {			
 			a {
-			font-size: 12px;							
+				font-size: 12px;							
 			}
 		}
 	}
@@ -255,6 +291,9 @@ menu {
 		width: 55%;
 	}
 	.header-phone {
+		i {
+			font-size: 12px;
+		}
 		&__number-phone {
 			font-size: 12px;
 		}
@@ -307,7 +346,6 @@ menu {
 	    padding-top: 3px;
 	    padding-bottom: 3px;
 	}
-
 	menu {
 		margin: 0;	
 	}
