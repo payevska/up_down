@@ -360,13 +360,13 @@
 				<div class="col-sm footer-block">
 					<div class="form-contact">
 						<div class="form-contact__form-title">Напишите нам</div>
-						<form class="form-contact__form-content">
-							<input type="text" class="form-contact__form-content_form-name" placeholder="Имя">
-							<input type="email" class="form-contact__form-content_form-email" placeholder="Электронный адресс">
-							<input type="message" class="form-contact__form-content_form-message" placeholder="Сообщение">
-							<button type="submit" class="form-contact__form-content_form-submit">
-								<a href="#myFooter">Отправить</a>
-							</button>
+						<!-- action="mail.php" method="POST" -->						
+						<form action="mail.php" method="POST" class="form-contact__form-content">
+							<input id="mail-name" type="text" class="form-contact__form-content_form-name" placeholder="Имя">
+							<input id="mail-email" type="email" class="form-contact__form-content_form-email" placeholder="Электронный адресс">
+							<input id="mail-message" type="message" class="form-contact__form-content_form-message" placeholder="Сообщение">
+							<button id="mail-submit" type="submit" class="form-contact__form-content_form-submit">Отправить</button>
+							<div class="form-message"></div>
 						</form>
 					</div>			
 			

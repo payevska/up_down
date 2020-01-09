@@ -66,23 +66,27 @@ footer {
 			padding: 16px 40px;
 			@extend button;
 			background-color: $white;
+			color: $orange;
 			border: 1px solid $orange;
 			&:hover {
 				background-color: $orange;
+				color: $white;
 				border: 1px solid $orange;
-			}
-			a {
-				color: $orange;
-				&:hover {
-					color: $white;
-				}
 			}
 		}
 	}
 }
 
 
-	
+.form-error {
+	color: red;
+}
+.form-success {
+	color: green;
+}
+.input-error {
+	box-shadow: 0 0 5px red;
+}	
 
 .footer-wrap {
     display: flex;

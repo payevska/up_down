@@ -278,7 +278,8 @@ menu {
   justify-content: flex-end;
   align-items: center; }
   .header-phone a, .header-phone .burger-menu__burger-link, .header-phone .video-table, .header-phone .block-right__text-about_span-about {
-    width: 86%;
+    width: 56%;
+    font-size: 14px;
     display: flex;
     align-items: center; }
     @media (min-width: 576px) and (max-width: 767.98px) {
@@ -2273,17 +2274,24 @@ footer {
       margin-bottom: 140px;
       padding: 16px 40px;
       background-color: #ffffff;
+      color: #f29257;
       border: 1px solid #f29257; }
       @media (min-width: 1440px) and (max-width: 1599.98px) {
         .form-contact__form-content_form-submit {
           margin-bottom: 40px; } }
       .form-contact__form-content_form-submit:hover {
         background-color: #f29257;
+        color: #ffffff;
         border: 1px solid #f29257; }
-      .form-contact__form-content_form-submit a, .form-contact__form-content_form-submit .burger-menu__burger-link, .form-contact__form-content_form-submit .video-table, .form-contact__form-content_form-submit .block-right__text-about_span-about {
-        color: #f29257; }
-        .form-contact__form-content_form-submit a:hover, .form-contact__form-content_form-submit .burger-menu__burger-link:hover, .form-contact__form-content_form-submit .video-table:hover, .form-contact__form-content_form-submit .block-right__text-about_span-about:hover {
-          color: #ffffff; }
+
+.form-error {
+  color: red; }
+
+.form-success {
+  color: green; }
+
+.input-error {
+  box-shadow: 0 0 5px red; }
 
 .footer-wrap {
   display: flex;
