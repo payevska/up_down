@@ -696,7 +696,7 @@ section-1 {
   display: -webkit-flex; }
 
 .home {
-  background: url("../images/Home-photo4.png") no-repeat top fixed;
+  background: url("../images/home-mobile.jpg") no-repeat top fixed;
   width: 100%;
   min-height: 100vh;
   display: flex;
@@ -767,6 +767,9 @@ section-1 {
 
 /* ------ media query ------ */
 @media (min-width: 1366px) and (max-width: 1439.98px) {
+  .home {
+    background: url("../images/Home-photo4.png") no-repeat top fixed; }
+
   .home-wrap {
     padding-top: 0; }
 
@@ -784,6 +787,9 @@ section-1 {
   .button-top__btn {
     padding: 14px 40px; } }
 @media (min-width: 1200px) and (max-width: 1365.98px) {
+  .home {
+    background: url("../images/Home-photo4.png") no-repeat top fixed; }
+
   .home-wrap {
     padding-top: 0; }
 
@@ -807,6 +813,9 @@ section-1 {
     .scroll-link__link-arrow {
       width: 65%; } }
 @media (min-width: 992px) and (max-width: 1199.98px) {
+  .home {
+    background: url("../images/Home-photo4.png") no-repeat top fixed; }
+
   .home-wrap {
     padding-top: 0; }
 
@@ -825,6 +834,7 @@ section-1 {
 /* ---- iPadPro ---- */
 @media only screen and (min-width: 1024px) and (max-width: 1366px) {
   .home {
+    background: url("../images/Home-photo4.png") no-repeat top fixed;
     background-attachment: scroll; }
 
   .home-wrap {
@@ -852,6 +862,7 @@ section-1 {
       width: 75%; } }
 @media only screen and (min-device-width: 1024px) and (max-device-height: 1366px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
   .home {
+    background: url("../images/Home-photo4.png") no-repeat top fixed;
     background-attachment: scroll; }
 
   .main__main-title_title {
@@ -861,10 +872,12 @@ section-1 {
     bottom: 50px; } }
 @media only screen and (min-device-width: 1366px) and (max-device-height: 1024px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
   .home {
+    background: url("../images/Home-photo4.png") no-repeat top fixed;
     background-attachment: scroll; } }
 /* ---- iPad ---- */
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   .home {
+    background: url("../images/Home-photo4.png") no-repeat top fixed;
     background-attachment: scroll; }
 
   .home-wrap {
@@ -891,6 +904,7 @@ section-1 {
       width: 75%; } }
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
   .home {
+    background: url("../images/Home-photo4.png") no-repeat top fixed;
     background-attachment: scroll; }
 
   .main {
@@ -902,11 +916,15 @@ section-1 {
     bottom: 50px; } }
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
   .home {
+    background: url("../images/Home-photo4.png") no-repeat top fixed;
     background-attachment: scroll; }
 
   .main__main-title_main-button {
     margin-top: 30px; } }
 @media (min-width: 768px) and (max-width: 991.98px) {
+  .home {
+    background: url("../images/Home-photo4.png") no-repeat top fixed; }
+
   .home-wrap {
     padding-top: 0; }
 
@@ -921,6 +939,9 @@ section-1 {
     .main__main-title_main-button {
       margin-top: 40px; } }
 @media (min-width: 576px) and (max-width: 767.98px) {
+  .home {
+    background: url("../images/Home-photo4.png") no-repeat top fixed; }
+
   .main {
     align-items: center;
     padding-top: 0; }
