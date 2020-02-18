@@ -1,44 +1,79 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-124833650-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-124833650-1');
+	</script>
+	
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"> <!-- , user-scalable=no -->
-	<title>Up Down</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	<title>Стол для работы стоя с регулировкой высоты | Up and Down</title>
 	<meta name="autor" content="Yuliya Payevska">
-	<meta name="description" content="Web desing landing page">
-	<meta name="keywords" content="web story, table, landing page">
+	<meta name="title" content="Стол для работы стоя с регулировкой высоты | Up and Down">
+	<meta name="description" content="Купить стол для работы стоя. Регулировка высоты происходит простым нажатием на кнопку. Доставка по всей Украине.">
+	<meta name="keywords" content="стол для работы стоя, Up and Down">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<script src="https://kit.fontawesome.com/79503d5842.js"></script>
 	<link href="https://fonts.googleapis.com/css?family=Archivo+Narrow:400,400i,500,500i,600,600i,700,700i&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Nunito+Sans&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Judson:400,400i,700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="css/style.css">
+
+	<script type="application/ld+json">
+		{
+		  "@context": "https://schema.org/",
+		  "@type": "Product",
+		  "name": "Стол для работы стоя | Up and Down",
+		  "image": [
+			"https://und.com.ua/images/full_jpg_01.jpg"
+		   ],
+		  "description": "Стол ддя работы стоя с регулировкой высоты.",
+		  "sku": "55555555",
+		  "brand": {
+			"@type": "Thing",
+			"name": "Up and Down"
+		  },
+		  "offers": {
+			"@type": "Offer",
+			"url": "https://example.com/anvil",
+			"priceCurrency": "UAH",
+			"price": "6000",
+			"priceValidUntil": "2020-12-12",
+			"itemCondition": "https://schema.org/UsedCondition",
+			"availability": "https://schema.org/InStock"
+		  }
+		}
+	</script>
 </head>
 <body>
 	
-<!-- HEADER start -->
 	<header id="myHeader">	
 
-		<!-- menu -->
 		<div class="container">
 			<div class="row">
 				<div class="col-12 col-sm-12 header-wrap">
 					<menu class="col-5 col-sm-5 menu-active">
 						<ul class="header-nav">
 							<li class="header-nav__link-group">
-								<a href="#myProducts" class="link-active">Продукты</a>
+								<a href="#characteristics" class="link-active">Характеристики</a>
 							</li>						
 							<li class="header-nav__link-group">
-								<a href="#myAbout" class="link-active">Обзор</a>
+								<a href="#about" class="link-active">Обзор</a>
 							</li>
 							<li class="header-nav__link-group">
-								<a href="#myPortfolio" class="link-active">Галерея</a>
+								<a href="#gallery" class="link-active">Галерея</a>
 							</li>
 							<li class="header-nav__link-group">
-								<a href="#myBlog" class="link-active">Блог</a>
+								<a href="#blog" class="link-active">Блог</a>
 							</li>			
 						</ul>
-						<!-- gambyrger-menu start -->
+						
 					<div id="myGambyrger" class="col col-sm burger-menu">						
 						<a href="#" class="burger-menu__burger-button">
 							<span class="burger-menu__lines"></span>
@@ -47,54 +82,50 @@
 							
 				                	<ul class="burger-list">
 										<li class="lists pop">
-											<a href="#myProducts" class="burger-menu__burger-link">Продукты</a>
+											<a href="#characteristics" class="burger-menu__burger-link">Продукты</a>
 										</li>						
 										<li class="lists pop">
-											<a href="#myAbout" class="burger-menu__burger-link">Обзор</a>
+											<a href="#about" class="burger-menu__burger-link">Обзор</a>
 										</li>
 										<li class="lists pop">
-											<a href="#myPortfolio" class="burger-menu__burger-link">Галерея</a>
+											<a href="#gallery" class="burger-menu__burger-link">Галерея</a>
 										</li>
 										<li class="lists pop">
-											<a href="#myBlog" class="burger-menu__burger-link">Блог</a>
+											<a href="#blog" class="burger-menu__burger-link">Блог</a>
 										</li>			
 									</ul>								
 						</div>
 						<div class="burger-menu__overlay"></div>
 					</div>
-					<!-- gambyrge-menu finish -->						
+											
 					</menu>
 
 					<div class="col-2 col-sm-2 logotype">
-						<a href="#myHome" class="link-active">
+						<a href="#home" class="link-active">
 							<img src="images/Up-and-Down-final.png" alt="logotype">
 						</a>
 					</div>
 
 					<div class="col-3 col-sm-3 header-phone">
-						<a href="#myFooter" class="link-active">
+						<a href="#footer" class="link-active">
 							<i class="fas fa-phone"></i>
-							<div href="#myFooter" class="header-phone__number-phone">077-777-77-77</div>
+							<div href="#footer" class="header-phone__number-phone">050-922-33-76</div>
 						</a>
 					</div>
 					<div class="col-2 col-sm-2 language">
 						<a href="#" class="language__Ru">
 								Ru
 						</a>
-						<a href="#" class="language__En">
+						<!--<a href="#" class="language__En">
 								En
-						</a>
+						</a>-->
 					</div>				
             	</div>	
 			</div>				
 		</div>
 	</header>
-<!-- Heade finish -->
-	
 
-
-<!-- Home start -->
-	<section-1 id="myHome">
+	<section-1 id="home">
 		<div class="col-sm home">
 			<div class="container">				
 				<div class="row">
@@ -110,47 +141,39 @@
 								</div>
 							</div>
 						
-
-						<!--scroll mouse start -->	
-						
-		                <a href="#myAbout" id="scroll-home" class="scroll-link">
+		                <a href="#about" id="scroll-home" class="scroll-link">
 		                	<i class="fas fa-circle fa-5x"></i>
 		                	<img src="images/button-down-home.png" alt="button-down" class="scroll-link__link-arrow">
 		                </a>
 						
-						<!-- scroll mouse finish-->	
 						</div>				
 					</div>
 				</div>	
 			</div>		
 		</div>		
 	</section-1>
-<!-- Home finish -->
-	
-<!-- Video-review start -->
+
 	<section-2 id="myVideo-review">
 		<div class="container">
 			<div class="row">
 				<div class="col-sm col-md review-wrap">
 					<div class="title-review">3D обзор</div>
-					<!-- <div class="video-portfolio"> -->
+
 						<video class="video-table" controls="controls" poster="" preload="">
 							<source src="images/1080x1080_insta.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
 						</video>						
-					<!-- </div> -->
+
 					<div class="box-button-review">
 						<button class="button-review">
-							<a href="#myProducts" class="button-review__btn">Продукты</a>
+							<a href="#characteristics" class="button-review__btn">Характеристики</a>
 						</button>
 					</div>					
 				</div>				
 			</div>
 		</div>				
 	</section-2>
-<!-- video-review finish -->
 
-<!-- About start -->
-	<section-3 id="myAbout">
+	<section-3 id="about">
 		<div class="container">
 			<div class="row">
 				<div class="col-sm block-about">	
@@ -169,12 +192,12 @@
 							</div>
 						</div>
 						<div class="block-right__text-about">
-							Cтол Up-and-Down предназначен для комбинированной работы как сидя, так и стоя. Представляемая модель устанавливается на основной рабочий стол. Благодаря своим компактным размерам он легко разместится на Вашем столе даже в небольшом офисе. Расположите на верхней столешнице монитор, а на нижней полке клавиатуру. При помощи кнопки Вы сможете поднять все необходимое оборудование на комфортную для вас высоту, не прилагая никаких усилий<span class="block-right__text-about_span-about"> click here</span>
+							Cтол Up-and-Down предназначен для комбинированной работы как сидя, так и стоя. Представляемая модель устанавливается на основной рабочий стол. Благодаря своим компактным размерам он легко разместится на Вашем столе даже в небольшом офисе. Расположите на верхней столешнице монитор, а на нижней полке клавиатуру. При помощи кнопки Вы сможете поднять все необходимое оборудование на комфортную для вас высоту, не прилагая никаких усилий.
 						</div>
 						
 						<div class="block-right__box-botton-about">
 							<button class="button-about">
-								<a href="#myPortfolio" class="button-about_btn">Галерея</a>
+								<a href="#gallery" class="button-about_btn">Галерея</a>
 							</button>
 						</div>
 					</div>							
@@ -182,10 +205,8 @@
 			</div>
 		</div>			
 	</section-3>
-<!-- About finish -->
 
-<!-- Products start -->
-	<section-4 id="myProducts">
+	<section-4 id="characteristics">
 		<div class="container">
 			<div class="row">
 				<div class="col-sm product-wrap">
@@ -245,16 +266,13 @@
 			</div>
 		</div>
 	</section-4>
-<!-- Products finish -->			
 
-<!-- Portfolio start -->
-	<section-5 id="myPortfolio">
+	<section-5 id="gallery">
 		<div class="container">
 			<div class="row">
 				<div class="col-sm block-gallery">
 					<div class="portfolio-info">
 						<h2 class="portfolio-info__topic">Галерея</h2>
-						<div class="portfolio-info__text-portfolio">All my projects in my portfolio have been created using mockups, that  web designers posted online for free access. </div>		
 					</div>	
 		
 					<div class="block-gallery-image">
@@ -263,7 +281,7 @@
 								<img src="images/full_jpg_01.jpg" alt="desk" class="portfolio-left__project-big-foto_fotoProject-big">
 							</div>			
 						</div>
-						<!--   carousel - start  -->
+						
 						<div class="col-sm-3 portfolio-right">
 							<div class="carousel-foto">
 								<div id="slider-top" class="carousel-foto__project arrow-up-down">
@@ -321,16 +339,14 @@
 								</div>
 							</div>
 						</div>
-						<!-- carousel-finis -->	
+						
 					</div>
 				</div>											
 			</div>			
 		</div>		
 	</section-5>
-<!-- Portfolio finish -->
 
-<!-- Blog start -->
-	<section-6 id="myBlog">
+	<section-6 id="blog">
 		<div class="container">
 			<div class="row">
 			<div class="col-sm blog-wrap">		
@@ -351,16 +367,14 @@
 			</div>			
 		</div>
 	</section-6>
-<!-- Blog finish -->
 
-<!-- Footer start -->
-	<footer id="myFooter">		
+	<footer id="footer">
 		<div class="container">	
 			<div class="row">
 				<div class="col-sm footer-block">
 					<div class="form-contact">
 						<div class="form-contact__form-title">Напишите нам</div>
-						<!-- action="mail.php" method="POST" -->						
+												
 						<form action="mail.php" method="POST" class="form-contact__form-content">
 							<input id="mail-name" type="text" class="form-contact__form-content_form-name" placeholder="Имя">
 							<input id="mail-email" type="email" class="form-contact__form-content_form-email" placeholder="Электронный адресс">
@@ -376,19 +390,19 @@
 							</div>	
 							<ul class="footer-wrap__menu-footer_vertical-menu">
 								<li class="footer-wrap__menu-footer_vertical-menu_link-group">
-									<a href="#myHome">Главная</a>
+									<a href="#home">Главная</a>
 								</li>					
 								<li class="footer-wrap__menu-footer_vertical-menu_link-group">
-									<a href="#myAbout">Обзор</a>
+									<a href="#about">Обзор</a>
 								</li>
 								<li class="footer-wrap__menu-footer_vertical-menu_link-group">
-									<a href="#myProducts">Продукты</a>
+									<a href="#characteristics">Характеристики</a>
 								</li>
 								<li class="footer-wrap__menu-footer_vertical-menu_link-group">
-									<a href="#myPortfolio">Галерея</a>
+									<a href="#gallery">Галерея</a>
 								</li>
 								<li class="footer-wrap__menu-footer_vertical-menu_link-group">
-									<a href="#myBlog">Блог</a>
+									<a href="#blog">Блог</a>
 								</li>			
 							</ul>					
 						</div>
@@ -397,10 +411,10 @@
 							<div class="footer-wrap__footer-contact_topic-contact">Наш контакт</div>
 							<div class="footer-wrap__footer-contact_phone-contact">
 								<i class="fas fa-phone"></i>
-								<div class="footer-phone">077-777-77-77</div>
+								<div class="footer-phone">050-922-33-76</div>
 							</div>
 							<div class="footer-wrap__footer-contact_footer-email">
-								<a href="#">y.payevska@gmail.com</a>
+								<a href="#">sales@und.com.ua</a>
 							</div>
 												
 							<div class="footer-wrap__footer-contact_social-web">
@@ -414,17 +428,15 @@
 				</div>
 			</div>
 		</div>
-		<!-- botton-up start -->
-		<a href="#myHome" class="button-up">
+
+		<a href="#home" class="button-up">
 			<i class="fas fa-chevron-circle-up fa-3x"></i>	      
         </a>				
-		<!-- botton-up finish -->
-		<!-- copyright -->
+
 		<div class="footer-bottom">			
-			<div class="footer-bottom__footer-copyright">Up-and-Down &#169 2019 By Payevska Yuliya</div>	
+			<div class="footer-bottom__footer-copyright">Up-and-Down &#169 2020</div>	
 		</div>
-	</footer>
-<!-- Footer finish -->	
+	</footer>	
 
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
