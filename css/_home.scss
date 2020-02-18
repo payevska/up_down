@@ -4,7 +4,7 @@ section-1 {
 }
 
 .home {
-	background: url('../images/Home-photo4.png') no-repeat top fixed;	
+	background: url('../images/home-mobile.jpg') no-repeat top fixed;	
     width: 100%;
 	min-height: 100vh;
 	display: flex;
@@ -97,6 +97,9 @@ section-1 {
 
 /* ------ media query ------ */
 @include television {
+	.home {
+		background: url('../images/Home-photo4.png') no-repeat top fixed;
+	}
 	.home-wrap {	
 	    padding-top: 0;		
 	}
@@ -124,6 +127,9 @@ section-1 {
 	}
 }
 @include desktop {
+	.home {
+		background: url('../images/Home-photo4.png') no-repeat top fixed;
+	}
 	.home-wrap {	
 	    padding-top: 0;		
 	}
@@ -159,6 +165,9 @@ section-1 {
 	}
 }
 @include laptop {
+	.home {
+		background: url('../images/Home-photo4.png') no-repeat top fixed;
+	}
 	.home-wrap {	
 	    padding-top: 0;		
 	}
@@ -189,6 +198,7 @@ section-1 {
 /* ---- iPadPro ---- */
 @include iPadPro {
 	.home {
+		background: url('../images/Home-photo4.png') no-repeat top fixed;
 		background-attachment: scroll;
 	}	
 	.home-wrap {	
@@ -227,6 +237,7 @@ section-1 {
 }
 @include iPadPro-portrait {
 	.home {
+		background: url('../images/Home-photo4.png') no-repeat top fixed;
 		background-attachment: scroll;
 	}
 	.main {	
@@ -249,6 +260,7 @@ section-1 {
 
 @include iPadPro-landscape {
 	.home {
+		background: url('../images/Home-photo4.png') no-repeat top fixed;
 		background-attachment: scroll;
 	}
 	.main {	
@@ -268,6 +280,7 @@ section-1 {
 /* ---- iPad ---- */
 @include iPad {	
 	.home {
+		background: url('../images/Home-photo4.png') no-repeat top fixed;
 		background-attachment: scroll;
 	}
 	.home-wrap {	
@@ -305,6 +318,7 @@ section-1 {
 }
 @include iPad-landscape {	
 	.home {
+		background: url('../images/Home-photo4.png') no-repeat top fixed;
 		background-attachment: scroll;
 	}	
 	.main {
@@ -328,6 +342,7 @@ section-1 {
 
 @include iPad-portrait {
 	.home {
+		background: url('../images/Home-photo4.png') no-repeat top fixed;
 		background-attachment: scroll;
 	}
 	.main {	
@@ -344,6 +359,9 @@ section-1 {
 }
 
 @include tablet {
+	.home {
+		background: url('../images/Home-photo4.png') no-repeat top fixed;
+	}
 	.home-wrap {	
 	    padding-top: 0;		
 	}
@@ -365,6 +383,9 @@ section-1 {
 	}
 }
 @include tablet-mini {
+	.home {
+		background: url('../images/Home-photo4.png') no-repeat top fixed;
+	}
 	.main {
 		align-items: center;
 		padding-top: 0;	

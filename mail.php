@@ -8,14 +8,17 @@ if (isset($_POST['submit'])) {
 	$errorEmpty = false;
 	$errorEmail = false;
 
-	if (empty($name) || empty($email) || empty($message)) {
-		echo "<span class="form-error">Fill in all fields!</span>";
+	if (empty($name) || empty($email) || empty($message)) {		
+		echo "<span class='form-error'>Fill in all fields!</span>";
 		$errorEmpty = true;
 	} elseif (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-		echo "<span class="form-error">Write a valid e-mail address!</span>";
+		echo "<span class='form-error'>Write a valid e-mail address!</span>";
 		$errorEmail = true;
 	} else {
-		echo "<span class="form-success">Fill in all fields!</span>";
+		$headers = 'From: '.$name."\r\n".
+		'Reply-To: '.$email."\r\n" .
+		'X-Mailer: PHP/' . phpversion();
+		@mail('sales@und.com.ua', 'UND: Вопрос из формы', $message, $headers);  
 	}
 } else {
 	echo "There was an error!";
