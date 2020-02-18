@@ -94,6 +94,10 @@ menu {
 		}
 	}
 }
+.logo-name .link-active.active {
+	color: $black;
+	border-bottom: none;
+}
 .header-phone {
 	width: 100%;
 	display: flex;

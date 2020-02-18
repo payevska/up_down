@@ -183,6 +183,7 @@ footer {
 	margin-left: 10px;
 }
 .fa-instagram {
+	font-size: 24px;
 	color: $orange;
 }
 
@@ -500,6 +501,10 @@ footer {
 	    right: 15px;
 	    bottom: 46px;    
 	}
+	.fa-instagram {
+		font-size: 22px;
+		color: $orange;
+	}
 	.fa-chevron-circle-up {	
 		font-size: 32px;
 	}
@@ -559,6 +564,7 @@ footer {
 			}				
 		}
 		&__footer-contact {
+			padding-bottom: 35px;
 			&_topic-contact {
 				font-size: 14px;
 				padding-bottom: 5px;
@@ -586,6 +592,10 @@ footer {
 	.button-up {
 	    right: 15px;
 	    bottom: 46px;    
+	}
+	.fa-instagram {
+		font-size: 20px;
+		color: $orange;
 	}
 	.fa-chevron-circle-up {	
 		font-size: 32px;
@@ -670,6 +680,7 @@ footer {
 		}	
 	}
 	.footer-bottom {
+		bottom: 15px;
 		&__footer-copyright {
 			font-size: 10px;
 		} 
@@ -677,6 +688,10 @@ footer {
 	.button-up {
 	    right: 15px;
 	    bottom: 46px;    
+	}
+	.fa-instagram {
+		font-size: 20px;
+		color: $orange;
 	}
 	.fa-chevron-circle-up {	
 		font-size: 32px;
