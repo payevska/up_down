@@ -272,22 +272,40 @@ menu {
     .logotype a img, .logotype .burger-menu__burger-link img, .logotype .video-table img, .logotype .block-right__text-about_span-about img {
       width: 100%; }
 
+.logo-name {
+  padding-left: 0;
+  display: flex;
+  align-items: center; }
+  .logo-name__logo-text {
+    font-size: 17px;
+    line-height: 1.35;
+    color: #000000; }
+    @media (min-width: 1200px) and (max-width: 1440px) {
+      .logo-name__logo-text {
+        font-size: 16px;
+        line-height: 1.35; } }
+    @media (min-width: 992px) and (max-width: 1199.98px) {
+      .logo-name__logo-text {
+        font-size: 14px;
+        line-height: 1.25; } }
+    .logo-name__logo-text:hover {
+      color: #000000; }
+    .logo-name__logo-text_logo-row {
+      margin-left: -40px; }
+      @media (min-width: 992px) and (max-width: 1199.98px) {
+        .logo-name__logo-text_logo-row {
+          margin-left: -30px; } }
+
 .header-phone {
   width: 100%;
   display: flex;
   justify-content: flex-end;
-  align-items: center; }
+  align-items: center;
+  padding-right: 30px; }
   .header-phone a, .header-phone .burger-menu__burger-link, .header-phone .video-table, .header-phone .block-right__text-about_span-about {
-    width: 56%;
     font-size: 14px;
     display: flex;
     align-items: center; }
-    @media (min-width: 576px) and (max-width: 767.98px) {
-      .header-phone a, .header-phone .burger-menu__burger-link, .header-phone .video-table, .header-phone .block-right__text-about_span-about {
-        width: 82%; } }
-    @media (max-width: 575.98px) {
-      .header-phone a, .header-phone .burger-menu__burger-link, .header-phone .video-table, .header-phone .block-right__text-about_span-about {
-        width: 15%; } }
   .header-phone i {
     display: flex;
     color: #16943f; }
@@ -298,9 +316,14 @@ menu {
       .header-phone__number-phone {
         display: none; } }
 
-.language {
-  width: 100%;
+.phone-wrap {
   display: flex;
+  align-items: center; }
+
+.language {
+  display: none;
+  width: 100%;
+  /* display: flex; */
   justify-content: flex-end;
   align-items: center;
   font-size: 14px; }
@@ -419,9 +442,6 @@ menu {
   .header-nav__link-group a, .header-nav__link-group .burger-menu__burger-link, .header-nav__link-group .video-table, .header-nav__link-group .block-right__text-about_span-about {
     font-size: 12px; }
 
-  .link-active {
-    width: 55%; }
-
   .header-phone i {
     font-size: 12px; }
   .header-phone__number-phone {
@@ -438,8 +458,11 @@ menu {
   .header-nav__link-group a, .header-nav__link-group .burger-menu__burger-link, .header-nav__link-group .video-table, .header-nav__link-group .block-right__text-about_span-about {
     font-size: 12px; }
 
-  .link-active {
-    width: 55%; }
+  .logo-name__logo-text {
+    font-size: 14px;
+    line-height: 1.25; }
+    .logo-name__logo-text_logo-row {
+      margin-left: -10px; }
 
   .header-phone i {
     font-size: 12px; }
@@ -458,10 +481,16 @@ menu {
     margin-bottom: 0;
     padding: 0; }
     .header-nav__link-group a, .header-nav__link-group .burger-menu__burger-link, .header-nav__link-group .video-table, .header-nav__link-group .block-right__text-about_span-about {
-      font-size: 11px; }
+      font-size: 10px; }
 
-  .link-active {
-    width: 60%; }
+  .logotype a img, .logotype .burger-menu__burger-link img, .logotype .video-table img, .logotype .block-right__text-about_span-about img {
+    width: 80%; }
+
+  .logo-name__logo-text {
+    font-size: 14px;
+    line-height: 1.25; }
+    .logo-name__logo-text_logo-row {
+      margin-left: -10px; }
 
   .header-phone i {
     font-size: 10px; }
@@ -481,22 +510,13 @@ menu {
   menu {
     margin: 0; }
 
-  .fa-phone {
-    font-size: 12px; }
+  .logo-name__logo-text {
+    font-size: 9px;
+    line-height: 1.25; }
+    .logo-name__logo-text_logo-row {
+      margin-left: -7px; }
 
-  .language__Ru {
-    font-size: 12px; }
-  .language__En {
-    font-size: 12px; } }
-@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-device-pixel-ratio: 3) {
-  header {
-    padding-top: 3px;
-    padding-bottom: 3px; }
-
-  menu {
-    margin: 0; }
-
-  .fa-phone {
+  .header-phone i {
     font-size: 12px; }
 
   .language__Ru {
@@ -511,7 +531,17 @@ menu {
   menu {
     margin: 0; }
 
-  .fa-phone {
+  .logotype {
+    padding-left: 10px;
+    padding-right: 10px; }
+
+  .logo-name__logo-text {
+    font-size: 8px;
+    line-height: 1.25; }
+    .logo-name__logo-text_logo-row {
+      margin-left: -5px; }
+
+  .header-phone i {
     font-size: 12px; }
 
   .language__Ru {
@@ -696,7 +726,7 @@ section-1 {
   display: -webkit-flex; }
 
 .home {
-  background: url("../images/Home-photo4.png") no-repeat top fixed;
+  background: url("../images/home-mobile.jpg") no-repeat top fixed;
   width: 100%;
   min-height: 100vh;
   display: flex;
@@ -767,6 +797,9 @@ section-1 {
 
 /* ------ media query ------ */
 @media (min-width: 1366px) and (max-width: 1439.98px) {
+  .home {
+    background: url("../images/Home-photo4.png") no-repeat top fixed; }
+
   .home-wrap {
     padding-top: 0; }
 
@@ -784,6 +817,9 @@ section-1 {
   .button-top__btn {
     padding: 14px 40px; } }
 @media (min-width: 1200px) and (max-width: 1365.98px) {
+  .home {
+    background: url("../images/Home-photo4.png") no-repeat top fixed; }
+
   .home-wrap {
     padding-top: 0; }
 
@@ -807,6 +843,9 @@ section-1 {
     .scroll-link__link-arrow {
       width: 65%; } }
 @media (min-width: 992px) and (max-width: 1199.98px) {
+  .home {
+    background: url("../images/Home-photo4.png") no-repeat top fixed; }
+
   .home-wrap {
     padding-top: 0; }
 
@@ -825,6 +864,7 @@ section-1 {
 /* ---- iPadPro ---- */
 @media only screen and (min-width: 1024px) and (max-width: 1366px) {
   .home {
+    background: url("../images/Home-photo4.png") no-repeat top fixed;
     background-attachment: scroll; }
 
   .home-wrap {
@@ -852,6 +892,7 @@ section-1 {
       width: 75%; } }
 @media only screen and (min-device-width: 1024px) and (max-device-height: 1366px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
   .home {
+    background: url("../images/Home-photo4.png") no-repeat top fixed;
     background-attachment: scroll; }
 
   .main__main-title_title {
@@ -861,10 +902,12 @@ section-1 {
     bottom: 50px; } }
 @media only screen and (min-device-width: 1366px) and (max-device-height: 1024px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
   .home {
+    background: url("../images/Home-photo4.png") no-repeat top fixed;
     background-attachment: scroll; } }
 /* ---- iPad ---- */
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   .home {
+    background: url("../images/Home-photo4.png") no-repeat top fixed;
     background-attachment: scroll; }
 
   .home-wrap {
@@ -891,6 +934,7 @@ section-1 {
       width: 75%; } }
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
   .home {
+    background: url("../images/Home-photo4.png") no-repeat top fixed;
     background-attachment: scroll; }
 
   .main {
@@ -902,11 +946,15 @@ section-1 {
     bottom: 50px; } }
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
   .home {
+    background: url("../images/Home-photo4.png") no-repeat top fixed;
     background-attachment: scroll; }
 
   .main__main-title_main-button {
     margin-top: 30px; } }
 @media (min-width: 768px) and (max-width: 991.98px) {
+  .home {
+    background: url("../images/Home-photo4.png") no-repeat top fixed; }
+
   .home-wrap {
     padding-top: 0; }
 
@@ -921,6 +969,9 @@ section-1 {
     .main__main-title_main-button {
       margin-top: 40px; } }
 @media (min-width: 576px) and (max-width: 767.98px) {
+  .home {
+    background: url("../images/Home-photo4.png") no-repeat top fixed; }
+
   .main {
     align-items: center;
     padding-top: 0; }
