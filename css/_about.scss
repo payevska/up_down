@@ -419,11 +419,13 @@ section-3 {
 	}
 	.block-right {
 		&__title-about {
-			font-size: 28px;
+			font-size: 24px;
+			margin-bottom: 12px;
 		}
 		&__subtitle-about{
-			font-size: 20px;
+			font-size: 18px;
 			margin-top: 0;
+			margin-bottom: 20px;
 		}
 		&__block-left {
 			display: block;
@@ -436,8 +438,8 @@ section-3 {
 			width: 70%;
 			font-size: 14px;
 			line-height: 1.4;
-			padding-top: 32px;
-			margin-bottom: 36px;
+			padding-top: 20px;
+			margin-bottom: 20px;
 			padding-left: 0px;
 			&_span-about {			
 			}

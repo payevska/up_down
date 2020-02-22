@@ -74,6 +74,7 @@ menu {
 	&__logo-text {
 		font-size: 17px;
     	line-height: 1.35;
+		color: $blue-grey;
     	@media (min-width: 1200px) and (max-width: 1440px) {
 			font-size: 16px;
     		line-height: 1.35;
@@ -82,7 +83,6 @@ menu {
 			font-size: 14px;
     		line-height: 1.25;
 		}
-		color: $black;
 		&:hover {
 			color: $black;
 		}
@@ -95,7 +95,7 @@ menu {
 	}
 }
 .logo-name .link-active.active {
-	color: $black;
+	color: $blue-grey;
 	border-bottom: none;
 }
 .header-phone {
@@ -104,27 +104,32 @@ menu {
     justify-content: flex-end;
     align-items: center;
     padding-right: 30px;
-    a {
+    &__phone {
     	@extend a;
-    	font-size: 14px;
+    	font-size: 16px;
     	display: flex;
     	align-items: center;
-    }
-    i {
-    	display: flex;    	
-    	color: $green;
-    }
-	&__number-phone {
-		display: flex;
-		@media (max-width: 575.98px) {
-			display: none;
-		}
-		margin-left: 15px;		
-	}
+    	&_phone-wrap {
+			display: flex;
+			align-items: center;
+			i {
+	    	display: flex;    	
+		    	color: $green;
+		    }
+		    &_number-phone {
+				display: flex;
+		    	color: $blue-dark;
+				@media (max-width: 575.98px) {
+					display: none;
+				}
+				margin-left: 15px;		
+			}
+		}    	
+    }	
 }
-.phone-wrap {
-	display: flex;
-	align-items: center;
+.header-phone .link-active {
+	color: $blue-grey;
+	border-bottom: none;
 }
 
 .language{
@@ -284,13 +289,11 @@ menu {
 			}
 		}
 	}
-	.header-phone {
-		i {
-			font-size: 12px;
-		}
-		&__number-phone {
-			font-size: 12px;
-		}
+	.header-phone i{		
+		font-size: 12px;
+	}
+	.header-phone__phone_phone-wrap_number-phone {
+		font-size: 12px;
 	}
 	.language{
 		&__Ru {
@@ -319,13 +322,11 @@ menu {
 			margin-left: -10px;
 		}
 	}
-	.header-phone {
-		i {
-			font-size: 12px;
-		}
-		&__number-phone {
-			font-size: 12px;
-		}
+	.header-phone i{		
+		font-size: 12px;
+	}
+	.header-phone__phone_phone-wrap_number-phone {
+		font-size: 12px;
 	}
 	.language{
 		&__Ru {
@@ -359,15 +360,13 @@ menu {
 			margin-left: -10px;
 		}	
 	}
-	.header-phone {
-		i {
-			font-size: 10px;
-		}
-		&__number-phone {
-			font-size: 10px;
-			margin-left: 10px;
-		}
+	.header-phone i{		
+		font-size: 10px;
 	}
+	.header-phone__phone_phone-wrap_number-phone {
+		font-size: 10px;
+		margin-left: 10px;
+	}	
 	.language{
 		&__Ru {
 			font-size: 12px;
@@ -392,10 +391,8 @@ menu {
 			margin-left: -7px;
 		}	
 	}
-	.header-phone {
-		i {
-			font-size: 12px;
-		}
+	.header-phone i{		
+		font-size: 14px;
 	}
 	.language{
 		&__Ru {
@@ -406,7 +403,37 @@ menu {
 		}
 	}
 }
-
+@include iphone-X {	
+	header {    
+	    padding-top: 3px;
+	    padding-bottom: 3px;
+	}
+	menu {
+		margin: 0;	
+	}
+	.logotype {
+		padding-left: 10px;
+    	padding-right: 10px;
+	}
+	.logo-name__logo-text{
+		font-size: 8px;
+		line-height: 1.25;
+		&_logo-row {
+			margin-left: -5px;
+		}	
+	}	
+	.header-phone i{		
+		font-size: 14px;
+	}
+	.language{
+		&__Ru {
+			font-size: 12px;
+		}	
+		&__En {
+			font-size: 12px;
+		}
+	}
+}
 @include iphone-X-portrait {
 }
 @include iphone-X-landscape {
@@ -430,10 +457,8 @@ menu {
 			margin-left: -5px;
 		}	
 	}	
-	.header-phone {
-		i {
-			font-size: 12px;
-		}		
+	.header-phone i{		
+		font-size: 14px;
 	}
 	.language{
 		&__Ru {
@@ -444,9 +469,7 @@ menu {
 		}
 	}
 }
-@include iphone-X {	
-		
-}
+
 
 /* 
 // Extra small devices (portrait phones, less than 576px)

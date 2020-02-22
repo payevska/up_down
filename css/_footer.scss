@@ -181,6 +181,8 @@ footer {
 .footer-phone {
 	color: $blue-dark;
 	margin-left: 10px;
+	font-size: 16px;
+	font-weight: $bold;
 }
 .fa-instagram {
 	font-size: 24px;
@@ -477,6 +479,9 @@ footer {
 				font-size: 14px;
 				padding-bottom: 5px;
 			}
+			&_phone-contact i {
+				font-size: 14px;
+			}
 			&_footer-email {
 				margin-bottom: 5px;
 				a {
@@ -500,6 +505,9 @@ footer {
 	.button-up {
 	    right: 15px;
 	    bottom: 46px;    
+	}
+	.footer-phone {
+		font-size: 14px;
 	}
 	.fa-instagram {
 		font-size: 22px;
@@ -569,6 +577,9 @@ footer {
 				font-size: 14px;
 				padding-bottom: 5px;
 			}
+			&_phone-contact i {
+				font-size: 14px;
+			}
 			&_footer-email {
 				margin-bottom: 5px;
 				a {
@@ -592,6 +603,9 @@ footer {
 	.button-up {
 	    right: 15px;
 	    bottom: 46px;    
+	}
+	.footer-phone {
+		font-size: 14px;
 	}
 	.fa-instagram {
 		font-size: 20px;
@@ -664,6 +678,9 @@ footer {
 				font-size: 14px;
 				padding-bottom: 5px;
 			}
+			&_phone-contact i {
+				font-size: 12px;
+			}
 			&_footer-email {
 				margin-bottom: 5px;
 				a {
@@ -688,6 +705,9 @@ footer {
 	.button-up {
 	    right: 15px;
 	    bottom: 46px;    
+	}
+	.footer-phone {
+		font-size: 12px;
 	}
 	.fa-instagram {
 		font-size: 20px;
