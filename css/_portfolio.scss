@@ -38,11 +38,10 @@ section-5 {
 	&__project-big-foto {
 		position: relative;
 	    overflow: hidden;
-	    width: 70%;
-	    height: 450px;
-	    margin-left: 40px;
+	    width: 100%;
+	    /*margin-left: 40px;*/
 	    &_fotoProject-big {
-			margin-top: -180px;
+			margin-top: -100px;
 			width: 100%;
 		}	
 	}
@@ -115,6 +114,44 @@ section-5 {
     align-items: center;
 }
 
+.portfolio-price {
+	color: $blue-dark;
+	&__price-title {
+		font-size: 18px;
+		font-weight: $medium-plus;
+		padding: 40px 0 15px;
+	}
+	&__price-info {
+		font-size: 16px;
+    	font-weight: $medium-plus;
+    	
+	}
+	&__news-info {
+		font-size: 18px;
+		color: $blue-grey;
+		padding-top: 10px;
+	}
+	&__price-review {
+		padding: 80px 0 30px;
+	}
+	&__price-characteristic a {
+		padding-top: 30px;
+    	text-decoration-line: underline;
+	}
+}
+.price {
+	font-weight: $medium-plus;
+}
+.price-info-spec {
+	color: $orange;
+}
+.form-group label {
+	font-weight: $medium-plus;
+}
+.form-control {
+	color: $blue-dark;
+	border: 1px solid $blue-grey;
+}
 
 /* ------ media query ------ */
 @include television {
@@ -139,7 +176,7 @@ section-5 {
 		&__project-big-foto {
 			width: 65%;
 		    &_fotoProject-big {
-				margin-top: -110px;
+				margin-top: 0px;
 			}	
 		}
 	}
@@ -149,9 +186,8 @@ section-5 {
 	.portfolio-left {
 		&__project-big-foto {
 			width: 65%;
-			height: 350px;
 		    &_fotoProject-big {
-				margin-top: -100px;
+				margin-top: 0px;
 			}	
 		}
 	}
@@ -174,9 +210,8 @@ section-5 {
 @include iPad-portrait {
 	.portfolio-left {
 		&__project-big-foto {
-			height: 450px;
 		    &_fotoProject-big {
-				margin-top: -80px;
+				margin-top: 0px;
 			}	
 		}
 	}
