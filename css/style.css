@@ -2099,8 +2099,15 @@ section-5 {
     padding-top: 10px; }
   .portfolio-price__price-review {
     padding: 80px 0 30px; }
+  .portfolio-price__name-select {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 5px; }
+  .portfolio-price__price-select {
+    width: 230px;
+    margin-bottom: 25px; }
   .portfolio-price__price-characteristic a, .portfolio-price__price-characteristic .header-phone__phone, .portfolio-price__price-characteristic .burger-menu__burger-link, .portfolio-price__price-characteristic .video-table, .portfolio-price__price-characteristic .block-right__text-about_span-about {
-    padding-top: 30px;
+    margin-top: 30px;
     text-decoration-line: underline; }
 
 .price {
@@ -2109,12 +2116,59 @@ section-5 {
 .price-info-spec {
   color: #f29257; }
 
-.form-group label {
-  font-weight: 600; }
+/*custom-select*/
+/*the container must be positioned relative:*/
+.portfolio-price__price-select {
+  position: relative;
+  font-family: Arial; }
 
-.form-control {
-  color: #1b255d;
-  border: 1px solid #828893; }
+.portfolio-price__price-select select {
+  display: none;
+  /*hide original SELECT element:*/ }
+
+.select-selected {
+  background-color: #828893; }
+
+/*style the arrow inside the select element:*/
+.select-selected:after {
+  position: absolute;
+  content: "";
+  top: 18px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-color: #fff transparent transparent transparent; }
+
+/*point the arrow upwards when the select box is open (active):*/
+.select-selected.select-arrow-active:after {
+  border-color: transparent transparent #fff transparent;
+  top: 7px; }
+
+/*style the items (options), including the selected item:*/
+.select-items div, .select-selected {
+  color: #ffffff;
+  padding: 8px 16px;
+  border: 1px solid transparent;
+  border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+  cursor: pointer;
+  user-select: none; }
+
+/*style items (options):*/
+.select-items {
+  position: absolute;
+  background-color: #828893;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99; }
+
+/*hide the items when the select box is closed:*/
+.select-hide {
+  display: none; }
+
+.select-items div:hover, .same-as-selected {
+  background-color: rgba(0, 0, 0, 0.1); }
 
 /* ------ media query ------ */
 @media (min-width: 1366px) and (max-width: 1439.98px) {
