@@ -305,7 +305,10 @@ menu {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  padding-right: 30px; }
+  padding-right: 15px; }
+  @media (max-width: 575.98px) {
+    .header-phone {
+      padding-right: 30px; } }
   .header-phone__phone {
     font-size: 16px;
     display: flex;
@@ -527,6 +530,9 @@ menu {
     .logo-name__logo-text_logo-row {
       margin-left: -7px; }
 
+  /*.header-phone {
+  	padding-right: 30px;
+  }*/
   .header-phone i {
     font-size: 14px; }
 
@@ -2085,6 +2091,7 @@ section-5 {
   align-items: center; }
 
 .portfolio-price {
+  width: 100%;
   color: #1b255d; }
   .portfolio-price__price-title {
     font-size: 18px;
@@ -2181,12 +2188,12 @@ section-5 {
     font-size: 36px; } }
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
   .portfolio-left__project-big-foto {
-    width: 65%; }
+    width: 90%; }
     .portfolio-left__project-big-foto_fotoProject-big {
       margin-top: 0px; } }
 @media only screen and (min-device-width: 1024px) and (max-device-height: 1366px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
   .portfolio-left__project-big-foto {
-    width: 65%; }
+    width: 90%; }
     .portfolio-left__project-big-foto_fotoProject-big {
       margin-top: 0px; } }
 @media (min-width: 768px) and (max-width: 991.98px) {
@@ -2222,17 +2229,52 @@ section-5 {
         margin-top: -60px;
         width: 100%; } }
 @media (min-width: 375px) and (max-width: 575.98px) {
+  .block-gallery-image {
+    padding: 0; }
+
   .portfolio-info__topic {
     font-size: 20px;
     margin-bottom: 10px; }
   .portfolio-info__text-portfolio {
     display: none; }
 
+  .portfolio-right {
+    padding: 0; }
+    .portfolio-right__carousel {
+      width: 100%; }
+
   .portfolio-left {
     display: none; }
 
   .arrow-up-down {
-    height: 20px; } }
+    height: 20px; }
+
+  .portfolio-price {
+    padding-left: 25px; }
+    .portfolio-price__price-title {
+      font-size: 16px;
+      padding: 40px 0 5px; }
+    .portfolio-price__price-info {
+      font-size: 14px; }
+    .portfolio-price__news-info {
+      font-size: 14px; }
+    .portfolio-price__price-review {
+      width: 88%;
+      font-size: 14px;
+      padding: 50px 0 30px; }
+    .portfolio-price__name-select {
+      font-size: 14px; }
+    .portfolio-price__price-select {
+      width: 190px; }
+
+  .price {
+    font-size: 15px; }
+
+  .select-selected {
+    padding: 4px 16px; }
+
+  .select-selected:after {
+    top: 14px; } }
 @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-device-pixel-ratio: 3) {
   .portfolio-info__topic {
     font-size: 20px;
@@ -2244,8 +2286,38 @@ section-5 {
     display: none; }
 
   .arrow-up-down {
-    height: 20px; } }
+    height: 20px; }
+
+  .portfolio-price {
+    padding-left: 25px; }
+    .portfolio-price__price-title {
+      font-size: 16px;
+      padding: 40px 0 5px; }
+    .portfolio-price__price-info {
+      font-size: 14px; }
+    .portfolio-price__news-info {
+      font-size: 14px; }
+    .portfolio-price__price-review {
+      font-size: 14px;
+      padding: 50px 0 30px; }
+    .portfolio-price__name-select {
+      font-size: 14px; }
+    .portfolio-price__price-select {
+      width: 190px; }
+
+  .price {
+    font-size: 15px; }
+
+  .select-selected {
+    padding: 4px 16px; }
+
+  .select-selected:after {
+    top: 14px; } }
 @media (min-width: 320px) and (max-width: 374.98px) {
+  .block-gallery-image {
+    padding-left: 15px;
+    padding-right: 0; }
+
   .portfolio-info__topic {
     font-size: 20px;
     margin-bottom: 10px; }
@@ -2256,7 +2328,38 @@ section-5 {
     display: none; }
 
   .arrow-up-down {
-    height: 20px; } }
+    height: 20px; }
+
+  .portfolio-price {
+    padding-right: 10px;
+    padding-left: 20px; }
+    .portfolio-price__price-title {
+      font-size: 13px;
+      padding: 40px 0 5px; }
+    .portfolio-price__price-info {
+      font-size: 12px; }
+    .portfolio-price__news-info {
+      font-size: 12px; }
+    .portfolio-price__price-review {
+      width: 95%;
+      font-size: 12px;
+      padding: 40px 0 30px; }
+    .portfolio-price__name-select {
+      font-size: 12px; }
+    .portfolio-price__price-select {
+      width: 155px; }
+    .portfolio-price__price-characteristic a, .portfolio-price__price-characteristic .header-phone__phone, .portfolio-price__price-characteristic .burger-menu__burger-link, .portfolio-price__price-characteristic .video-table, .portfolio-price__price-characteristic .block-right__text-about_span-about {
+      font-size: 14px; }
+
+  .price {
+    font-size: 13px; }
+
+  .select-selected {
+    padding: 2px 16px;
+    font-size: 14px; }
+
+  .select-selected:after {
+    top: 11px; } }
 /* 
 // Extra small devices (portrait phones, less than 576px)
 @media (max-width: 575.98px) {  }

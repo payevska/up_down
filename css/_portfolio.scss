@@ -115,6 +115,7 @@ section-5 {
 }
 
 .portfolio-price {
+    width: 100%;
 	color: $blue-dark;
 	&__price-title {
 		font-size: 18px;
@@ -124,7 +125,6 @@ section-5 {
 	&__price-info {
 		font-size: 16px;
     	font-weight: $medium-plus;
-    	
 	}
 	&__news-info {
 		font-size: 18px;
@@ -242,7 +242,7 @@ section-5 {
 @include iPad-landscape {
 	.portfolio-left {
 		&__project-big-foto {
-			width: 65%;
+			width: 90%;
 		    &_fotoProject-big {
 				margin-top: 0px;
 			}	
@@ -253,7 +253,7 @@ section-5 {
 @include iPadPro-portrait {
 	.portfolio-left {
 		&__project-big-foto {
-			width: 65%;
+			width: 90%;
 		    &_fotoProject-big {
 				margin-top: 0px;
 			}	
@@ -311,6 +311,9 @@ section-5 {
 	}
 }
 @include phone {
+	.block-gallery-image {
+		padding: 0;
+	}
  	.portfolio-info {    
 		&__topic {
 			font-size: 20px;
@@ -322,13 +325,55 @@ section-5 {
 		&__link-portfolio {
 		}
 	}
+	.portfolio-right {
+		padding: 0;
+		&__carousel {
+    		width: 100%;
+    	}	
+	}
 	.portfolio-left {
 		display: none;
 	}
 	.arrow-up-down {
 	    height: 20px;
 	}
- }
+	.portfolio-price {
+		padding-left: 25px;
+		&__price-title {
+    		font-size: 16px;
+    		padding: 40px 0 5px;
+		}
+		&__price-info {
+			font-size: 14px;
+		}
+		&__news-info {
+			font-size: 14px;
+		}
+		&__price-review {
+			width: 88%;
+			font-size: 14px;
+			padding: 50px 0 30px;
+		}
+		&__name-select {
+		    font-size: 14px;
+		}
+		&__price-select {
+			width: 190px;
+		}
+		&__price-characteristic {
+
+		}
+	}
+	.price {
+		font-size: 15px;
+	}
+	.select-selected {
+	    padding: 4px 16px;
+	}
+	.select-selected:after {
+		top: 14px;
+	}
+}
 @include iphone-X {
  	.portfolio-info {    
 		&__topic {
@@ -347,12 +392,51 @@ section-5 {
 	.arrow-up-down {
 	    height: 20px;
 	}
+	.portfolio-price {
+		padding-left: 25px;
+		&__price-title {
+    		font-size: 16px;
+    		padding: 40px 0 5px;
+		}
+		&__price-info {
+			font-size: 14px;
+		}
+		&__news-info {
+			font-size: 14px;
+		}
+		&__price-review {
+			font-size: 14px;
+			padding: 50px 0 30px;
+		}
+		&__name-select {
+		    font-size: 14px;
+		}
+		&__price-select {
+			width: 190px;
+		}
+		&__price-characteristic {
+
+		}
+	}
+	.price {
+		font-size: 15px;
+	}
+	.select-selected {
+	    padding: 4px 16px;
+	}
+	.select-selected:after {
+		top: 14px;
+	}
 }
 @include iphone-X-portrait {
 }
 @include iphone-X-landscape {
 }	
 @include iphone-5 {
+	.block-gallery-image {
+		padding-left: 15px;
+    	padding-right: 0;
+	}
 	.portfolio-info {    
 		&__topic {
 			font-size: 20px;
@@ -369,6 +453,44 @@ section-5 {
 	}
 	.arrow-up-down {
 	    height: 20px;
+	}
+	.portfolio-price {
+		padding-right: 10px;
+	    padding-left: 20px;
+		&__price-title {
+    		font-size: 13px;
+    		padding: 40px 0 5px;
+		}
+		&__price-info {
+			font-size: 12px;
+		}
+		&__news-info {
+			font-size: 12px;
+		}
+		&__price-review {
+			width: 95%;
+			font-size: 12px;
+			padding: 40px 0 30px;
+		}
+		&__name-select {
+		    font-size: 12px;
+		}
+		&__price-select {
+			width: 155px;
+		}
+		&__price-characteristic a {
+			font-size: 14px;
+		}
+	}
+	.price {
+		font-size: 13px;
+	}
+	.select-selected {
+	    padding: 2px 16px;
+	    font-size: 14px;
+	}
+	.select-selected:after {
+		top: 11px;
 	}
 }
 
