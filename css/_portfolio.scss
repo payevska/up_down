@@ -311,9 +311,9 @@ section-5 {
 	}
 }
 @include phone {
-	.block-gallery-image {
+	/*.block-gallery-image {
 		padding: 0;
-	}
+	}*/
  	.portfolio-info {    
 		&__topic {
 			font-size: 20px;
@@ -358,7 +358,7 @@ section-5 {
 		    font-size: 14px;
 		}
 		&__price-select {
-			width: 190px;
+			width: 170px;
 		}
 		&__price-characteristic {
 
@@ -375,6 +375,9 @@ section-5 {
 	}
 }
 @include iphone-X {
+	.portfolio-right {
+		padding: 0;
+	}
  	.portfolio-info {    
 		&__topic {
 			font-size: 20px;
@@ -393,7 +396,7 @@ section-5 {
 	    height: 20px;
 	}
 	.portfolio-price {
-		padding-left: 25px;
+		padding-left: 15px;
 		&__price-title {
     		font-size: 16px;
     		padding: 40px 0 5px;
@@ -412,7 +415,7 @@ section-5 {
 		    font-size: 14px;
 		}
 		&__price-select {
-			width: 190px;
+			width: 170px;
 		}
 		&__price-characteristic {
 

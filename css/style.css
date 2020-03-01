@@ -2229,9 +2229,9 @@ section-5 {
         margin-top: -60px;
         width: 100%; } }
 @media (min-width: 375px) and (max-width: 575.98px) {
-  .block-gallery-image {
-    padding: 0; }
-
+  /*.block-gallery-image {
+  	padding: 0;
+  }*/
   .portfolio-info__topic {
     font-size: 20px;
     margin-bottom: 10px; }
@@ -2265,7 +2265,7 @@ section-5 {
     .portfolio-price__name-select {
       font-size: 14px; }
     .portfolio-price__price-select {
-      width: 190px; }
+      width: 170px; }
 
   .price {
     font-size: 15px; }
@@ -2276,6 +2276,9 @@ section-5 {
   .select-selected:after {
     top: 14px; } }
 @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-device-pixel-ratio: 3) {
+  .portfolio-right {
+    padding: 0; }
+
   .portfolio-info__topic {
     font-size: 20px;
     margin-bottom: 10px; }
@@ -2289,7 +2292,7 @@ section-5 {
     height: 20px; }
 
   .portfolio-price {
-    padding-left: 25px; }
+    padding-left: 15px; }
     .portfolio-price__price-title {
       font-size: 16px;
       padding: 40px 0 5px; }
@@ -2303,7 +2306,7 @@ section-5 {
     .portfolio-price__name-select {
       font-size: 14px; }
     .portfolio-price__price-select {
-      width: 190px; }
+      width: 170px; }
 
   .price {
     font-size: 15px; }
