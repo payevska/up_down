@@ -2197,6 +2197,11 @@ section-5 {
     .portfolio-left__project-big-foto_fotoProject-big {
       margin-top: 0px; } }
 @media (min-width: 768px) and (max-width: 991.98px) {
+  .portfolio-right {
+    padding: 0; }
+    .portfolio-right__carousel {
+      width: 100%; }
+
   /* .portfolio-info {    
   	&__topic {
   		font-size: 32px;

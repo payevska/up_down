@@ -262,6 +262,12 @@ section-5 {
 }
 
 @include tablet {
+	.portfolio-right {
+		padding: 0;
+		&__carousel {
+    		width: 100%;
+    	}	
+	}
 	/* .portfolio-info {    
 		&__topic {
 			font-size: 32px;
