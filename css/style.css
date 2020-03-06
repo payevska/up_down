@@ -282,7 +282,7 @@ menu {
   .logo-name__logo-text {
     font-size: 17px;
     line-height: 1.35;
-    color: #828893; }
+    color: #000000; }
     @media (min-width: 1200px) and (max-width: 1440px) {
       .logo-name__logo-text {
         font-size: 16px;
@@ -300,7 +300,7 @@ menu {
           margin-left: -30px; } }
 
 .logo-name .link-active.active {
-  color: #828893;
+  color: #000000;
   border-bottom: none; }
 
 .header-phone {
@@ -2427,7 +2427,7 @@ section-3 {
 
  */
 /* ------------ blog --------------- */
-section-6 {
+section-4 {
   display: none;
   display: flex;
   align-items: center;

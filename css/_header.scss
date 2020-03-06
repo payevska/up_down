@@ -74,7 +74,7 @@ menu {
 	&__logo-text {
 		font-size: 17px;
     	line-height: 1.35;
-		color: $blue-grey;
+		color: $black;
     	@media (min-width: 1200px) and (max-width: 1440px) {
 			font-size: 16px;
     		line-height: 1.35;
@@ -95,7 +95,7 @@ menu {
 	}
 }
 .logo-name .link-active.active {
-	color: $blue-grey;
+	color: $black;
 	border-bottom: none;
 }
 .header-phone {
