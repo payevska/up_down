@@ -42,7 +42,31 @@ $(document).ready(function(){
 
 
 
-    
+    /*carousel....  https://www.youtube.com/watch?v=casgv9Y8I1w&t=28s*/
+
+    document.getElementById('slider-top').onclick = sliderTop;
+    var top = -360;
+
+    function sliderTop(){
+        var polosa = document.getElementById('polosa');
+        top = top - 90;
+        if(top < -360) {
+            top = -360;
+        }
+        polosa.style.top = top + 'px';
+    }
+
+    document.getElementById('slider-bottom').onclick = sliderBottom;
+
+
+    function sliderBottom(){
+        var polosa = document.getElementById('polosa');
+        top = top + 90;
+        if(top > 0) {
+            top = 0;
+        }
+        polosa.style.top = top + 'px';
+    }
 
     /*image portfolio-left.... http://www.web.cofp.ru/vse-o-sajtakh/
     sozdanie-sajta/javascript/jquery/154-uvelichenie-izobrazheniya-pri-nazhatii-na-nego*/ 
@@ -186,10 +210,3 @@ $(document).ready(function(){
 
 
 });
-
-
-
-
-
-
- 
