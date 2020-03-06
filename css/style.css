@@ -2007,7 +2007,6 @@ section-3 {
 /* ------------ portfolio --------------- */
 #up-down-actuator {
   display: flex;
-  display: -webkit-flex;
   align-items: center;
   min-height: 100vh; }
 
