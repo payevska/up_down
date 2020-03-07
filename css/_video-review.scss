@@ -30,6 +30,24 @@ section-2 {
 	justify-content: center;
 }
 
+.box-button-review input {
+	display: flex;
+	justify-content: center;
+	color: $white;
+	outline: none;
+	margin-top: 60px;
+	padding: 20px 54px;
+	@extend button;	
+	button {
+		border: 1px solid $orange;
+		&:hover {
+			color: $orange;
+			background-color: $white;
+			border: 1px solid $orange;
+		}
+	}	
+}
+
 
 .video-table{
 	width: 40%;
@@ -45,22 +63,7 @@ section-2 {
 	display: flex;
 	justify-content: center;
 	margin-top: 60px;
-	@extend button;		
-	background-color: $orange;
-	border: 1px solid $orange;
-	&:hover {
-		background-color: $white;
-		border: 1px solid $orange;
-	}
-	a {
-		color: $white;
-		&:hover {
-			color: $orange;
-		}
-	}
-	&__btn {
-		padding: 20px 54px;
-	}
+	
 }	
 
 

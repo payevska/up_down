@@ -1,0 +1,582 @@
+/* ------------ up-down-mini --------------- */
+#up-down-mini {
+	display: flex;
+	//display: -webkit-flex;
+	align-items: center;
+	//padding-top: 94px;
+    min-height: 100vh;
+} 
+
+.block-gallery {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.portfolio-info {    
+    display: flex;
+    flex-direction: column;
+    align-items: center;	
+	&__topic {
+		text-align: center;
+	    margin-bottom: 30px;			
+		@extend h2;
+	}
+	&__text-portfolio {
+	    width: 50%;
+    	text-align: center;
+    	color: $blue-dark;
+	}	
+}
+
+.block-gallery-image {
+	display: flex;
+}
+
+.portfolio-right {
+	display: flex;
+	align-items: center;
+	&__project-big-foto {
+		position: relative;
+	    overflow: hidden;
+	    width: 100%;
+	    /*margin-left: 40px;*/
+	    &_fotoProject-big {
+			margin-top: 0px;
+			width: 100%;
+		}	
+	}
+}
+
+
+.portfolio-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__projeсts-portfolio {
+		margin-bottom: 20px;
+	}
+	&__carousel	{
+		width: 115px;
+		height: 360px;
+		display: flex;
+		justify-content: center;
+		overflow: hidden;
+	    margin-top: 15px;
+    	margin-bottom: 10px;		
+		&_carousel-block {
+			height: 720px;
+			display: flex;
+			flex-direction: column;
+		}
+	}
+}
+
+#polosa {
+	position: relative;
+	top: -360px;
+	transition: all ease 1s;
+}
+
+.carousel-foto {
+	&__project {
+		position: relative;
+		overflow: hidden;
+		width: 115px;
+	    height: 90px;
+		&_fotoProject {
+			width: 100%;
+			margin-top: -53px;
+		}
+	}
+}
+
+.arrow-up-down {
+	height: 60px;
+}
+
+
+
+.caret {
+	position: absolute;
+	font-size: 25px;
+	color: $orange;
+}
+
+#slider-top {
+	display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#slider-bottom {
+	display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.portfolio-price {
+    width: 100%;
+	color: $blue-dark;
+	&__price-title {
+		font-size: 16px;
+		font-weight: $medium-plus;
+		padding: 40px 0 0;
+	}
+	&__price-name {
+		font-size: 18px;
+		font-weight: $medium-plus;
+		padding: 0;
+	}
+	&__price-info {
+		font-size: 16px;
+    	font-weight: $medium-plus;
+    	padding-top: 15px;
+	}
+	&__news-info {
+		font-size: 18px;
+		color: $blue-grey;
+		padding-top: 10px;
+	}
+	&__price-review {
+		padding: 80px 0 30px;
+	}
+	&__name-select {
+		font-size: 16px;
+		font-weight: $medium-plus;
+		margin-bottom: 5px;
+	}
+	&__price-select {
+		width: 230px;
+		margin-bottom: 25px;
+	}
+	&__price-characteristic a {
+		margin-top: 30px;
+    	text-decoration-line: underline;
+	}
+}
+.price {
+	font-weight: $medium-plus;
+}
+.price-info-spec {
+	color: $orange;
+}
+.table-name {
+	font-size: 18px;
+	padding: 0;
+}
+
+/*custom-select*/
+
+/*the container must be positioned relative:*/
+.portfolio-price__price-select {
+  position: relative;
+  font-family: Arial;
+}
+
+.portfolio-price__price-select select {
+  display: none; /*hide original SELECT element:*/
+}
+
+.select-selected {
+  background-color: $blue-grey;
+}
+
+/*style the arrow inside the select element:*/
+.select-selected:after {
+  position: absolute;
+  content: "";
+  top: 18px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-color: #fff transparent transparent transparent;
+}
+
+/*point the arrow upwards when the select box is open (active):*/
+.select-selected.select-arrow-active:after {
+  border-color: transparent transparent #fff transparent;
+  top: 7px;
+}
+
+/*style the items (options), including the selected item:*/
+.select-items div,.select-selected {
+  color: #ffffff;
+  padding: 8px 16px;
+  border: 1px solid transparent;
+  border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+  cursor: pointer;
+  user-select: none;
+}
+
+/*style items (options):*/
+.select-items {
+  position: absolute;
+  background-color: $blue-grey;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+
+/*hide the items when the select box is closed:*/
+.select-hide {
+  display: none;
+}
+
+.select-items div:hover, .same-as-selected {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+/* ------ media query ------ */
+@include television {
+	.portfolio-info {  
+	  	padding-top: 65px;
+		&__topic {
+			font-size: 36px;
+		}
+	}
+}
+@include desktop {
+	.portfolio-info {    
+		&__topic {
+			font-size: 36px;
+		}		
+	}	
+}
+@include laptop {
+	.portfolio-info {    
+		&__topic {
+			font-size: 32px;
+		}		
+	}
+}
+@include iPad-landscape {
+	.portfolio-info {    
+		&__topic {
+			font-size: 28px;
+		}		
+	}
+	.portfolio-right {
+		&__project-big-foto {
+			width: 90%;
+		    &_fotoProject-big {
+				margin-top: 0px;
+			}	
+		}
+	}
+}
+
+@include iPadPro-portrait {
+	.portfolio-info {    
+		&__topic {
+			font-size: 28px;
+		}		
+	}
+	.portfolio-right {
+		&__project-big-foto {
+			width: 90%;
+		    &_fotoProject-big {
+				margin-top: 0px;
+			}	
+		}
+	}
+}
+
+@include tablet {
+	.portfolio-info {    
+		&__topic {
+			font-size: 28px;
+		}		
+	}
+	.portfolio-left {
+		padding-left: 0;
+    	padding-right: 0;
+		&__carousel {
+    		/*width: 100%;*/
+    	}	
+	}
+	/* .portfolio-info {    
+		&__topic {
+			font-size: 32px;
+			margin-bottom: 20px;
+		}
+		&__text-portfolio {
+			width: 80%;
+			font-size: 14px;
+		}
+		&__link-portfolio {
+		}
+	} */
+}
+@include iPad-portrait {
+	.portfolio-info {    
+		&__topic {
+			font-size: 28px;
+		}		
+	}
+	.portfolio-right {
+		&__project-big-foto {
+		    &_fotoProject-big {
+				margin-top: 0px;
+			}	
+		}
+	}
+}
+@include tablet-mini {
+	.portfolio-info {    
+		&__topic {
+			font-size: 28px;
+			margin-bottom: 20px;
+		}
+		&__text-portfolio {
+			width: 80%;
+			font-size: 14px;
+		}
+		&__link-portfolio {
+		}
+	}
+	.portfolio-right {
+		display: none;		
+	}
+}
+@include phone {
+ 	.portfolio-info {    
+		&__topic {
+			font-size: 17px;
+			margin-bottom: 10px;
+		}
+		&__text-portfolio {
+			display: none;
+		}
+		&__link-portfolio {
+		}
+	}
+	.portfolio-left {
+		padding-left: 0;
+    	padding-right: 0;
+		&__carousel {
+    		/*width: 100%;*/
+    	}	
+	}
+	.carousel-foto {
+		&__project {
+			width: 90px;
+			&_fotoProject {
+				margin-top: -34px;
+			}
+		}
+	}
+	.portfolio-right {
+		display: none;
+	}
+	.arrow-up-down {
+	    height: 20px;
+	}
+	.portfolio-price {
+		padding-left: 25px;
+		&__price-title {
+    		font-size: 16px;
+    		padding: 40px 0 5px;
+		}
+		&__price-info {
+			font-size: 14px;
+		}
+		&__news-info {
+			font-size: 14px;
+		}
+		&__price-review {
+			width: 88%;
+			font-size: 14px;
+			padding: 50px 0 30px;
+		}
+		&__name-select {
+		    font-size: 14px;
+		}
+		&__price-select {
+			width: 170px;
+		}
+		&__price-characteristic {
+
+		}
+	}
+	.price {
+		font-size: 15px;
+	}
+	.select-selected {
+	    padding: 4px 16px;
+	}
+	.select-selected:after {
+		top: 14px;
+	}
+}
+@include iphone-X {
+	.portfolio-left {
+		padding-left: 0;
+    	padding-right: 0;
+	}
+ 	.portfolio-info {    
+		&__topic {
+			font-size: 17px;
+			margin-bottom: 10px;
+		}
+		&__text-portfolio {
+			display: none;
+		}
+		&__link-portfolio {
+		}
+	}
+	.carousel-foto {
+		&__project {
+			width: 90px;
+			&_fotoProject {
+				margin-top: -34px;
+			}
+		}
+	}
+	.portfolio-right {
+		display: none;
+	}
+	.arrow-up-down {
+	    height: 20px;
+	}
+	.portfolio-price {
+		padding-left: 15px;
+		&__price-title {
+    		font-size: 14px;
+    		padding: 40px 0 0;
+		}
+		&__price-name {
+    		font-size: 14px;
+		}
+		&__price-info {
+			font-size: 14px;
+		}
+		&__news-info {
+			font-size: 14px;
+		}
+		&__price-review {
+			font-size: 14px;
+			padding: 50px 0 30px;
+		}
+		&__name-select {
+		    font-size: 14px;
+		}
+		&__price-select {
+			width: 170px;
+		}
+		&__price-characteristic {
+
+		}
+	}
+	.price {
+		font-size: 15px;
+	}
+	.select-selected {
+	    padding: 4px 16px;
+	}
+	.select-selected:after {
+		top: 14px;
+	}
+}
+@include iphone-X-portrait {
+}
+@include iphone-X-landscape {
+}	
+@include iphone-5 {
+	
+	.block-gallery-image {
+		padding-left: 15px;
+    	padding-right: 0;
+	}
+	.portfolio-info {    
+		&__topic {
+			font-size: 16px;
+			margin-bottom: 10px;
+		}
+		&__text-portfolio {
+			display: none;
+		}
+		&__link-portfolio {
+		}
+	}
+	.carousel-foto {
+		&__project {
+			width: 90px;
+			&_fotoProject {
+				margin-top: -34px;
+			}
+		}
+	}
+
+	.portfolio-right {
+		display: none;
+	}
+	.arrow-up-down {
+	    height: 20px;
+	}
+	.portfolio-price {
+		padding-right: 10px;
+	    padding-left: 20px;
+		&__price-title {
+    		font-size: 13px;
+    		padding: 40px 0 5px;
+		}
+		&__price-name {
+    		font-size: 14px;
+		}
+		&__price-info {
+			font-size: 12px;
+		}
+		&__news-info {
+			font-size: 12px;
+		}
+		&__price-review {
+			width: 95%;
+			font-size: 12px;
+			padding: 40px 0 30px;
+		}
+		&__name-select {
+		    font-size: 12px;
+		}
+		&__price-select {
+			width: 140px;
+		}
+		&__price-characteristic a {
+			font-size: 14px;
+		}
+	}
+	.price {
+		font-size: 13px;
+	}
+	.select-selected {
+	    padding: 2px 16px;
+	    font-size: 14px;
+	}
+	.select-selected:after {
+		top: 11px;
+	}
+}
+
+
+/* 
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {  }
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) and (max-width: 767.98px) {  }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 991.98px) {  }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) and (max-width: 1199.98px) {  }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {  } 
+
+ */

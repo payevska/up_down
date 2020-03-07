@@ -1,0 +1,161 @@
+/* ------------ fotogallery --------------- */
+section-5 {
+	display: none;
+	display: flex;
+    align-items: center;
+    padding-bottom: 100px;
+}
+
+.fotogallery-wrap {
+	display: flex;
+	flex-direction: column;	
+    margin-top: 100px;
+}
+
+.fotogallery-title {
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__topic-fotogallery {
+    	margin: 30px 0;    	
+		@extend h2;
+        font-size: 40px;
+    }
+    &__topic-text {
+        @extend h3;
+        color: $blue-dark;
+        font-weight: $medium-plus;
+	    width: 45%;
+    	text-align: center;
+        padding-bottom: 50px;
+    }
+}
+
+.fotogallery-gallery {    
+	display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    &__picture	{
+        position: relative;
+        overflow: hidden;
+        width: 85%;
+        height: 515px;
+        display: flex;
+        margin: 0 auto;
+        margin-bottom: 70px;
+        border-radius: 20px;
+        border: 1px solid $grey-opacity;
+        img {
+            position: absolute;
+            width: 100%;
+            margin: auto;
+            margin: 0 auto;
+        }
+    }
+}
+
+.picture1 {
+    top: 0;
+}
+
+.picture2 {
+    top: -600px;
+}
+
+.picture3 {
+    top: -535px;
+}
+
+.picture5 {
+    top: 0;
+}
+
+.picture6 {
+    top: -423px;
+}
+
+.picture9 {
+    top: 0;
+}
+
+
+/* ------ media query ------ */
+@include desktop {	
+}
+@include laptop {
+}
+@include tablet {
+    .blog-title {
+        &__topic-blog {
+            margin: 20px 0;     
+            font-size: 30px;
+        }
+        &__topic-text {
+            width: 53%;
+            font-size: 18px;
+        }
+    }
+    .fotogallery-gallery {    
+          
+    }
+}
+@include tablet-mini {
+    .blog-title {
+        &__topic-blog {
+            margin: 15px 0;     
+            font-size: 24px;
+        }
+        &__topic-text {
+            width: 80%;
+            font-size: 14px;
+        }
+    }
+    .fotogallery-gallery {    
+          
+    }
+}
+@include phone {
+    .blog-title {
+        &__topic-blog {
+            margin: 15px 0;     
+            font-size: 24px;
+        }
+        &__topic-text {
+            width: 80%;
+            font-size: 14px;
+        }
+    }
+    .fotogallery-gallery {    
+           
+    } 	
+}
+@include iphone-X {
+    .blog-title {
+        &__topic-blog {
+            margin: 10px 0;     
+            font-size: 22px;
+        }
+        &__topic-text {
+            width: 80%;
+            font-size: 14px;
+        }
+    }
+    .fotogallery-gallery {    
+           
+    } 	
+}	
+@include iphone-5 {
+    .blog-title {
+        &__topic-blog {
+            margin: 10px 0;     
+            font-size: 20px;
+        }
+        &__topic-text {
+            width: 80%;
+            font-size: 12px;
+        }
+    }
+    .fotogallery-gallery {    
+          
+    }
+}

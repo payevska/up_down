@@ -65,10 +65,11 @@ footer {
  			}
 			padding: 16px 40px;
 			@extend button;
-			background-color: $white;
+			text-transform: none;	
 			color: $orange;
+			background-color: $white;		
 			border: 1px solid $orange;
-			&:hover {
+			&:hover {				
 				background-color: $orange;
 				color: $white;
 				border: 1px solid $orange;
@@ -76,7 +77,26 @@ footer {
 		}
 	}
 }
+.footer-input {
+	width: 100%;	
+	border: 1px solid $white;
+	background-color: $blue-grey;
+	caret-color: $white;
+	color: $white;
+	&:hover {
+		color: $white;
+		background-color: $blue-grey;
+		transition: 0s;
+	}
+}
 
+.footer-input::placeholder  {
+	display: flex;
+	justify-content: start;
+	color: $orange;
+	opacity: 0.5;
+	margin-left: 27px;	
+}
 
 .form-error {
 	color: red;

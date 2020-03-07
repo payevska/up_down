@@ -1,0 +1,81 @@
+/* ------------ tables --------------- */
+#tables {
+	display: none;
+	display: flex;
+    align-items: center;
+    min-height: 100vh;
+    
+}
+
+.tables-wrap {
+	display: flex;
+	flex-direction: column;	
+    margin-top: 100px;    
+}
+
+.tables-title {
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__tables-topic {
+    	margin: 70px 0;    	
+		@extend h2;
+        font-size: 40px;
+    }    
+}
+
+.tables-collection {    
+	display: flex;
+    flex-wrap: wrap;
+    &__table {
+	    &_foto-table	{
+	        position: relative;
+	        overflow: hidden;
+	        width: 70%;
+	        height: 350px;
+	        display: flex;
+	        margin: 0 auto;
+	        margin-bottom: 70px;
+	        border-radius: 20px;
+	        border: 1px solid $grey-opacity;
+	        img {
+	            position: absolute;
+	            width: 100%;
+	            margin: auto;
+	            margin: 0 auto;
+	        }
+	    }
+	}
+}
+
+.foto-table1 {
+    top: -75px;
+}
+
+.foto-table2 {
+    top: 75px;
+}
+
+
+
+
+/* ------ media query ------ */
+@include desktop {	
+}
+@include laptop {
+}
+@include tablet {
+    
+}
+@include tablet-mini {
+    
+}
+@include phone {
+     	
+}
+@include iphone-X {
+     	
+}	
+@include iphone-5 {
+    
+}
