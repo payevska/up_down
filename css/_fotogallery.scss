@@ -3,7 +3,7 @@ section-5 {
 	display: none;
 	display: flex;
     align-items: center;
-    padding-bottom: 100px;
+    padding-bottom: 45px;
 }
 
 .fotogallery-wrap {
@@ -80,82 +80,282 @@ section-5 {
 
 
 /* ------ media query ------ */
-@include desktop {	
+@include desktop {
+    .fotogallery-gallery {    
+            flex-direction: row;
+        &__picture  {
+            width: 40%;
+            height: 243px;
+        }
+    }
+
+    .picture1 {
+        top: 0;
+    }
+
+    .picture2 {
+        top: -274px;
+    }
+
+    .picture3 {
+        top: -290px;
+    }
+
+    .picture5 {
+        top: 0;
+    }
+
+    .picture6 {
+        top: -205px;
+    }
+
+    .picture9 {
+        top: 0;
+    }	
 }
 @include laptop {
+    .fotogallery-gallery {    
+            flex-direction: row;
+        &__picture  {
+            width: 40%;
+            height: 200px;
+            border-radius: 5px;
+        }
+    }
+
+    .picture1 {
+        top: 0;
+    }
+
+    .picture2 {
+        top: -230px;
+    }
+
+    .picture3 {
+        top: -239px;
+    }
+
+    .picture5 {
+        top: 0;
+    }
+
+    .picture6 {
+        top: -173px;
+    }
+
+    .picture9 {
+        top: 0;
+    }
 }
 @include tablet {
-    .blog-title {
-        &__topic-blog {
-            margin: 20px 0;     
-            font-size: 30px;
+    .fotogallery-gallery {    
+            flex-direction: row;
+        &__picture  {
+            width: 40%;
+            height: 147px;
+            margin-bottom: 30px;
+            border-radius: 5px;
+        }
+    }
+
+    .picture1 {
+        top: 0;
+    }
+
+    .picture2 {
+        top: -165px;
+    }
+
+    .picture3 {
+        top: -172px;
+    }
+
+    .picture5 {
+        top: 0;
+    }
+
+    .picture6 {
+        top: -124px;
+    }
+
+    .picture9 {
+        top: 0;
+    }
+}
+@include tablet-mini {
+    .fotogallery-title {
+        &__topic-fotogallery {
+            margin: 5px 0;     
+            font-size: 24px;
         }
         &__topic-text {
-            width: 53%;
+            padding-bottom: 20px;
             font-size: 18px;
         }
     }
     .fotogallery-gallery {    
-          
-    }
-}
-@include tablet-mini {
-    .blog-title {
-        &__topic-blog {
-            margin: 15px 0;     
-            font-size: 24px;
-        }
-        &__topic-text {
-            width: 80%;
-            font-size: 14px;
+            flex-direction: row;
+        &__picture  {
+            width: 40%;
+            height: 107px;
+            margin-bottom: 30px;
+            border-radius: 5px;
         }
     }
-    .fotogallery-gallery {    
-          
+
+    .picture1 {
+        top: 0;
+    }
+
+    .picture2 {
+        top: -120px;
+    }
+
+    .picture3 {
+        top: -123px;
+    }
+
+    .picture5 {
+        top: 0;
+    }
+
+    .picture6 {
+        top: -90px;
+    }
+
+    .picture9 {
+        top: 0;
     }
 }
 @include phone {
-    .blog-title {
-        &__topic-blog {
-            margin: 15px 0;     
-            font-size: 24px;
-        }
-        &__topic-text {
-            width: 80%;
-            font-size: 14px;
-        }
-    }
-    .fotogallery-gallery {    
-           
-    } 	
-}
-@include iphone-X {
-    .blog-title {
-        &__topic-blog {
-            margin: 10px 0;     
+    .fotogallery-title {
+        &__topic-fotogallery {
+            margin: 5px 0;     
             font-size: 22px;
         }
         &__topic-text {
-            width: 80%;
+            padding-bottom: 20px;
             font-size: 14px;
         }
     }
     .fotogallery-gallery {    
-           
+        &__picture  {
+            width: 62%;
+            height: 107px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+    }
+
+    .picture1 {
+        top: 0;
+    }
+
+    .picture2 {
+        top: -120px;
+    }
+
+    .picture3 {
+        top: -123px;
+    }
+
+    .picture5 {
+        top: 0;
+    }
+
+    .picture6 {
+        top: -90px;
+    }
+
+    .picture9 {
+        top: 0;
     } 	
-}	
-@include iphone-5 {
-    .blog-title {
-        &__topic-blog {
-            margin: 10px 0;     
-            font-size: 20px;
+}
+@include iphone-X {
+    .fotogallery-title {
+        &__topic-fotogallery {
+            margin: 5px 0;     
+            font-size: 22px;
         }
         &__topic-text {
-            width: 80%;
-            font-size: 12px;
+            padding-bottom: 20px;
+            font-size: 14px;
         }
     }
     .fotogallery-gallery {    
-          
+        &__picture  {
+            width: 62%;
+            height: 107px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+    }
+
+    .picture1 {
+        top: 0;
+    }
+
+    .picture2 {
+        top: -120px;
+    }
+
+    .picture3 {
+        top: -123px;
+    }
+
+    .picture5 {
+        top: 0;
+    }
+
+    .picture6 {
+        top: -90px;
+    }
+
+    .picture9 {
+        top: 0;
+    } 	
+}	
+@include iphone-5 {
+    .fotogallery-title {
+        &__topic-fotogallery {
+            margin: 5px 0;     
+            font-size: 20px;
+        }
+        &__topic-text {
+            padding-bottom: 20px;
+            font-size: 11px;
+        }
+    }
+    .fotogallery-gallery {    
+        &__picture  {
+            width: 62%;
+            height: 90px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+    }
+
+    .picture1 {
+        top: 0;
+    }
+
+    .picture2 {
+        top: -105px;
+    }
+
+    .picture3 {
+        top: -105px;
+    }
+
+    .picture5 {
+        top: 0;
+    }
+
+    .picture6 {
+        top: -75px;
+    }
+
+    .picture9 {
+        top: 0;
     }
 }

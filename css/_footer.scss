@@ -465,11 +465,12 @@ footer {
 			&_form-submit {
 				padding: 7px 22px;
 				margin-bottom: 25px;
-				a {
-					font-size: 12px;
-				}			 			
+				font-size: 12px;			 			
 			}
 		}
+	}
+	.footer-input {
+		font-size: 12px;
 	}
 	.footer-wrap {
 		flex-direction: column;
@@ -562,11 +563,12 @@ footer {
 			&_form-submit {
 				padding: 7px 22px;
 				margin-bottom: 25px;
-				a {
-					font-size: 12px;
-				}			 			
+				font-size: 12px;			 			
 			}
 		}
+	}
+	.footer-input {
+		font-size: 12px;
 	}
 	.footer-wrap {
 		flex-direction: column;
@@ -662,13 +664,14 @@ footer {
 			    padding: 5px 0 32px 27px;
 			}
 			&_form-submit {
+			    font-size: 12px;
 				padding: 7px 22px;
-				margin-bottom: 25px;
-				a {
-					font-size: 12px;
-				}			 			
+				margin-bottom: 25px;							 			
 			}
 		}
+	}
+	.footer-input {
+		font-size: 12px;
 	}
 	.footer-wrap {
 		flex-direction: column;
