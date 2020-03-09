@@ -36,46 +36,34 @@ section-5 {
     flex-wrap: wrap;
     flex-direction: column;
     &__picture	{
-        position: relative;
-        overflow: hidden;
-        width: 85%;
-        height: 515px;
         display: flex;
         margin: 0 auto;
         margin-bottom: 70px;
-        border-radius: 20px;
-        border: 1px solid $grey-opacity;
         img {
-            position: absolute;
             width: 100%;
-            margin: auto;
+            border: 1px solid rgba(130, 136, 147, 0.3);
+            border-radius: 5px;
             margin: 0 auto;
         }
     }
 }
 
 .picture1 {
-    top: 0;
 }
 
 .picture2 {
-    top: -600px;
 }
 
 .picture3 {
-    top: -535px;
 }
 
 .picture5 {
-    top: 0;
 }
 
 .picture6 {
-    top: -423px;
 }
 
 .picture9 {
-    top: 0;
 }
 
 
@@ -84,102 +72,32 @@ section-5 {
     .fotogallery-gallery {    
             flex-direction: row;
         &__picture  {
-            width: 40%;
-            height: 243px;
+            img {
+                width: 70%;
+            }
         }
-    }
-
-    .picture1 {
-        top: 0;
-    }
-
-    .picture2 {
-        top: -274px;
-    }
-
-    .picture3 {
-        top: -290px;
-    }
-
-    .picture5 {
-        top: 0;
-    }
-
-    .picture6 {
-        top: -205px;
-    }
-
-    .picture9 {
-        top: 0;
     }	
 }
 @include laptop {
     .fotogallery-gallery {    
             flex-direction: row;
         &__picture  {
-            width: 40%;
-            height: 200px;
-            border-radius: 5px;
+            margin-bottom: 30px;
+            img {
+                width: 70%;
+            }
         }
-    }
-
-    .picture1 {
-        top: 0;
-    }
-
-    .picture2 {
-        top: -230px;
-    }
-
-    .picture3 {
-        top: -239px;
-    }
-
-    .picture5 {
-        top: 0;
-    }
-
-    .picture6 {
-        top: -173px;
-    }
-
-    .picture9 {
-        top: 0;
     }
 }
 @include tablet {
     .fotogallery-gallery {    
             flex-direction: row;
         &__picture  {
-            width: 40%;
-            height: 147px;
             margin-bottom: 30px;
-            border-radius: 5px;
+            img {
+                width: 70%;
+            }
         }
-    }
-
-    .picture1 {
-        top: 0;
-    }
-
-    .picture2 {
-        top: -165px;
-    }
-
-    .picture3 {
-        top: -172px;
-    }
-
-    .picture5 {
-        top: 0;
-    }
-
-    .picture6 {
-        top: -124px;
-    }
-
-    .picture9 {
-        top: 0;
     }
 }
 @include tablet-mini {
@@ -196,35 +114,11 @@ section-5 {
     .fotogallery-gallery {    
             flex-direction: row;
         &__picture  {
-            width: 40%;
-            height: 107px;
             margin-bottom: 30px;
-            border-radius: 5px;
+            img {
+                width: 70%;
+            }
         }
-    }
-
-    .picture1 {
-        top: 0;
-    }
-
-    .picture2 {
-        top: -120px;
-    }
-
-    .picture3 {
-        top: -123px;
-    }
-
-    .picture5 {
-        top: 0;
-    }
-
-    .picture6 {
-        top: -90px;
-    }
-
-    .picture9 {
-        top: 0;
     }
 }
 @include phone {
@@ -240,36 +134,12 @@ section-5 {
     }
     .fotogallery-gallery {    
         &__picture  {
-            width: 62%;
-            height: 107px;
             margin-bottom: 20px;
-            border-radius: 5px;
+            img {
+                width: 70%;
+            }
         }
     }
-
-    .picture1 {
-        top: 0;
-    }
-
-    .picture2 {
-        top: -120px;
-    }
-
-    .picture3 {
-        top: -123px;
-    }
-
-    .picture5 {
-        top: 0;
-    }
-
-    .picture6 {
-        top: -90px;
-    }
-
-    .picture9 {
-        top: 0;
-    } 	
 }
 @include iphone-X {
     .fotogallery-title {
@@ -284,36 +154,12 @@ section-5 {
     }
     .fotogallery-gallery {    
         &__picture  {
-            width: 62%;
-            height: 107px;
             margin-bottom: 20px;
-            border-radius: 5px;
+            img {
+                width: 70%;
+            }
         }
     }
-
-    .picture1 {
-        top: 0;
-    }
-
-    .picture2 {
-        top: -120px;
-    }
-
-    .picture3 {
-        top: -123px;
-    }
-
-    .picture5 {
-        top: 0;
-    }
-
-    .picture6 {
-        top: -90px;
-    }
-
-    .picture9 {
-        top: 0;
-    } 	
 }	
 @include iphone-5 {
     .fotogallery-title {
@@ -328,34 +174,10 @@ section-5 {
     }
     .fotogallery-gallery {    
         &__picture  {
-            width: 62%;
-            height: 90px;
-            margin-bottom: 20px;
-            border-radius: 5px;
+            margin-bottom: 15px;
+            img {
+                width: 70%;
+            }
         }
-    }
-
-    .picture1 {
-        top: 0;
-    }
-
-    .picture2 {
-        top: -105px;
-    }
-
-    .picture3 {
-        top: -105px;
-    }
-
-    .picture5 {
-        top: 0;
-    }
-
-    .picture6 {
-        top: -75px;
-    }
-
-    .picture9 {
-        top: 0;
     }
 }

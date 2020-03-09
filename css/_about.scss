@@ -72,30 +72,18 @@ section-3 {
 	&__box-botton-about{
 		display: flex;
 		justify-content: center;
-	}
-}
-
-.button-about {
-	display: flex;
-	justify-content: center;	
-	@extend button;		
-	background-color: $white;
-	border: 1px solid $orange;
-	&:hover {
-		background-color: $orange;
-		border: 1px solid $orange;
-	}
-	a {
-		color: $orange;
-		&:hover {
-			color: $white;
+		input {
+			@extend input;
+			border: 1px solid $orange;
+			padding: 19px 53px;
+			&:hover {
+				color: $white;
+				background-color: $orange;
+				transition: 1s;
+			}				
 		}
 	}
-	&_btn {
-		padding: 20px 54px;					
-	}
 }
-
 
 /* ------ media query ----------------- */
 
@@ -135,17 +123,13 @@ section-3 {
 			}
 		}
 		&__box-botton-about{
+			input {
+				font-size: 20px;
+				padding: 12px 30px;
+				}				
+			}
 		}
 	}
-	.button-about {
-		a {
-			font-size: 16px;
-		}
-		&_btn {
-			padding: 15px 30px;					
-		}
-	}	
-}
 @include laptop {
 	.block-about  {
 		display: flex;
@@ -177,19 +161,15 @@ section-3 {
 			}
 		}
 		&__box-botton-about{
+			input {
+				font-size: 20px;
+				padding: 12px 30px;
+			}
 		}
-	}
-	.button-about {
-		a {
-			font-size: 16px;
-		}
-		&_btn {
-			padding: 15px 30px;					
-		}
-	}
+	}	
 }
 
-@include iPadPro-portrait {
+/*@include iPadPro-portrait {
 	.block-about  {
 	}
 	.block-left {
@@ -221,13 +201,17 @@ section-3 {
 			}
 		}
 		&__box-botton-about{
+			input {
+				font-size: 20px;
+				padding: 12px 30px;
+			}
 		}
 	}
 	.table-foto-about {
 		margin-top: -70px;
 	}
 }
-
+*/
 @include iPadPro-landscape {
 }
 
@@ -263,6 +247,10 @@ section-3 {
 			}
 		}
 		&__box-botton-about{
+			input {
+				font-size: 20px;
+				padding: 12px 30px;
+			}
 		}
 	}
 	.table-foto-about {
@@ -271,7 +259,7 @@ section-3 {
 }
 
 
-@include iPad-landscape {
+/*@include iPad-landscape {
 	.block-about  {
 		display: flex;
 		justify-content: space-around;
@@ -303,19 +291,15 @@ section-3 {
 			}
 		}
 		&__box-botton-about{
+			input {
+				font-size: 20px;
+				padding: 12px 30px;
+			}
 		}
 	}
-	.button-about {
-		a {
-			font-size: 16px;
-		}
-		&_btn {
-			padding: 15px 30px;					
-		}
-	}
-}
+}*/
 
-@include iPad-portrait {
+@include iPad {
 	.block-about  {
 		display: flex;
 		justify-content: space-around;
@@ -347,6 +331,10 @@ section-3 {
 			}
 		}
 		&__box-botton-about{
+			input {
+				font-size: 20px;
+				padding: 12px 30px;
+			}
 		}
 	}
 	.table-foto-about {
@@ -388,19 +376,10 @@ section-3 {
 			}
 		}
 		&__box-botton-about{
-			a {
+			input {
 				font-size: 14px;
+    			padding: 13px 30px;
 			}
-			&_btn {
-			}
-		}
-	}
-	.button-about {
-		a {				
-			font-size: 14px;
-		}
-		&_btn {
-			padding: 12px 30px;
 		}
 	}
 	.table-foto-about {
@@ -444,15 +423,11 @@ section-3 {
 			&_span-about {			
 			}
 		}
-		&__box-botton-about{			
-		}
-	}
-	.button-about {
-		a {				
-			font-size: 14px;
-		}
-		&_btn {
-			padding: 10px 28px;
+		&__box-botton-about{
+			input {
+				font-size: 14px;
+    			padding: 6px 17px;
+			}
 		}
 	}
 	.table-foto-about {
@@ -494,15 +469,11 @@ section-3 {
 			&_span-about {			
 			}
 		}
-		&__box-botton-about{			
-		}
-	}
-	.button-about {
-		a {				
-			font-size: 14px;
-		}
-		&_btn {
-			padding: 10px 28px;
+		&__box-botton-about{
+			input {
+				font-size: 14px;
+    			padding: 6px 17px;
+			}
 		}
 	}
 	.table-foto-about {
@@ -552,17 +523,13 @@ section-3 {
 				font-size: 14px;			
 			}
 		}
-		&__box-botton-about{			
+		&__box-botton-about{
+			input {
+				font-size: 14px;
+    			padding: 6px 17px;
+			}
 		}
-	}
-	.button-about {
-		a {				
-			font-size: 12px;
-		}
-		&_btn {
-			padding: 7px 15px;
-		}
-	}
+	}	
 	.table-foto-about {
 		margin-top: -37px;
 	}
