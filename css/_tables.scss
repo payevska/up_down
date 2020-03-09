@@ -4,13 +4,12 @@
 	display: flex;
     align-items: center;
     min-height: 100vh;
-    
 }
 
 .tables-wrap {
 	display: flex;
 	flex-direction: column;	
-    margin-top: 100px;    
+	align-items: center;
 }
 
 .tables-title {
@@ -24,66 +23,59 @@
     }    
 }
 
-.tables-collection {    
+.tables-collection {
+	width: 80%;    
 	display: flex;
-    flex-wrap: wrap;
+    justify-content: space-around;
     &__table {
+    	width: 40%;
+    	display: flex;
+	    flex-direction: column;
+	    align-items: center;
 	    &_foto-table	{
-	        position: relative;
-	        overflow: hidden;
-	        width: 70%;
-	        height: 350px;
+	        width: 100%;
 	        display: flex;
-	        margin: 0 auto;
+	        justify-content: center;
 	        margin-bottom: 40px;
-	        border-radius: 20px;
+	        border-radius: 5px;
 	        border: 1px solid $grey-opacity;
 	        img {
-	            position: absolute;
+	        	width:100%;
 	        }
 	    }
 	    &_tables-name {
-	    	text-align: center;
 	    	@extend a;
-	    	font-size: 18px;
 	    }
 	}
 }
 
-.foto-table1 {
-	width: 100%;
-    top: -94px;
-}
-
-.foto-table2 {
-    top: 75px;
-    width: 80%;
-    right: 52px;
+.tables-name-special {
+	font-size: 18px;
 }
 
 
 
 
 /* ------ media query ------ */
-@include desktop {	
+@include desktop {
+	.tables-collection {    
+	    &__table {
+	    	width: 32%;
+		}
+	}
 }
 @include laptop {
+	.tables-title {
+    &__tables-topic {
+    	margin-top: 0;    	
+        font-size: 36px;
+    }    
+}
 	.tables-collection {    
 	    &__table {
 		    &_foto-table	{
-		        height: 300px;
 		    }	    
 		}
-	}
-	.foto-table1 {
-		width: 94%;
-	    top: -48px;
-	}
-
-	.foto-table2 {
-	    top: 80px;
-	    width: 75%;
-	    right: 40px;
 	}
 }
 @include tablet {
@@ -93,24 +85,15 @@
     .tables-collection {    
 	    &__table {
 		    &_foto-table	{
-		    	width: 80%;
-		    	margin-bottom: 30px;
-		        height: 230px;
 		    }
 		    &_tables-name a {
 		    	font-size: 12px;
 		    }
 		}
 	}
-	.foto-table1 {
-	    width: 94%;
-	    top: -57px;
-	}
-	.foto-table2 {
-	    top: 50px;
-	    width: 80%;
-	    right: 25px;
-	}
+	.tables-name-special {
+	font-size: 14px;
+}
 }
 @include tablet-mini {
     .tables-title__tables-topic {
@@ -120,23 +103,15 @@
     .tables-collection { 
 	    &__table {
 		    &_foto-table	{
-		    	width: 100%;
 			    margin-bottom: 20px;
-			    height: 200px;
 		    }
 		    &_tables-name a {
-		    	font-size: 10px;
+		    	font-size: 12px;
 		    }
 		}
 	}
-	.foto-table1 {
-	    width: 90%;
-	    top: -40px;
-	}
-	.foto-table2 {
-	    top: 47px;
-	    width: 72%;
-	    right: 29px;
+	.tables-name-special {
+		font-size: 14px;
 	}
 }
 @include phone {
@@ -145,31 +120,27 @@
     	margin: 25px 0;
 	}
     .tables-collection { 
-        flex-direction: column;   
+    	width: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: none;   
 	    &__table {
+	    	width: 50%;
 		    &_foto-table	{
-		    	width: 75%;
 			    margin-bottom: 4px;
-			    height: 150px;
 		    }
 		    &_tables-name {
+		    	line-height: 1.1;
 		    	margin-bottom: 20px;
 			    a {
-			    	font-size: 10px;
+			    	font-size: 12px;
 
 			    }
 			}
 		}
 	}
-	.foto-table1 {
-	    width: 85%;
-	    top: -57px;
-	    right: 20px;
-	}
-	.foto-table2 {
-	    top: 25px;
-	    width: 70%;
-	    right: 36px;
+	.tables-name-special {
+		font-size: 12px;
 	}
 }
 @include iphone-X {
@@ -178,63 +149,55 @@
     	margin: 25px 0;
 	}
     .tables-collection { 
-        flex-direction: column;   
+    	width: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: none;   
 	    &__table {
+	    	width: 50%;
 		    &_foto-table	{
-		    	width: 75%;
 			    margin-bottom: 4px;
-			    height: 150px;
 		    }
 		    &_tables-name {
+		    	line-height: 1.1;
 		    	margin-bottom: 20px;
 			    a {
-			    	font-size: 10px;
+			    	font-size: 12px;
 
 			    }
 			}
 		}
 	}
-	.foto-table1 {
-	    width: 85%;
-	    top: -57px;
-	    right: 20px;
+	.tables-name-special {
+		font-size: 12px;
 	}
-	.foto-table2 {
-	    top: 25px;
-	    width: 70%;
-	    right: 36px;
-	}	
 }	
 @include iphone-5 {
     .tables-title__tables-topic {
 	    font-size: 20px;
-    	margin: 25px 0;
+    	margin: 15px 0;
 	}
     .tables-collection { 
-        flex-direction: column;   
+    	width: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: none;   
 	    &__table {
+	    	width: 50%;
 		    &_foto-table	{
-		    	width: 86%;
 			    margin-bottom: 4px;
-			    height: 150px;
 		    }
 		    &_tables-name {
+		    	line-height: 1.1;
 		    	margin-bottom: 20px;
 			    a {
-			    	font-size: 10px;
+			    	font-size: 12px;
 
 			    }
 			}
 		}
 	}
-	.foto-table1 {
-	    width: 85%;
-	    top: -46px;
-	    right: 20px;
-	}
-	.foto-table2 {
-	    top: 28px;
-	    width: 70%;
-	    right: 35px;
+	.tables-name-special {
+		font-size: 12px;
 	}
 }
