@@ -1797,12 +1797,11 @@ section-3 {
 @media (min-width: 1200px) {  } 
 
  */
-/* ------------ products --------------- */
+/* ------------ characteristics-actuator --------------- */
 #characteristics-actuator {
   display: flex;
   display: -webkit-flex;
   align-items: center;
-  padding-top: 94px;
   min-height: 100vh; }
 
 .product-wrap {
