@@ -2623,6 +2623,7 @@ section-5 {
   flex-wrap: wrap;
   flex-direction: column; }
   .fotogallery-gallery__picture {
+    width: 100%;
     display: flex;
     margin: 0 auto;
     margin-bottom: 70px; }
@@ -2636,22 +2637,20 @@ section-5 {
 @media (min-width: 1200px) and (max-width: 1365.98px) {
   .fotogallery-gallery {
     flex-direction: row; }
-    .fotogallery-gallery__picture img {
+    .fotogallery-gallery__picture {
       width: 70%; } }
 @media (min-width: 992px) and (max-width: 1199.98px) {
   .fotogallery-gallery {
     flex-direction: row; }
     .fotogallery-gallery__picture {
-      margin-bottom: 30px; }
-      .fotogallery-gallery__picture img {
-        width: 70%; } }
+      width: 70%;
+      margin-bottom: 30px; } }
 @media (min-width: 768px) and (max-width: 991.98px) {
   .fotogallery-gallery {
     flex-direction: row; }
     .fotogallery-gallery__picture {
-      margin-bottom: 30px; }
-      .fotogallery-gallery__picture img {
-        width: 70%; } }
+      width: 70%;
+      margin-bottom: 30px; } }
 @media (min-width: 576px) and (max-width: 767.98px) {
   .fotogallery-title__topic-fotogallery {
     margin: 5px 0;
@@ -2663,9 +2662,8 @@ section-5 {
   .fotogallery-gallery {
     flex-direction: row; }
     .fotogallery-gallery__picture {
-      margin-bottom: 30px; }
-      .fotogallery-gallery__picture img {
-        width: 70%; } }
+      width: 70%;
+      margin-bottom: 30px; } }
 @media (min-width: 375px) and (max-width: 575.98px) {
   .fotogallery-title__topic-fotogallery {
     margin: 5px 0;
@@ -2675,9 +2673,8 @@ section-5 {
     font-size: 14px; }
 
   .fotogallery-gallery__picture {
-    margin-bottom: 20px; }
-    .fotogallery-gallery__picture img {
-      width: 70%; } }
+    width: 70%;
+    margin-bottom: 20px; } }
 @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-device-pixel-ratio: 3) {
   .fotogallery-title__topic-fotogallery {
     margin: 5px 0;
@@ -2687,9 +2684,8 @@ section-5 {
     font-size: 14px; }
 
   .fotogallery-gallery__picture {
-    margin-bottom: 20px; }
-    .fotogallery-gallery__picture img {
-      width: 70%; } }
+    width: 70%;
+    margin-bottom: 20px; } }
 @media (min-width: 320px) and (max-width: 374.98px) {
   .fotogallery-title__topic-fotogallery {
     margin: 5px 0;
@@ -2699,9 +2695,8 @@ section-5 {
     font-size: 11px; }
 
   .fotogallery-gallery__picture {
-    margin-bottom: 15px; }
-    .fotogallery-gallery__picture img {
-      width: 70%; } }
+    margin-bottom: 15px;
+    width: 70%; } }
 /* ------------ footer --------------- */
 footer {
   display: flex;
