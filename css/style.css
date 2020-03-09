@@ -1798,7 +1798,7 @@ section-3 {
 
  */
 /* ------------ products --------------- */
-#characteristic-actuator {
+#characteristics-actuator {
   display: flex;
   display: -webkit-flex;
   align-items: center;
@@ -1821,19 +1821,8 @@ section-3 {
   display: flex;
   flex-direction: column; }
   .product-images__picture {
-    height: 150px;
-    position: relative;
-    overflow: hidden;
     display: flex;
     justify-content: center; }
-    .product-images__picture_product-image {
-      width: 50%;
-      position: absolute;
-      margin-top: -40px; }
-      @media (min-width: 1025px) and (max-width: 1199.98px) {
-        .product-images__picture_product-image {
-          width: 100%;
-          margin-top: -82px; } }
 
 .characteristic-list {
   display: flex;
@@ -2055,7 +2044,7 @@ section-3 {
 @media (min-width: 1200px) {  } 
 
  */
-/* ------------ portfolio --------------- */
+/* ------------ up-down-actuator --------------- */
 #up-down-actuator {
   display: flex;
   align-items: center;
@@ -2117,14 +2106,8 @@ section-3 {
   top: -360px;
   transition: all ease 1s; }
 
-.carousel-foto__project {
-  position: relative;
-  overflow: hidden;
-  width: 115px;
-  height: 90px; }
-  .carousel-foto__project_fotoProject {
-    width: 100%;
-    margin-top: -53px; }
+.carousel-foto__project_fotoProject {
+  width: 100%; }
 
 .arrow-up-down {
   height: 60px; }
@@ -3396,20 +3379,6 @@ footer {
 .product-images {
   display: flex;
   flex-direction: column; }
-  .product-images__picture {
-    height: 150px;
-    position: relative;
-    overflow: hidden;
-    display: flex;
-    justify-content: center; }
-    .product-images__picture_product-image {
-      width: 50%;
-      position: absolute;
-      margin-top: -40px; }
-      @media (min-width: 1025px) and (max-width: 1199.98px) {
-        .product-images__picture_product-image {
-          width: 100%;
-          margin-top: -82px; } }
 
 .characteristic-list {
   display: flex;
@@ -3693,14 +3662,8 @@ footer {
   top: -360px;
   transition: all ease 1s; }
 
-.carousel-foto__project {
-  position: relative;
-  overflow: hidden;
-  width: 115px;
-  height: 90px; }
-  .carousel-foto__project_fotoProject {
-    width: 100%;
-    margin-top: -53px; }
+.carousel-foto__project_fotoProject {
+  width: 100%; }
 
 .arrow-up-down {
   height: 60px; }
@@ -4059,8 +4022,8 @@ footer {
 /* -------- home -------- */
 /* -------- video-review -------- */
 /* -------- about -------- */
-/* -------- products -------- */
-/* -------- portfolio -------- */
+/* -------- characteristic-actuator -------- */
+/* -------- up-down-actuator -------- */
 /* -------- blog -------- */
 /* -------- fotogallery -------- */
 /* -------- footer -------- */

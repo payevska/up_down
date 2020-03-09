@@ -1,5 +1,5 @@
 /* ------------ products --------------- */
-#characteristic-actuator {
+#characteristics-actuator {
 	display: flex;
 	display: -webkit-flex;
     align-items: center;
@@ -28,19 +28,9 @@
 	display: flex;
     flex-direction: column;
 	&__picture {
-		height: 150px;
-		position: relative;
-    	overflow: hidden;
     	display: flex;
     	justify-content: center;
     	&_product-image {
-			width: 50%;			
-			position: absolute;
-			margin-top: -40px;
-			@media (min-width: 1025px) and (max-width: 1199.98px) {
-			    width: 100%;
-			    margin-top: -82px;
-			}
 		}
 	}	
 }

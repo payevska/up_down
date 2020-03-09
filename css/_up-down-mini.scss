@@ -80,13 +80,8 @@
 
 .carousel-foto {
 	&__project {
-		position: relative;
-		overflow: hidden;
-		width: 115px;
-	    height: 90px;
 		&_fotoProject {
 			width: 100%;
-			margin-top: -53px;
 		}
 	}
 }
