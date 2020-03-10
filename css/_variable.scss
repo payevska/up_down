@@ -179,7 +179,7 @@ $ipad-pro-landscape-breakpoint: "(min-device-width : 1024px) and (max-device-wid
   }
 }
 /* ---- iPadPro ---- */
-@mixin iPadPro {
+/*@mixin iPadPro {
 	@media only screen 
 	and (min-width: 1024px) and (max-width: 1366px) {
     @content;
@@ -204,7 +204,7 @@ $ipad-pro-landscape-breakpoint: "(min-device-width : 1024px) and (max-device-wid
     @content;
   }
 }
-/* ---- iPad ---- */
+ ---- iPad ---- 
 @mixin iPad {
 	@media only screen 
 	and (min-width: 768px) and (max-width: 1024px) {
@@ -229,7 +229,7 @@ $ipad-pro-landscape-breakpoint: "(min-device-width : 1024px) and (max-device-wid
 	and (-webkit-min-device-pixel-ratio: 2) {
 	    @content;
 	}
-}
+}*/
 
 @mixin tablet {
   @media (min-width: 768px) and (max-width: 991.98px) {
@@ -246,7 +246,7 @@ $ipad-pro-landscape-breakpoint: "(min-device-width : 1024px) and (max-device-wid
     @content;
   }
 }
-@mixin iphone-X {
+/*@mixin iphone-X {
   @media only screen 
 and (min-device-width : 375px) 
 and (max-device-width : 812px)
@@ -271,7 +271,7 @@ and (-webkit-device-pixel-ratio : 3)
 and (orientation : landscape) {
     @content;
   }
-}
+}*/
 @mixin iphone-5 {
   @media (min-width: 320px) and (max-width: 374.98px) {
     @content;

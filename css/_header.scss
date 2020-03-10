@@ -281,7 +281,7 @@ menu {
 
 
 /* ------ media query ------ */
-@include iPad {
+/*@include iPad {
 	menu {
 		margin: 0;	
 	}
@@ -306,7 +306,7 @@ menu {
 			font-size: 12px;
 		}
 	}
-}
+}*/
 @include tablet {
 	menu {
 		margin: 0;	
@@ -409,7 +409,7 @@ menu {
 		}
 	}
 }
-@include iphone-X {	
+/*@include iphone-X {	
 	header {    
 	    padding-top: 3px;
 	    padding-bottom: 3px;
@@ -443,7 +443,7 @@ menu {
 @include iphone-X-portrait {
 }
 @include iphone-X-landscape {
-}
+}*/
 @include iphone-5 {
 	header {    
 	    padding-top: 3px;

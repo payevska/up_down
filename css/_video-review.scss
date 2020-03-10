@@ -1,9 +1,7 @@
 /* ------------ video-review --------------- */
 section-2 {    
 	display: flex;
-	display: -webkit-flex;
 	align-items: center;
-	-webkit-align-items: center;	
 	//padding-top: 94px;
 	min-height: 100vh;		
 }
@@ -35,7 +33,7 @@ section-2 {
 	padding: 19px 22px;
 	@extend input;	
 	background-color: $orange;
-	border: 1px solid $orange;
+	//border: 1px solid $orange;
 	font-size: 25px;			
 	&:hover {
 		color: $orange;
@@ -89,7 +87,7 @@ section-2 {
 	}
 }
 
-@include iPadPro-landscape {
+/*@include iPadPro-landscape {
 	.title-review {
 		font-size: 36px;
 		padding-top: 40px;
@@ -157,7 +155,7 @@ section-2 {
 		padding: 15px 20px;			
 	}
 }
-
+*/
 
 
 @include tablet {
@@ -206,7 +204,7 @@ section-2 {
 	    padding: 7px 8px;			
 	}
 }
-@include iphone-X {
+/*@include iphone-X {
 	.title-review {
 		font-size: 24px;
 		padding-top: 0;
@@ -224,7 +222,7 @@ section-2 {
 @include iphone-X-portrait {
 }
 @include iphone-X-landscape {
-}	
+}*/	
 @include iphone-5 {
 	.title-review {
 		font-size: 24px;

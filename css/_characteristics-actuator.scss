@@ -1,7 +1,6 @@
-/* ------------ characteristics-actuator --------------- */
+/*  ------- characteristics-actuator ------- */
 #characteristics-actuator {
 	display: flex;
-	display: -webkit-flex;
     align-items: center;
 	//padding-top: 94px;
     min-height: 100vh;
@@ -63,7 +62,7 @@
 @include desktop {	
 }
 
-@include iPadPro-portrait {
+/*@include iPadPro-portrait {
 	.product-contain {
 		flex-direction: column;
 	}
@@ -138,7 +137,7 @@
 			font-size: 36px;
 		}	
 	}
-}
+}*/
 @include laptop {
 	.product-contain {
 		flex-direction: row;
@@ -148,14 +147,14 @@
 	}
 	.product-images {
 		flex-direction: column;
-	&__picture {
-		width: 70%;
-		margin-left: 30px;
-    	&_product-image {
-			
-		}
-	}	
-}
+		&__picture {
+			width: 70%;
+			margin-left: 30px;
+	    	&_product-image {
+				
+			}
+		}	
+	}
 }
 @include tablet {
 	.product-images {
@@ -230,7 +229,7 @@
 		width: 50%;
 	}
 }
-@include iphone-X {
+/*@include iphone-X {
 	.product {
 		margin-bottom: 10px;
 		&__product-title {
@@ -267,7 +266,7 @@
 @include iphone-X-portrait {
 }
 @include iphone-X-landscape {
-}
+}*/
 @include iphone-5 {
 	.product {
 		margin-bottom: 10px;
@@ -303,20 +302,4 @@
 	}
 }
 
-/* 
-// Extra small devices (portrait phones, less than 576px)
-@media (max-width: 575.98px) {  }
-
-// Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) and (max-width: 767.98px) {  }
-
-// Medium devices (tablets, 768px and up)
-@media (min-width: 768px) and (max-width: 991.98px) {  }
-
-// Large devices (desktops, 992px and up)
-@media (min-width: 992px) and (max-width: 1199.98px) {  }
-
-// Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) {  } 
-
- */
+ 

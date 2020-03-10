@@ -212,8 +212,8 @@ section-3 {
 	}
 }
 */
-@include iPadPro-landscape {
-}
+/*@include iPadPro-landscape {
+}*/
 
 @include tablet {
 	.block-about  {
@@ -299,7 +299,7 @@ section-3 {
 	}
 }*/
 
-@include iPad {
+/*@include iPad {
 	.block-about  {
 		display: flex;
 		justify-content: space-around;
@@ -340,7 +340,7 @@ section-3 {
 	.table-foto-about {
 		margin-top: -70px;
 	}
-}
+}*/
 
 @include tablet-mini {
 	.block-about  {
@@ -434,7 +434,7 @@ section-3 {
 		margin-top: -37px;
 	}
 }
-@include iphone-X {
+/*@include iphone-X {
 	.block-about  {
 		display: flex;
 		justify-content: space-around;
@@ -483,7 +483,7 @@ section-3 {
 @include iphone-X-portrait {
 }
 @include iphone-X-landscape {
-}	
+}*/	
 @include iphone-5 {
 	.block-about  {
 		display: flex;

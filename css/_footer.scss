@@ -1,9 +1,7 @@
 /* ------------ footer --------------- */
 footer {
 	display: flex;
-	display: -webkit-flex;
 	align-items: center;
-	-webkit-align-items: center;
     //position: relative;
 	background-color: $blue-grey;
 	//padding-top: 94px;
@@ -15,17 +13,13 @@ footer {
 
 .footer-block {
 	display: flex;
-	display: -webkit-flex;
     flex-direction: column;
-    -webkit-flex-direction: column;
 }
 
 .form-contact {
 	display: flex;
-    display: -webkit-flex;
-    -webkit-flex-direction: column;
-    -webkit-align-items: center;
     align-items: center;
+    flex-direction: column;
     padding: 0;
 	&__form-title {		
     	margin-top: 46px;
@@ -37,11 +31,8 @@ footer {
 	&__form-content {
 	    width: 43%;
 	    display: flex;
-	    display: -webkit-flex;
 	    flex-direction: column;
-	    -webkit-flex-direction: column;
 	    align-items: center;
-	    -webkit-align-items: center;
 		&_form-name {
 			outline: none;			
 			margin-bottom: 24px;
@@ -72,7 +63,7 @@ footer {
 			&:hover {				
 				background-color: $orange;
 				color: $white;
-				border: 1px solid $orange;
+				//border: 1px solid $orange;
 			}
 		}
 	}
@@ -110,14 +101,11 @@ footer {
 
 .footer-wrap {
     display: flex;
-    display: -webkit-flex;
     color: $white;
 	
 	&__menu-footer {
 	    display: flex;	    
-	    display: -webkit-flex;
 	    flex-direction: column;
-    	-webkit-flex-direction: column;
 		padding: 0;
 		padding-left: 20px;
 		&_title-menu {
@@ -144,9 +132,6 @@ footer {
 	    display: flex;
 	    flex-direction: column;
 	    align-items: center;
-	    display: -webkit-flex;
-    	-webkit-flex-direction: column;
-    	-webkit-align-items: center;
 	    padding: 0;	    
 	    &_topic-contact {
     	    padding-bottom: 10px;
@@ -177,7 +162,6 @@ footer {
 		    //width: 28%;
 		    color: $orange;
 		    display: flex;
-		    display: -webkit-flex;
 		    &_topic-social {
 		    	color: $white;
 		    	margin-bottom: 8px;
@@ -190,11 +174,8 @@ footer {
 		font-weight: $bold;
 		display: flex;
 	    justify-content: flex-end;
-	    display: -webkit-flex;
-	    -webkit-justify-content: flex-end;
 	    padding-right: 20px;
 	    align-items: flex-start;
-	    -webkit-align-items: flex-start;
     	padding-bottom: 39px;
     }	
 }
@@ -211,7 +192,6 @@ footer {
 
 .footer-bottom {
     display: flex;
-    display: -webkit-flex;
     bottom: 20px;
     position: absolute;
     width: 100%;
@@ -222,8 +202,6 @@ footer {
 		width: 100%;
 		display: flex;
     	justify-content: center;
-    	display: -webkit-flex;
-    	-webkit-justify-content: center;
     	border-top: 1px solid white;
     	padding-top: 6px;
 	}
@@ -277,7 +255,7 @@ footer {
 		}
 	}
 }
-@include iPadPro-landscape {
+/*@include iPadPro-landscape {
 	.form-contact {
 		&__form-title {		
 	    	margin-top: 20px;
@@ -299,7 +277,7 @@ footer {
 			}
 		}
 	}
-}
+}*/
 @include desktop {
 	.form-contact {
 		&__form-title {		
@@ -324,7 +302,7 @@ footer {
 }
 @include laptop {
 }
-@include iPad-landscape {
+/*@include iPad-landscape {
 	.form-contact {
 		&__form-title {		
 	    	margin-top: 0;
@@ -353,10 +331,10 @@ footer {
 			}
 		}
 	}
-}
+}*/
 @include tablet {
 }
-@include iPad-portrait {
+/*@include iPad-portrait {
 	footer {		
 		padding-top: 0;
 	}
@@ -367,7 +345,7 @@ footer {
 			}
 		}	
 	}
-}
+}*/
 @include tablet-mini {
 	.form-contact {
 		&__form-title {		
@@ -538,7 +516,7 @@ footer {
 		font-size: 32px;
 	}
 }
-@include iphone-X {
+/*@include iphone-X {
 	.form-contact {
 		&__form-title {		
 	    	margin-top: 0;
@@ -640,7 +618,7 @@ footer {
 @include iphone-X-portrait {
 }
 @include iphone-X-landscape {
-}
+}*/
 @include iphone-5 {
 	.form-contact {
 		&__form-title {		
@@ -741,20 +719,5 @@ footer {
 	}
 }
 
-/* 
-// Extra small devices (portrait phones, less than 576px)
-@media (max-width: 575.98px) {  }
 
-// Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) and (max-width: 767.98px) {  }
-
-// Medium devices (tablets, 768px and up)
-@media (min-width: 768px) and (max-width: 991.98px) {  }
-
-// Large devices (desktops, 992px and up)
-@media (min-width: 992px) and (max-width: 1199.98px) {  }
-
-// Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) {  } 
-
- */
+ 

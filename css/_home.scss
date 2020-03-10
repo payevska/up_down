@@ -1,6 +1,5 @@
 section-1 {
 	display: flex;
-	display: -webkit-flex;  
 }
 
 .home {
@@ -9,13 +8,7 @@ section-1 {
 	min-height: 100vh;
 	display: flex;
 	background-size:2880px 1800px;
-	-webkit-background-size: 100%; 
-    -moz-background-size: 100%; 
-    -o-background-size: 100%; 
     background-size: 100%; 
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;	
 	background-size: cover;
 }
 
@@ -194,7 +187,7 @@ section-1 {
 }
 
 /* ---- iPadPro ---- */
-@include iPadPro {
+/*@include iPadPro {
 	.home {
 		background: url('../images/Home-photo4.png') no-repeat top fixed;
 		background-attachment: scroll;
@@ -288,9 +281,9 @@ section-1 {
 	}
 		
 }
-
+*/
 /* ---- iPad ---- */
-@include iPad {	
+/*@include iPad {	
 	.home {
 		background: url('../images/Home-photo4.png') no-repeat top fixed;
 		background-attachment: scroll;
@@ -358,9 +351,9 @@ section-1 {
 		&__link-arrow {
 		}
 	}	
-}
+}*/
 
-@include iPad-portrait {
+/*@include iPad-portrait {
 	.home {
 		background: url('../images/Home-photo4.png') no-repeat top fixed;
 		background-attachment: scroll;
@@ -380,7 +373,7 @@ section-1 {
 			}
 		}	
 	}	
-}
+}*/
 
 @include tablet {
 	.home {
@@ -490,7 +483,7 @@ section-1 {
 		}
 	}
 }
-@include iphone-X {
+/*@include iphone-X {
 	.home {
 		background-attachment: scroll;
 	}
@@ -539,7 +532,7 @@ section-1 {
 	.home {
 		background-attachment: scroll;
 	}
-}	
+}*/	
 @include iphone-5 {
 	.main {
 		align-items: center;
