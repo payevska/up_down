@@ -2308,18 +2308,6 @@ section-3 {
 .block-gallery-image {
   display: flex; }
 
-.portfolio-right {
-  display: flex;
-  align-items: center; }
-  .portfolio-right__project-big-foto {
-    position: relative;
-    overflow: hidden;
-    width: 100%;
-    /*margin-left: 40px;*/ }
-    .portfolio-right__project-big-foto_fotoProject-big {
-      margin-top: -100px;
-      width: 100%; }
-
 .portfolio-left {
   display: flex;
   flex-direction: column;
@@ -2344,8 +2332,10 @@ section-3 {
   top: -360px;
   transition: all ease 1s; }
 
-.carousel-foto__project_fotoProject {
-  width: 100%; }
+.carousel-foto__project {
+  height: 90px; }
+  .carousel-foto__project_fotoProject {
+    width: 100%; }
 
 .arrow-up-down {
   height: 60px; }
@@ -2364,6 +2354,18 @@ section-3 {
   display: flex;
   justify-content: center;
   align-items: center; }
+
+.portfolio-right {
+  display: flex;
+  align-items: center; }
+  .portfolio-right__project-big-foto {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    /*margin-left: 40px;*/ }
+    .portfolio-right__project-big-foto_fotoProject-big {
+      margin-top: -100px;
+      width: 100%; }
 
 .portfolio-price {
   width: 100%;
@@ -2566,8 +2568,6 @@ section-3 {
 
   .carousel-foto__project {
     width: 90px; }
-    .carousel-foto__project_fotoProject {
-      margin-top: -34px; }
 
   .portfolio-right {
     display: none; }
@@ -2687,8 +2687,6 @@ section-3 {
 
   .carousel-foto__project {
     width: 90px; }
-    .carousel-foto__project_fotoProject {
-      margin-top: -34px; }
 
   .portfolio-right {
     display: none; }
@@ -3010,7 +3008,8 @@ footer {
     width: 43%;
     display: flex;
     flex-direction: column;
-    align-items: center; }
+    align-items: center;
+    font-size: 16px; }
     .form-contact__form-content_form-name {
       outline: none;
       margin-bottom: 24px;
@@ -3178,29 +3177,6 @@ footer {
   .form-contact__form-content_form-submit {
     outline: none;
     margin-bottom: 60px; } }
-/*@include iPadPro-landscape {
-	.form-contact {
-		&__form-title {		
-	    	margin-top: 20px;
-		    margin-bottom: 40px;
-		    font-size: 26px;
-		}
-		&__form-content {
-			&_form-name {
-			}
-			&_form-email {
-			}
-			&_form-message {
-				margin-bottom: 70px;
-			    padding: 10px 0 70px 27px;
-			}
-			&_form-submit {
-				outline: none;
-				margin-bottom: 140px; 			
-			}
-		}
-	}
-}*/
 @media (min-width: 1200px) and (max-width: 1365.98px) {
   .form-contact__form-title {
     margin-top: 30px;
@@ -3211,54 +3187,65 @@ footer {
     padding: 10px 0 40px 27px; }
   .form-contact__form-content_form-submit {
     margin-bottom: 60px; } }
-/*@include iPad-landscape {
-	.form-contact {
-		&__form-title {		
-	    	margin-top: 0;
-		    margin-bottom: 20px;
-		    font-size: 32px;
-		}
-		&__form-content {
-			&_form-name {
-				margin-bottom: 18px;
-				padding: 5px 0 5px 27px;
-			}
-			&_form-email {
-				margin-bottom: 18px;
-				padding: 5px 0 5px 27px;
-			}
-			&_form-message {
-				margin-bottom: 25px;
-			    padding: 5px 0 32px 27px;
-			}
-			&_form-submit {
-				padding: 10px 30px;
-				margin-bottom: 30px;
-				a {
-					font-size: 12px;
-				}			 			
-			}
-		}
-	}
-}*/
-/*@include iPad-portrait {
-	footer {		
-		padding-top: 0;
-	}
-	.form-contact {
-		&__form-content {			
-			&_form-submit {
-				margin-bottom: 80px; 			
-			}
-		}	
-	}
-}*/
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .form-contact__form-title {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 27px; }
+  .form-contact__form-content {
+    width: 40%; }
+    .form-contact__form-content_form-name {
+      margin-bottom: 20px;
+      padding: 5px 0 5px 27px; }
+    .form-contact__form-content_form-email {
+      margin-bottom: 20px;
+      padding: 5px 0 5px 27px; }
+    .form-contact__form-content_form-message {
+      margin-bottom: 20px;
+      padding: 5px 0 32px 27px; }
+    .form-contact__form-content_form-submit {
+      padding: 12px 30px;
+      margin-bottom: 50px;
+      font-size: 20px; }
+
+  .footer-input {
+    font-size: 16px; }
+
+  footer {
+    padding-top: 0; } }
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .form-contact__form-title {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 27px; }
+  .form-contact__form-content {
+    width: 60%; }
+    .form-contact__form-content_form-name {
+      margin-bottom: 20px;
+      padding: 5px 0 5px 27px; }
+    .form-contact__form-content_form-email {
+      margin-bottom: 20px;
+      padding: 5px 0 5px 27px; }
+    .form-contact__form-content_form-message {
+      margin-bottom: 20px;
+      padding: 5px 0 32px 27px; }
+    .form-contact__form-content_form-submit {
+      padding: 12px 30px;
+      margin-bottom: 25px;
+      font-size: 20px; }
+
+  .footer-input {
+    font-size: 16px; }
+
+  footer {
+    padding-top: 0; } }
 @media (min-width: 576px) and (max-width: 767.98px) {
   .form-contact__form-title {
     margin-top: 0;
     margin-bottom: 17px;
     font-size: 26px; }
   .form-contact__form-content {
+    width: 60%;
     font-size: 14px; }
     .form-contact__form-content_form-name {
       margin-bottom: 18px;
@@ -3270,10 +3257,12 @@ footer {
       margin-bottom: 25px;
       padding: 5px 0 32px 27px; }
     .form-contact__form-content_form-submit {
-      padding: 7px 22px;
+      font-size: 14px;
+      padding: 13px 30px;
       margin-bottom: 25px; }
-      .form-contact__form-content_form-submit a, .form-contact__form-content_form-submit .header-phone__phone, .form-contact__form-content_form-submit .burger-menu__burger-link, .form-contact__form-content_form-submit .video-table, .form-contact__form-content_form-submit .block-right__text-about_span-about, .form-contact__form-content_form-submit .tables-collection__table_tables-name {
-        font-size: 12px; }
+
+  .footer-input {
+    font-size: 14px; }
 
   .footer-wrap__logotype-small {
     font-size: 16px; }
@@ -3364,109 +3353,6 @@ footer {
 
   .fa-chevron-circle-up {
     font-size: 32px; } }
-/*@include iphone-X {
-	.form-contact {
-		&__form-title {		
-	    	margin-top: 0;
-		    margin-bottom: 17px;
-		    font-size: 21px;
-		}
-		&__form-content {
-			width: 75%;
-			font-size: 14px;
-			&_form-name {
-				margin-bottom: 18px;
-				padding: 5px 0 5px 27px;
-			}
-			&_form-email {
-				margin-bottom: 18px;
-				padding: 5px 0 5px 27px;
-			}
-			&_form-message {
-				margin-bottom: 25px;
-			    padding: 5px 0 32px 27px;
-			}
-			&_form-submit {
-				padding: 7px 22px;
-				margin-bottom: 25px;
-				font-size: 12px;			 			
-			}
-		}
-	}
-	.footer-input {
-		font-size: 12px;
-	}
-	.footer-wrap {
-		flex-direction: column;
-		&__logotype-small {
-			justify-content: center;
-			font-size: 16px;
-		    padding-bottom: 0;
-		}
-		&__menu-footer {
-			padding: 5px 15px;
-			&_title-menu {
-				font-size: 14px;
-				text-align: center;
-			}
-			&_vertical-menu {
-				display: flex;
-    			justify-content: space-between;
-				&_link-group {
-					a {
-						font-size: 12px;
-					}					
-				}				
-			}				
-		}
-		&__footer-contact {
-			padding-bottom: 35px;
-			&_topic-contact {
-				font-size: 14px;
-				padding-bottom: 5px;
-			}
-			&_phone-contact i {
-				font-size: 14px;
-			}
-			&_footer-email {
-				margin-bottom: 5px;
-				a {
-					font-size: 14px;
-				}
-			}
-			&_social-web {
-				padding-bottom: 10px;
-				&_topic-social {
-					font-size: 14px;
-				}
-			}	
-			
-		}	
-	}
-	.footer-bottom {
-		&__footer-copyright {
-			font-size: 10px;
-		} 
-	}
-	.button-up {
-	    right: 15px;
-	    bottom: 46px;    
-	}
-	.footer-phone {
-		font-size: 14px;
-	}
-	.fa-instagram {
-		font-size: 20px;
-		color: $orange;
-	}
-	.fa-chevron-circle-up {	
-		font-size: 32px;
-	}
-}
-@include iphone-X-portrait {
-}
-@include iphone-X-landscape {
-}*/
 @media (min-width: 320px) and (max-width: 374.98px) {
   .form-contact__form-title {
     margin-top: 0;
@@ -4219,8 +4105,6 @@ footer {
 
   .carousel-foto__project {
     width: 90px; }
-    .carousel-foto__project_fotoProject {
-      margin-top: -34px; }
 
   .portfolio-right {
     display: none; }
@@ -4340,8 +4224,6 @@ footer {
 
   .carousel-foto__project {
     width: 90px; }
-    .carousel-foto__project_fotoProject {
-      margin-top: -34px; }
 
   .portfolio-right {
     display: none; }

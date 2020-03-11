@@ -33,22 +33,6 @@
 	display: flex;
 }
 
-.portfolio-right {
-	display: flex;
-	align-items: center;
-	&__project-big-foto {
-		position: relative;
-	    overflow: hidden;
-	    width: 100%;
-	    /*margin-left: 40px;*/
-	    &_fotoProject-big {
-			margin-top: -100px;
-			width: 100%;
-		}	
-	}
-}
-
-
 .portfolio-left {
     display: flex;
     flex-direction: column;
@@ -80,6 +64,7 @@
 
 .carousel-foto {
 	&__project {
+		height: 90px;
 		&_fotoProject {
 			width: 100%;
 		}
@@ -109,6 +94,24 @@
     justify-content: center;
     align-items: center;
 }
+
+
+.portfolio-right {
+	display: flex;
+	align-items: center;
+	&__project-big-foto {
+		position: relative;
+	    overflow: hidden;
+	    width: 100%;
+	    /*margin-left: 40px;*/
+	    &_fotoProject-big {
+			margin-top: -100px;
+			width: 100%;
+		}	
+	}
+}
+
+
 
 .portfolio-price {
     width: 100%;
@@ -362,7 +365,6 @@
 		&__project {
 			width: 90px;
 			&_fotoProject {
-				margin-top: -34px;
 			}
 		}
 	}
@@ -503,7 +505,6 @@
 		&__project {
 			width: 90px;
 			&_fotoProject {
-				margin-top: -34px;
 			}
 		}
 	}
