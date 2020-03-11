@@ -14,35 +14,6 @@ $(document).ready(function(){
 
 
 
-
-
-    /*scroll-home......https://www.w3schools.com/howto/howto_css_smooth_scroll.asp#section2*/
-
-    /*$('a').on('click', function(event) {
-
-        // Make sure this.hash has a value before overriding default behavior
-        if (this.hash !== "") {
-          // Prevent default anchor click behavior
-          event.preventDefault();
-
-          // Store hash
-          var hash = this.hash;
-
-          // Using jQuery's animate() method to add smooth page scroll
-          // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-          $('html, body').animate({
-            scrollTop: $(hash).offset().top
-          }, 800, function(){
-
-            // Add hash (#) to URL when done scrolling (default click behavior)
-            window.location.hash = hash;
-          });
-        } // End if
-      });*/
-
-
-
-
     /*carousel....  https://www.youtube.com/watch?v=casgv9Y8I1w&t=28s*/
 
     document.getElementById('slider-top').onclick = sliderTop;
@@ -72,7 +43,7 @@ $(document).ready(function(){
     /*image portfolio-left.... http://www.web.cofp.ru/vse-o-sajtakh/
     sozdanie-sajta/javascript/jquery/154-uvelichenie-izobrazheniya-pri-nazhatii-na-nego*/ 
 
-    $(".carousel-foto__project_fotoProject").click(function(){   // Событие клика на маленькое изображение
+    $(".carousel-foto__fotoProject").click(function(){   // Событие клика на маленькое изображение
         var img = $(this);  // Получаем изображение, на которое кликнули
         var src = img.attr('src'); // Достаем из этого изображения путь до картинки
         

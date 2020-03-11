@@ -24,27 +24,23 @@
 }
 
 .tables-collection {
-	width: 80%;    
 	display: flex;
     justify-content: space-around;
     &__table {
-    	width: 40%;
     	display: flex;
 	    flex-direction: column;
 	    align-items: center;
-	    &_foto-table	{
-	        width: 100%;
-	        display: flex;
-	        justify-content: center;
-	        margin-bottom: 40px;
-	        border-radius: 5px;
-	        border: 1px solid $grey-opacity;
-	        img {
-	        	width:100%;
-	        }
-	    }
-	    &_tables-name {
+	    justify-content: space-between;
+		border-radius: 5px;
+        border: 1px solid $grey-opacity;
+        margin-top: 40px;
+        padding: 0 10px;
+        img {
+        	width:100%;
+        }
+	    &_table-name {
 	    	@extend a;
+			margin-bottom: 22px;
 	    }
 	}
 }
@@ -58,24 +54,14 @@
 
 /* ------ media query ------ */
 @include desktop {
-	.tables-collection {    
-	    &__table {
-	    	width: 32%;
-		}
-	}
+	
 }
 @include laptop {
 	.tables-title {
-    &__tables-topic {
-    	margin-top: 0;    	
-        font-size: 36px;
-    }    
-}
-	.tables-collection {    
-	    &__table {
-		    &_foto-table	{
-		    }	    
-		}
+	    &__tables-topic {
+	    	margin-top: 0;    	
+	        font-size: 36px;
+	    }    
 	}
 }
 @include tablet {
@@ -143,39 +129,6 @@
 		font-size: 12px;
 	}
 }
-
-
-/*@include iphone-X {
-    .tables-title__tables-topic {
-	    font-size: 24px;
-    	margin: 25px 0;
-	}
-    .tables-collection { 
-    	width: 100%;
-        flex-direction: column;
-        align-items: center;
-        justify-content: none;   
-	    &__table {
-	    	width: 50%;
-		    &_foto-table	{
-			    margin-bottom: 4px;
-		    }
-		    &_tables-name {
-		    	line-height: 1.1;
-		    	margin-bottom: 20px;
-			    a {
-			    	font-size: 12px;
-
-			    }
-			}
-		}
-	}
-	.tables-name-special {
-		font-size: 12px;
-	}
-}*/	
-
-
 @include iphone-5 {
     .tables-title__tables-topic {
 	    font-size: 20px;

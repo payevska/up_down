@@ -1,0 +1,177 @@
+/*  ------- characteristics ------- */
+.characteristics {
+	display: flex;
+    align-items: center;
+	//padding-top: 94px;
+    min-height: 100vh;
+} 
+.product-wrap {
+	display: flex;
+	flex-direction: column;
+}
+
+.product {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 90px;
+	&__product-title {
+		@extend  h2;
+	}	
+}
+
+.product-contain {
+	display: flex;
+}
+
+.product-images {
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: center;
+	&__picture {
+    	width: 50%;
+	}	
+}
+
+
+.characteristic-list {
+	display: flex;
+    flex-direction: column;
+    margin-top: 18px;
+	&__product-characteristic {
+		display: flex;
+		margin-bottom: 7px;
+	}
+}
+
+
+.character {
+	display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    margin: 0;
+}
+
+/* ------ media query ------ */
+@include television {
+	.product {
+		&__product-title {
+			font-size: 32px;
+		}	
+	}
+}
+@include desktop {	
+}
+@include laptop {
+	.product-contain {
+		flex-direction: row;
+	}
+	.product {
+		margin-bottom: 80px;			
+	}
+	.product-images {
+		&__picture {
+			width: 50%;
+		}	
+	}
+}
+@include tablet {
+	.product-images {
+		&__picture {
+	    	width: 80%;
+		}	
+	}	
+	.characteristic-list {
+		max-width: 100%;		
+	}
+
+}
+
+@include tablet-mini {
+	.product {
+		margin-bottom: 10px;
+		&__product-title {
+			font-size: 26px;
+		}	
+	}
+	.product-contain {
+		flex-direction: column;
+	}
+	.product-images {
+		min-width: 100%;
+	    flex-direction: row;
+	    justify-content: space-around;
+	    padding-bottom: 0;
+		&__picture {
+			width: 30%;
+		}	
+	}
+	.characteristic-list {
+		max-width: 100%;		
+	}
+	.character {
+		line-height: 1.2;
+	}
+}
+@include phone {
+	.product {
+		margin-bottom: 10px;
+		&__product-title {
+			font-size: 20px;
+		}	
+	}
+	.product-contain {
+		flex-direction: column;
+	}
+	.product-images {
+		max-width: 100%;
+	    flex-direction: row;
+	    justify-content: space-around;
+	    padding-bottom: 0;
+		&__picture {
+	    	width: 30%;
+		}	
+	}
+	.characteristic-list {
+		max-width: 100%;		
+	}
+	.character {
+		font-size: 12px;
+		line-height: 1.2;
+	}
+	.character-min {
+		width: 50%;
+	}
+}
+@include iphone-5 {
+	.product {
+		margin-bottom: 10px;
+		&__product-title {
+			font-size: 20px;
+		}	
+	}
+	.product-contain {
+		flex-direction: column;
+	}
+	.product-images {
+		max-width: 100%;
+	    flex-direction: row;
+	    justify-content: space-around;
+	    padding-bottom: 10px;
+		&__picture {
+			width: 30%;
+		}	
+	}
+	.characteristic-list {
+		max-width: 100%;		
+	}
+	.character {
+		font-size: 12px;
+		line-height: 1.2;
+	}
+	.character-min {
+		width: 57%;
+	}
+}
+
+ 

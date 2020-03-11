@@ -1,5 +1,5 @@
-/* ------------ up-down-mini --------------- */
-#up-down-mini {
+/* ------------ up-down-table --------------- */
+.up-down-table {
 	display: flex;
 	//display: -webkit-flex;
 	align-items: center;
@@ -33,22 +33,6 @@
 	display: flex;
 }
 
-.portfolio-right {
-	display: flex;
-	align-items: center;
-	&__project-big-foto {
-		position: relative;
-	    overflow: hidden;
-	    width: 100%;
-	    /*margin-left: 40px;*/
-	    &_fotoProject-big {
-			margin-top: 0px;
-			width: 100%;
-		}	
-	}
-}
-
-
 .portfolio-left {
     display: flex;
     flex-direction: column;
@@ -79,36 +63,41 @@
 }
 
 .carousel-foto {
-	&__project {
-		&_fotoProject {
-			width: 100%;
-		}
+	height: 90px;
+	display: flex;
+    align-items: center;
+    align-self: center;
+	&__fotoProject {
+		width: 100%;
 	}
 }
 
-.arrow-up-down {
-	height: 60px;
-}
-
-
-
 .caret {
-	position: absolute;
+	//position: absolute;
 	font-size: 25px;
 	color: $orange;
 }
 
-#slider-top {
+.carousel-arrow {
+	width: 100%;
 	display: flex;
     justify-content: center;
     align-items: center;
+    height: 60px;
 }
 
-#slider-bottom {
+.portfolio-right {
 	display: flex;
-    justify-content: center;
-    align-items: center;
+	align-items: center;
+	&__project-big-foto {
+	    &_fotoProject-big {
+			margin-top: -100px;
+			width: 100%;
+		}	
+	}
 }
+
+
 
 .portfolio-price {
     width: 100%;
@@ -250,38 +239,6 @@
 		}		
 	}
 }
-/*@include iPad-landscape {
-	.portfolio-info {    
-		&__topic {
-			font-size: 28px;
-		}		
-	}
-	.portfolio-right {
-		&__project-big-foto {
-			width: 90%;
-		    &_fotoProject-big {
-				margin-top: 0px;
-			}	
-		}
-	}
-}
-
-@include iPadPro-portrait {
-	.portfolio-info {    
-		&__topic {
-			font-size: 28px;
-		}		
-	}
-	.portfolio-right {
-		&__project-big-foto {
-			width: 90%;
-		    &_fotoProject-big {
-				margin-top: 0px;
-			}	
-		}
-	}
-}*/
-
 @include tablet {
 	.portfolio-info {    
 		&__topic {
@@ -292,36 +249,9 @@
 		padding-left: 0;
     	padding-right: 0;
 		&__carousel {
-    		/*width: 100%;*/
     	}	
 	}
-	/* .portfolio-info {    
-		&__topic {
-			font-size: 32px;
-			margin-bottom: 20px;
-		}
-		&__text-portfolio {
-			width: 80%;
-			font-size: 14px;
-		}
-		&__link-portfolio {
-		}
-	} */
-}
-/*@include iPad-portrait {
-	.portfolio-info {    
-		&__topic {
-			font-size: 28px;
-		}		
-	}
-	.portfolio-right {
-		&__project-big-foto {
-		    &_fotoProject-big {
-				margin-top: 0px;
-			}	
-		}
-	}
-}*/
+}	
 @include tablet-mini {
 	.portfolio-info {    
 		&__topic {
@@ -343,7 +273,7 @@
  	.portfolio-info {    
 		&__topic {
 			font-size: 17px;
-			margin-bottom: 10px;
+			margin-bottom: 25px;
 		}
 		&__text-portfolio {
 			display: none;
@@ -359,24 +289,21 @@
     	}	
 	}
 	.carousel-foto {
-		&__project {
-			width: 90px;
-			&_fotoProject {
-				//margin-top: -34px;
-			}
+		width: 90px;
+		&__fotoProject {
 		}
 	}
 	.portfolio-right {
 		display: none;
 	}
-	.arrow-up-down {
+	.carousel-arrow {
 	    height: 20px;
 	}
 	.portfolio-price {
 		padding-left: 25px;
 		&__price-title {
     		font-size: 16px;
-    		padding: 40px 0 5px;
+    		padding: 12px 0 5px;
 		}
 		&__price-info {
 			font-size: 14px;
@@ -409,79 +336,6 @@
 		top: 14px;
 	}
 }
-/*@include iphone-X {
-	.portfolio-left {
-		padding-left: 0;
-    	padding-right: 0;
-	}
- 	.portfolio-info {    
-		&__topic {
-			font-size: 17px;
-			margin-bottom: 10px;
-		}
-		&__text-portfolio {
-			display: none;
-		}
-		&__link-portfolio {
-		}
-	}
-	.carousel-foto {
-		&__project {
-			width: 90px;
-			&_fotoProject {
-				margin-top: -34px;
-			}
-		}
-	}
-	.portfolio-right {
-		display: none;
-	}
-	.arrow-up-down {
-	    height: 20px;
-	}
-	.portfolio-price {
-		padding-left: 15px;
-		&__price-title {
-    		font-size: 14px;
-    		padding: 40px 0 0;
-		}
-		&__price-name {
-    		font-size: 14px;
-		}
-		&__price-info {
-			font-size: 14px;
-		}
-		&__news-info {
-			font-size: 14px;
-		}
-		&__price-review {
-			font-size: 14px;
-			padding: 50px 0 30px;
-		}
-		&__name-select {
-		    font-size: 14px;
-		}
-		&__price-select {
-			width: 170px;
-		}
-		&__price-characteristic {
-
-		}
-	}
-	.price {
-		font-size: 15px;
-	}
-	.select-selected {
-	    padding: 4px 16px;
-	}
-	.select-selected:after {
-		top: 14px;
-	}
-}
-@include iphone-X-portrait {
-}
-@include iphone-X-landscape {
-}*/	
 @include iphone-5 {
 	
 	.block-gallery-image {
@@ -500,18 +354,15 @@
 		}
 	}
 	.carousel-foto {
-		&__project {
-			width: 90px;
-			&_fotoProject {
-				//margin-top: -34px;
-			}
+		width: 90px;
+		&__fotoProject {
 		}
 	}
 
 	.portfolio-right {
 		display: none;
 	}
-	.arrow-up-down {
+	.carousel-arrow {
 	    height: 20px;
 	}
 	.portfolio-price {
@@ -558,20 +409,3 @@
 }
 
 
-/* 
-// Extra small devices (portrait phones, less than 576px)
-@media (max-width: 575.98px) {  }
-
-// Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) and (max-width: 767.98px) {  }
-
-// Medium devices (tablets, 768px and up)
-@media (min-width: 768px) and (max-width: 991.98px) {  }
-
-// Large devices (desktops, 992px and up)
-@media (min-width: 992px) and (max-width: 1199.98px) {  }
-
-// Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) {  } 
-
- */
