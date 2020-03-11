@@ -339,7 +339,7 @@ header {
 .header-wrap {
   display: flex; }
 
-menu {
+.menu-active {
   display: flex;
   align-items: center; }
 
@@ -2063,7 +2063,8 @@ section-3 {
 .character {
   display: flex;
   justify-content: flex-end;
-  flex-direction: column; }
+  flex-direction: column;
+  margin: 0; }
 
 /* ------ media query ------ */
 @media (min-width: 1366px) and (max-width: 1439.98px) {
@@ -3020,6 +3021,7 @@ footer {
       padding: 10px 0 10px 27px; }
     .form-contact__form-content_form-message {
       outline: none;
+      border-radius: 4px;
       margin-bottom: 42px;
       padding: 10px 0 51px 27px; }
     .form-contact__form-content_form-submit {
@@ -3039,6 +3041,7 @@ footer {
 
 .footer-input {
   width: 100%;
+  font-size: 22px;
   border: 1px solid #ffffff;
   background-color: #828893;
   caret-color: #ffffff;

@@ -44,6 +44,7 @@ footer {
 		}
 		&_form-message {
 			outline: none;
+			border-radius: 4px;
 			margin-bottom: 42px;
 		    padding: 10px 0 51px 27px;
 		}
@@ -67,7 +68,8 @@ footer {
 	}
 }
 .footer-input {
-	width: 100%;	
+	width: 100%;
+	font-size: 22px;	
 	border: 1px solid $white;
 	background-color: $blue-grey;
 	caret-color: $white;
