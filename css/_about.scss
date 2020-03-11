@@ -3,7 +3,6 @@ section-3 {
     display: flex;
     align-items: center;
 	min-height: 100vh;
-	//padding-top: 94px;	
 	background-color: $blue-grey;
 }
 
@@ -169,51 +168,6 @@ section-3 {
 	}	
 }
 
-/*@include iPadPro-portrait {
-	.block-about  {
-	}
-	.block-left {
-		display: none;
-		&__foto-about {		
-		}
-	}
-	.block-right {
-		width: 80%;
-		&__title-about {
-		}
-		&__subtitle-about{
-			margin-top: 0;
-			margin-bottom: 45px;
-		}
-		&__block-left {
-			display: block;
-			&_foto-about {
-			    width: 350px;
-			    height: 350px;
-			}
-		}
-		&__text-about {
-			width: 100%;
-			padding-left: 0px;
-			padding-top: 32px;
-			margin-bottom: 52px;
-			&_span-about {			
-			}
-		}
-		&__box-botton-about{
-			input {
-				font-size: 20px;
-				padding: 12px 30px;
-			}
-		}
-	}
-	.table-foto-about {
-		margin-top: -70px;
-	}
-}
-*/
-/*@include iPadPro-landscape {
-}*/
 
 @include tablet {
 	.block-about  {
@@ -257,91 +211,6 @@ section-3 {
 		margin-top: -70px;
 	}
 }
-
-
-/*@include iPad-landscape {
-	.block-about  {
-		display: flex;
-		justify-content: space-around;
-	}
-	.block-left {
-		padding-top: 36px;
-		&__foto-about {
-			width: 400px;
-    		height: 400px;		
-		}
-	}
-	.block-right {
-		width: 50%;
-		&__title-about {
-			padding-top: 0;
-		}
-		&__subtitle-about{
-			margin-top: 0;
-			margin-bottom: 0;
-		}
-		&__block-left {
-			&_foto-about {
-			}
-		}
-		&__text-about {
-			padding-top: 32px;
-			margin-bottom: 30px;
-			&_span-about {			
-			}
-		}
-		&__box-botton-about{
-			input {
-				font-size: 20px;
-				padding: 12px 30px;
-			}
-		}
-	}
-}*/
-
-/*@include iPad {
-	.block-about  {
-		display: flex;
-		justify-content: space-around;
-	}
-	.block-left {
-		display: none;
-		&__foto-about {		
-		}
-	}
-	.block-right {
-		&__title-about {
-		}
-		&__subtitle-about{
-			margin-top: 0;
-		}
-		&__block-left {
-			display: block;
-			&_foto-about {
-			    width: 300px;
-			    height: 300px;
-			}
-		}
-		&__text-about {
-			width: 80%;
-			padding-top: 32px;
-			margin-bottom: 36px;
-			padding-left: 0;
-			&_span-about {			
-			}
-		}
-		&__box-botton-about{
-			input {
-				font-size: 20px;
-				padding: 12px 30px;
-			}
-		}
-	}
-	.table-foto-about {
-		margin-top: -70px;
-	}
-}*/
-
 @include tablet-mini {
 	.block-about  {
 		display: flex;
@@ -434,56 +303,6 @@ section-3 {
 		margin-top: -37px;
 	}
 }
-/*@include iphone-X {
-	.block-about  {
-		display: flex;
-		justify-content: space-around;
-	}
-	.block-left {
-		display: none;
-		&__foto-about {		
-		}
-	}
-	.block-right {
-		&__title-about {
-			font-size: 28px;
-		}
-		&__subtitle-about{
-			font-size: 20px;
-			margin-top: 0;
-		}
-		&__block-left {
-			display: block;
-			&_foto-about {
-			    width: 170px;
-			    height: 170px;
-			}
-		}
-		&__text-about {
-			width: 70%;
-			font-size: 14px;
-			line-height: 1.4;
-			padding-top: 32px;
-			margin-bottom: 36px;
-			padding-left: 0px;
-			&_span-about {			
-			}
-		}
-		&__box-botton-about{
-			input {
-				font-size: 14px;
-    			padding: 6px 17px;
-			}
-		}
-	}
-	.table-foto-about {
-		margin-top: -37px;
-	}
-}
-@include iphone-X-portrait {
-}
-@include iphone-X-landscape {
-}*/	
 @include iphone-5 {
 	.block-about  {
 		display: flex;
@@ -534,22 +353,3 @@ section-3 {
 		margin-top: -37px;
 	}
 }
-
-/* 
-// Extra small devices (portrait phones, less than 576px)
-@media (max-width: 575.98px) {  }
-
-// Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) and (max-width: 767.98px) {  }
-
-// Medium devices (tablets, 768px and up)
-@media (min-width: 768px) and (max-width: 991.98px) {  }
-
-// Large devices (desktops, 992px and up)
-@media (min-width: 992px) and (max-width: 1199.98px) {  }
-
-// Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) {  } 
-
- */
-

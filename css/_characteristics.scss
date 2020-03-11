@@ -2,7 +2,6 @@
 .characteristics {
 	display: flex;
     align-items: center;
-	//padding-top: 94px;
     min-height: 100vh;
 } 
 .product-wrap {
@@ -33,7 +32,6 @@
 	}	
 }
 
-
 .characteristic-list {
 	display: flex;
     flex-direction: column;
@@ -43,7 +41,6 @@
 		margin-bottom: 7px;
 	}
 }
-
 
 .character {
 	display: flex;

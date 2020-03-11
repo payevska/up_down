@@ -279,7 +279,6 @@ header {
 .language {
   display: none;
   width: 100%;
-  /* display: flex; */
   justify-content: flex-end;
   align-items: center;
   font-size: 14px; }
@@ -389,34 +388,6 @@ header {
 .pop {
   margin-bottom: 7px; }
 
-/* -----  gambyrger-menu finish  -----*/
-/* ------ media query ------ */
-/*@include iPad {
-	menu {
-		margin: 0;	
-	}
-	.header-nav {
-		&__link-group {			
-			a {
-				font-size: 12px;							
-			}
-		}
-	}
-	.header-phone i{		
-		font-size: 12px;
-	}
-	.header-phone__phone_phone-wrap_number-phone {
-		font-size: 12px;
-	}
-	.language{
-		&__Ru {
-			font-size: 12px;
-		}	
-		&__En {
-			font-size: 12px;
-		}
-	}
-}*/
 @media (min-width: 768px) and (max-width: 991.98px) {
   menu {
     margin: 0; }
@@ -494,41 +465,6 @@ header {
     font-size: 12px; }
   .language__En {
     font-size: 12px; } }
-/*@include iphone-X {	
-	header {    
-	    padding-top: 3px;
-	    padding-bottom: 3px;
-	}
-	menu {
-		margin: 0;	
-	}
-	.logotype {
-		padding-left: 10px;
-    	padding-right: 10px;
-	}
-	.logo-name__logo-text{
-		font-size: 8px;
-		line-height: 1.25;
-		&_logo-row {
-			margin-left: -5px;
-		}	
-	}	
-	.header-phone i{		
-		font-size: 14px;
-	}
-	.language{
-		&__Ru {
-			font-size: 12px;
-		}	
-		&__En {
-			font-size: 12px;
-		}
-	}
-}
-@include iphone-X-portrait {
-}
-@include iphone-X-landscape {
-}*/
 @media (min-width: 320px) and (max-width: 374.98px) {
   header {
     padding-top: 3px;
@@ -554,179 +490,6 @@ header {
     font-size: 12px; }
   .language__En {
     font-size: 12px; } }
-/* 
-// Extra small devices (portrait phones, less than 576px)
-@media (max-width: 575.98px) {  }
-
-// Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) and (max-width: 767.98px) {  }
-
-// Medium devices (tablets, 768px and up)
-@media (min-width: 768px) and (max-width: 991.98px) {  }
-
-// Large devices (desktops, 992px and up)
-@media (min-width: 992px) and (max-width: 1199.98px) {  }
-
-// Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) {  } 
-
- */
-/* -----  gambyrger-menu start  -----*/
-/* .gambyrger-menu {
-	display: none;
-	//position: fixed;
-	top: -16px;
-	left: 0;
-	z-index: 1;
-	&__toggler {
-		position: absolute;
-		top: 0;
-		left: 0;
-		z-index: 2;
-		cursor: pointer;
-		width: 50px;
-		height: 50px;
-		opacity: 0;		
-	}
-	&__gambyrger {
-		position: absolute;
-		top: 0;
-		left: 0;
-		z-index: 1;
-		width: 60px;
-		height: 60px;
-		padding: 1rem;
-		//background: $shadow;
-		display: flex;
-	    justify-content: center;
-	    align-items: center;	    
-	}
-}
-
-gambyrger line
-.gambyrger-in {
-	position: relative;
-	width: 100%;
-	height: 2px;
-	background-color: $blue-dark;
-	display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: all 0.4s ease;
-}
-
-Top and bottom lines
-.gambyrger-menu__gambyrger .gambyrger-in:before, 
-.gambyrger-menu__gambyrger .gambyrger-in:after {
-	content: '';
-	position: absolute;
-	z-index: 1;
-	top: -10px;
-	width: 100%;
-	height: 2px;
-	background: inherit;	
-}
-
-Moves line down
-.gambyrger-menu__gambyrger .gambyrger-in:after {
-	top: 10px;
-}
-
-Toggler animate
-.gambyrger-menu__toggler:checked + .gambyrger-menu__gambyrger > .gambyrger-in {
-	transform: rotate(135deg); 
-}
-
-Turn lines into X
-.gambyrger-menu__toggler:checked + .gambyrger-menu__gambyrger > .gambyrger-in:before, 
-.gambyrger-menu__toggler:checked + .gambyrger-menu__gambyrger > .gambyrger-in:after {
-	top: 0;
-	transform: rotate(90deg); 
-}
-
-Rotate on hover when checked
-.gambyrger-menu__toggler:checked:hover + .gambyrger-menu__gambyrger > .gambyrger-in {
-	transform: rotate(225deg); 
-}
-
-Show gambyrger-background
-.gambyrger-menu__toggler:checked ~ .gambyrger-background {
-	visibility: visible;
-}
-
-.gambyrger-menu__toggler:checked ~ .gambyrger-background > .gambyrger-wrap {
-	transform: scale(1);
-	transition-duration: 0.75s;
-}
-
-.gambyrger-menu__toggler:checked ~ .gambyrger-background > .gambyrger-wrap > .gambyrger-box {
-	opacity: 1;
-	transition: opacity 0.4s ease;
-}
-
-.gambyrger-menu .gambyrger-background {
-	display: flex;
-    justify-content: center;
-    align-items: center;
-	width: 100%;
-	height: 100%;
-	visibility: hidden;
-	overflow: hidden;
-	position: fixed;
-	top: 0;
-	left: 0;
-}
-.gambyrger-menu .gambyrger-background > .gambyrger-wrap  {
-	display: flex;
-	flex: none;
-	justify-content: center;
-    align-items: center;
-	background: $blue-grey;
-	border-radius: 50%;
-	width: 200vw;
-	height: 200vw;
-	transform: scale(0);
-	transition: all 0.4s ease;
-}	
-.gambyrger-menu .gambyrger-background > .gambyrger-wrap > .gambyrger-box {
-	text-align: center;
-	max-width: 90vw;
-	max-height: 100vh;
-	opacity: 0;
-	transition: opacity 0.4s ease;
-}	
-.gambyrger-menu .gambyrger-background > .gambyrger-wrap > .gambyrger-box > .gambyrger-list {
-    @extend ul;
-    padding-left: 0;
-} 
-.gambyrger-menu .gambyrger-background > .gambyrger-wrap > .gambyrger-box > .gambyrger-list > .lists > a:hover ~ .gambyrger-background > .gambyrger-wrap {
-    transform: scale(0);
-} 
-
-.lists {			
-	a {
-		padding: 0px 4px;
-		@extend a;		
-		transition: color 0.4s ease;				
-		&:hover {
-  			border-bottom: 2px solid $red-link;
-  			color: $blue-light;
-		}		
-	}
-}
-
-.gambyrger-menu__active .gambyrger-background {
-	visibility: visible;
-}
-
-.popap {
-    padding-top: 20px;
-}
-
-.pop {
-	margin-bottom: 7px;
-} */
-/* -----  gambyrger-menu finish  -----*/
 section-1 {
   display: flex; }
 
@@ -857,193 +620,6 @@ section-1 {
     font-size: 18px; }
   .button-top__btn {
     padding: 15px 30px; } }
-/* ---- iPadPro ---- */
-/*@include iPadPro {
-	.home {
-		background: url('../images/Home-photo4.png') no-repeat top fixed;
-		background-attachment: scroll;
-	}	
-	.home-wrap {	
-	    padding-top: 0;		
-	}
-	.main {	
-	    &__main-title {	
-	    	padding-top: 0;	    		
-		    &_title {		    	
-				font-size: 50px;
-				padding-top: 0;	
-			}
-			&_topic {
-				font-size: 40px;	
-			}
-			&_main-button {
-				margin-top: 40px;
-				input {
-					font-size: 16px;			
-					padding: 15px 45px;
-				}	
-			}
-		}	
-	}
-	.button-top {
-		a {
-			font-size: 16px;			
-		}
-		&__btn {
-			padding: 15px 30px;					
-		}
-	}
-	.scroll-link {
-		bottom: 50px;	
-		font-size: 10px;
-		&__link-arrow {
-			width: 75%;
-		}
-	}
-}
-@include iPadPro-portrait {
-	.home {
-		background: url('../images/Home-photo4.png') no-repeat top fixed;
-		background-attachment: scroll;
-	}
-	.main {	
-	    &__main-title {	
-		    &_title {		    	
-				padding-top: 0;	
-			}
-			&_topic {
-			}
-			&_main-button {
-				margin-top: 40px;
-				input {
-					font-size: 16px;			
-					padding: 15px 45px;
-				}	
-			}
-		}	
-	}
-	.scroll-link {
-		bottom: 50px;	
-		&__link-arrow {
-		}
-	}
-}
-
-@include iPadPro-landscape {
-	.home {
-		background: url('../images/Home-photo4.png') no-repeat top fixed;
-		background-attachment: scroll;
-	}
-	.main {	
-	    &__main-title {   	
-	    	//padding-top: 160px;	
-		    &_title {		    	
-			}
-			&_topic {
-			}
-			&_main-button {
-				margin-top: 22px;
-				input {
-					font-size: 16px;			
-					padding: 15px 45px;
-				}	
-			}
-		}	
-	}
-		
-}
-*/
-/* ---- iPad ---- */
-/*@include iPad {	
-	.home {
-		background: url('../images/Home-photo4.png') no-repeat top fixed;
-		background-attachment: scroll;
-	}
-	.home-wrap {	
-	    padding-top: 0;		
-	}
-	.main {	
-	    &__main-title {	    	
-	    	padding-top: 0;	
-		    &_title {		    	
-				font-size: 36px;	
-			}
-			&_topic {
-				font-size: 28px;	
-			}
-			&_main-button {
-				margin-top: 22px;
-				input {
-					font-size: 16px;			
-					padding: 15px 45px;
-				}	
-			}
-		}	
-	}
-	.button-top {
-		a {
-			font-size: 14px;			
-		}
-		&__btn {
-			padding: 12px 22px;					
-		}
-	}
-	.scroll-link {
-		bottom: 50px;	
-		font-size: 10px;
-		&__link-arrow {
-			width: 75%;
-		}
-	}	
-}
-@include iPad-landscape {	
-	.home {
-		background: url('../images/Home-photo4.png') no-repeat top fixed;
-		background-attachment: scroll;
-	}	
-	.main {
-		padding-top: 94px;	
-	    &__main-title {	    	
-		    &_title {		    	
-			}
-			&_topic {
-			}
-			&_main-button {
-				margin-top: 22px;
-				input {
-					font-size: 16px;			
-					padding: 15px 45px;
-				}	
-			}
-		}	
-	}	
-	.scroll-link {
-		bottom: 50px;	
-		&__link-arrow {
-		}
-	}	
-}*/
-/*@include iPad-portrait {
-	.home {
-		background: url('../images/Home-photo4.png') no-repeat top fixed;
-		background-attachment: scroll;
-	}
-	.main {	
-	    &__main-title {	    	
-		    &_title {		    	
-			}
-			&_topic {
-			}
-			&_main-button {
-				margin-top: 22px;
-				input {
-					font-size: 16px;			
-					padding: 15px 45px;
-				}	
-			}
-		}	
-	}	
-}*/
 @media (min-width: 768px) and (max-width: 991.98px) {
   .home {
     background: url("../images/Home-photo4.png") no-repeat top fixed; }
@@ -1120,56 +696,6 @@ section-1 {
     font-size: 8px; }
     .scroll-link__link-arrow {
       width: 60%; } }
-/*@include iphone-X {
-	.home {
-		background-attachment: scroll;
-	}
-	.main {
-		align-items: center;
-		padding-top: 0;	
-	    &__main-title {		
-		    &_title {
-		    	padding-top: 0;
-				font-size: 22px;	
-			}
-			&_topic {
-				font-size: 16px;	
-			}
-			&_main-button {
-				margin-top: 22px;
-				input {
-					font-size: 12px;
-    				padding: 8px 27px;;
-				}	
-			}
-		}	
-	}
-	.button-top {
-		a {
-			font-size: 12px;			
-		}
-		&__btn {
-			padding: 8px 10px;					
-		}
-	}
-	.scroll-link {
-		bottom: 50px;	
-		font-size: 8px;
-		&__link-arrow {
-			width: 60%;
-		}
-	}
-}
-@include iphone-X-portrait {
-	.home {
-		background-attachment: scroll;
-	}
-}
-@include iphone-X-landscape {
-	.home {
-		background-attachment: scroll;
-	}
-}*/
 @media (min-width: 320px) and (max-width: 374.98px) {
   .main {
     align-items: center;
@@ -1195,23 +721,6 @@ section-1 {
     font-size: 8px; }
     .scroll-link__link-arrow {
       width: 60%; } }
-/* 
-// Extra small devices (portrait phones, less than 576px)
-@media (max-width: 575.98px) {  }
-
-// Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) and (max-width: 767.98px) {  }
-
-// Medium devices (tablets, 768px and up)
-@media (min-width: 768px) and (max-width: 991.98px) {  }
-
-// Large devices (desktops, 992px and up)
-@media (min-width: 992px) and (max-width: 1199.98px) {  }
-
-// Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) {  } 
-
- */
 /* ------------ video-review --------------- */
 section-2 {
   display: flex;
@@ -1281,75 +790,6 @@ section-2 {
     margin-top: 60px;
     font-size: 16px;
     padding: 15px 20px; } }
-/*@include iPadPro-landscape {
-	.title-review {
-		font-size: 36px;
-		padding-top: 40px;
-		margin-bottom: 0px;
-	}
-	.video-table{
-		width: 40%;
-	}
-	.box-button-review input {
-		margin-top: 60px;
-		font-size: 16px;			
-		padding: 15px 20px;			
-	}
-}
-
-@include iPadPro-portrait {
-	.video-table{
-		width: 40%;
-	}
-	.video-table{
-		width: 60%;
-	}
-	.box-button-review input {
-		margin-top: 60px;
-		font-size: 16px;			
-		padding: 15px 20px;			
-	}
-}
-
-@include iPad-landscape {
-	section-2 {
-		padding-top: 30px;
-	}
-	.review-wrap {
-		padding-top: 0;
-	}	
-	.title-review {
-		font-size: 28px;
-		padding-top: 0;
-		margin-bottom: 0px;
-	}
-	.video-table{
-		width: 32%;
-	}
-	.box-button-review input {
-		margin-top: 60px;
-		font-size: 16px;			
-		padding: 15px 20px;			
-	}
-}
-
-
-@include iPad-portrait {
-	.title-review {
-		font-size: 28px;
-		padding-top: 40px;
-		margin-bottom: 0px;
-	}
-	.video-table{
-		width: 50%;
-	}
-	.box-button-review input {
-		margin-top: 60px;
-		font-size: 16px;			
-		padding: 15px 20px;			
-	}
-}
-*/
 @media (min-width: 768px) and (max-width: 991.98px) {
   .title-review {
     font-size: 28px;
@@ -1389,25 +829,6 @@ section-2 {
     margin-top: 30px;
     font-size: 12px;
     padding: 7px 8px; } }
-/*@include iphone-X {
-	.title-review {
-		font-size: 24px;
-		padding-top: 0;
-		margin-bottom: 0px;
-	}
-	.video-table{
-		width: 50%;
-	}
-	.box-button-review input {
-		margin-top: 30px;
-	    font-size: 12px;
-	    padding: 7px 8px;			
-	}
-}
-@include iphone-X-portrait {
-}
-@include iphone-X-landscape {
-}*/
 @media (min-width: 320px) and (max-width: 374.98px) {
   .title-review {
     font-size: 24px;
@@ -1421,23 +842,6 @@ section-2 {
     margin-top: 30px;
     font-size: 12px;
     padding: 7px 8px; } }
-/* 
-// Extra small devices (portrait phones, less than 576px)
-@media (max-width: 575.98px) {  }
-
-// Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) and (max-width: 767.98px) {  }
-
-// Medium devices (tablets, 768px and up)
-@media (min-width: 768px) and (max-width: 991.98px) {  }
-
-// Large devices (desktops, 992px and up)
-@media (min-width: 992px) and (max-width: 1199.98px) {  }
-
-// Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) {  } 
-
- */
 /* ------------ about --------------- */
 section-3 {
   display: flex;
@@ -1552,51 +956,6 @@ section-3 {
     .block-right__box-botton-about input {
       font-size: 20px;
       padding: 12px 30px; } }
-/*@include iPadPro-portrait {
-	.block-about  {
-	}
-	.block-left {
-		display: none;
-		&__foto-about {		
-		}
-	}
-	.block-right {
-		width: 80%;
-		&__title-about {
-		}
-		&__subtitle-about{
-			margin-top: 0;
-			margin-bottom: 45px;
-		}
-		&__block-left {
-			display: block;
-			&_foto-about {
-			    width: 350px;
-			    height: 350px;
-			}
-		}
-		&__text-about {
-			width: 100%;
-			padding-left: 0px;
-			padding-top: 32px;
-			margin-bottom: 52px;
-			&_span-about {			
-			}
-		}
-		&__box-botton-about{
-			input {
-				font-size: 20px;
-				padding: 12px 30px;
-			}
-		}
-	}
-	.table-foto-about {
-		margin-top: -70px;
-	}
-}
-*/
-/*@include iPadPro-landscape {
-}*/
 @media (min-width: 768px) and (max-width: 991.98px) {
   .block-about {
     display: flex;
@@ -1623,87 +982,6 @@ section-3 {
 
   .table-foto-about {
     margin-top: -70px; } }
-/*@include iPad-landscape {
-	.block-about  {
-		display: flex;
-		justify-content: space-around;
-	}
-	.block-left {
-		padding-top: 36px;
-		&__foto-about {
-			width: 400px;
-    		height: 400px;		
-		}
-	}
-	.block-right {
-		width: 50%;
-		&__title-about {
-			padding-top: 0;
-		}
-		&__subtitle-about{
-			margin-top: 0;
-			margin-bottom: 0;
-		}
-		&__block-left {
-			&_foto-about {
-			}
-		}
-		&__text-about {
-			padding-top: 32px;
-			margin-bottom: 30px;
-			&_span-about {			
-			}
-		}
-		&__box-botton-about{
-			input {
-				font-size: 20px;
-				padding: 12px 30px;
-			}
-		}
-	}
-}*/
-/*@include iPad {
-	.block-about  {
-		display: flex;
-		justify-content: space-around;
-	}
-	.block-left {
-		display: none;
-		&__foto-about {		
-		}
-	}
-	.block-right {
-		&__title-about {
-		}
-		&__subtitle-about{
-			margin-top: 0;
-		}
-		&__block-left {
-			display: block;
-			&_foto-about {
-			    width: 300px;
-			    height: 300px;
-			}
-		}
-		&__text-about {
-			width: 80%;
-			padding-top: 32px;
-			margin-bottom: 36px;
-			padding-left: 0;
-			&_span-about {			
-			}
-		}
-		&__box-botton-about{
-			input {
-				font-size: 20px;
-				padding: 12px 30px;
-			}
-		}
-	}
-	.table-foto-about {
-		margin-top: -70px;
-	}
-}*/
 @media (min-width: 576px) and (max-width: 767.98px) {
   .block-about {
     display: flex;
@@ -1766,56 +1044,6 @@ section-3 {
 
   .table-foto-about {
     margin-top: -37px; } }
-/*@include iphone-X {
-	.block-about  {
-		display: flex;
-		justify-content: space-around;
-	}
-	.block-left {
-		display: none;
-		&__foto-about {		
-		}
-	}
-	.block-right {
-		&__title-about {
-			font-size: 28px;
-		}
-		&__subtitle-about{
-			font-size: 20px;
-			margin-top: 0;
-		}
-		&__block-left {
-			display: block;
-			&_foto-about {
-			    width: 170px;
-			    height: 170px;
-			}
-		}
-		&__text-about {
-			width: 70%;
-			font-size: 14px;
-			line-height: 1.4;
-			padding-top: 32px;
-			margin-bottom: 36px;
-			padding-left: 0px;
-			&_span-about {			
-			}
-		}
-		&__box-botton-about{
-			input {
-				font-size: 14px;
-    			padding: 6px 17px;
-			}
-		}
-	}
-	.table-foto-about {
-		margin-top: -37px;
-	}
-}
-@include iphone-X-portrait {
-}
-@include iphone-X-landscape {
-}*/
 @media (min-width: 320px) and (max-width: 374.98px) {
   .block-about {
     display: flex;
@@ -1852,23 +1080,6 @@ section-3 {
 
   .table-foto-about {
     margin-top: -37px; } }
-/* 
-// Extra small devices (portrait phones, less than 576px)
-@media (max-width: 575.98px) {  }
-
-// Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) and (max-width: 767.98px) {  }
-
-// Medium devices (tablets, 768px and up)
-@media (min-width: 768px) and (max-width: 991.98px) {  }
-
-// Large devices (desktops, 992px and up)
-@media (min-width: 992px) and (max-width: 1199.98px) {  }
-
-// Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) {  } 
-
- */
 /*  ------- characteristics ------- */
 .characteristics {
   display: flex;
@@ -2376,25 +1587,6 @@ section-4 {
     .blog-article__article-text {
       font-size: 12px;
       padding: 5px 20px 0; } }
-/*@include iphone-X {
-    .blog-title {
-        &__topic-blog {
-            margin: 10px 0;     
-            font-size: 22px;
-        }
-        &__topic-text {
-            width: 80%;
-            font-size: 14px;
-        }
-    }
-    .blog-article {    
-        flex-direction: column;    
-        &__article-text {
-            font-size: 12px;
-            padding: 5px 20px 0;
-        }   
-    } 	
-}*/
 @media (min-width: 320px) and (max-width: 374.98px) {
   .blog-title__topic-blog {
     margin: 10px 0;
@@ -2408,23 +1600,6 @@ section-4 {
     .blog-article__article-text {
       font-size: 10px;
       padding: 5px 15px 0; } }
-/* 
-// Extra small devices (portrait phones, less than 576px)
-@media (max-width: 575.98px) {  }
-
-// Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) and (max-width: 767.98px) {  }
-
-// Medium devices (tablets, 768px and up)
-@media (min-width: 768px) and (max-width: 991.98px) {  }
-
-// Large devices (desktops, 992px and up)
-@media (min-width: 992px) and (max-width: 1199.98px) {  }
-
-// Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) {  } 
-
- */
 /* ------------ fotogallery --------------- */
 section-5 {
   display: none;
