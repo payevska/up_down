@@ -39,8 +39,8 @@
         	width:100%;
         }
 	    &_table-name {
-	    	@extend a;
-			margin-bottom: 22px;
+			@extend a;
+			margin-bottom: 20px;
 	    }
 	}
 }
@@ -67,94 +67,88 @@
 @include tablet {
 	.tables-title__tables-topic {
 	    font-size: 28px;
+	    margin: 20px 0;
 	}
-    .tables-collection {    
+    .tables-collection { 
+    	flex-direction: column;
+    	align-items: center;   
 	    &__table {
-		    &_foto-table	{
-		    }
-		    &_tables-name a {
-		    	font-size: 12px;
+	    	width:45%;
+		    img {
+	        }
+		    &_table-name {
+		    	font-size: 14px;
 		    }
 		}
 	}
-	.tables-name-special {
-	font-size: 14px;
-}
+		.tables-name-special {
+		font-size: 14px;
+	}
 }
 @include tablet-mini {
     .tables-title__tables-topic {
 	    font-size: 24px;
-    	margin: 25px 0;
+	    margin: 20px 0;
 	}
     .tables-collection { 
+    	flex-direction: column;
+    	align-items: center;   
 	    &__table {
-		    &_foto-table	{
-			    margin-bottom: 20px;
-		    }
-		    &_tables-name a {
-		    	font-size: 12px;
+	    	width:45%;
+	    	margin-top: 15px;
+		    img {
+	        }
+		    &_table-name {
+		    	font-size: 14px;
 		    }
 		}
 	}
-	.tables-name-special {
+		.tables-name-special {
 		font-size: 14px;
 	}
 }
 @include phone {
  	.tables-title__tables-topic {
-	    font-size: 24px;
-    	margin: 25px 0;
+	    font-size: 20px;
+	    margin: 20px 0;
 	}
     .tables-collection { 
-    	width: 100%;
-        flex-direction: column;
-        align-items: center;
-        justify-content: start;   
+    	flex-direction: column;
+    	align-items: center;   
 	    &__table {
-	    	width: 50%;
-		    &_foto-table	{
-			    margin-bottom: 4px;
+	    	width:45%;
+	    	margin-top: 15px;
+		    img {
+	        }
+		    &_table-name {
+		    	font-size: 10px;
 		    }
-		    &_tables-name {
-		    	line-height: 1.1;
-		    	margin-bottom: 20px;
-			    a {
-			    	font-size: 12px;
-
-			    }
-			}
 		}
 	}
 	.tables-name-special {
-		font-size: 12px;
+		font-size: 11px;
 	}
 }
 @include iphone-5 {
     .tables-title__tables-topic {
 	    font-size: 20px;
-    	margin: 15px 0;
+	    margin: 10px 0;
 	}
     .tables-collection { 
-    	width: 100%;
-        flex-direction: column;
-        align-items: center;
-        justify-content: start;   
+    	flex-direction: column;
+    	align-items: center;   
 	    &__table {
-	    	width: 50%;
-		    &_foto-table	{
-			    margin-bottom: 4px;
+	    	width:45%;
+	    	margin-top: 15px;
+		    img {
+	        }
+		    &_table-name {
+		    	font-size: 10px;
 		    }
-		    &_tables-name {
-		    	line-height: 1.1;
-		    	margin-bottom: 20px;
-			    a {
-			    	font-size: 12px;
-
-			    }
-			}
 		}
 	}
 	.tables-name-special {
-		font-size: 12px;
+		font-size: 11px;
 	}
 }
+

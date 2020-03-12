@@ -48,12 +48,12 @@ $(document).ready(function(){
         var src = img.attr('src'); // Достаем из этого изображения путь до картинки
         
         
-        $(".portfolio-right__project-big-foto_fotoProject-big").remove(); // Удаляем разметку всплывающего окна
+        $(".portfolio-right__project-big-foto").remove(); // Удаляем разметку всплывающего окна
 
 
-        $(".portfolio-right__project-big-foto").append("<img src='"+src+"' class='portfolio-right__project-big-foto_fotoProject-big'>"); // Само увеличенное фото
+        $(".portfolio-right").append("<img src='"+src+"' class='portfolio-right__project-big-foto'>"); // Само увеличенное фото
                           
-        $(".portfolio-right__project-big-foto").fadeIn(800); // Медленно выводим изображение
+        $(".portfolio-right").fadeIn(800); // Медленно выводим изображение
         
     });
 
@@ -182,3 +182,18 @@ $(document).ready(function(){
 
 
 });
+
+
+/*$(".carousel-foto__fotoProject").click(function(){   // Событие клика на маленькое изображение
+        var img = $(this);  // Получаем изображение, на которое кликнули
+        var src = img.attr('src'); // Достаем из этого изображения путь до картинки
+        
+        
+        $(".portfolio-right__project-big-foto_fotoProject-big").remove(); // Удаляем разметку всплывающего окна
+
+
+        $(".portfolio-right__project-big-foto").append("<img src='"+src+"' class='portfolio-right__project-big-foto_fotoProject-big'>"); // Само увеличенное фото
+                          
+        $(".portfolio-right__project-big-foto").fadeIn(800); // Медленно выводим изображение
+        
+    });*/

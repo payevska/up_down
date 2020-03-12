@@ -79,6 +79,15 @@ h3 {
 	color: $white;	
 }
 
+h6 {
+	font: {
+		family: 'Nunito Sans', sans-serif;
+		size: 16px;
+		weight: $regular;
+	}
+		color: $blue-light;
+}
+
 :active, :hover, :focus {
     outline: none;
     outline-offset: 0;
