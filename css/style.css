@@ -2145,7 +2145,7 @@ footer {
   .fa-chevron-circle-up {
     font-size: 32px; } }
 /* ------------ tables --------------- */
-#tables {
+.tables-up-down {
   display: flex;
   align-items: center;
   min-height: 100vh; }
@@ -2173,17 +2173,10 @@ footer {
   justify-content: space-between;
   padding: 0;
   margin-top: 25px; }
-  .tables-collection__table {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    		/*border-radius: 5px;
-            border: 1px solid $grey-opacity;*/ }
-    .tables-collection__table img {
-      width: 100%; }
-    .tables-collection__table_table-name {
-      padding: 0 10px 20px; }
+  .tables-collection__table img {
+    width: 100%; }
+  .tables-collection__table_table-name {
+    padding: 0 10px 20px; }
 
 .tables-name-special {
   font-size: 18px; }

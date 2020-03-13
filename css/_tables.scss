@@ -1,5 +1,5 @@
 /* ------------ tables --------------- */
-#tables {
+.tables-up-down {
 	display: flex;
     align-items: center;
     min-height: 100vh;
@@ -37,14 +37,6 @@
     //border-radius: 5px;
 	//border: 1px solid rgba(130, 136, 147, 0.3);
     &__table {
-    	display: flex;
-	    flex-direction: column;
-	    align-items: center;
-	    justify-content: space-between;
-		/*border-radius: 5px;
-        border: 1px solid $grey-opacity;*/
-        
-        
         img {
         	width:100%;
         }
