@@ -23,12 +23,9 @@
     }    
 }
 
-.tables-collectionss {
-	display: flex;
-    justify-content: space-around;
-}
 .tables-collection {
 	display: flex;
+    justify-content: space-around;
     &__table {
     	display: flex;
 	    flex-direction: column;
@@ -37,15 +34,14 @@
 		border-radius: 5px;
         border: 1px solid $grey-opacity;
         margin-top: 40px;
-        padding: 0 10px 20px;
-        @extend a;
+        padding: 0 10px;
         img {
         	width:100%;
         }
-	    /*&_table-name {
+	    &_table-name {
 			@extend a;
 			margin-bottom: 20px;
-	    }*/
+	    }
 	}
 }
 
@@ -73,20 +69,16 @@
 	    font-size: 28px;
 	    margin: 20px 0;
 	}
-	.tables-collectionss {
-		flex-direction: column;
-    	align-items: center;
-	}
-    .tables-collection {
-    	justify-content: center; 
+    .tables-collection { 
+    	flex-direction: column;
+    	align-items: center;   
 	    &__table {
 	    	width:45%;
-	    	font-size: 14px;
 		    img {
 	        }
-		    /*&_table-name {
+		    &_table-name {
 		    	font-size: 14px;
-		    }*/
+		    }
 		}
 	}
 		.tables-name-special {
@@ -98,21 +90,17 @@
 	    font-size: 24px;
 	    margin: 20px 0;
 	}
-	.tables-collectionss {
-		flex-direction: column;
-    	align-items: center;
-	}
     .tables-collection { 
-    	justify-content: center;
+    	flex-direction: column;
+    	align-items: center;   
 	    &__table {
 	    	width:45%;
 	    	margin-top: 15px;
-	    	font-size: 14px;
 		    img {
 	        }
-		    /*&_table-name {
+		    &_table-name {
 		    	font-size: 14px;
-		    }*/
+		    }
 		}
 	}
 		.tables-name-special {
@@ -124,21 +112,17 @@
 	    font-size: 20px;
 	    margin: 20px 0;
 	}
-	.tables-collectionss {
-		flex-direction: column;
-    	align-items: center;
-	}
-    .tables-collection {
-    	justify-content: center; 
+    .tables-collection { 
+    	flex-direction: column;
+    	align-items: center;   
 	    &__table {
 	    	width:45%;
 	    	margin-top: 15px;
-	    	font-size: 10px;
 		    img {
 	        }
-		    /*&_table-name {
+		    &_table-name {
 		    	font-size: 10px;
-		    }*/
+		    }
 		}
 	}
 	.tables-name-special {
@@ -150,21 +134,17 @@
 	    font-size: 20px;
 	    margin: 10px 0;
 	}
-	.tables-collectionss {
-		flex-direction: column;
-    	align-items: center;
-	}
-    .tables-collection {
-    	justify-content: center; 
+    .tables-collection { 
+    	flex-direction: column;
+    	align-items: center;   
 	    &__table {
 	    	width:45%;
 	    	margin-top: 15px;
-	    	font-size: 10px;
 		    img {
 	        }
-		    /*&_table-name {
+		    &_table-name {
 		    	font-size: 10px;
-		    }*/
+		    }
 		}
 	}
 	.tables-name-special {
