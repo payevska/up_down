@@ -2172,6 +2172,8 @@ footer {
 .tables-collection {
   display: flex;
   justify-content: space-around;
+  padding: 0;
+  margin-top: 25px;
   border-radius: 5px;
   border: 1px solid rgba(130, 136, 147, 0.3); }
   .tables-collection__table {
@@ -2180,13 +2182,11 @@ footer {
     align-items: center;
     justify-content: space-between;
     		/*border-radius: 5px;
-            border: 1px solid $grey-opacity;*/
-    margin-top: 40px;
-    padding: 0 10px; }
+            border: 1px solid $grey-opacity;*/ }
     .tables-collection__table img {
       width: 100%; }
     .tables-collection__table_table-name {
-      margin-bottom: 20px; }
+      padding: 0 10px 20px; }
 
 .tables-name-special {
   font-size: 18px; }
@@ -2206,11 +2206,10 @@ footer {
     flex-direction: column; }
 
   .tables-collection {
-    width: 50%;
+    max-width: 50%;
     flex-direction: column;
     align-items: center; }
     .tables-collection__table_table-name {
-      padding: 0 10px;
       font-size: 14px; }
 
   .tables-name-special {
@@ -2225,14 +2224,11 @@ footer {
     flex-direction: column; }
 
   .tables-collection {
-    width: 50%;
+    max-width: 50%;
     flex-direction: column;
     align-items: center; }
-    .tables-collection__table {
-      margin-top: 15px; }
-      .tables-collection__table_table-name {
-        padding: 0 10px;
-        font-size: 14px; }
+    .tables-collection__table_table-name {
+      font-size: 14px; }
 
   .tables-name-special {
     font-size: 14px; } }
@@ -2241,17 +2237,16 @@ footer {
     font-size: 20px;
     margin: 20px 0; }
 
+  .collectionss {
+    display: flex;
+    flex-direction: column; }
+
   .tables-collection {
-    width: 50%;
+    max-width: 50%;
     flex-direction: column;
-    align-items: center;
-    border-radius: 5px;
-    border: 1px solid rgba(130, 136, 147, 0.3); }
-    .tables-collection__table {
-      margin-top: 15px; }
-      .tables-collection__table_table-name {
-        padding: 0 10px;
-        font-size: 10px; }
+    align-items: center; }
+    .tables-collection__table_table-name {
+      font-size: 10px; }
 
   .tables-name-special {
     font-size: 11px; } }
@@ -2260,14 +2255,16 @@ footer {
     font-size: 20px;
     margin: 10px 0; }
 
+  .collectionss {
+    display: flex;
+    flex-direction: column; }
+
   .tables-collection {
+    max-width: 50%;
     flex-direction: column;
     align-items: center; }
-    .tables-collection__table {
-      width: 45%;
-      margin-top: 15px; }
-      .tables-collection__table_table-name {
-        font-size: 10px; }
+    .tables-collection__table_table-name {
+      font-size: 10px; }
 
   .tables-name-special {
     font-size: 11px; } }
