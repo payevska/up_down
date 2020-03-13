@@ -31,6 +31,8 @@
 .tables-collection {
 	display: flex;
     justify-content: space-around;
+    border-radius: 5px;
+	border: 1px solid rgba(130, 136, 147, 0.3);
     &__table {
     	display: flex;
 	    flex-direction: column;
@@ -74,14 +76,19 @@
 	    font-size: 28px;
 	    margin: 20px 0;
 	}
+	.collectionss {
+		display: flex;
+	    flex-direction: column;
+	}
     .tables-collection { 
+    	width: 50%;
     	flex-direction: column;
     	align-items: center;   
 	    &__table {
-	    	width:45%;
 		    img {
 	        }
 		    &_table-name {
+		    	padding: 0 10px;
 		    	font-size: 14px;
 		    }
 		}
@@ -98,12 +105,9 @@
 	.collectionss {
 		display: flex;
 	    flex-direction: column;
-	    align-items: center;
 	}
     .tables-collection { 
     	width: 50%;
-	    border-radius: 5px;
-	    border: 1px solid rgba(130, 136, 147, 0.3);
     	flex-direction: column;
     	align-items: center;   
 	    &__table {
