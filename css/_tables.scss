@@ -25,26 +25,30 @@
 
 .collectionss {
 	display: flex;
-	justify-content: space-around;
 
 }
 .tables-collection {
 	display: flex;
-	flex-direction: column;
-    justify-content: space-between;
+	justify-content: center;
     padding: 0;
     margin-top: 25px;
     //border-radius: 5px;
 	//border: 1px solid rgba(130, 136, 147, 0.3);
     &__table {
+    	display: flex;
+		flex-direction: column;
+		width: 65%;
+    	align-items: center;
         img {
-        	width:100%;
+        	width: 100%;
         }
-	    &_table-name {
+	    
+	}
+}
+
+.table-name {
 			@extend a;
 			padding: 0 10px 20px;
-	    }
-	}
 }
 
 .tables-name-special {
@@ -56,7 +60,29 @@
 
 /* ------ media query ------ */
 @include desktop {
-	
+	.tables-title {
+		margin-top: 0;
+	    &__tables-topic {
+	    	    	
+	        font-size: 36px;
+	    }    
+	}
+	.tables-collection { 
+	    &__table {
+	    	width: 50%;
+		    img {
+	        }
+		    &_table-name {
+		    	font-size: 14px;
+		    }
+		}
+	}
+	.table-name {
+		font-size: 14px;
+	}
+	.tables-name-special {
+		font-size: 14px;
+	}
 }
 @include laptop {
 	.tables-title {
@@ -66,6 +92,23 @@
 	        font-size: 36px;
 	    }    
 	}
+	.tables-collection { 
+	    &__table {
+	    	width: 50%;
+		    img {
+	        }
+		    &_table-name {
+		    	font-size: 14px;
+		    }
+		}
+	}
+	.table-name {
+		font-size: 14px;
+	}
+	.tables-name-special {
+		font-size: 14px;
+	}
+
 }
 @include tablet {
 	.tables-title {
@@ -75,24 +118,14 @@
 		}
 	}
 	.collectionss {
-		display: flex;
 	    flex-direction: column;
 	    align-items: center;
 	}
-    .tables-collection { 
-    	max-width: 50%;
-    	flex-direction: column;
-    	align-items: center;   
-	    &__table {
-		    img {
-	        }
-		    &_table-name {
-		    	font-size: 14px;
-		    }
-		}
+    .table-name {
+		font-size: 16px;
 	}
-		.tables-name-special {
-		font-size: 14px;
+	.tables-name-special {
+		font-size: 16px;
 	}
 }
 @include tablet-mini {
@@ -103,24 +136,14 @@
 		}
 	}
 	.collectionss {
-		display: flex;
 	    flex-direction: column;
 	    align-items: center;
 	}
-    .tables-collection { 
-    	max-width: 50%;
-    	flex-direction: column;
-    	align-items: center;   
-	    &__table {
-		    img {
-	        }
-		    &_table-name {
-		    	font-size: 14px;
-		    }
-		}
+	.table-name {
+		font-size: 11px;
 	}
-		.tables-name-special {
-		font-size: 14px;
+	.tables-name-special {
+		font-size: 12px;
 	}
 }
 @include phone {
@@ -138,15 +161,14 @@
     .tables-collection { 
     	max-width: 50%;
     	flex-direction: column;
-    	align-items: center; 
+    	align-items: center;
+    	margin-top: 5px;
 	    &__table {
-	    	//width:45%;
-		    img {
-	        }
-		    &_table-name {
-		    	font-size: 10px;
-		    }
+	    	width:90%;
 		}
+	}
+	.table-name {
+		font-size: 11px;
 	}
 	.tables-name-special {
 		font-size: 11px;
@@ -167,14 +189,14 @@
     .tables-collection { 
     	max-width: 50%;
     	flex-direction: column;
-    	align-items: center;   
+    	align-items: center;
+    	margin-top: 5px;
 	    &__table {
-		    img {
-	        }
-		    &_table-name {
-		    	font-size: 10px;
-		    }
+	    	width:90%;
 		}
+	}
+	.table-name {
+		font-size: 11px;
 	}
 	.tables-name-special {
 		font-size: 11px;
