@@ -1,6 +1,5 @@
 /* ------------ tables --------------- */
 #tables {
-	display: none;
 	display: flex;
     align-items: center;
     min-height: 100vh;
@@ -16,8 +15,9 @@
 	display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 30px 0;
     &__tables-topic {
-    	margin: 70px 0;    	
+    	    	
 		@extend h2;
         font-size: 40px;
     }    
@@ -26,15 +26,16 @@
 .collectionss {
 	display: flex;
 	justify-content: space-around;
+
 }
 .tables-collection {
 	display: flex;
-	    flex-direction: column;
+	flex-direction: column;
     justify-content: space-between;
     padding: 0;
     margin-top: 25px;
-    border-radius: 5px;
-	border: 1px solid rgba(130, 136, 147, 0.3);
+    //border-radius: 5px;
+	//border: 1px solid rgba(130, 136, 147, 0.3);
     &__table {
     	display: flex;
 	    flex-direction: column;
@@ -67,16 +68,19 @@
 }
 @include laptop {
 	.tables-title {
+		margin-top: 0;
 	    &__tables-topic {
-	    	margin-top: 0;    	
+	    	    	
 	        font-size: 36px;
 	    }    
 	}
 }
 @include tablet {
-	.tables-title__tables-topic {
-	    font-size: 28px;
-	    margin: 20px 0;
+	.tables-title {
+		margin-top: 0;
+		&__tables-topic {
+		    font-size: 28px;
+		}
 	}
 	.collectionss {
 		display: flex;
@@ -100,13 +104,16 @@
 	}
 }
 @include tablet-mini {
-    .tables-title__tables-topic {
-	    font-size: 24px;
-	    margin: 20px 0;
+    .tables-title {
+		margin: 0;
+		&__tables-topic {
+		    font-size: 24px;
+		}
 	}
 	.collectionss {
 		display: flex;
 	    flex-direction: column;
+	    align-items: center;
 	}
     .tables-collection { 
     	max-width: 50%;
@@ -125,13 +132,16 @@
 	}
 }
 @include phone {
- 	.tables-title__tables-topic {
-	    font-size: 20px;
-	    margin: 20px 0;
+ 	.tables-title {
+		margin: 0;
+		&__tables-topic {
+		    font-size: 20px;
+		}
 	}
 	.collectionss {
 		display: flex;
 	    flex-direction: column;
+	    align-items: center;
 	}
     .tables-collection { 
     	max-width: 50%;
@@ -151,13 +161,16 @@
 	}
 }
 @include iphone-5 {
-    .tables-title__tables-topic {
-	    font-size: 20px;
-	    margin: 10px 0;
+    .tables-title {
+		margin: 0;
+		&__tables-topic {
+		    font-size: 20px;
+		}
 	}
 	.collectionss {
 		display: flex;
 	    flex-direction: column;
+	    align-items: center;
 	}
     .tables-collection { 
     	max-width: 50%;
