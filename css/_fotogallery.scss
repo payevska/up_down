@@ -9,7 +9,7 @@ section-5 {
 .fotogallery-wrap {
 	display: flex;
 	flex-direction: column;	
-    margin-top: 100px;
+    margin-top: 90px;
 }
 
 .fotogallery-title {
@@ -89,6 +89,9 @@ section-5 {
     }
 }
 @include tablet-mini {
+    .fotogallery-wrap {
+        margin-top: 70px;
+    }
     .fotogallery-title {
         &__topic-fotogallery {
             margin: 5px 0;     
@@ -106,6 +109,9 @@ section-5 {
     }
 }
 @include phone {
+    .fotogallery-wrap {
+        margin-top: 50px;
+    }
     .fotogallery-title {
         &__topic-fotogallery {
             margin: 5px 0;     
@@ -123,6 +129,9 @@ section-5 {
     }
 }
 @include iphone-5 {
+    .fotogallery-wrap {
+        margin-top: 50px;
+    }
     .fotogallery-title {
         &__topic-fotogallery {
             margin: 5px 0;     

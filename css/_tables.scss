@@ -34,14 +34,15 @@
 		border-radius: 5px;
         border: 1px solid $grey-opacity;
         margin-top: 40px;
-        padding: 0 10px;
+        padding: 0 10px 20px;
+        @extend a;
         img {
         	width:100%;
         }
-	    &_table-name {
+	    /*&_table-name {
 			@extend a;
 			margin-bottom: 20px;
-	    }
+	    }*/
 	}
 }
 
@@ -74,11 +75,12 @@
     	align-items: center;   
 	    &__table {
 	    	width:45%;
+	    	font-size: 14px;
 		    img {
 	        }
-		    &_table-name {
+		    /*&_table-name {
 		    	font-size: 14px;
-		    }
+		    }*/
 		}
 	}
 		.tables-name-special {
@@ -96,11 +98,12 @@
 	    &__table {
 	    	width:45%;
 	    	margin-top: 15px;
+	    	font-size: 14px;
 		    img {
 	        }
-		    &_table-name {
+		    /*&_table-name {
 		    	font-size: 14px;
-		    }
+		    }*/
 		}
 	}
 		.tables-name-special {
@@ -118,11 +121,12 @@
 	    &__table {
 	    	width:45%;
 	    	margin-top: 15px;
+	    	font-size: 10px;
 		    img {
 	        }
-		    &_table-name {
+		    /*&_table-name {
 		    	font-size: 10px;
-		    }
+		    }*/
 		}
 	}
 	.tables-name-special {
@@ -140,11 +144,12 @@
 	    &__table {
 	    	width:45%;
 	    	margin-top: 15px;
+	    	font-size: 10px;
 		    img {
 	        }
-		    &_table-name {
+		    /*&_table-name {
 		    	font-size: 10px;
-		    }
+		    }*/
 		}
 	}
 	.tables-name-special {
