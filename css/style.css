@@ -2164,9 +2164,12 @@ footer {
     margin: 70px 0;
     font-size: 40px; }
 
-.tables-collection {
+.tables-collectionss {
   display: flex;
   justify-content: space-around; }
+
+.tables-collection {
+  display: flex; }
   .tables-collection__table {
     display: flex;
     flex-direction: column;
@@ -2196,9 +2199,12 @@ footer {
     font-size: 28px;
     margin: 20px 0; }
 
-  .tables-collection {
+  .tables-collectionss {
     flex-direction: column;
     align-items: center; }
+
+  .tables-collection {
+    justify-content: center; }
     .tables-collection__table {
       width: 45%;
       font-size: 14px;
@@ -2213,9 +2219,12 @@ footer {
     font-size: 24px;
     margin: 20px 0; }
 
-  .tables-collection {
+  .tables-collectionss {
     flex-direction: column;
     align-items: center; }
+
+  .tables-collection {
+    justify-content: center; }
     .tables-collection__table {
       width: 45%;
       margin-top: 15px;
@@ -2231,9 +2240,12 @@ footer {
     font-size: 20px;
     margin: 20px 0; }
 
-  .tables-collection {
+  .tables-collectionss {
     flex-direction: column;
     align-items: center; }
+
+  .tables-collection {
+    justify-content: center; }
     .tables-collection__table {
       width: 45%;
       margin-top: 15px;
@@ -2249,9 +2261,12 @@ footer {
     font-size: 20px;
     margin: 10px 0; }
 
-  .tables-collection {
+  .tables-collectionss {
     flex-direction: column;
     align-items: center; }
+
+  .tables-collection {
+    justify-content: center; }
     .tables-collection__table {
       width: 45%;
       margin-top: 15px;
