@@ -175,8 +175,8 @@ header {
   z-index: 101;
   width: 100%;
   background: #ffffff;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 3px;
+  padding-bottom: 3px;
   opacity: 0.95; }
   @media (min-width: 385px) and (max-width: 575.98px) {
     header {
@@ -221,19 +221,20 @@ header {
     text-align: center;
     font-size: 14px; }
     .logotype a img, .logotype .header-phone__phone img, .logotype .burger-menu__burger-link img, .logotype .video-table img, .logotype .block-right__text-about_span-about img, .logotype .table-name img {
-      width: 100%; }
+      width: 54%; }
 
 .logo-name {
   padding-left: 0;
   display: flex;
   align-items: center; }
   .logo-name__logo-text {
-    font-size: 17px;
+    font-size: 14px;
     line-height: 1.35;
+    font-weight: 500;
     color: #000000; }
     @media (min-width: 1200px) and (max-width: 1440px) {
       .logo-name__logo-text {
-        font-size: 16px;
+        font-size: 14px;
         line-height: 1.35; } }
     @media (min-width: 992px) and (max-width: 1199.98px) {
       .logo-name__logo-text {
@@ -394,6 +395,9 @@ header {
 .pop {
   margin-bottom: 7px; }
 
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .logotype a img, .logotype .header-phone__phone img, .logotype .burger-menu__burger-link img, .logotype .video-table img, .logotype .block-right__text-about_span-about img, .logotype .table-name img {
+    width: 67%; } }
 @media (min-width: 768px) and (max-width: 991.98px) {
   menu {
     margin: 0; }
@@ -401,9 +405,12 @@ header {
   .header-nav__link-group a, .header-nav__link-group .header-phone__phone, .header-nav__link-group .burger-menu__burger-link, .header-nav__link-group .video-table, .header-nav__link-group .block-right__text-about_span-about, .header-nav__link-group .table-name {
     font-size: 12px; }
 
+  .logotype a img, .logotype .header-phone__phone img, .logotype .burger-menu__burger-link img, .logotype .video-table img, .logotype .block-right__text-about_span-about img, .logotype .table-name img {
+    width: 100%; }
+
   .logo-name__logo-text {
     font-size: 14px;
-    line-height: 1.25; }
+    line-height: 1.4; }
     .logo-name__logo-text_logo-row {
       margin-left: -10px; }
 
@@ -428,10 +435,10 @@ header {
       font-size: 10px; }
 
   .logotype a img, .logotype .header-phone__phone img, .logotype .burger-menu__burger-link img, .logotype .video-table img, .logotype .block-right__text-about_span-about img, .logotype .table-name img {
-    width: 80%; }
+    width: 100%; }
 
   .logo-name__logo-text {
-    font-size: 14px;
+    font-size: 12px;
     line-height: 1.25; }
     .logo-name__logo-text_logo-row {
       margin-left: -10px; }
@@ -455,8 +462,11 @@ header {
   menu {
     margin: 0; }
 
+  .logotype a img, .logotype .header-phone__phone img, .logotype .burger-menu__burger-link img, .logotype .video-table img, .logotype .block-right__text-about_span-about img, .logotype .table-name img {
+    width: 100%; }
+
   .logo-name__logo-text {
-    font-size: 9px;
+    font-size: 10px;
     line-height: 1.25; }
     .logo-name__logo-text_logo-row {
       margin-left: -7px; }
@@ -479,9 +489,12 @@ header {
   menu {
     margin: 0; }
 
+  .logotype a img, .logotype .header-phone__phone img, .logotype .burger-menu__burger-link img, .logotype .video-table img, .logotype .block-right__text-about_span-about img, .logotype .table-name img {
+    width: 100%; }
+
   .logotype {
-    padding-left: 10px;
-    padding-right: 10px; }
+    padding-left: 9px;
+    padding-right: 9px; }
 
   .logo-name__logo-text {
     font-size: 8px;
