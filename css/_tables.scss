@@ -15,8 +15,6 @@
 .tables-title {
 	display: flex;
 	justify-content: center;
-    //flex-direction: column;
-    //align-items: center;
     margin: 30px 0;
     &__tables-topic {
     	    	
@@ -33,9 +31,11 @@
 	display: flex;
 	justify-content: center;
     padding: 0;
+    margin-left: 10px;
+    margin-right: 10px;
     margin-top: 25px;
-    //border-radius: 5px;
-	//border: 1px solid rgba(130, 136, 147, 0.3);
+    border-radius: 5px;
+	border: 1px solid rgba(130, 136, 147, 0.3);
     &__table {
     	display: flex;
 		flex-direction: column;
@@ -89,14 +89,18 @@
 @include laptop {
 	.tables-title {
 		margin-top: 0;
-	    &__tables-topic {
-	    	    	
-	        font-size: 36px;
-	    }    
+		&__tables-topic {
+		    font-size: 28px;
+		}
+	}
+	.collectionss {
+	    flex-direction: column;
+	    align-items: center;
 	}
 	.tables-collection { 
+		max-width: 100%;
 	    &__table {
-	    	width: 50%;
+	    	width: 85%;
 		    img {
 	        }
 		    &_table-name {
@@ -104,11 +108,11 @@
 		    }
 		}
 	}
-	.table-name {
-		font-size: 14px;
+    .table-name {
+		font-size: 16px;
 	}
 	.tables-name-special {
-		font-size: 14px;
+		font-size: 16px;
 	}
 
 }
@@ -122,6 +126,17 @@
 	.collectionss {
 	    flex-direction: column;
 	    align-items: center;
+	}
+	.tables-collection { 
+		max-width: 80%;
+	    &__table {
+	    	width: 85%;
+		    img {
+	        }
+		    &_table-name {
+		    	font-size: 14px;
+		    }
+		}
 	}
     .table-name {
 		font-size: 16px;
@@ -137,12 +152,24 @@
 		    font-size: 24px;
 		}
 	}
+	.tables-collection { 
+		max-width: 80%;
+	    &__table {
+	    	width: 85%;
+		    img {
+	        }
+		    &_table-name {
+		    	font-size: 14px;
+		    }
+		}
+	}
 	.collectionss {
 	    flex-direction: column;
 	    align-items: center;
 	}
 	.table-name {
 		font-size: 11px;
+		padding: 0px 4px 20px;
 	}
 	.tables-name-special {
 		font-size: 12px;
@@ -161,16 +188,17 @@
 	    align-items: center;
 	}
     .tables-collection { 
-    	max-width: 50%;
+    	max-width: 60%;
     	flex-direction: column;
     	align-items: center;
-    	margin-top: 5px;
+    	margin-top: 15px;
 	    &__table {
 	    	width:90%;
 		}
 	}
 	.table-name {
 		font-size: 11px;
+		padding: 0px 7px 20px;
 	}
 	.tables-name-special {
 		font-size: 11px;
@@ -189,10 +217,10 @@
 	    align-items: center;
 	}
     .tables-collection { 
-    	max-width: 50%;
+    	max-width: 55%;
     	flex-direction: column;
     	align-items: center;
-    	margin-top: 5px;
+    	margin-top: 15px;
 	    &__table {
 	    	width:90%;
 		}
