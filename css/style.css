@@ -1280,7 +1280,7 @@ section-3 {
   height: 90px;
   display: flex;
   align-items: center;
-  align-self: center; }
+  justify-content: center; }
   .carousel-foto__fotoProject {
     width: 80%; }
 
