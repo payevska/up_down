@@ -1534,6 +1534,9 @@ section-4 {
   min-height: 100vh; }
 
 .blog-wrap {
+  display: flex; }
+
+.block-blog {
   display: flex;
   flex-direction: column; }
 

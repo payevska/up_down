@@ -8,7 +8,11 @@ section-4 {
 
 .blog-wrap {
 	display: flex;
-	flex-direction: column;	
+}
+
+.block-blog {
+    display: flex;
+    flex-direction: column; 
 }
 
 .blog-title {
