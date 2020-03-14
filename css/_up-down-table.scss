@@ -10,13 +10,14 @@
 .block-gallery {
 	display: flex;
 	flex-direction: column;
-	align-items: center;
+	//align-items: center;
 }
 
 .portfolio-info {    
     display: flex;
-    flex-direction: column;
-    align-items: center;	
+    justify-content: center;
+    //flex-direction: column;
+    //align-items: center;	
 	&__topic {
 		text-align: center;
 	    margin-bottom: 30px;			
