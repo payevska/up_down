@@ -1092,7 +1092,11 @@ section-3 {
   align-items: center;
   min-height: 100vh; }
 
-.product-wrap {
+.characteristics-wrap {
+  display: flex;
+  justify-content: center; }
+
+.block-characteristics {
   display: flex;
   flex-direction: column; }
 
@@ -1236,14 +1240,15 @@ section-3 {
 
 .portfolio-info {
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+  	/*&__text-portfolio {
+  	    width: 50%;
+      	text-align: center;
+      	color: $blue-dark;
+  	}*/ }
   .portfolio-info__topic {
     text-align: center;
     margin-bottom: 30px; }
-  .portfolio-info__text-portfolio {
-    width: 50%;
-    text-align: center;
-    color: #1b255d; }
 
 .block-gallery-image {
   display: flex; }
@@ -1277,7 +1282,7 @@ section-3 {
   align-items: center;
   align-self: center; }
   .carousel-foto__fotoProject {
-    width: 100%; }
+    width: 80%; }
 
 .caret {
   font-size: 25px;

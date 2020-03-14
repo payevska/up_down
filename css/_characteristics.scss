@@ -3,8 +3,13 @@
 	display: flex;
     align-items: center;
     min-height: 100vh;
-} 
-.product-wrap {
+}
+.characteristics-wrap {
+	display: flex;
+	justify-content: center;
+}
+
+.block-characteristics {
 	display: flex;
 	flex-direction: column;
 }
