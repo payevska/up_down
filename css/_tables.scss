@@ -25,9 +25,10 @@
 
 .collectionss {
 	display: flex;
-
+    justify-content: space-evenly;
 }
 .tables-collection {
+	max-width: 30%;
 	display: flex;
 	justify-content: center;
     padding: 0;
@@ -39,10 +40,9 @@
     &__table {
     	display: flex;
 		flex-direction: column;
-		width: 65%;
     	align-items: center;
         img {
-        	width: 100%;
+        	width: 80%;
         }
 	    
 	}
@@ -65,14 +65,13 @@
 	.tables-title {
 		margin-top: 0;
 	    &__tables-topic {
-	    	    	
 	        font-size: 36px;
 	    }    
 	}
 	.tables-collection { 
 	    &__table {
-	    	width: 50%;
 		    img {
+		    	width: 75%;
 	        }
 		    &_table-name {
 		    	font-size: 14px;
@@ -94,14 +93,14 @@
 		}
 	}
 	.collectionss {
-	    flex-direction: column;
-	    align-items: center;
+	    /*flex-direction: column;
+	    align-items: center;*/
 	}
 	.tables-collection { 
-		max-width: 100%;
+		max-width: 30%;
 	    &__table {
-	    	width: 85%;
 		    img {
+	    		width: 75%;
 	        }
 		    &_table-name {
 		    	font-size: 14px;
@@ -128,9 +127,9 @@
 	    align-items: center;
 	}
 	.tables-collection { 
-		max-width: 80%;
+		max-width: 55%;
 	    &__table {
-	    	width: 85%;
+	    	//width: 85%;
 		    img {
 	        }
 		    &_table-name {
@@ -153,7 +152,7 @@
 		}
 	}
 	.tables-collection { 
-		max-width: 80%;
+		max-width: 55%;
 	    &__table {
 	    	width: 85%;
 		    img {
@@ -217,16 +216,19 @@
 	    align-items: center;
 	}
     .tables-collection { 
-    	max-width: 55%;
+    	max-width: 64%;
     	flex-direction: column;
     	align-items: center;
     	margin-top: 15px;
 	    &__table {
-	    	width:90%;
+	    	width: 74%;
+	    	img {
+	    		width: 55%;
+	        }
 		}
 	}
 	.table-name {
-		font-size: 11px;
+		font-size: 10px;
 	}
 	.tables-name-special {
 		font-size: 11px;
