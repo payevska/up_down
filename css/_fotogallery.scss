@@ -16,11 +16,6 @@ section-5 {
 	display: flex;
     flex-direction: column;
     align-items: center;
-    &__topic-fotogallery {
-    	margin: 30px 0;    	
-		@extend h2;
-        font-size: 40px;
-    }
     &__topic-text {
         @extend h3;
         color: $blue-dark;
@@ -45,23 +40,6 @@ section-5 {
     
 }
 
-.picture1 {
-}
-
-.picture2 {
-}
-
-.picture3 {
-}
-
-.picture5 {
-}
-
-.picture6 {
-}
-
-.picture9 {
-}
 
 
 /* ------ media query ------ */
@@ -93,14 +71,19 @@ section-5 {
         margin-top: 70px;
     }
     .fotogallery-title {
-        &__topic-fotogallery {
-            margin: 5px 0;     
-            font-size: 24px;
-        }
         &__topic-text {
             padding-bottom: 20px;
             font-size: 18px;
         }
+    }
+    .title-section {
+        &__title-topic {
+            font-size: 26px;
+        } 
+        &__title-border {
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }   
     }
      .fotogallery-gallery {    
             img {
@@ -113,14 +96,20 @@ section-5 {
         margin-top: 50px;
     }
     .fotogallery-title {
-        &__topic-fotogallery {
-            margin: 5px 0;     
-            font-size: 22px;
-        }
         &__topic-text {
             padding-bottom: 20px;
             font-size: 14px;
         }
+    }
+    .title-section {
+        margin: 10px 0;
+        &__title-topic {
+            font-size: 26px;
+        } 
+        &__title-border {
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }   
     }
      .fotogallery-gallery {    
             img {
@@ -133,14 +122,20 @@ section-5 {
         margin-top: 50px;
     }
     .fotogallery-title {
-        &__topic-fotogallery {
-            margin: 5px 0;     
-            font-size: 20px;
-        }
         &__topic-text {
             padding-bottom: 20px;
             font-size: 11px;
         }
+    }
+    .title-section {
+        margin: 10px 0;
+        &__title-topic {
+            font-size: 20px;
+        } 
+        &__title-border {
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }   
     }
     .fotogallery-gallery {    
             img {

@@ -13,23 +13,6 @@
 	//align-items: center;
 }
 
-.portfolio-info {    
-    display: flex;
-    justify-content: center;
-    //flex-direction: column;
-    //align-items: center;	
-	&__topic {
-		text-align: center;
-	    margin-bottom: 30px;			
-		@extend h2;
-	}
-	/*&__text-portfolio {
-	    width: 50%;
-    	text-align: center;
-    	color: $blue-dark;
-	}*/	
-}
-
 .block-gallery-image {
 	display: flex;
 }
@@ -214,33 +197,22 @@
 
 /* ------ media query ------ */
 @include television {
-	.portfolio-info {  
-	  	padding-top: 65px;
-		&__topic {
-			font-size: 36px;
-		}
-	}
 }
 @include desktop {
-	.portfolio-info {    
-		&__topic {
-			font-size: 36px;
-		}		
-	}	
 }
 @include laptop {
-	.portfolio-info {    
-		&__topic {
-			font-size: 32px;
-		}		
-	}
+	.title-section {
+        &__title-topic {
+            font-size: 32px;
+        } 
+    }
 }
 @include tablet {
-	.portfolio-info {    
-		&__topic {
-			font-size: 28px;
-		}		
-	}
+	.title-section {
+        &__title-topic {
+            font-size: 28px;
+        } 
+    }
 	.portfolio-left {
 		padding-left: 0;
     	padding-right: 0;
@@ -249,34 +221,29 @@
 	}
 }	
 @include tablet-mini {
-	.portfolio-info {    
-		&__topic {
-			font-size: 28px;
-			margin-bottom: 20px;
-		}
-		&__text-portfolio {
-			width: 80%;
-			font-size: 14px;
-		}
-		&__link-portfolio {
-		}
-	}
+	.title-section {
+        &__title-topic {
+            font-size: 26px;
+        } 
+        &__title-border {
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }   
+    }
 	.portfolio-right {
 		display: none;		
 	}
 }
 @include phone {
- 	.portfolio-info {    
-		&__topic {
-			font-size: 17px;
-			margin-bottom: 25px;
-		}
-		&__text-portfolio {
-			display: none;
-		}
-		&__link-portfolio {
-		}
-	}
+ 	.title-section {
+        &__title-topic {
+            font-size: 26px;
+        } 
+        &__title-border {
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }   
+    }
 	.portfolio-left {
 		padding-left: 0;
     	padding-right: 0;
@@ -338,17 +305,15 @@
 		padding-left: 15px;
     	padding-right: 0;
 	}
-	.portfolio-info {    
-		&__topic {
-			font-size: 16px;
-			margin-bottom: 10px;
-		}
-		&__text-portfolio {
-			display: none;
-		}
-		&__link-portfolio {
-		}
-	}
+	.title-section {
+        &__title-topic {
+            font-size: 20px;
+        } 
+        &__title-border {
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }   
+    }
 	.carousel-foto {
 		width: 90px;
 		&__fotoProject {

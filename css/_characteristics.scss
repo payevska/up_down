@@ -10,17 +10,9 @@
 }
 
 .block-characteristics {
+    width: 100%;
 	display: flex;
 	flex-direction: column;
-}
-
-.product {
-	display: flex;
-	justify-content: center;
-	margin-bottom: 90px;
-	&__product-title {
-		@extend  h2;
-	}	
 }
 
 .product-contain {
@@ -52,26 +44,33 @@
 	display: flex;
     flex-direction: column;
     margin: 0;
+    padding-right: 0;
+    padding-left: 0;
     @extend  h6;
     font-size: 15px;
 }
 
 /* ------ media query ------ */
 @include television {
-	.product {
-		&__product-title {
-			font-size: 32px;
-		}	
-	}
+	.title-section {
+        &__title-topic {
+            font-size: 32px;
+        } 
+    }
 }
-@include desktop {	
+@include desktop {
+	.title-section {
+        &__title-topic {
+            font-size: 32px;
+        } 
+    }	
 }
 @include laptop {
-	.product-contain {
-	}
-	.product {
-		margin-bottom: 80px;			
-	}
+	.title-section {
+        &__title-topic {
+            font-size: 32px;
+        } 
+    }
 	.product-images {
 		&__picture {
 			width: 50%;
@@ -79,23 +78,28 @@
 	}
 }
 @include tablet {
+	.title-section {
+        &__title-topic {
+            font-size: 32px;
+        } 
+    }
 	.product-images {
 		&__picture {
 	    	width: 80%;
 		}	
 	}	
-	.characteristic-list {
-	}
-
 }
 
 @include tablet-mini {
-	.product {
-		margin-bottom: 10px;
-		&__product-title {
-			font-size: 26px;
-		}	
-	}
+	.title-section {
+        &__title-topic {
+            font-size: 26px;
+        } 
+        &__title-border {
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }   
+    }
 	.product-contain {
 		flex-direction: column;
 	}
@@ -121,12 +125,15 @@
 	}
 }
 @include phone {
-	.product {
-		margin-bottom: 10px;
-		&__product-title {
-			font-size: 20px;
-		}	
-	}
+	.title-section {
+        &__title-topic {
+            font-size: 26px;
+        } 
+        &__title-border {
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }   
+    }
 	.product-contain {
 		flex-direction: column;
 	}
@@ -155,12 +162,15 @@
 	}
 }
 @include iphone-5 {
-	.product {
-		margin-bottom: 10px;
-		&__product-title {
-			font-size: 20px;
-		}	
-	}
+	.title-section {
+        &__title-topic {
+            font-size: 20px;
+        } 
+        &__title-border {
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }   
+    }
 	.product-contain {
 		flex-direction: column;
 	}
