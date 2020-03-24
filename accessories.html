@@ -1,16 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-124833650-1"></script>
-	<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag(){dataLayer.push(arguments);}
-		gtag('js', new Date());
-
-		gtag('config', 'UA-124833650-1');
-	</script> -->
-	
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
@@ -25,32 +15,6 @@
 	<link href="https://fonts.googleapis.com/css?family=Nunito+Sans&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Judson:400,400i,700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="css/style.css">
-
-	<!-- <script type="application/ld+json">
-		{
-		  "@context": "https://schema.org/",
-		  "@type": "Product",
-		  "name": "Стол для работы стоя | Up and Down",
-		  "image": [
-			"https://und.com.ua/images/full_jpg_01.jpg"
-		   ],
-		  "description": "Стол ддя работы стоя с регулировкой высоты.",
-		  "sku": "55555555",
-		  "brand": {
-			"@type": "Thing",
-			"name": "Up and Down"
-		  },
-		  "offers": {
-			"@type": "Offer",
-			"url": "https://example.com/anvil",
-			"priceCurrency": "UAH",
-			"price": "6000",
-			"priceValidUntil": "2020-12-12",
-			"itemCondition": "https://schema.org/UsedCondition",
-			"availability": "https://schema.org/InStock"
-		  }
-		}
-	</script> -->
 </head>
 <body>
 	
@@ -64,9 +28,15 @@
 							<li class="header-nav__link-group">
 								<a href="index.html#about" class="link-active">Обзор</a>
 							</li>
-							<li class="header-nav__link-group">
-								<a href="#" class="link-active">Коллекция</a>
-							</li>
+							<li class="header-nav__link-group dropdown">
+						    	<button class="dropbtn" onClick='location.href="catalog.html"'>Каталог 
+						      	<i class="fa fa-caret-down"></i>
+						    	</button>
+						    	<div class="dropdown-content">
+						      	<a href="tables-up-down.html">Столы для работы стоя</a>
+						      	<a href="#">Аксессуары</a>
+						    	</div>
+						  	</li>
 							<li class="header-nav__link-group">
 								<a href="index.html#blog" class="link-active">Блог</a>
 							</li>
@@ -87,9 +57,17 @@
 									<li class="lists pop">
 										<a href="index.html#about" class="burger-menu__burger-link">Обзор</a>
 									</li>
-									<li class="lists pop">
-										<a href="#" class="burger-menu__burger-link">Коллекция</a>
-									</li>														
+									
+									<li class="lists dropdown pop">
+								    	<button class="burger-menu__burger-link dropbtn" onClick='location.href="catalog.html"'>Каталог 
+								      	<i class="fa fa-caret-down"></i>
+								    	</button>
+								    	<div class="dropdown-content">
+								      	<a href="tables-up-down.html">Столы для работы стоя</a>
+								      	<a href="accessories.html">Аксессуары</a>
+								    	</div>
+								  	</li>	
+
 									<li class="lists pop">
 										<a href="index.html#blog" class="burger-menu__burger-link">Блог</a>
 									</li>
@@ -134,34 +112,108 @@
 		</div>
 	</header>	
 
-	<section id="accessories" class="tables-up-down">
+	<section id="accessories" class="sub-catalogue">
 		<div class="container">
 			<div class="row">
-				<div class="col col-sm tables-wrap">
+				<div class="col col-sm sub-catalogue-wrap">
+					<div class="title-section">
+							<h2 class="title-section__title-topic">Aксессуары</h2>
+							<div class="title-section__title-border"></div>
+						</div>	
+					<div class="collection-box">
+						<div class="col-sm-6 collection-product">
+							<a href="#" class="collection-product__unit">
+								<img class="foto-unit1" src="images/pen-holder.png" alt="block-foto">				
+								<div class="unit-name">
+									<div class="unit-name-price">
+										Подставка для ручек <span class="unit-name-special">Square</span>
+									</div>
+									<div class="unit-name-price">
+										от <span class="price-info-spec">150 &#8372;</span>
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="col-sm-6 collection-product">
+							<a href="#" class="collection-product__unit">
+								<img class="foto-unit2" src="images/pen-holder-prism.png" alt="block-foto">				
+								<div class="unit-name">
+									<div class="unit-name-price">
+										Подставка для ручек <span class="unit-name-special">Prism</span>
+									</div>
+									<div class="unit-name-price">
+										от <span class="price-info-spec">150 &#8372;</span>
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="col-sm-6 collection-product">
+							<a href="#" class="collection-product__unit">
+								<img class="foto-unit3" src="images/soon.png" alt="block-foto">				
+								<div class="unit-name">
+									<div class="unit-name-price">
+										Подставкa под мобильный телефон <span class="unit-name-special">Crown</span>
+									</div>
+									<!-- <div class="unit-name-price">
+										от <span class="price-info-spec">150 &#8372;</span>
+									</div> -->
+								</div>
+							</a>
+						</div>
+						<div class="col-sm-6 collection-product">
+							<a href="#" class="collection-product__unit">
+								<img class="foto-unit3" src="images/soon.png" alt="block-foto">				
+								<div class="unit-name">
+									<div class="unit-name-price">
+										Подставкa под мобильный телефон <span class="unit-name-special">Case</span>
+									</div>
+									<!-- <div class="unit-name-price">
+										от <span class="price-info-spec">150 &#8372;</span>
+									</div> -->
+								</div>
+							</a>
+						</div>
+					</div>									
+				</div>
+				<!-- <div class="col col-sm tables-wrap">
 					<div class="tables-title">
 						<h2 class="tables-title__tables-topic">Aксессуары</h2>
 					</div>	
 					<div class="collectionss">
 						<div class="col-sm-6 tables-collection">
-
 							<a href="up-down-actuator.html" class="tables-collection__table">
-								<img class="foto-table1" src="images/table-actuator-desktop.png" alt="table-foto">				
+								<img class="foto-table1" src="images/pen-holder.png" alt="table-foto">				
 								<div class="table-name">
-									Подставки для ручек<span class="tables-name-special">Pen-holder square</span>
+									Подставки для ручек<span class="tables-name-special"> Pen-holder square</span>
 								</div>
 							</a>
 						</div>
 						<div class="col-sm-6 tables-collection">
-
+							<a href="up-down-actuator.html" class="tables-collection__table">
+								<img class="foto-table1" src="images/pen-holder.png" alt="table-foto">				
+								<div class="table-name">
+									Подставки для ручек<span class="tables-name-special"> Pen-holder prism</span>
+								</div>
+							</a>
+						</div>
+						<div class="col-sm-6 tables-collection">
 							<a href="up-down-computer.html" class="tables-collection__table">
 								<img class="foto-table1" src="images/table-computer-desktop.png" alt="table-foto">				
 								<div class="table-name">
-									Подставки под мобильный телефон<span class="tables-name-special">Mobile phone holder</span>
+									Подставки под мобильный телефон<span class="tables-name-special"> Mobile phone holder</span>
+								</div>
+							</a>
+						</div>
+						<div class="col-sm-6 tables-collection">
+							<a href="up-down-computer.html" class="tables-collection__table">
+								<img class="foto-table1" src="images/table-computer-desktop.png" alt="table-foto">				
+								<div class="table-name">
+									Подставки под мобильный телефон<span class="tables-name-special"> Mobile phone holder</span>
 								</div>
 							</a>
 						</div>						
 					</div>									
-				</div>
+				</div> -->
 			</div>			
 		</div>		
 	</section>
@@ -195,7 +247,7 @@
 									<a href="index.html#about">Обзор</a>
 								</li>
 								<li class="footer-wrap__menu-footer_vertical-menu_link-group">
-									<a href="#">Коллекция</a>
+									<a href="catalog.html">Каталог</a>
 								</li>
 								<li class="footer-wrap__menu-footer_vertical-menu_link-group">
 									<a href="index.html#blog">Блог</a>
@@ -241,7 +293,7 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-	<script src="js/script_tables.js"></script>
+	<script src="js/script_sub-catalogue.js"></script>
 
 </body>
 </html>

@@ -64,9 +64,17 @@
 							<li class="header-nav__link-group">
 								<a href="#about" class="link-active">Обзор</a>
 							</li>
-							<li class="header-nav__link-group">
-								<a href="catalog.html" class="link-active">Каталог</a>
-							</li>
+
+							<li class="header-nav__link-group dropdown">
+						    	<button class="dropbtn" onClick='location.href="catalog.html"'>Каталог 
+						      	<i class="fa fa-caret-down"></i>
+						    	</button>
+						    	<div class="dropdown-content">
+						      	<a href="tables-up-down.html">Столы для работы стоя</a>
+						      	<a href="accessories.html">Аксессуары</a>
+						    	</div>
+						  	</li>
+
 							<li class="header-nav__link-group">
 								<a href="#blog" class="link-active">Блог</a>
 							</li>
@@ -80,16 +88,24 @@
 								<span class="burger-menu__lines"></span>
 							</a>
 							<div class="burger-menu__burger-nav">			
-              	<ul class="burger-list">
-              		<li class="lists pop">
+			              	<ul class="burger-list">
+			              		<li class="lists pop">
 										<a href="index.html" class="burger-menu__burger-link">Главная</a>
 									</li>
 									<li class="lists pop">
 										<a href="#about" class="burger-menu__burger-link">Обзор</a>
 									</li>
-									<li class="lists pop">
-										<a href="catalog.html" class="burger-menu__burger-link">Каталог</a>
-									</li>
+
+									<li class="lists dropdown pop">
+								    	<button class="burger-menu__burger-link dropbtn" onClick='location.href="catalog.html"'>Каталог 
+								      	<i class="fa fa-caret-down"></i>
+								    	</button>
+								    	<div class="dropdown-content">
+								      	<a href="tables-up-down.html">Столы для работы стоя</a>
+								      	<a href="accessories.html">Аксессуары</a>
+								    	</div>
+								  	</li>
+
 									<li class="lists pop">
 										<a href="#blog" class="burger-menu__burger-link">Блог</a>
 									</li>
