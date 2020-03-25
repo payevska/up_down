@@ -2,8 +2,14 @@
 .sub-catalogue {
 	display: flex;
     align-items: center;
-    
-    min-height: 100vh;
+    @media (min-width: 1366px) {
+   		padding-top: 80px;
+	}
+	/*@media (min-width: 1366px) and (max-width: 1439.98px) {
+    padding-top: 80px;
+    min-height: auto;
+  }*/
+  min-height: 100vh;
 }
 
 .sub-catalogue-wrap {
@@ -22,9 +28,10 @@
 	display: flex;
 	justify-content: center;
     padding: 0;
-    margin-left: 10px;
+    margin: 15px 10px;
+    /*margin-left: 10px;
     margin-right: 10px;
-    margin-top: 25px;
+    margin-top: 25px;*/
     border-radius: 5px;
 	border: 1px solid rgba(130, 136, 147, 0.3);
     &__unit {
@@ -40,8 +47,15 @@
 }
 
 .unit-name {
-			@extend a;
-			padding: 0 10px 20px;
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+	@extend a;
+	padding: 0 10px 20px;
+}
+
+.unit-name-price {
+	text-align: center;
 }
 
 .unit-name-special {
@@ -95,7 +109,39 @@
 
 }
 @include tablet {
+	.sub-catalogue {
+		padding-top: 80px;
+	}
+	.title-section {
+        margin: 10px 0;
+        &__title-topic {
+            font-size: 22px;
+        } 
+        &__title-border {
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }   
+    }
+	.collection-product { 
+		max-width: 44%;
+	    &__unit {
+	    	width: 85%;
+		    img {
+	        }
+		}
+	}
 	.collection-box {
+	    /*flex-direction: column;*/
+	    align-items: center;
+	}
+	.unit-name {
+		font-size: 11px;
+		padding: 0px 4px 20px;
+	}
+	.unit-name-special {
+		font-size: 12px;
+	}
+	/*.collection-box {
 	    flex-direction: column;
 	    align-items: center;
 	}
@@ -122,9 +168,12 @@
 	}
 	.unit-name-special {
 		font-size: 16px;
-	}
+	}*/
 }
 @include tablet-mini {
+	.sub-catalogue {
+		padding-top: 60px;
+	}
 	.title-section {
         margin: 10px 0;
         &__title-topic {
@@ -136,7 +185,7 @@
         }   
     }
 	.collection-product { 
-		max-width: 55%;
+		max-width: 44%;
 	    &__unit {
 	    	width: 85%;
 		    img {
@@ -144,7 +193,7 @@
 		}
 	}
 	.collection-box {
-	    flex-direction: column;
+	    /*flex-direction: column;*/
 	    align-items: center;
 	}
 	.unit-name {
@@ -156,6 +205,10 @@
 	}
 }
 @include phone {
+	.sub-catalogue {
+		min-height: auto;
+		padding-top: 40px;
+	}
 	.collection-box {
 		display: flex;
 	    flex-direction: column;
@@ -175,7 +228,7 @@
     	max-width: 60%;
     	flex-direction: column;
     	align-items: center;
-    	margin-top: 15px;
+    	margin: 8px 0;
 	    &__unit {
 	    	width:90%;
 		}
@@ -188,7 +241,10 @@
 		font-size: 11px;
 	}
 }
-@include iphone-5 {    
+@include iphone-5 { 
+	.sub-catalogue {
+		padding-top: 30px;
+	}   
 	.collection-box {
 		display: flex;
 	    flex-direction: column;
@@ -198,7 +254,7 @@
     	max-width: 64%;
     	flex-direction: column;
     	align-items: center;
-    	margin-top: 15px;
+    	margin: 6px 0;
 	    &__unit {
 	    	width: 74%;
 	    	img {

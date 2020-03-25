@@ -329,7 +329,7 @@ header {
 	margin-bottom: 7px;
 }
 
-.lists:hover .dropdown-content {
+.lists:hover .dropdown-content, .lists:active .dropdown-content {
 	display: inline-block;
 	left: 84px;
 }
