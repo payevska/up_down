@@ -2451,6 +2451,34 @@ footer {
 
   .fa-chevron-circle-up {
     font-size: 32px; } }
+@media (min-width: 811.98px) and (max-width: 812px) {
+  footer {
+    padding-top: 92px;
+    min-height: auto; }
+
+  .footer-block {
+    padding-bottom: 50px; }
+
+  .form-contact__form-title {
+    margin-top: 0;
+    margin-bottom: 17px;
+    font-size: 21px; }
+  .form-contact__form-content {
+    width: 50%;
+    font-size: 14px; }
+    .form-contact__form-content_form-name {
+      margin-bottom: 18px;
+      padding: 5px 0 5px 27px; }
+    .form-contact__form-content_form-email {
+      margin-bottom: 18px;
+      padding: 5px 0 5px 27px; }
+    .form-contact__form-content_form-message {
+      margin-bottom: 25px;
+      padding: 5px 0 32px 27px; }
+    .form-contact__form-content_form-submit {
+      padding: 7px 22px;
+      margin-bottom: 25px;
+      font-size: 12px; } }
 /* ------------ sub-catalogue --------------- */
 .sub-catalogue {
   display: flex;
@@ -2619,7 +2647,6 @@ footer {
     font-size: 12px; } }
 @media (min-width: 375px) and (max-width: 575.98px) {
   .sub-catalogue {
-    min-height: auto;
     padding-top: 40px; }
 
   .collection-box {

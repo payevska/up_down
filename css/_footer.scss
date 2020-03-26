@@ -618,4 +618,42 @@ footer {
 }
 
 
+@include phone-vertical {
+	footer {
+		padding-top: 92px;
+   		min-height: auto;
+	}
+	.footer-block {
+   		padding-bottom: 50px;
+	}
+	.form-contact {
+		&__form-title {		
+	    	margin-top: 0;
+		    margin-bottom: 17px;
+		    font-size: 21px;
+		}
+		&__form-content {
+			width: 50%;
+			font-size: 14px;
+			&_form-name {
+				margin-bottom: 18px;
+				padding: 5px 0 5px 27px;
+			}
+			&_form-email {
+				margin-bottom: 18px;
+				padding: 5px 0 5px 27px;
+			}
+			&_form-message {
+				margin-bottom: 25px;
+			    padding: 5px 0 32px 27px;
+			}
+			&_form-submit {
+				padding: 7px 22px;
+				margin-bottom: 25px;
+				font-size: 12px;			 			
+			}
+		}
+	}
+}
+
  

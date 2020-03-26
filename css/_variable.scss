@@ -190,6 +190,7 @@ input {
     @content;
   }
 }
+
 @mixin phone {
   @media (min-width: 375px) and (max-width: 575.98px) {
     @content;
@@ -199,4 +200,11 @@ input {
   @media (min-width: 320px) and (max-width: 374.98px) {
     @content;
   }
+}
+
+
+@mixin phone-vertical {
+	@media (min-width: 811.98px) and (max-width: 812px)  {
+   		@content;
+	}
 }
