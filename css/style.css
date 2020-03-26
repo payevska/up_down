@@ -2451,7 +2451,7 @@ footer {
 
   .fa-chevron-circle-up {
     font-size: 32px; } }
-@media (min-width: 811.98px) and (max-width: 812px) {
+@media (width: 812px) {
   footer {
     padding-top: 92px;
     min-height: 0;

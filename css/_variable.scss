@@ -203,8 +203,8 @@ input {
 }
 
 
-@mixin phone-vertical {
-	@media (min-width: 811.98px) and (max-width: 812px)  {
+@mixin phone-gorisontal {
+	@media (width: 812px)  {
    		@content;
 	}
 }
