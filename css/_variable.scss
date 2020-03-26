@@ -204,7 +204,7 @@ input {
 
 
 @mixin phone-gorisontal {
-	@media (width: 812px)  {
+	@media only screen and (orientation: landscape) {
    		@content;
 	}
 }
