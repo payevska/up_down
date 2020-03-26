@@ -2454,7 +2454,7 @@ footer {
 @media (min-width: 811.98px) and (max-width: 812px) {
   footer {
     padding-top: 92px;
-    min-height: auto;
+    min-height: 0;
     padding-bottom: 50px; }
 
   .form-contact__form-title {

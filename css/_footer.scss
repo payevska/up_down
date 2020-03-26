@@ -621,7 +621,7 @@ footer {
 @include phone-vertical {
 	footer {
 		padding-top: 92px;
-   		min-height: auto;
+   		min-height: 0;
    		padding-bottom: 50px;
 	}
 	.footer-block {
