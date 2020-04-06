@@ -28,24 +28,29 @@ section-5 {
 
 .fotogallery-gallery {    
 	display: flex;
-    flex-direction: column;
-    align-items: center;
-    img {
-        width: 65%;
-        //border: 1px solid rgba(130, 136, 147, 0.3);
-        border-radius: 5px;
-        margin-bottom: 70px;
-        //box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.3);
-    }
-    img:hover {
-        cursor: pointer;
-        transform: translateY(-2px);
-        box-shadow: 0 12px 22px -14px #000;
-    }
-    
+    flex-wrap: wrap;
+    &__picture {
+        padding: 5px;
+        a {
+            display: flex;
+            img {
+                width: 100%;
+                //border: 1px solid rgba(130, 136, 147, 0.3);
+                border-radius: 5px;
+                //box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.3);
+            }
+            img:hover {
+                cursor: pointer;
+                transform: translateY(-2px);
+                box-shadow: 0 12px 22px -14px #000;
+            }
+        }
+    }    
 }
 
-
+.fancybox-bg {
+    background: rgba(13, 22, 72, 0.85);
+}
 
 /* ------ media query ------ */
 @include desktop {

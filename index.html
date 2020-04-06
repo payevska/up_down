@@ -21,6 +21,7 @@
 	<meta name="description" content="Купить стол для работы стоя. Регулировка высоты происходит простым нажатием на кнопку. Доставка по всей Украине.">
 	<meta name="keywords" content="стол для работы стоя, Up and Down">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link href="fancy-box/jquery.fancybox.min.css" rel="stylesheet">
 	<script src="https://kit.fontawesome.com/79503d5842.js"></script>
 	<link href="https://fonts.googleapis.com/css?family=Archivo+Narrow:400,400i,500,500i,600,600i,700,700i&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Nunito+Sans&display=swap" rel="stylesheet">
@@ -271,7 +272,7 @@
 	<section-5 id="fotogallery">
 		<div class="container">
 			<div class="row">
-				<div class="col-sm fotogallery-wrap">		
+				<div class="col col-sm col-md col-lg fotogallery-wrap">		
 					<div class="fotogallery-title">
 						<div class="title-section">
 							<h2 class="title-section__title-topic">Фотогаллерея</h2>
@@ -280,12 +281,66 @@
 						<div class="fotogallery-title__topic-text">Наша продукция</div>	
 					</div>					
 					<div class="fotogallery-gallery">
-							<img class="picture1" src="images/picture1-desktop.png" alt="table-foto">
-							<img class="picture2" src="images/picture2-desktop.png" alt="table-foto">
-							<img class="picture3" src="images/picture3-desktop.png" alt="table-foto">
-							<img class="picture5" src="images/picture5-desktop.png" alt="table-foto">
-							<img class="picture6" src="images/picture6-desktop.png" alt="table-foto">
-							<img class="picture9" src="images/picture9-desktop.png" alt="table-foto">
+						<div class="col-6 col-md-4 col-lg-3 fotogallery-gallery__picture">
+							<a data-fancybox="gallery" href="images/picture1-desktop.png">
+								<img class="img-fluid" src="images/picture1-desktop.png" alt="table-foto">
+							</a>	
+						</div>
+						<div class="col-6 col-md-4 col-lg-3 fotogallery-gallery__picture">
+							<a data-fancybox="gallery" href="images/picture2-desktop.png">
+								<img class="img-fluid" src="images/picture2-desktop.png" alt="table-foto">
+							</a>
+						</div>
+						<div class="col-6 col-md-4 col-lg-3 fotogallery-gallery__picture">
+							<a data-fancybox="gallery" href="images/picture3-desktop.png">
+								<img class="img-fluid" src="images/picture3-desktop.png" alt="table-foto">
+							</a>
+						</div>
+						<div class="col-6 col-md-4 col-lg-3 fotogallery-gallery__picture">
+							<a data-fancybox="gallery" href="images/picture5-desktop.png">
+								<img class="img-fluid" src="images/picture5-desktop.png" alt="table-foto">
+							</a>
+						</div>
+						<div class="col-6 col-md-4 col-lg-3 fotogallery-gallery__picture">
+							<a data-fancybox="gallery" href="images/picture6-desktop.png">
+								<img class="img-fluid" src="images/picture6-desktop.png" alt="table-foto">
+							</a>
+						</div>
+						<div class="col-6 col-md-4 col-lg-3 fotogallery-gallery__picture">
+							<a data-fancybox="gallery" href="images/picture9-desktop.png">
+								<img class="img-fluid" src="images/picture9-desktop.png" alt="table-foto">
+							</a>
+						</div>
+						<div class="col-6 col-md-4 col-lg-3 fotogallery-gallery__picture">
+							<a data-fancybox="gallery" href="images/picture1-laptop.png">
+								<img class="img-fluid" src="images/picture1-laptop.png" alt="table-foto">
+							</a>
+						</div>
+						<div class="col-6 col-md-4 col-lg-3 fotogallery-gallery__picture">
+							<a data-fancybox="gallery" href="images/picture2-laptop.png">
+								<img class="img-fluid" src="images/picture2-laptop.png" alt="table-foto">
+							</a>
+						</div>
+						<div class="col-6 col-md-4 col-lg-3 fotogallery-gallery__picture">
+							<a data-fancybox="gallery" href="images/picture3-laptop.png">
+								<img class="img-fluid" src="images/picture3-laptop.png" alt="table-foto">
+							</a>
+						</div>
+						<div class="col-6 col-md-4 col-lg-3 fotogallery-gallery__picture">
+							<a data-fancybox="gallery" href="images/picture4-laptop.png">
+								<img class="img-fluid" src="images/picture4-laptop.png" alt="table-foto">
+							</a>
+						</div>
+						<div class="col-6 col-md-4 col-lg-3 fotogallery-gallery__picture">
+							<a data-fancybox="gallery" href="images/picture10-desktop.png">
+								<img class="img-fluid" src="images/picture10-desktop.png" alt="table-foto">
+							</a>
+						</div>
+						<div class="col-6 col-md-4 col-lg-3 fotogallery-gallery__picture">
+							<a data-fancybox="gallery" href="images/picture12-desktop.png">
+								<img class="img-fluid" src="images/picture12-desktop.png" alt="table-foto">
+							</a>
+						</div>
 					</div>										
 				</div>
 			</div>			
@@ -366,6 +421,7 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<script src="fancy-box/jquery.fancybox.min.js"></script>
 	<script src="js/script.js"></script>
 
 </body>
