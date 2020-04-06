@@ -3,16 +3,24 @@ $(document).ready(function(){
     /* for active a ... http://jsfiddle.net/sdLs7urp/1/
       https://toster.ru/q/136525*/ 
 
-    var links = $('.link-active');
+    /*var links = $('.link-active');
     
     links.last().addClass('active');
     
     links.on('click', function(){
         links.removeClass('active');
         $(this).addClass('active');
-    });
+    });*/
 
+    const currentLocation = location.href;
+    const menuItem = document.querySelectorAll('a');
+    const menuLength = menuItem.length;
 
+    for(let i = 0; i < menuLength; i++) {
+        if(menuItem[i].href === currentLocation) {
+            menuItem[i].className = "active";
+        }
+    }
 
     /*carousel....  https://www.youtube.com/watch?v=casgv9Y8I1w&t=28s*/
 

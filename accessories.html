@@ -19,61 +19,66 @@
 </head>
 <body>
 	
+
 	<header id="myHeader">	
 
 		<div class="container">
 			<div class="row">
 				<div class="col-12 col-sm-12 header-wrap">
 					<div class="col-5 col-sm-5 menu-active">
+
 						<ul class="header-nav">
-							<li class="header-nav__link-group">
-								<a href="index.html#about" class="link-active">Обзор</a>
+							<li>
+								<a href="index.html#about">Обзор</a>
 							</li>
-							<li class="header-nav__link-group dropdown">
-						    	<button class="dropbtn" onClick='location.href="catalog.html"'>Каталог 
-						      	<i class="fa fa-caret-down"></i>
-						    	</button>
+							<li class="dropdown">
+						    	<a href="catalog.html">Каталог 
+						      		<i class="fa fa-caret-down"></i>
+						      	</a>	
 						    	<div class="dropdown-content">
-						      	<a href="tables-up-down.html">Столы для работы стоя</a>
-						      	<a href="#">Аксессуары</a>
-						    	</div>
+						      		<a href="tables-up-down.html">Столы для работы стоя</a>
+						      		<a href="#">Аксессуары</a>
+						    	</div>						    	
 						  	</li>
-							<li class="header-nav__link-group">
-								<a href="index.html#blog" class="link-active">Блог</a>
+							<li>
+								<a href="index.html#blog">Блог</a>
 							</li>
-							<li class="header-nav__link-group">
-								<a href="index.html#fotogallery" class="link-active">Галлерея</a>
-							</li>			
+							<li>
+								<a href="index.html#fotogallery">Галлерея</a>
+							</li>		
 						</ul>
 						
 						<div id="myGambyrger" class="col col-sm burger-menu">
 							<a href="#" class="burger-menu__burger-button">
 								<span class="burger-menu__lines"></span>
 							</a>
-							<div class="burger-menu__burger-nav">			
-			                	<ul class="burger-list">
-			                		<li class="lists pop">
-										<a href="index.html" class="burger-menu__burger-link">Главная</a>
+							<div class="burger-menu__burger-nav">
+								<ul class="burger-list">
+				              		<li class="pop">
+										<a href="index.html">Главная</a>
 									</li>
-									<li class="lists pop">
-										<a href="index.html#about" class="burger-menu__burger-link">Обзор</a>
+									<li class="pop">
+										<a href="index.html#about">Обзор</a>
 									</li>
-									
-									<li class="lists dropdown pop">
-								    	<button class="burger-menu__burger-link dropbtn" onClick='location.href="catalog.html"'>Каталог 
-								      	<i class="fa fa-caret-down"></i>
-								    	</button>
-								    	<div class="dropdown-content">
-								      	<a href="tables-up-down.html">Столы для работы стоя</a>
-								      	<a href="accessories.html">Аксессуары</a>
-								    	</div>
-								  	</li>	
 
-									<li class="lists pop">
-										<a href="index.html#blog" class="burger-menu__burger-link">Блог</a>
+									<li class="dropdown pop">
+								    	<a href="catalog.html">Каталог 
+							      		<i class="fa fa-caret-down"></i>
+							      	</a>	
+								    	<div class="dropdown-content">
+								      		<a href="tables-up-down.html">Столы для работы стоя</a>
+								      		<a href="#">Аксессуары</a>
+								    	</div>
+								  	</li>
+
+									<li class="pop">
+										<a href="index.html#blog">Блог</a>
 									</li>
-									<li class="lists pop">
-										<a href="index.html#fotogallery" class="burger-menu__burger-link">Галлерея</a>
+									<li class="pop">
+										<a href="index.html#fotogallery">Галлерея</a>
+									</li>
+									<li class="pop">
+										<a href="delivery.html">Доставка</a>
 									</li>			
 								</ul>								
 							</div>
@@ -82,23 +87,22 @@
 					</div>
 
 					<div class="col-2 col-sm-2 logotype">
-						<a href="index.html#home" class="link-active">
+						<a href="#home">
 							<img src="images/up-and-down_logotype.png" alt="logotype">
 						</a>
 					</div>
-					<div class="col-2 col-sm-2 logo-name">
-						<a href="index.html#home" class="logo-name__logo-text link-active">
-							<div class="logo-name__logo-text_logo-row">Standing</div>
-							<div class="logo-name__logo-text_logo-row">Desk</div>
-						</a>
-					</div>
-					<div class="col-3 col-sm-3 header-phone">
-						<a href="#footer" class="header-phone__phone link-active">
-							<div class="header-phone__phone_phone-wrap">
-								<i class="fas fa-phone"></i>
-								<div class="header-phone__phone_phone-wrap_number-phone">050-922-33-76</div>
-							</div>
-						</a>
+					<div class="col-5 col-sm-5 menu-active">
+						<ul class="header-nav header-nav-front">
+							<li class="behind">
+								<a href="delivery.html">Доставка</a>
+							</li>
+							<li>
+								<a href="#footer" class="phone-wrap">
+									<i class="fas fa-phone"></i>
+									<div class="phone-wrap__number-phone">050-922-33-76</div>
+								</a>
+							</li>
+						</ul>
 					</div>					
 					<div class="col-2 col-sm-2 language">
 						<a href="#" class="language__Ru">
@@ -111,7 +115,7 @@
             	</div>	
 			</div>				
 		</div>
-	</header>	
+	</header>
 
 	<section id="accessories" class="sub-catalogue">
 		<div class="container">

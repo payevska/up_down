@@ -72,7 +72,7 @@ body, li {
 .container {
   /* padding: 0; */ }
 
-a, .header-nav__link-group a, .logotype a, .header-phone__phone, .language__Ru a, .language__En a, .dropdown .dropbtn, .dropdown-content a, .burger-menu__burger-link, .burger-list .dropbtn, .video-table, .block-right__text-about_span-about, .type-name, .information-text a, .footer-wrap__menu-footer_vertical-menu_link-group a, .footer-wrap__footer-contact_footer-email a, .unit-name {
+a, .header-nav li a, .logotype a, .language__Ru a, .language__En a, .dropdown-content a, .burger-list a, .burger-list .dropdown:hover .dropdown-content a, .video-table, .block-right__text-about_span-about, .type-name, .information-text a, .footer-wrap__menu-footer_vertical-menu li a, .footer-wrap__footer-contact_footer-email a, .unit-name {
   font-family: 'Nunito Sans', sans-serif;
   font-size: 16px;
   font-weight: 700;
@@ -84,12 +84,12 @@ a, .header-nav__link-group a, .logotype a, .header-phone__phone, .language__Ru a
   /* &:alink {
   		color: $blue-grey;
   	} */ }
-  a:hover, .header-phone__phone:hover, .dropdown .dropbtn:hover, .burger-menu__burger-link:hover, .burger-list .dropbtn:hover, .video-table:hover, .block-right__text-about_span-about:hover, .type-name:hover, .unit-name:hover {
+  a:hover, .header-nav li a:hover, .burger-list .dropdown:hover .dropdown-content a:hover, .video-table:hover, .block-right__text-about_span-about:hover, .type-name:hover, .footer-wrap__menu-footer_vertical-menu li a:hover, .unit-name:hover {
     text-decoration: none;
     color: #566ca5; }
-  a:active, .header-phone__phone:active, .dropdown .dropbtn:active, .burger-menu__burger-link:active, .burger-list .dropbtn:active, .video-table:active, .block-right__text-about_span-about:active, .type-name:active, .unit-name:active {
+  a:active, .header-nav li a:active, .burger-list .dropdown:hover .dropdown-content a:active, .video-table:active, .block-right__text-about_span-about:active, .type-name:active, .footer-wrap__menu-footer_vertical-menu li a:active, .unit-name:active {
     color: #566ca5; }
-  a:focus, .header-phone__phone:focus, .dropdown .dropbtn:focus, .burger-menu__burger-link:focus, .burger-list .dropbtn:focus, .video-table:focus, .block-right__text-about_span-about:focus, .type-name:focus, .unit-name:focus {
+  a:focus, .header-nav li a:focus, .burger-list .dropdown:hover .dropdown-content a:focus, .video-table:focus, .block-right__text-about_span-about:focus, .type-name:focus, .footer-wrap__menu-footer_vertical-menu li a:focus, .unit-name:focus {
     color: #566ca5; }
 
 ul, .header-nav, .footer-wrap__menu-footer_vertical-menu {
@@ -166,7 +166,7 @@ button, .form-contact__form-content_form-submit {
   .fon:active {
     outline: none; }
 
-input, .main__main-title_main-button input, .box-button-review input, .block-right__box-botton-about input {
+input, .home__home-overlay input, .box-button-review input, .block-right__box-botton-about input {
   outline: none;
   font-family: 'Nunito Sans', sans-serif;
   text-transform: none;
@@ -206,97 +206,55 @@ header {
   align-items: center; }
 
 .header-nav {
-  width: 100%;
+  min-width: 100%;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   text-decoration: none;
-  margin-bottom: 6px;
-  padding: 12px 0 0 0; }
+  margin-bottom: 0px;
+  padding-left: 0; }
   @media (max-width: 575.98px) {
     .header-nav {
       display: none; } }
-  .header-nav__link-group a, .header-nav__link-group .header-phone__phone, .header-nav__link-group .dropdown .dropbtn, .dropdown .header-nav__link-group .dropbtn, .header-nav__link-group .burger-menu__burger-link, .header-nav__link-group .burger-list .dropbtn, .burger-list .header-nav__link-group .dropbtn, .header-nav__link-group .video-table, .header-nav__link-group .block-right__text-about_span-about, .header-nav__link-group .type-name, .header-nav__link-group .unit-name {
-    padding: 0px 4px 5px 4px; }
+  .header-nav li a, .header-nav li .burger-list .dropdown:hover .dropdown-content a, .burger-list .dropdown:hover .dropdown-content .header-nav li a, .header-nav li .video-table, .header-nav li .block-right__text-about_span-about, .header-nav li .type-name, .header-nav li .unit-name {
+    display: flex;
+    align-items: center; }
 
 /* for border in menu */
-.link-active.active {
+.active {
   color: #566ca5;
   border-bottom: 1px solid #f29257; }
-  .link-active.active a, .link-active.active .header-phone__phone, .link-active.active .dropdown .dropbtn, .dropdown .link-active.active .dropbtn, .link-active.active .burger-menu__burger-link, .link-active.active .burger-list .dropbtn, .burger-list .link-active.active .dropbtn, .link-active.active .video-table, .link-active.active .block-right__text-about_span-about, .link-active.active .type-name, .link-active.active .unit-name {
-    border-bottom: 1px solid #f29257; }
+  @media (max-width: 575.98px) {
+    .active {
+      border-bottom: 0; } }
 
-.logotype .link-active.active {
+.logotype.active a, .logotype.active .burger-list .dropdown:hover .dropdown-content a, .burger-list .dropdown:hover .dropdown-content .logotype.active a, .logotype.active .video-table, .logotype.active .block-right__text-about_span-about, .logotype.active .type-name, .logotype.active .unit-name {
   border-bottom: none; }
 
 .logotype {
   display: flex;
   justify-content: center;
   align-items: center; }
-  .logotype a, .logotype .header-phone__phone, .logotype .dropdown .dropbtn, .dropdown .logotype .dropbtn, .logotype .burger-menu__burger-link, .logotype .burger-list .dropbtn, .burger-list .logotype .dropbtn, .logotype .video-table, .logotype .block-right__text-about_span-about, .logotype .type-name, .logotype .unit-name {
+  .logotype .header-nav li a, .header-nav li .logotype a, .logotype a, .logotype .burger-list .dropdown:hover .dropdown-content a, .burger-list .dropdown:hover .dropdown-content .logotype a, .logotype .video-table, .logotype .block-right__text-about_span-about, .logotype .type-name, .logotype .footer-wrap__menu-footer_vertical-menu li a, .footer-wrap__menu-footer_vertical-menu li .logotype a, .logotype .unit-name {
     text-align: center;
     font-size: 14px; }
-    .logotype a img, .logotype .header-phone__phone img, .logotype .dropdown .dropbtn img, .dropdown .logotype .dropbtn img, .logotype .burger-menu__burger-link img, .logotype .burger-list .dropbtn img, .burger-list .logotype .dropbtn img, .logotype .video-table img, .logotype .block-right__text-about_span-about img, .logotype .type-name img, .logotype .unit-name img {
+    .logotype a img, .logotype .burger-list .dropdown:hover .dropdown-content a img, .burger-list .dropdown:hover .dropdown-content .logotype a img, .logotype .video-table img, .logotype .block-right__text-about_span-about img, .logotype .type-name img, .logotype .unit-name img {
       width: 54%; }
 
-.logo-name {
-  padding-left: 0;
+.phone-wrap {
   display: flex;
   align-items: center; }
-  .logo-name__logo-text {
-    font-size: 14px;
-    line-height: 1.35;
-    font-weight: 500;
-    color: #000000; }
-    @media (min-width: 1200px) and (max-width: 1440px) {
-      .logo-name__logo-text {
-        font-size: 14px;
-        line-height: 1.35; } }
-    @media (min-width: 992px) and (max-width: 1199.98px) {
-      .logo-name__logo-text {
-        font-size: 14px;
-        line-height: 1.25; } }
-    .logo-name__logo-text:hover {
-      color: #000000; }
-    .logo-name__logo-text_logo-row {
-      margin-left: -40px; }
-      @media (min-width: 992px) and (max-width: 1199.98px) {
-        .logo-name__logo-text_logo-row {
-          margin-left: -30px; } }
-
-.logo-name .link-active.active {
-  color: #000000;
-  border-bottom: none; }
-
-.header-phone {
-  width: 100%;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  padding-right: 15px; }
-  @media (max-width: 575.98px) {
-    .header-phone {
-      padding-right: 30px; } }
-  .header-phone__phone {
-    font-size: 16px;
+  .phone-wrap__number-phone {
     display: flex;
-    align-items: center; }
-    .header-phone__phone_phone-wrap {
-      display: flex;
-      align-items: center; }
-      .header-phone__phone_phone-wrap i {
-        display: flex;
-        color: #16943f; }
-      .header-phone__phone_phone-wrap_number-phone {
-        display: flex;
-        color: #1b255d;
-        margin-left: 15px; }
-        @media (max-width: 575.98px) {
-          .header-phone__phone_phone-wrap_number-phone {
-            display: none; } }
+    color: #1b255d;
+    margin-left: 15px; }
+    @media (max-width: 575.98px) {
+      .phone-wrap__number-phone {
+        display: none; } }
 
-.header-phone .link-active {
-  color: #828893;
-  border-bottom: none; }
+.fa-phone {
+  display: flex;
+  color: #16943f; }
 
 .language {
   display: none;
@@ -311,17 +269,6 @@ header {
     color: #cb3d00; }
 
 /* -----  menu dropdown hover  -----*/
-.dropdown button, .dropdown .form-contact__form-content_form-submit, .dropdown button:hover, .dropdown .form-contact__form-content_form-submit:hover {
-  background-color: #ffffff;
-  text-transform: none; }
-
-.dropdown button:hover, .dropdown .form-contact__form-content_form-submit:hover {
-  background-color: #ffffff; }
-
-.dropdown .dropbtn {
-  font-size: 15px;
-  outline: none; }
-
 .dropdown-content {
   display: none;
   position: absolute;
@@ -330,14 +277,14 @@ header {
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 4; }
 
-.dropdown-content .header-phone__phone, .dropdown-content .dropdown .dropbtn, .dropdown .dropdown-content .dropbtn, .dropdown-content a, .dropdown-content .burger-menu__burger-link, .dropdown-content .burger-list .dropbtn, .burger-list .dropdown-content .dropbtn, .dropdown-content .video-table, .dropdown-content .block-right__text-about_span-about, .dropdown-content .type-name, .dropdown-content .unit-name {
+.dropdown-content .header-nav li a, .header-nav li .dropdown-content a, .dropdown-content a, .burger-list .dropdown:hover .dropdown-content a, .dropdown-content .video-table, .dropdown-content .block-right__text-about_span-about, .dropdown-content .type-name, .dropdown-content .footer-wrap__menu-footer_vertical-menu li a, .footer-wrap__menu-footer_vertical-menu li .dropdown-content a, .dropdown-content .unit-name {
   float: none;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
   text-align: left; }
 
-.dropdown-content .header-phone__phone:hover, .dropdown-content .dropdown .dropbtn:hover, .dropdown .dropdown-content .dropbtn:hover, .dropdown-content a:hover, .dropdown-content .burger-menu__burger-link:hover, .dropdown-content .burger-list .dropbtn:hover, .burger-list .dropdown-content .dropbtn:hover, .dropdown-content .video-table:hover, .dropdown-content .block-right__text-about_span-about:hover, .dropdown-content .type-name:hover, .dropdown-content .unit-name:hover {
+.dropdown-content a:hover, .burger-list .dropdown:hover .dropdown-content a:hover, .dropdown-content .video-table:hover, .dropdown-content .block-right__text-about_span-about:hover, .dropdown-content .type-name:hover, .dropdown-content .unit-name:hover {
   background-color: rgba(130, 136, 147, 0.3); }
 
 .dropdown:hover .dropdown-content {
@@ -403,6 +350,7 @@ header {
   background-color: #ffffff;
   transform: rotate(-45deg); }
 
+/* burger vertical menu */
 .burger-menu__burger-nav {
   top: 0;
   padding-top: 80px;
@@ -421,15 +369,15 @@ header {
 .burger-list {
   padding-left: 50px; }
 
-.burger-menu__burger-link {
+.burger-list .header-nav li a, .header-nav li .burger-list a, .burger-list a, .burger-list .dropdown:hover .dropdown-content a, .burger-list .video-table, .burger-list .block-right__text-about_span-about, .burger-list .type-name, .burger-list .footer-wrap__menu-footer_vertical-menu li a, .footer-wrap__menu-footer_vertical-menu li .burger-list a, .burger-list .unit-name {
   font-size: 15px;
   color: #ffffff;
   transition: color 0.4s ease; }
 
-.burger-menu__burger-link:hover {
+.burger-list a:hover, .burger-list .dropdown:hover .dropdown-content a:hover, .burger-list .video-table:hover, .burger-list .block-right__text-about_span-about:hover, .burger-list .type-name:hover, .burger-list .unit-name:hover {
   filter: brightness(0.95); }
 
-.burger-menu__burger-link i {
+.burger-list a i, .burger-list .dropdown:hover .dropdown-content a i, .burger-list .video-table i, .burger-list .block-right__text-about_span-about i, .burger-list .type-name i, .burger-list .unit-name i {
   padding-right: 10px;
   padding-left: 4px; }
 
@@ -449,55 +397,51 @@ header {
 .pop {
   margin-bottom: 7px; }
 
-.lists:hover .dropdown-content, .lists:active .dropdown-content {
+.burger-list .dropdown:hover .dropdown-content,
+.burger-list .dropdown:active .dropdown-content {
   display: inline-block;
   left: 84px; }
 
-.burger-list .dropbtn:hover {
+.burger-list a:hover, .burger-list .dropdown:hover .dropdown-content a:hover, .burger-list .video-table:hover, .burger-list .block-right__text-about_span-about:hover, .burger-list .type-name:hover, .burger-list .unit-name:hover {
   background: none; }
 
-.lists .dropbtn {
+.burger-list li a, .burger-list li .dropdown:hover .dropdown-content a, .burger-list .dropdown:hover .dropdown-content li a, .burger-list li .video-table, .burger-list li .block-right__text-about_span-about, .burger-list li .type-name, .burger-list li .unit-name {
   padding: 0; }
 
-.burger-list .dropbtn {
-  color: #ffffff;
+.burger-list .dropdown:hover .dropdown-content a, .burger-list .dropdown:hover .dropdown-content .video-table, .burger-list .dropdown:hover .dropdown-content .block-right__text-about_span-about, .burger-list .dropdown:hover .dropdown-content .type-name, .burger-list .dropdown:hover .dropdown-content .unit-name {
+  font-size: 15px;
+  color: #1b255d;
   transition: color 0.4s ease;
   background: none; }
 
-.lists:hover .burger-menu__active .burger-menu__burger-nav {
+.burger-list .dropdown:hover .burger-menu__active .burger-menu__burger-nav {
   width: 100vw;
   left: 0; }
 
 /* ------ media query ------ */
 @media (min-width: 992px) and (max-width: 1199.98px) {
-  .logotype a img, .logotype .header-phone__phone img, .logotype .dropdown .dropbtn img, .dropdown .logotype .dropbtn img, .logotype .burger-menu__burger-link img, .logotype .burger-list .dropbtn img, .burger-list .logotype .dropbtn img, .logotype .video-table img, .logotype .block-right__text-about_span-about img, .logotype .type-name img, .logotype .unit-name img {
+  .logotype a img, .logotype .burger-list .dropdown:hover .dropdown-content a img, .burger-list .dropdown:hover .dropdown-content .logotype a img, .logotype .video-table img, .logotype .block-right__text-about_span-about img, .logotype .type-name img, .logotype .unit-name img {
     width: 67%; } }
 @media (min-width: 768px) and (max-width: 991.98px) {
   menu {
     margin: 0; }
 
-  .header-nav__link-group a, .header-nav__link-group .header-phone__phone, .header-nav__link-group .dropdown .dropbtn, .dropdown .header-nav__link-group .dropbtn, .header-nav__link-group .burger-menu__burger-link, .header-nav__link-group .burger-list .dropbtn, .burger-list .header-nav__link-group .dropbtn, .header-nav__link-group .video-table, .header-nav__link-group .block-right__text-about_span-about, .header-nav__link-group .type-name, .header-nav__link-group .unit-name {
+  .header-nav li a, .header-nav li .burger-list .dropdown:hover .dropdown-content a, .burger-list .dropdown:hover .dropdown-content .header-nav li a, .header-nav li .video-table, .header-nav li .block-right__text-about_span-about, .header-nav li .type-name, .header-nav li .unit-name {
     font-size: 12px; }
 
-  .dropdown .dropbtn {
+  .dropdown a, .dropdown .header-nav li a, .header-nav li .dropdown a, .burger-list .dropdown:hover .dropdown-content a, .dropdown .video-table, .dropdown .block-right__text-about_span-about, .dropdown .type-name, .dropdown .footer-wrap__menu-footer_vertical-menu li a, .footer-wrap__menu-footer_vertical-menu li .dropdown a, .dropdown .unit-name {
     font-size: 12px; }
 
   .dropdown-content {
     min-width: 176px; }
 
-  .logotype a img, .logotype .header-phone__phone img, .logotype .dropdown .dropbtn img, .dropdown .logotype .dropbtn img, .logotype .burger-menu__burger-link img, .logotype .burger-list .dropbtn img, .burger-list .logotype .dropbtn img, .logotype .video-table img, .logotype .block-right__text-about_span-about img, .logotype .type-name img, .logotype .unit-name img {
+  .logotype a img, .logotype .burger-list .dropdown:hover .dropdown-content a img, .burger-list .dropdown:hover .dropdown-content .logotype a img, .logotype .video-table img, .logotype .block-right__text-about_span-about img, .logotype .type-name img, .logotype .unit-name img {
     width: 100%; }
 
-  .logo-name__logo-text {
-    font-size: 14px;
-    line-height: 1.4; }
-    .logo-name__logo-text_logo-row {
-      margin-left: -10px; }
-
-  .header-phone i {
+  .phone-wrap i {
     font-size: 12px; }
 
-  .header-phone__phone_phone-wrap_number-phone {
+  .phone-wrap_number-phone {
     font-size: 12px; }
 
   .language__Ru {
@@ -512,38 +456,29 @@ header {
     padding-right: 0px;
     padding-left: 0px; }
 
-  .header-nav {
-    margin-bottom: 0;
-    padding: 0; }
-    .header-nav__link-group a, .header-nav__link-group .header-phone__phone, .header-nav__link-group .dropdown .dropbtn, .dropdown .header-nav__link-group .dropbtn, .header-nav__link-group .burger-menu__burger-link, .header-nav__link-group .burger-list .dropbtn, .burger-list .header-nav__link-group .dropbtn, .header-nav__link-group .video-table, .header-nav__link-group .block-right__text-about_span-about, .header-nav__link-group .type-name, .header-nav__link-group .unit-name {
-      font-size: 10px; }
+  .header-nav li a, .header-nav li .burger-list .dropdown:hover .dropdown-content a, .burger-list .dropdown:hover .dropdown-content .header-nav li a, .header-nav li .video-table, .header-nav li .block-right__text-about_span-about, .header-nav li .type-name, .header-nav li .unit-name {
+    font-size: 10px; }
 
   .menu-active {
     padding-right: 0px;
     padding-left: 0px; }
 
-  .dropdown .dropbtn {
+  .dropdown a, .dropdown .header-nav li a, .header-nav li .dropdown a, .burger-list .dropdown:hover .dropdown-content a, .dropdown .video-table, .dropdown .block-right__text-about_span-about, .dropdown .type-name, .dropdown .footer-wrap__menu-footer_vertical-menu li a, .footer-wrap__menu-footer_vertical-menu li .dropdown a, .dropdown .unit-name {
     font-size: 10px; }
 
   .dropdown-content {
     min-width: 152px; }
 
-  .logotype a img, .logotype .header-phone__phone img, .logotype .dropdown .dropbtn img, .dropdown .logotype .dropbtn img, .logotype .burger-menu__burger-link img, .logotype .burger-list .dropbtn img, .burger-list .logotype .dropbtn img, .logotype .video-table img, .logotype .block-right__text-about_span-about img, .logotype .type-name img, .logotype .unit-name img {
+  .logotype a img, .logotype .burger-list .dropdown:hover .dropdown-content a img, .burger-list .dropdown:hover .dropdown-content .logotype a img, .logotype .video-table img, .logotype .block-right__text-about_span-about img, .logotype .type-name img, .logotype .unit-name img {
     width: 100%; }
 
-  .logo-name__logo-text {
-    font-size: 12px;
-    line-height: 1.25; }
-    .logo-name__logo-text_logo-row {
-      margin-left: -10px; }
-
-  .header-phone {
+  .phone-wrap {
     padding-right: 0px; }
 
-  .header-phone i {
+  .phone-wrap i {
     font-size: 10px; }
 
-  .header-phone__phone_phone-wrap_number-phone {
+  .phone-wrap_number-phone {
     font-size: 10px;
     margin-left: 10px; }
 
@@ -562,23 +497,34 @@ header {
   .dropdown-content {
     min-width: 200px; }
 
-  .dropdown-content .header-phone__phone, .dropdown-content .dropdown .dropbtn, .dropdown .dropdown-content .dropbtn, .dropdown-content a, .dropdown-content .burger-menu__burger-link, .dropdown-content .burger-list .dropbtn, .burger-list .dropdown-content .dropbtn, .dropdown-content .video-table, .dropdown-content .block-right__text-about_span-about, .dropdown-content .type-name, .dropdown-content .unit-name {
-    padding: 2px 5px;
-    font-size: 15px; }
+  .dropdown-content .header-nav li a, .header-nav li .dropdown-content a, .dropdown-content a, .burger-list .dropdown:hover .dropdown-content a, .dropdown-content .video-table, .dropdown-content .block-right__text-about_span-about, .dropdown-content .type-name, .dropdown-content .footer-wrap__menu-footer_vertical-menu li a, .footer-wrap__menu-footer_vertical-menu li .dropdown-content a, .dropdown-content .unit-name {
+    font-size: 14px; }
 
-  .logotype a img, .logotype .header-phone__phone img, .logotype .dropdown .dropbtn img, .dropdown .logotype .dropbtn img, .logotype .burger-menu__burger-link img, .logotype .burger-list .dropbtn img, .burger-list .logotype .dropbtn img, .logotype .video-table img, .logotype .block-right__text-about_span-about img, .logotype .type-name img, .logotype .unit-name img {
+  .burger-list li a i, .burger-list li .dropdown:hover .dropdown-content a i, .burger-list .dropdown:hover .dropdown-content li a i, .burger-list li .video-table i, .burger-list li .block-right__text-about_span-about i, .burger-list li .type-name i, .burger-list li .unit-name i {
+    padding-right: 10px;
+    padding-left: 4px; }
+
+  .burger-list li {
+    font-size: 14px; }
+
+  .burger-list .dropdown:hover .dropdown-content a, .burger-list .dropdown:hover .dropdown-content .video-table, .burger-list .dropdown:hover .dropdown-content .block-right__text-about_span-about, .burger-list .dropdown:hover .dropdown-content .type-name, .burger-list .dropdown:hover .dropdown-content .unit-name {
+    font-size: 14px;
+    padding: 5px 5px; }
+
+  .logotype a img, .logotype .burger-list .dropdown:hover .dropdown-content a img, .burger-list .dropdown:hover .dropdown-content .logotype a img, .logotype .video-table img, .logotype .block-right__text-about_span-about img, .logotype .type-name img, .logotype .unit-name img {
     width: 100%; }
 
-  .logo-name__logo-text {
-    font-size: 10px;
-    line-height: 1.25; }
-    .logo-name__logo-text_logo-row {
-      margin-left: -7px; }
+  .header-nav-front {
+    display: flex;
+    justify-content: flex-end; }
 
-  .header-phone {
+  .behind {
+    display: none; }
+
+  .phone-wrap {
     padding-right: 30px; }
 
-  .header-phone i {
+  .phone-wrap i {
     font-size: 14px; }
 
   .language__Ru {
@@ -596,37 +542,38 @@ header {
   .dropdown-content {
     min-width: 178px; }
 
-  .dropdown-content .header-phone__phone, .dropdown-content .dropdown .dropbtn, .dropdown .dropdown-content .dropbtn, .dropdown-content a, .dropdown-content .burger-menu__burger-link, .dropdown-content .burger-list .dropbtn, .burger-list .dropdown-content .dropbtn, .dropdown-content .video-table, .dropdown-content .block-right__text-about_span-about, .dropdown-content .type-name, .dropdown-content .unit-name {
-    padding: 2px 5px;
+  .dropdown-content .header-nav li a, .header-nav li .dropdown-content a, .dropdown-content a, .burger-list .dropdown:hover .dropdown-content a, .dropdown-content .video-table, .dropdown-content .block-right__text-about_span-about, .dropdown-content .type-name, .dropdown-content .footer-wrap__menu-footer_vertical-menu li a, .footer-wrap__menu-footer_vertical-menu li .dropdown-content a, .dropdown-content .unit-name {
     font-size: 14px; }
 
-  .burger-menu__burger-link i {
+  .burger-list li a i, .burger-list li .dropdown:hover .dropdown-content a i, .burger-list .dropdown:hover .dropdown-content li a i, .burger-list li .video-table i, .burger-list li .block-right__text-about_span-about i, .burger-list li .type-name i, .burger-list li .unit-name i {
     padding-right: 10px;
     padding-left: 4px; }
 
-  .burger-menu__burger-link {
+  .burger-list li {
     font-size: 14px; }
 
-  .lists .dropbtn {
-    font-size: 14px; }
+  .burger-list .dropdown:hover .dropdown-content a, .burger-list .dropdown:hover .dropdown-content .video-table, .burger-list .dropdown:hover .dropdown-content .block-right__text-about_span-about, .burger-list .dropdown:hover .dropdown-content .type-name, .burger-list .dropdown:hover .dropdown-content .unit-name {
+    font-size: 14px;
+    padding: 5px 5px; }
 
-  .lists:hover .dropdown-content {
+  .burger-list .dropdown:hover .dropdown-content {
     left: 76px; }
 
-  .logotype a img, .logotype .header-phone__phone img, .logotype .dropdown .dropbtn img, .dropdown .logotype .dropbtn img, .logotype .burger-menu__burger-link img, .logotype .burger-list .dropbtn img, .burger-list .logotype .dropbtn img, .logotype .video-table img, .logotype .block-right__text-about_span-about img, .logotype .type-name img, .logotype .unit-name img {
+  .logotype a img, .logotype .burger-list .dropdown:hover .dropdown-content a img, .burger-list .dropdown:hover .dropdown-content .logotype a img, .logotype .video-table img, .logotype .block-right__text-about_span-about img, .logotype .type-name img, .logotype .unit-name img {
     width: 100%; }
 
   .logotype {
     padding-left: 9px;
     padding-right: 9px; }
 
-  .logo-name__logo-text {
-    font-size: 8px;
-    line-height: 1.25; }
-    .logo-name__logo-text_logo-row {
-      margin-left: -5px; }
+  .header-nav-front {
+    display: flex;
+    justify-content: flex-end; }
 
-  .header-phone i {
+  .behind {
+    display: none; }
+
+  .phone-wrap i {
     font-size: 14px; }
 
   .language__Ru {
@@ -644,6 +591,34 @@ section-1 {
   background-size: 2880px 1800px;
   background-size: 100%;
   background-size: cover; }
+  .home__home-overlay {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 6px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    transition: 250ms;
+    background: rgba(62, 75, 146, 0.9);
+    opacity: 0;
+    visibility: hidden; }
+    .home__home-overlay input {
+      display: flex;
+      margin-top: 65px; }
+      .home__home-overlay input:hover {
+        color: #ffffff;
+        background-color: #f29257;
+        transition: 1s; }
+
+.home:hover .home__home-overlay,
+.home:active .home__home-overlay {
+  opacity: 1;
+  visibility: visible;
+  cursor: pointer; }
 
 .home-wrap {
   display: flex;
@@ -658,20 +633,24 @@ section-1 {
   .main__main-title {
     display: flex;
     flex-direction: column;
-    align-items: center; }
+    align-items: center;
+    /*&_main-button {
+    	margin-top: 65px;
+    	input {
+    		@extend input;
+    		display: flex;
+    		&:hover {
+    			color: $white;
+    			background-color: $orange;
+    			transition: 1s;
+    		}				
+    	}	
+    }*/ }
     .main__main-title_title {
       padding-top: 0; }
     .main__main-title_topic {
       color: #ffffff;
       padding-top: 23px; }
-    .main__main-title_main-button {
-      margin-top: 65px; }
-      .main__main-title_main-button input {
-        display: flex; }
-        .main__main-title_main-button input:hover {
-          color: #ffffff;
-          background-color: #f29257;
-          transition: 1s; }
 
 .scroll-link {
   display: flex;
@@ -688,7 +667,7 @@ section-1 {
 .fa-circle {
   color: #ffffff;
   position: absolute;
-  opacity: 0.5;
+  opacity: 0.8;
   z-index: 1; }
 
 /* ------ media query ------ */
@@ -705,13 +684,15 @@ section-1 {
       font-size: 60px; }
     .main__main-title_topic {
       font-size: 40px; }
-    .main__main-title_main-button {
-      margin-top: 40px; }
 
-  .button-top a, .button-top .header-phone__phone, .button-top .dropdown .dropbtn, .dropdown .button-top .dropbtn, .button-top .burger-menu__burger-link, .button-top .burger-list .dropbtn, .burger-list .button-top .dropbtn, .button-top .video-table, .button-top .block-right__text-about_span-about, .button-top .type-name, .button-top .unit-name {
-    font-size: 22px; }
-  .button-top__btn {
-    padding: 14px 40px; } }
+  /*.button-top {
+  	a {
+  		font-size: 22px;			
+  	}
+  	&__btn {
+  		padding: 14px 40px;					
+  	}
+  }*/ }
 @media (min-width: 1200px) and (max-width: 1365.98px) {
   .home {
     background: url("../images/Home-photo4.png") no-repeat top fixed; }
@@ -725,17 +706,19 @@ section-1 {
       font-size: 40px; }
     .main__main-title_topic {
       font-size: 30px; }
-    .main__main-title_main-button {
-      margin-top: 40px; }
-      .main__main-title_main-button input {
-        font-size: 16px;
-        padding: 15px 45px; }
 
-  .button-top a, .button-top .header-phone__phone, .button-top .dropdown .dropbtn, .dropdown .button-top .dropbtn, .button-top .burger-menu__burger-link, .button-top .burger-list .dropbtn, .burger-list .button-top .dropbtn, .button-top .video-table, .button-top .block-right__text-about_span-about, .button-top .type-name, .button-top .unit-name {
-    font-size: 18px; }
-  .button-top__btn {
-    padding: 15px 30px; }
+  .home__home-overlay input {
+    font-size: 16px;
+    padding: 15px 45px; }
 
+  /*.button-top {
+  	a {
+  		font-size: 18px;			
+  	}
+  	&__btn {
+  		padding: 15px 30px;					
+  	}
+  }*/
   .scroll-link {
     bottom: 80px;
     font-size: 10px; }
@@ -753,16 +736,19 @@ section-1 {
     font-size: 40px; }
   .main__main-title_topic {
     font-size: 30px; }
-  .main__main-title_main-button {
-    margin-top: 40px; }
-    .main__main-title_main-button input {
-      font-size: 16px;
-      padding: 15px 45px; }
 
-  .button-top a, .button-top .header-phone__phone, .button-top .dropdown .dropbtn, .dropdown .button-top .dropbtn, .button-top .burger-menu__burger-link, .button-top .burger-list .dropbtn, .burger-list .button-top .dropbtn, .button-top .video-table, .button-top .block-right__text-about_span-about, .button-top .type-name, .button-top .unit-name {
-    font-size: 18px; }
-  .button-top__btn {
-    padding: 15px 30px; } }
+  .home__home-overlay input {
+    font-size: 16px;
+    padding: 15px 45px; }
+
+  /*.button-top {
+  	a {
+  		font-size: 18px;			
+  	}
+  	&__btn {
+  		padding: 15px 30px;					
+  	}
+  }*/ }
 @media (min-width: 768px) and (max-width: 991.98px) {
   .home {
     background: url("../images/Home-photo4.png") no-repeat top fixed; }
@@ -778,11 +764,10 @@ section-1 {
       font-size: 40px; }
     .main__main-title_topic {
       font-size: 30px; }
-    .main__main-title_main-button {
-      margin-top: 22px; }
-      .main__main-title_main-button input {
-        font-size: 16px;
-        padding: 15px 45px; } }
+
+  .home__home-overlay input {
+    font-size: 16px;
+    padding: 15px 45px; } }
 @media (min-width: 576px) and (max-width: 767.98px) {
   .home {
     background: url("../images/Home-photo4.png") no-repeat top fixed; }
@@ -795,17 +780,19 @@ section-1 {
       font-size: 25px; }
     .main__main-title_topic {
       font-size: 18px; }
-    .main__main-title_main-button {
-      margin-top: 22px; }
-      .main__main-title_main-button input {
-        font-size: 16px;
-        padding: 13px 31px; }
 
-  .button-top a, .button-top .header-phone__phone, .button-top .dropdown .dropbtn, .dropdown .button-top .dropbtn, .button-top .burger-menu__burger-link, .button-top .burger-list .dropbtn, .burger-list .button-top .dropbtn, .button-top .video-table, .button-top .block-right__text-about_span-about, .button-top .type-name, .button-top .unit-name {
-    font-size: 12px; }
-  .button-top__btn {
-    padding: 8px 10px; }
+  .home__home-overlay input {
+    font-size: 16px;
+    padding: 13px 31px; }
 
+  /*.button-top {
+  	a {
+  		font-size: 12px;			
+  	}
+  	&__btn {
+  		padding: 8px 10px;					
+  	}
+  }*/
   .scroll-link {
     bottom: 50px;
     font-size: 8px; }
@@ -823,17 +810,19 @@ section-1 {
       font-size: 22px; }
     .main__main-title_topic {
       font-size: 16px; }
-    .main__main-title_main-button {
-      margin-top: 22px; }
-      .main__main-title_main-button input {
-        font-size: 12px;
-        padding: 8px 27px; }
 
-  .button-top a, .button-top .header-phone__phone, .button-top .dropdown .dropbtn, .dropdown .button-top .dropbtn, .button-top .burger-menu__burger-link, .button-top .burger-list .dropbtn, .burger-list .button-top .dropbtn, .button-top .video-table, .button-top .block-right__text-about_span-about, .button-top .type-name, .button-top .unit-name {
-    font-size: 12px; }
-  .button-top__btn {
-    padding: 8px 10px; }
+  .home__home-overlay input {
+    font-size: 12px;
+    padding: 8px 27px; }
 
+  /*.button-top {
+  	a {
+  		font-size: 12px;			
+  	}
+  	&__btn {
+  		padding: 8px 10px;					
+  	}
+  }*/
   .scroll-link {
     bottom: 50px;
     font-size: 8px; }
@@ -848,17 +837,19 @@ section-1 {
       font-size: 22px; }
     .main__main-title_topic {
       font-size: 16px; }
-    .main__main-title_main-button {
-      margin-top: 22px; }
-      .main__main-title_main-button input {
-        font-size: 12px;
-        padding: 8px 27px; }
 
-  .button-top a, .button-top .header-phone__phone, .button-top .dropdown .dropbtn, .dropdown .button-top .dropbtn, .button-top .burger-menu__burger-link, .button-top .burger-list .dropbtn, .burger-list .button-top .dropbtn, .button-top .video-table, .button-top .block-right__text-about_span-about, .button-top .type-name, .button-top .unit-name {
-    font-size: 12px; }
-  .button-top__btn {
-    padding: 8px 10px; }
+  .home__home-overlay input {
+    font-size: 12px;
+    padding: 8px 27px; }
 
+  /*.button-top {
+  	a {
+  		font-size: 12px;			
+  	}
+  	&__btn {
+  		padding: 8px 10px;					
+  	}
+  }*/
   .scroll-link {
     bottom: 50px;
     font-size: 8px; }
@@ -1623,7 +1614,7 @@ section-3 {
   .portfolio-price__price-select {
     width: 230px;
     margin-bottom: 25px; }
-  .portfolio-price__price-characteristic a, .portfolio-price__price-characteristic .header-phone__phone, .portfolio-price__price-characteristic .dropdown .dropbtn, .dropdown .portfolio-price__price-characteristic .dropbtn, .portfolio-price__price-characteristic .burger-menu__burger-link, .portfolio-price__price-characteristic .burger-list .dropbtn, .burger-list .portfolio-price__price-characteristic .dropbtn, .portfolio-price__price-characteristic .video-table, .portfolio-price__price-characteristic .block-right__text-about_span-about, .portfolio-price__price-characteristic .type-name, .portfolio-price__price-characteristic .unit-name {
+  .portfolio-price__price-characteristic a, .portfolio-price__price-characteristic .header-nav li a, .header-nav li .portfolio-price__price-characteristic a, .portfolio-price__price-characteristic .burger-list .dropdown:hover .dropdown-content a, .burger-list .dropdown:hover .dropdown-content .portfolio-price__price-characteristic a, .portfolio-price__price-characteristic .video-table, .portfolio-price__price-characteristic .block-right__text-about_span-about, .portfolio-price__price-characteristic .type-name, .portfolio-price__price-characteristic .footer-wrap__menu-footer_vertical-menu li a, .footer-wrap__menu-footer_vertical-menu li .portfolio-price__price-characteristic a, .portfolio-price__price-characteristic .unit-name {
     margin-top: 30px;
     text-decoration-line: underline; }
 
@@ -1799,7 +1790,7 @@ section-3 {
       font-size: 12px; }
     .portfolio-price__price-select {
       width: 140px; }
-    .portfolio-price__price-characteristic a, .portfolio-price__price-characteristic .header-phone__phone, .portfolio-price__price-characteristic .dropdown .dropbtn, .dropdown .portfolio-price__price-characteristic .dropbtn, .portfolio-price__price-characteristic .burger-menu__burger-link, .portfolio-price__price-characteristic .burger-list .dropbtn, .burger-list .portfolio-price__price-characteristic .dropbtn, .portfolio-price__price-characteristic .video-table, .portfolio-price__price-characteristic .block-right__text-about_span-about, .portfolio-price__price-characteristic .type-name, .portfolio-price__price-characteristic .unit-name {
+    .portfolio-price__price-characteristic a, .portfolio-price__price-characteristic .header-nav li a, .header-nav li .portfolio-price__price-characteristic a, .portfolio-price__price-characteristic .burger-list .dropdown:hover .dropdown-content a, .burger-list .dropdown:hover .dropdown-content .portfolio-price__price-characteristic a, .portfolio-price__price-characteristic .video-table, .portfolio-price__price-characteristic .block-right__text-about_span-about, .portfolio-price__price-characteristic .type-name, .portfolio-price__price-characteristic .footer-wrap__menu-footer_vertical-menu li a, .footer-wrap__menu-footer_vertical-menu li .portfolio-price__price-characteristic a, .portfolio-price__price-characteristic .unit-name {
       font-size: 14px; }
 
   .price {
@@ -1812,6 +1803,9 @@ section-3 {
   .select-selected:after {
     top: 11px; } }
 /* ------------ blog --------------- */
+#blog {
+  min-height: 100vh; }
+
 .information {
   display: none;
   display: flex;
@@ -1852,6 +1846,9 @@ section-3 {
   text-align: justify;
   line-height: 1.35;
   margin-bottom: 8px; }
+
+.blog-block {
+  flex-direction: row; }
 
 .blog-text {
   text-indent: 1.5em;
@@ -1953,9 +1950,12 @@ section-5 {
   align-items: center; }
   .fotogallery-gallery img {
     width: 65%;
-    border: 1px solid rgba(130, 136, 147, 0.3);
     border-radius: 5px;
     margin-bottom: 70px; }
+  .fotogallery-gallery img:hover {
+    cursor: pointer;
+    transform: translateY(-2px);
+    box-shadow: 0 12px 22px -14px #000; }
 
 /* ------ media query ------ */
 @media (min-width: 1200px) and (max-width: 1365.98px) {
@@ -2120,9 +2120,9 @@ footer {
     .footer-wrap__menu-footer_vertical-menu {
       padding-left: 0;
       margin-bottom: 0; }
-      .footer-wrap__menu-footer_vertical-menu_link-group .header-phone__phone, .footer-wrap__menu-footer_vertical-menu_link-group .dropdown .dropbtn, .dropdown .footer-wrap__menu-footer_vertical-menu_link-group .dropbtn, .footer-wrap__menu-footer_vertical-menu_link-group .burger-menu__burger-link, .footer-wrap__menu-footer_vertical-menu_link-group .burger-list .dropbtn, .burger-list .footer-wrap__menu-footer_vertical-menu_link-group .dropbtn, .footer-wrap__menu-footer_vertical-menu_link-group .video-table, .footer-wrap__menu-footer_vertical-menu_link-group .block-right__text-about_span-about, .footer-wrap__menu-footer_vertical-menu_link-group .type-name, .footer-wrap__menu-footer_vertical-menu_link-group a, .footer-wrap__menu-footer_vertical-menu_link-group .unit-name {
+      .footer-wrap__menu-footer_vertical-menu li .burger-list .dropdown:hover .dropdown-content a, .burger-list .dropdown:hover .dropdown-content .footer-wrap__menu-footer_vertical-menu li a, .footer-wrap__menu-footer_vertical-menu li .video-table, .footer-wrap__menu-footer_vertical-menu li .block-right__text-about_span-about, .footer-wrap__menu-footer_vertical-menu li .type-name, .footer-wrap__menu-footer_vertical-menu li a, .footer-wrap__menu-footer_vertical-menu li .unit-name {
         font-weight: 400; }
-        .footer-wrap__menu-footer_vertical-menu_link-group .header-phone__phone:hover, .footer-wrap__menu-footer_vertical-menu_link-group .dropdown .dropbtn:hover, .dropdown .footer-wrap__menu-footer_vertical-menu_link-group .dropbtn:hover, .footer-wrap__menu-footer_vertical-menu_link-group .burger-menu__burger-link:hover, .footer-wrap__menu-footer_vertical-menu_link-group .burger-list .dropbtn:hover, .burger-list .footer-wrap__menu-footer_vertical-menu_link-group .dropbtn:hover, .footer-wrap__menu-footer_vertical-menu_link-group .video-table:hover, .footer-wrap__menu-footer_vertical-menu_link-group .block-right__text-about_span-about:hover, .footer-wrap__menu-footer_vertical-menu_link-group .type-name:hover, .footer-wrap__menu-footer_vertical-menu_link-group a:hover, .footer-wrap__menu-footer_vertical-menu_link-group .unit-name:hover {
+        .footer-wrap__menu-footer_vertical-menu li .burger-list .dropdown:hover .dropdown-content a:hover, .burger-list .dropdown:hover .dropdown-content .footer-wrap__menu-footer_vertical-menu li a:hover, .footer-wrap__menu-footer_vertical-menu li .video-table:hover, .footer-wrap__menu-footer_vertical-menu li .block-right__text-about_span-about:hover, .footer-wrap__menu-footer_vertical-menu li .type-name:hover, .footer-wrap__menu-footer_vertical-menu li a:hover, .footer-wrap__menu-footer_vertical-menu li .unit-name:hover {
           border-bottom: none;
           color: #ffffff;
           opacity: 0.5; }
@@ -2142,9 +2142,9 @@ footer {
         color: #16943f; }
     .footer-wrap__footer-contact_footer-email {
       margin-bottom: 25px; }
-      .footer-wrap__footer-contact_footer-email .header-phone__phone, .footer-wrap__footer-contact_footer-email .dropdown .dropbtn, .dropdown .footer-wrap__footer-contact_footer-email .dropbtn, .footer-wrap__footer-contact_footer-email .burger-menu__burger-link, .footer-wrap__footer-contact_footer-email .burger-list .dropbtn, .burger-list .footer-wrap__footer-contact_footer-email .dropbtn, .footer-wrap__footer-contact_footer-email .video-table, .footer-wrap__footer-contact_footer-email .block-right__text-about_span-about, .footer-wrap__footer-contact_footer-email .type-name, .footer-wrap__footer-contact_footer-email a, .footer-wrap__footer-contact_footer-email .unit-name {
+      .footer-wrap__footer-contact_footer-email .header-nav li a, .header-nav li .footer-wrap__footer-contact_footer-email a, .footer-wrap__footer-contact_footer-email .burger-list .dropdown:hover .dropdown-content a, .burger-list .dropdown:hover .dropdown-content .footer-wrap__footer-contact_footer-email a, .footer-wrap__footer-contact_footer-email .video-table, .footer-wrap__footer-contact_footer-email .block-right__text-about_span-about, .footer-wrap__footer-contact_footer-email .type-name, .footer-wrap__footer-contact_footer-email .footer-wrap__menu-footer_vertical-menu li a, .footer-wrap__menu-footer_vertical-menu li .footer-wrap__footer-contact_footer-email a, .footer-wrap__footer-contact_footer-email a, .footer-wrap__footer-contact_footer-email .unit-name {
         font-weight: 400; }
-        .footer-wrap__footer-contact_footer-email .header-phone__phone:hover, .footer-wrap__footer-contact_footer-email .dropdown .dropbtn:hover, .dropdown .footer-wrap__footer-contact_footer-email .dropbtn:hover, .footer-wrap__footer-contact_footer-email .burger-menu__burger-link:hover, .footer-wrap__footer-contact_footer-email .burger-list .dropbtn:hover, .burger-list .footer-wrap__footer-contact_footer-email .dropbtn:hover, .footer-wrap__footer-contact_footer-email .video-table:hover, .footer-wrap__footer-contact_footer-email .block-right__text-about_span-about:hover, .footer-wrap__footer-contact_footer-email .type-name:hover, .footer-wrap__footer-contact_footer-email a:hover, .footer-wrap__footer-contact_footer-email .unit-name:hover {
+        .footer-wrap__footer-contact_footer-email .burger-list .dropdown:hover .dropdown-content a:hover, .burger-list .dropdown:hover .dropdown-content .footer-wrap__footer-contact_footer-email a:hover, .footer-wrap__footer-contact_footer-email .video-table:hover, .footer-wrap__footer-contact_footer-email .block-right__text-about_span-about:hover, .footer-wrap__footer-contact_footer-email .type-name:hover, .footer-wrap__footer-contact_footer-email a:hover, .footer-wrap__footer-contact_footer-email .unit-name:hover {
           border-bottom: none;
           color: #1b255d;
           opacity: 0.5; }
@@ -2311,11 +2311,11 @@ footer {
     font-size: 16px; }
   .footer-wrap__menu-footer_title-menu {
     font-size: 14px; }
-  .footer-wrap__menu-footer_vertical-menu_link-group .header-phone__phone, .footer-wrap__menu-footer_vertical-menu_link-group .dropdown .dropbtn, .dropdown .footer-wrap__menu-footer_vertical-menu_link-group .dropbtn, .footer-wrap__menu-footer_vertical-menu_link-group .burger-menu__burger-link, .footer-wrap__menu-footer_vertical-menu_link-group .burger-list .dropbtn, .burger-list .footer-wrap__menu-footer_vertical-menu_link-group .dropbtn, .footer-wrap__menu-footer_vertical-menu_link-group .video-table, .footer-wrap__menu-footer_vertical-menu_link-group .block-right__text-about_span-about, .footer-wrap__menu-footer_vertical-menu_link-group .type-name, .footer-wrap__menu-footer_vertical-menu_link-group a, .footer-wrap__menu-footer_vertical-menu_link-group .unit-name {
+  .footer-wrap__menu-footer_vertical-menu li .burger-list .dropdown:hover .dropdown-content a, .burger-list .dropdown:hover .dropdown-content .footer-wrap__menu-footer_vertical-menu li a, .footer-wrap__menu-footer_vertical-menu li .video-table, .footer-wrap__menu-footer_vertical-menu li .block-right__text-about_span-about, .footer-wrap__menu-footer_vertical-menu li .type-name, .footer-wrap__menu-footer_vertical-menu li a, .footer-wrap__menu-footer_vertical-menu li .unit-name {
     font-size: 12px; }
   .footer-wrap__footer-contact_topic-contact {
     font-size: 14px; }
-  .footer-wrap__footer-contact_footer-email .header-phone__phone, .footer-wrap__footer-contact_footer-email .dropdown .dropbtn, .dropdown .footer-wrap__footer-contact_footer-email .dropbtn, .footer-wrap__footer-contact_footer-email .burger-menu__burger-link, .footer-wrap__footer-contact_footer-email .burger-list .dropbtn, .burger-list .footer-wrap__footer-contact_footer-email .dropbtn, .footer-wrap__footer-contact_footer-email .video-table, .footer-wrap__footer-contact_footer-email .block-right__text-about_span-about, .footer-wrap__footer-contact_footer-email .type-name, .footer-wrap__footer-contact_footer-email a, .footer-wrap__footer-contact_footer-email .unit-name {
+  .footer-wrap__footer-contact_footer-email .header-nav li a, .header-nav li .footer-wrap__footer-contact_footer-email a, .footer-wrap__footer-contact_footer-email .burger-list .dropdown:hover .dropdown-content a, .burger-list .dropdown:hover .dropdown-content .footer-wrap__footer-contact_footer-email a, .footer-wrap__footer-contact_footer-email .video-table, .footer-wrap__footer-contact_footer-email .block-right__text-about_span-about, .footer-wrap__footer-contact_footer-email .type-name, .footer-wrap__footer-contact_footer-email .footer-wrap__menu-footer_vertical-menu li a, .footer-wrap__menu-footer_vertical-menu li .footer-wrap__footer-contact_footer-email a, .footer-wrap__footer-contact_footer-email a, .footer-wrap__footer-contact_footer-email .unit-name {
     font-size: 14px; }
   .footer-wrap__footer-contact_social-web_topic-social {
     font-size: 14px; }
@@ -2364,7 +2364,7 @@ footer {
       .footer-wrap__menu-footer_vertical-menu {
         display: flex;
         justify-content: space-between; }
-        .footer-wrap__menu-footer_vertical-menu_link-group .header-phone__phone, .footer-wrap__menu-footer_vertical-menu_link-group .dropdown .dropbtn, .dropdown .footer-wrap__menu-footer_vertical-menu_link-group .dropbtn, .footer-wrap__menu-footer_vertical-menu_link-group .burger-menu__burger-link, .footer-wrap__menu-footer_vertical-menu_link-group .burger-list .dropbtn, .burger-list .footer-wrap__menu-footer_vertical-menu_link-group .dropbtn, .footer-wrap__menu-footer_vertical-menu_link-group .video-table, .footer-wrap__menu-footer_vertical-menu_link-group .block-right__text-about_span-about, .footer-wrap__menu-footer_vertical-menu_link-group .type-name, .footer-wrap__menu-footer_vertical-menu_link-group a, .footer-wrap__menu-footer_vertical-menu_link-group .unit-name {
+        .footer-wrap__menu-footer_vertical-menu li .burger-list .dropdown:hover .dropdown-content a, .burger-list .dropdown:hover .dropdown-content .footer-wrap__menu-footer_vertical-menu li a, .footer-wrap__menu-footer_vertical-menu li .video-table, .footer-wrap__menu-footer_vertical-menu li .block-right__text-about_span-about, .footer-wrap__menu-footer_vertical-menu li .type-name, .footer-wrap__menu-footer_vertical-menu li a, .footer-wrap__menu-footer_vertical-menu li .unit-name {
           font-size: 12px; }
     .footer-wrap__footer-contact_topic-contact {
       font-size: 14px;
@@ -2373,7 +2373,7 @@ footer {
       font-size: 14px; }
     .footer-wrap__footer-contact_footer-email {
       margin-bottom: 5px; }
-      .footer-wrap__footer-contact_footer-email .header-phone__phone, .footer-wrap__footer-contact_footer-email .dropdown .dropbtn, .dropdown .footer-wrap__footer-contact_footer-email .dropbtn, .footer-wrap__footer-contact_footer-email .burger-menu__burger-link, .footer-wrap__footer-contact_footer-email .burger-list .dropbtn, .burger-list .footer-wrap__footer-contact_footer-email .dropbtn, .footer-wrap__footer-contact_footer-email .video-table, .footer-wrap__footer-contact_footer-email .block-right__text-about_span-about, .footer-wrap__footer-contact_footer-email .type-name, .footer-wrap__footer-contact_footer-email a, .footer-wrap__footer-contact_footer-email .unit-name {
+      .footer-wrap__footer-contact_footer-email .header-nav li a, .header-nav li .footer-wrap__footer-contact_footer-email a, .footer-wrap__footer-contact_footer-email .burger-list .dropdown:hover .dropdown-content a, .burger-list .dropdown:hover .dropdown-content .footer-wrap__footer-contact_footer-email a, .footer-wrap__footer-contact_footer-email .video-table, .footer-wrap__footer-contact_footer-email .block-right__text-about_span-about, .footer-wrap__footer-contact_footer-email .type-name, .footer-wrap__footer-contact_footer-email .footer-wrap__menu-footer_vertical-menu li a, .footer-wrap__menu-footer_vertical-menu li .footer-wrap__footer-contact_footer-email a, .footer-wrap__footer-contact_footer-email a, .footer-wrap__footer-contact_footer-email .unit-name {
         font-size: 14px; }
     .footer-wrap__footer-contact_social-web {
       padding-bottom: 10px; }
@@ -2435,7 +2435,7 @@ footer {
       .footer-wrap__menu-footer_vertical-menu {
         display: flex;
         justify-content: space-between; }
-        .footer-wrap__menu-footer_vertical-menu_link-group .header-phone__phone, .footer-wrap__menu-footer_vertical-menu_link-group .dropdown .dropbtn, .dropdown .footer-wrap__menu-footer_vertical-menu_link-group .dropbtn, .footer-wrap__menu-footer_vertical-menu_link-group .burger-menu__burger-link, .footer-wrap__menu-footer_vertical-menu_link-group .burger-list .dropbtn, .burger-list .footer-wrap__menu-footer_vertical-menu_link-group .dropbtn, .footer-wrap__menu-footer_vertical-menu_link-group .video-table, .footer-wrap__menu-footer_vertical-menu_link-group .block-right__text-about_span-about, .footer-wrap__menu-footer_vertical-menu_link-group .type-name, .footer-wrap__menu-footer_vertical-menu_link-group a, .footer-wrap__menu-footer_vertical-menu_link-group .unit-name {
+        .footer-wrap__menu-footer_vertical-menu li .burger-list .dropdown:hover .dropdown-content a, .burger-list .dropdown:hover .dropdown-content .footer-wrap__menu-footer_vertical-menu li a, .footer-wrap__menu-footer_vertical-menu li .video-table, .footer-wrap__menu-footer_vertical-menu li .block-right__text-about_span-about, .footer-wrap__menu-footer_vertical-menu li .type-name, .footer-wrap__menu-footer_vertical-menu li a, .footer-wrap__menu-footer_vertical-menu li .unit-name {
           font-size: 12px; }
     .footer-wrap__footer-contact_topic-contact {
       font-size: 14px;
@@ -2444,7 +2444,7 @@ footer {
       font-size: 12px; }
     .footer-wrap__footer-contact_footer-email {
       margin-bottom: 5px; }
-      .footer-wrap__footer-contact_footer-email .header-phone__phone, .footer-wrap__footer-contact_footer-email .dropdown .dropbtn, .dropdown .footer-wrap__footer-contact_footer-email .dropbtn, .footer-wrap__footer-contact_footer-email .burger-menu__burger-link, .footer-wrap__footer-contact_footer-email .burger-list .dropbtn, .burger-list .footer-wrap__footer-contact_footer-email .dropbtn, .footer-wrap__footer-contact_footer-email .video-table, .footer-wrap__footer-contact_footer-email .block-right__text-about_span-about, .footer-wrap__footer-contact_footer-email .type-name, .footer-wrap__footer-contact_footer-email a, .footer-wrap__footer-contact_footer-email .unit-name {
+      .footer-wrap__footer-contact_footer-email .header-nav li a, .header-nav li .footer-wrap__footer-contact_footer-email a, .footer-wrap__footer-contact_footer-email .burger-list .dropdown:hover .dropdown-content a, .burger-list .dropdown:hover .dropdown-content .footer-wrap__footer-contact_footer-email a, .footer-wrap__footer-contact_footer-email .video-table, .footer-wrap__footer-contact_footer-email .block-right__text-about_span-about, .footer-wrap__footer-contact_footer-email .type-name, .footer-wrap__footer-contact_footer-email .footer-wrap__menu-footer_vertical-menu li a, .footer-wrap__menu-footer_vertical-menu li .footer-wrap__footer-contact_footer-email a, .footer-wrap__footer-contact_footer-email a, .footer-wrap__footer-contact_footer-email .unit-name {
         font-size: 14px; }
     .footer-wrap__footer-contact_social-web {
       padding-bottom: 10px; }
@@ -2469,43 +2469,32 @@ footer {
 
   .fa-chevron-circle-up {
     font-size: 32px; } }
-@media only screen and (orientation: landscape) {
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (orientation: landscape) {
   footer {
     padding-top: 92px;
     min-height: 0;
     padding-bottom: 50px; }
 
-  	/*.footer-block {
-     		//padding-bottom: 50px;
-  	}
-  	.form-contact {
-  		&__form-title {		
-  	    	margin-top: 0;
-  		    margin-bottom: 17px;
-  		    font-size: 21px;
-  		}
-  		&__form-content {
-  			width: 50%;
-  			font-size: 14px;
-  			&_form-name {
-  				margin-bottom: 18px;
-  				padding: 5px 0 5px 27px;
-  			}
-  			&_form-email {
-  				margin-bottom: 18px;
-  				padding: 5px 0 5px 27px;
-  			}
-  			&_form-message {
-  				margin-bottom: 25px;
-  			    padding: 5px 0 32px 27px;
-  			}
-  			&_form-submit {
-  				padding: 7px 22px;
-  				margin-bottom: 25px;
-  				font-size: 12px;			 			
-  			}
-  		}
-  	}*/ }
+  .form-contact__form-title {
+    margin-top: 0;
+    margin-bottom: 17px;
+    font-size: 21px; }
+  .form-contact__form-content {
+    width: 50%;
+    font-size: 14px; }
+    .form-contact__form-content_form-name {
+      margin-bottom: 18px;
+      padding: 5px 0 5px 27px; }
+    .form-contact__form-content_form-email {
+      margin-bottom: 18px;
+      padding: 5px 0 5px 27px; }
+    .form-contact__form-content_form-message {
+      margin-bottom: 25px;
+      padding: 5px 0 32px 27px; }
+    .form-contact__form-content_form-submit {
+      padding: 7px 22px;
+      margin-bottom: 25px;
+      font-size: 12px; } }
 /* ------------ sub-catalogue --------------- */
 .sub-catalogue {
   display: flex;

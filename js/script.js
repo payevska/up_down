@@ -3,21 +3,34 @@ $(document).ready(function(){
     /* for active a ... http://jsfiddle.net/sdLs7urp/1/
       https://toster.ru/q/136525*/ 
 
-    var links = $('.link-active');
+    /*var links = $('.header-nav li a');
     
     links.last().addClass('active');
     
     links.on('click', function(){
         links.removeClass('active');
         $(this).addClass('active');
+    });*/
+
+
+    const currentLocation = location.href;
+    const menuItem = document.querySelectorAll('.header-nav li a');
+    const menuLength = menuItem.length;
+
+    for(let i = 0; i < menuLength; i++) {
+        if(menuItem[i].href === currentLocation) {
+            menuItem[i].className = "active";
+        }
+    } 
+
+       
+    var links = $('.header-nav li a');
+    links.on('click', function(){
+        links.removeClass('active');
+        $(this).addClass('active');
     });
 
 
-
-
-    
-        
-    
     /*scroll-home......https://www.w3schools.com/howto/howto_css_smooth_scroll.asp#section2*/
 
     /*$('a').on('click', function(event) {
@@ -50,7 +63,7 @@ $(document).ready(function(){
     /*image portfolio-left.... http://www.web.cofp.ru/vse-o-sajtakh/
     sozdanie-sajta/javascript/jquery/154-uvelichenie-izobrazheniya-pri-nazhatii-na-nego*/ 
 
-    $(".carousel-foto__project_fotoProject").click(function(){   // Событие клика на маленькое изображение
+    /*$(".carousel-foto__project_fotoProject").click(function(){   // Событие клика на маленькое изображение
         var img = $(this);  // Получаем изображение, на которое кликнули
         var src = img.attr('src'); // Достаем из этого изображения путь до картинки
         
@@ -62,7 +75,7 @@ $(document).ready(function(){
                           
         $(".portfolio-right__project-big-foto").fadeIn(800); // Медленно выводим изображение
         
-    });
+    });*/
 
 
    
@@ -70,7 +83,7 @@ $(document).ready(function(){
     function burgerMenu(selector) {
         let menu = $(selector);
         let button = menu.find('.burger-menu__burger-button');
-        let links = menu.find('.burger-menu__burger-link');
+        let links = menu.find('.burger-list li a');
         let overlay = menu.find('.burger-menu__overlay');
 
         button.on('click', (e) => {

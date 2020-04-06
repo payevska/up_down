@@ -1,4 +1,8 @@
 /* ------------ blog --------------- */
+#blog {
+    min-height: 100vh;
+}
+
 .information {
 	display: none;
 	display: flex;
@@ -54,6 +58,10 @@
 
 .information-text a {
     @extend a;
+}
+
+.blog-block {
+    flex-direction: row;
 }
 
 .blog-text {
