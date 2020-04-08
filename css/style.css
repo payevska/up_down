@@ -607,7 +607,7 @@ section-1 {
     width: 100%;
     height: 100%;
     transition: 250ms;
-    background: rgba(13, 22, 72, 0.75);
+    background: rgba(130, 136, 147, 0.8);
     opacity: 0;
     visibility: hidden; }
     .home__home-overlay input {
@@ -1966,7 +1966,7 @@ section-5 {
         box-shadow: 0 12px 22px -14px #000; }
 
 .fancybox-bg {
-  background: rgba(13, 22, 72, 0.85); }
+  background: rgba(130, 136, 147, 0.8); }
 
 /* ------ media query ------ */
 @media (min-width: 576px) and (max-width: 767.98px) {
