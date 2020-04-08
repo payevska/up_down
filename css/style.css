@@ -1950,7 +1950,8 @@ section-5 {
 
 .fotogallery-gallery {
   display: flex;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  align-content: flex-start; }
   .fotogallery-gallery__picture {
     padding: 5px; }
     .fotogallery-gallery__picture a, .fotogallery-gallery__picture .header-nav li a, .header-nav li .fotogallery-gallery__picture a, .fotogallery-gallery__picture .burger-list .dropdown:hover .dropdown-content a, .burger-list .dropdown:hover .dropdown-content .fotogallery-gallery__picture a, .fotogallery-gallery__picture .video-table, .fotogallery-gallery__picture .block-right__text-about_span-about, .fotogallery-gallery__picture .type-name, .fotogallery-gallery__picture .footer-wrap__menu-footer_vertical-menu li a, .footer-wrap__menu-footer_vertical-menu li .fotogallery-gallery__picture a, .fotogallery-gallery__picture .unit-name {

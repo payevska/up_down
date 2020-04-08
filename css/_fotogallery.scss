@@ -29,6 +29,7 @@ section-5 {
 .fotogallery-gallery {    
 	display: flex;
     flex-wrap: wrap;
+    align-content: flex-start;
     &__picture {
         padding: 5px;
         a {
