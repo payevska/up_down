@@ -56,8 +56,7 @@ section-5 {
 @include desktop {
     .fotogallery-gallery {
      img {
-                width: 50%;
-                margin-bottom: 30px;
+                //width: 50%;
             }    
     }	
 }
@@ -65,14 +64,12 @@ section-5 {
     .fotogallery-gallery {    
             img {
                 width: 50%;
-                margin-bottom: 30px;
             }
     }
 }
 @include tablet {
      .fotogallery-gallery {    
             img {
-                margin-bottom: 30px;
             }
     }
 }
@@ -97,7 +94,6 @@ section-5 {
     }
      .fotogallery-gallery {    
             img {
-                margin-bottom: 30px;
             }
     }
 }
@@ -123,7 +119,6 @@ section-5 {
     }
      .fotogallery-gallery {    
             img {
-                margin-bottom: 20px;
             }
     }
 }
@@ -149,7 +144,6 @@ section-5 {
     }
     .fotogallery-gallery {    
             img {
-                margin-bottom: 15px;
             }
     }
 }
