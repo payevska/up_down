@@ -3,7 +3,7 @@ section-5 {
 	display: none;
 	display: flex;
     align-items: center;
-    padding-bottom: 45px;
+    height: 100vh;
 }
 
 .fotogallery-wrap {
@@ -51,31 +51,21 @@ section-5 {
 }
 
 .fancybox-bg {
-    background: rgba(130, 136, 147, 0.8);
+    background: rgba(130, 136, 147, 0.9);
 }
 
 /* ------ media query ------ */
 @include desktop {
-    .fotogallery-gallery {
-     img {
-                //width: 50%;
-            }    
-    }	
 }
 @include laptop {
-    .fotogallery-gallery {    
-            img {
-                //width: 50%;
-            }
-    }
 }
 @include tablet {
-     .fotogallery-gallery {    
-            img {
-            }
-    }
 }
 @include tablet-mini {
+    section-5 {
+        height: auto;
+        padding-bottom: 30px;
+    }
     .fotogallery-wrap {
         margin-top: 70px;
     }
@@ -94,12 +84,12 @@ section-5 {
             margin-bottom: 5px;
         }   
     }
-     .fotogallery-gallery {    
-            img {
-            }
-    }
 }
 @include phone {
+    section-5 {
+        height: auto;
+        padding-bottom: 30px;
+    }
     .fotogallery-wrap {
         margin-top: 50px;
     }
@@ -119,12 +109,12 @@ section-5 {
             margin-bottom: 5px;
         }   
     }
-     .fotogallery-gallery {    
-            img {
-            }
-    }
 }
 @include iphone-5 {
+    section-5 {
+        height: auto;
+        padding-bottom: 30px;
+    }
     .fotogallery-wrap {
         margin-top: 50px;
     }
@@ -143,9 +133,5 @@ section-5 {
             margin-top: 5px;
             margin-bottom: 5px;
         }   
-    }
-    .fotogallery-gallery {    
-            img {
-            }
     }
 }
