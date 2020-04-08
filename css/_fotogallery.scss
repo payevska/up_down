@@ -34,6 +34,7 @@ section-5 {
         padding: 5px;
         a {
             display: flex;
+            align-items: flex-start;
             img {
                 width: 100%;
                 //border: 1px solid rgba(130, 136, 147, 0.3);
@@ -64,7 +65,7 @@ section-5 {
 @include laptop {
     .fotogallery-gallery {    
             img {
-                width: 50%;
+                //width: 50%;
             }
     }
 }
