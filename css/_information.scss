@@ -1,0 +1,239 @@
+/* ------------ information --------------- */
+#blog {
+    min-height: 100vh;
+}
+
+.information {
+	display: none;
+	display: flex;
+    align-items: center;
+    height: auto;
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+.information-wrap {
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.information-title {
+    width: 100%;
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__topic-article {
+        @extend h3;
+        color: $blue-dark;
+        font-weight: $medium-plus;
+	    width: 45%;
+    	text-align: center;
+    }
+}
+
+.information-block {
+    display: flex;
+    flex-direction: column;
+}
+
+.information-block-delivery {
+    width: 60%;    
+    &__para {
+        ul {
+            list-style: disc;
+            padding-inline-start: 20px;
+            margin-bottom: 8px;
+            li {
+                color: $blue-dark;
+                span {
+                    font-weight: $bold;
+                }
+            }
+        }
+    }	
+}
+
+.letter {
+    font-size: 17px;
+
+}
+
+.information-topic {
+    color: $blue-dark;
+    font-weight: $bold;
+}
+
+.information-text {
+    color: $blue-dark;
+    text-align: justify;
+    line-height: 1.35;
+    margin-bottom: 8px;
+}
+
+.information-text a {
+    @extend a;
+    color: $orange;
+}
+
+.information-text a:hover {
+    color: $orange-light;
+}
+
+.blog-block {
+    flex-direction: row;
+}
+
+.blog-text {
+    width: 50%;
+    color: $blue-dark;
+    text-indent: 1.5em;
+    font-size: 18px;
+    text-align: justify;
+    line-height: 1.35;
+    margin-bottom: 8px;
+    padding: 50px 40px;
+}
+
+/* ------ media query ------ */
+@include desktop {	
+}
+@include laptop {
+}
+@include tablet {
+    .information-title {
+        padding-bottom: 20px;
+        &__topic-article {
+            width: 53%;
+            font-size: 18px;
+        }
+    }
+    .information-block-delivery {
+        width: 70%;    
+    }
+    .information-block {
+        align-items: center;
+        flex-direction: column;
+    }
+    .blog-text {
+        width: 70%;
+        padding: 0;
+    }
+}
+@include tablet-mini {
+    .information-title {
+        padding-bottom: 20px;
+        &__topic-article {
+            width: 53%;
+            font-size: 18px;
+        }
+    }
+    .information-block-delivery {
+        width: 70%;    
+    }
+    .information-block {
+        align-items: center;
+        flex-direction: column;
+    }
+    .information-text {
+        font-size: 12px;
+    }
+    .information-topic {
+        font-size: 12px;
+    }
+    .information-block-delivery__para ul li {
+        font-size: 12px;
+    }
+    .information-text a {
+        font-size: 12px;
+    }
+    .letter {
+        font-size: 13px;
+    }
+    .blog-text {
+        width: 70%;
+        padding: 0;
+    }
+}
+@include phone {
+    .information-title {
+        padding-bottom: 5px;
+        &__topic-article {
+            width: 50%;
+            font-size: 12px;
+        }
+    }
+    .information-block-delivery {
+        width: 70%;    
+    }
+    .information-block {
+        align-items: center;
+        flex-direction: column;
+    }
+    .information-text {
+        font-size: 12px;
+    }
+    .information-topic {
+        font-size: 12px;
+    }
+    .information-block-delivery {
+        width: 80%;
+    }
+    .information-block-delivery__para ul li {
+        font-size: 12px;
+    }
+    .information-text a {
+        font-size: 12px;
+    }
+    .letter {
+        font-size: 13px;
+    }
+    .blog-text {
+        width: 70%;
+        padding: 0;
+    } 	
+}
+@include iphone-5 {
+    .information-title {
+        padding-bottom: 5px;
+        &__topic-article {
+            width: 80%;
+            font-size: 12px;
+        }
+    }
+    .title-section {
+        &__title-topic {
+            font-size: 16px;
+        }
+        &__title-border {
+            width: 60px;
+        }
+    }        
+    .information-block-delivery {
+        width: 85%;    
+    }
+    .information-block {
+        align-items: center;
+        flex-direction: column;
+    }
+    .information-text {
+        font-size: 12px;
+    }
+    .information-topic {
+        font-size: 12px;
+    }
+    .information-block-delivery__para ul li {
+        font-size: 12px;
+    }
+    .information-text a {
+        font-size: 12px;
+    }
+    .letter {
+        font-size: 13px;
+    }
+    .blog-text {
+        width: 80%;
+        padding: 0;
+    }
+}
+
