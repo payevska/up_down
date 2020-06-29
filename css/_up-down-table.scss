@@ -114,11 +114,19 @@
 		width: 230px;
 		margin-bottom: 25px;
 	}
-	&__price-characteristic a {
-		margin-top: 30px;
-    	text-decoration-line: underline;
-	}
+	&__price-characteristic {
+		display: flex;
+    	justify-content: space-between;
+    	width: 55%;
+		a {
+			@extend a;
+			margin-top: 30px;
+	    	text-decoration-line: underline;
+	    	border-bottom: none;
+		}
+	}	
 }
+
 .price {
 	font-weight: $medium-plus;
 }
